@@ -34,7 +34,7 @@ function AboutUs() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Eaque consectetur blanditiis, autem, sequi nihil quos accusamus harum,
           voluptatibus eius optio provident delectus deserunt distinctio voluptate.
-          Veniam deleniti molestias blanditiis quas.
+          Veniam deleniti molestias blanditiis quas...
         </p>
       </div>
 
