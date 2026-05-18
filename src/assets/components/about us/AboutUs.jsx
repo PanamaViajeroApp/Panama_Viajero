@@ -32,7 +32,7 @@ function AboutUs() {
 
         <p className="font-body max-w-xs leading-7 text-brand-charcoal/85 md:max-w-md md:text-lg">
           Somos un directorio digital turístico que conecta a viajeros nacionales e internacionales 
-          con alojamientos, experiencias, gastronomía y comercios turísticos en todo el país, somos un canal de promoción y visibilidad digital.
+          con alojamientos, experiencias, gastronomía y comercios turísticos en todo el país.
         </p>
       </div>
 

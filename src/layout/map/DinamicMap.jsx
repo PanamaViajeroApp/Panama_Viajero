@@ -17,12 +17,12 @@ const provinces = [
     { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui', top: '28.5%', left: '-0.20%', width: '25.66%' },
     { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '-3%', left: '0.50%', width: '32%' },
     { component: Cocle, alt: 'Cocle', to: '/provincias/cocle', top: '12%', left: '34.75%', width: '21%' },
-    { component: Colon, alt: 'Colon', to: '/provincias/colon', top: '0%', left: '37.56%', width: '30.05%', zIndex: 26 },
-    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 27 },
+    { component: Colon, alt: 'Colon', to: '/provincias/colon', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31 },
+    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23 },
     { component: Darien, alt: 'Darien', to: '/provincias/darien', top: '18.5%', left: '77.2%', width: '23.5%' },
     { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22 },
     { component: Herrera, alt: 'Herrera', to: '/provincias/herrera', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23 },
-    { component: PanamaOeste, alt: 'Panama Oeste', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 28 },
+    { component: PanamaOeste, alt: 'Panama Oeste', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32 },
     { component: Panama, alt: 'Panama', to: '/provincias/panama', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29 },
 ];
 
@@ -44,7 +44,7 @@ function Map() {
                         province.to ? (
                             <div
                                 key={province.alt}
-                                className="absolute transition duration-300 drop-shadow-[0_3px_2px_rgba(77,76,76,0.50)]"
+                                className="pointer-events-none absolute transition duration-300 drop-shadow-[0_3px_2px_rgba(77,76,76,0.50)]"
                                 style={{
                                     top: province.top,
                                     left: province.left,
@@ -55,7 +55,7 @@ function Map() {
                             >
                                 {province.component ? (
                                     <province.component
-                                        className="h-auto w-full"
+                                        className="pointer-events-auto h-auto w-full"
                                         onMouseEnter={() => setActiveProvince(province.alt)}
                                         onMouseLeave={() => setActiveProvince(null)}
                                         onClick={() => navigate(province.to)}
@@ -65,7 +65,7 @@ function Map() {
                         ) : (
                             <div
                                 key={province.alt}
-                                className="absolute cursor-pointer transition duration-300 hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
+                                className="pointer-events-none absolute cursor-pointer transition duration-300 hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
                                 style={{
                                     top: province.top,
                                     left: province.left,
@@ -73,7 +73,7 @@ function Map() {
                                     zIndex: province.zIndex ?? 1,
                                 }}
                             >
-                                {province.component ? <province.component className="h-auto w-full" /> : <img src={province.src} alt={province.alt} className="h-auto w-full" />}
+                                {province.component ? <province.component className="pointer-events-auto h-auto w-full" /> : <img src={province.src} alt={province.alt} className="pointer-events-auto h-auto w-full" />}
                             </div>
                         )
                     ))}
