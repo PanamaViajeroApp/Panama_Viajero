@@ -1,4 +1,4 @@
-import Banner from '../../assets/img_test/PanamaViajero.mp4';
+const Banner = 'https://res.cloudinary.com/dur8qmwlg/video/upload/v1779136864/PanamaViajero_nwczap.mp4'
 
 function BannerLayout() {
     return (
