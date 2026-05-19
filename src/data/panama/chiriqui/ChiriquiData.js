@@ -1,6 +1,5 @@
-const CHIRIQUI_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/VideoBannerChiriqui.mp4', import.meta.url).href;
-const SALTO_DEL_TIGRE_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/salto-del-tigre.mp4', import.meta.url).href;
-const CASCADA_JAGUATATA_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/Cascada_Jaguatta.mp4', import.meta.url).href;
+
+
 
 export const provincias = [
   {
@@ -9,7 +8,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: CHIRIQUI_VIDEO,
+      src: 'https://res.cloudinary.com/dur8qmwlg/video/upload/v1779209484/VideoBannerChiriqui_mihuvl.mp4',
       alt: 'Vista de la provincia de Chiriquí',
     },
 
@@ -65,7 +64,7 @@ export const provincias = [
         descripcion:
           'Cascada de gran fuerza visual en Tierras Altas, ideal para aventura, fotografía y contacto con la naturaleza.',
         tipo: 'video',
-        imagen: SALTO_DEL_TIGRE_VIDEO,
+        imagen: 'https://res.cloudinary.com/dur8qmwlg/video/upload/v1779209470/salto-del-tigre_sshzmc.mp4',
         ubicacion: 'Salto del Tigre, Volcán',
       },
       {
@@ -82,7 +81,7 @@ export const provincias = [
         descripcion:
           'Cascada natural en Caldera, rodeada de vegetación y ambiente fresco para una visita de aventura.',
         tipo: 'video',
-        imagen: CASCADA_JAGUATATA_VIDEO,
+        imagen: 'https://res.cloudinary.com/dur8qmwlg/video/upload/v1779209481/Cascada_Jaguatta_i5lant.mp4',
         ubicacion: 'Cascada Jagüatta, Caldera',
       },
     ],

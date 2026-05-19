@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import BocasDelToroSvg from '../../srcProvincias/bocas_del_toto/BocasGeneralMap.jpeg'
-import ChiriquiSvg from '../../srcProvincias/chiriqui/ChiriquiMap.jpeg'
+import ChiriquiSvg from '../../srcProvincias/chiriqui/ChiriquiMap.jpg'
 import CocleSvg from '../../srcProvincias/cocle/CocleMap.png'
 import Colon from '../../srcProvincias/colon/colon.jpeg'
 import GunaYalaSvg from '../../srcProvincias/comarca_guna_yala/guna ya.jpg'
