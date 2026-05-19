@@ -18,7 +18,7 @@ export const provincias = [
     },
 
     descripcionCorta:
-      'El corazón geográfico de la nación donde las tradiciones coloniales y los misterios precolombinos cobran vida. Coclé ofrece una experiencia completa que abarca desde la frescura del Valle de Antón hasta la exclusividad de sus complejos turísticos frente al Mar Pacífico.',
+      'El corazón geográfico de la nación donde las tradiciones coloniales y los misterios precolombinos cobran vida. Coclé ofrece una experience completa que abarca desde la frescura del Valle de Antón hasta la exclusividad de sus complejos turísticos frente al mar Pacífico.',
 
     ubicacionProvincia: {
       src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798251.7633135251!2d-81.09223188898939!3d8.573762478659607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fac480acbcd1bd7%3A0x49577a57e8feac2d!2sCocl%C3%A9%20Province!5e1!3m2!1sen!2spa!4v1778601157628!5m2!1sen!2spa',
@@ -30,12 +30,12 @@ export const provincias = [
       'Compras de artesanías',
       'Natación',
       'Golf',
-      'Tours de sal y y azúcar',
+      'Tours de sal y azúcar',
       'Observación de aves',
     ],
 
     resena:
-      'Esta provincia es custodia de uno de los legados arqueológicos más importantes de Centroamérica. Antes de la época colonial los cacicazgos de Coclé dominaban las llanuras con una orfebrería de oro que todavía asombra al mundo moderno. Su capital Penonomé fue incluso sede provisional del gobierno nacional en tiempos de conflicto reflejando la importancia estratégica de la zona. La historia de Coclé está ligada a personajes emblemáticos como Victoriano Lorenzo y a la defensa de las costumbres campesinas. Hoy es un centro de producción artesanal donde el sombrero pintao representa la maestría de un pueblo que valora su pasado mientras impulsa el turismo de playa y montaña más dinámico del país.',
+      'Esta provincia es custodia de uno de los legados arqueológicos más importantes de Centroamérica. Antes de la época colonial, los cacicazgos de Coclé dominaban las llanuras con una orfebrería de oro que todavía asombra al mundo moderno. Su capital, Penonomé, fue incluso sede provisional del gobierno nacional en tiempos de conflicto, reflejando la importancia estratégica de la zona. La historia de Coclé está ligada a personajes emblemáticos como Victoriano Lorenzo y a la defensa de las costumbres campesinas. Hoy es un centro de producción artesanal donde el sombrero pintao representa la maestría de un pueblo que valora su pasado mientras impulsa el turismo de playa y montaña más dinámico del país.',
 
     lugaresDestacados: [
       {
@@ -83,7 +83,7 @@ export const provincias = [
         descripcion: 'Serie de pozas y cascadas naturales rodeadas de paisaje rural y vegetación abundante.',
         tipo: 'video',
         imagen: CHORRO_MACHO,
-        ubicacion: 'Chorro Machom, Coclé',
+        ubicacion: 'Chorro Macho, Coclé',
       },
       {
         id: 'Isla_Farallón',
@@ -105,7 +105,7 @@ export const provincias = [
         descripcion: 'Cascada con poza natural de agua clara, ideal para refrescarse y disfrutar un entorno tranquilo.',
         tipo: 'video',
         imagen: CERRO_LA_SILLA,
-        ubicacion: 'Cerro la Silla, ',
+        ubicacion: 'Cerro la Silla, Coclé',
       },
       {
         id: 'Chorros_de_Ola',
@@ -121,13 +121,6 @@ export const provincias = [
         imagen: 'https://dam.visitpanama.com/files/664ec05e-f755-30d4-beef-24db565f644e?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779205850412&signature=w4%2FU7DxDe3DagYuxX0SsvtEawfCd%2Fq4LzKj1Ap4ci8%2BcjC7LoExq1WC7g2HzLpMUYjAm8ieEErTsmKUsFX2zDA%3D%3D&version=a0b1ec4b',
         ubicacion: 'Cerro Picacho, Coclé',
       },
-      /* {
-        id: '',
-        nombre: '',
-        descripcion: 'Mirador natural con senderos y vistas panorámicas, ideal para senderismo y fotografía.',
-        imagen: 'video',
-        ubicacion: '',
-      }, */
     ],
   },
 ];

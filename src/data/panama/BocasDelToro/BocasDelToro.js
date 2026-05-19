@@ -29,7 +29,7 @@ export const provincias = [
     actividades: [
       'Surf',
       'Buceo',
-      'Snorkel',
+      'Esnórquel',
       'Paseos en bote',
       'Delfines',
       'Senderismo',
@@ -41,7 +41,7 @@ export const provincias = [
     ],
 
     resena:
-      'Bocas del Toro fue habitada originalmente por pueblos indígenas como los Ngäbe. Durante la época colonial tuvo poco desarrollo, pero a finales del siglo XIX se convirtió en un importante centro bananero con la llegada de empresas extranjeras. Su mezcla cultural se fortaleció con la migración afroantillana. Hoy es uno de los destinos turísticos más importantes de Panamá por su biodiversidad y su ambiente relajado.',
+      'Bocas del Toro fue habitada originalmente por pueblos indígenas como los Ngäbe. Durante la época colonial tuvo poco desarrollo, pero a finales del siglo XIX se convirtió en un important centro bananero con la llegada de empresas extranjeras. Su mezcla cultural se fortaleció con la migración afroantillana. Hoy es uno de los destinos turísticos más importantes de Panamá por su biodiversidad y su ambiente relajado.',
 
     lugaresDestacados: [
       {
@@ -120,7 +120,7 @@ export const provincias = [
         id: 'coral-cay',
         nombre: 'Coral Cay',
         descripcion:
-          'Zona de arrecifes cerca de Bastimentos, popular para snorkel, paseos en bote y almuerzos frente al mar.',
+          'Zona de arrecifes cerca de Bastimentos, popular para esnórquel, paseos en bote y almuerzos frente al mar.',
         imagen:
           'https://dam.visitpanama.com/files/6b3d0722-03db-5937-aef9-dc38c4e52d07?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1778780979970&signature=AxwAX9V%2BlHqNxGcYDvOcDavAjwxy4l5EFo3F7LjuYKt58kQk4IDPBZd4q69GWreo3x%2BcQtEix8MBlDTNiFe6BQ%3D%3D&version=a0b1ec4b',
         ubicacion: 'Coral Cay, Isla Bastimentos',
@@ -165,7 +165,7 @@ export const provincias = [
         id: 'cayo-coral',
         nombre: 'Cayo Coral',
         descripcion:
-          'Punto clásico para snorkel y paseos acuáticos cerca de Isla Bastimentos.',
+          'Punto clásico para esnórquel y paseos acuáticos cerca de Isla Bastimentos.',
         imagen: BOCAS_IMAGE,
         ubicacion: 'Bocas del Toro',
       },

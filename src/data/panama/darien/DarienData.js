@@ -23,26 +23,26 @@ export const provincias = [
       'Avistamiento de aves',
       'Navegación en piragua',
       'Convivencia indígena',
-      'Fotografía',
+      'Fotografía de naturaleza',
       'Pesca artesanal',
     ],
 
     resena:
-      'La provincia del Darién representa el punto donde la geografía detuvo al progreso moderno para proteger un ecosistema único en su tipo. Fue el hogar de la primera ciudad española en tierra firme y hoy sigue siendo el territorio sagrado de las etnias Emberá y Wounaan que custodian los secretos de sus bosques. Su historia es un relato de resistencia frente a los intentos de conquista y un testimonio de la fuerza de sus ríos que sirven como las únicas carreteras posibles en gran parte de su extensión. Visitar esta región es entender el valor de lo que permanece intacto y descubrir un Panamá que todavía respira al ritmo original de la tierra lejos de las distracciones y el ruido de la vida moderna.',
+      'La provincia del Darién representa el punto donde la geografía detuvo al progreso moderno para proteger un ecosistema único en su tipo. Fue el hogar de la primera ciudad española en tierra firme y hoy sigue siendo el territorio sagrado de las etnias emberá y wounaan, que custodian los secretos de sus bosques. Su historia es un relato de resistencia frente a los intentos de conquista y un testimonio de la fuerza de sus ríos, que sirven como las únicas carreteras posibles en gran parte de su extensión. Visitar esta región es entender el valor de lo que permanece intacto y descubrir un Panamá que todavía respira al ritmo original de la tierra, lejos de las distracciones y el ruido de la vida moderna.',
 
     lugaresDestacados: [
       {
         id: 'Parque_Nacional_Darien',
         nombre: 'Parque Nacional Darién',
-        descripcion: 'Área protegida de selva tropical, ríos y biodiversidad única, ideal para expediciones de naturaleza.',
+        descripcion: 'Área protegida de selva tropical, ríos y biodiversidad única, declarada Patrimonio de la Humanidad e ideal para expediciones de naturaleza.',
         tipo: 'imagen',
         imagen: 'https://lac.wetlands.org/wp-content/uploads/sites/3/2019/12/PROYECTOS-garachine-WETLANDS-EDITABLE-03.jpg',
-        ubicacion: 'Darién, Panamá',
+        ubicacion: 'Parque Nacional Darién, Darién',
       },
       {
         id: 'La_Palma',
         nombre: 'La Palma',
-        descripcion: 'Cabecera provincial ubicada frente al golfo, punto de entrada a rutas fluviales y comunidades del Darién.',
+        descripcion: 'Cabecera provincial ubicada frente al golfo de San Miguel, punto de entrada a rutas fluviales y comunidades locales.',
         tipo: 'imagen',
         imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnR3YmjzDw4AMqhlQGalQUHCOgX0Oy27AYA&s',
         ubicacion: 'La Palma, Darién',
@@ -50,10 +50,10 @@ export const provincias = [
       {
         id: 'Comunidades_Embera_Wounaan',
         nombre: 'Comunidades Emberá y Wounaan',
-        descripcion: 'Comunidades indígenas donde se pueden conocer tradiciones, artesanías y formas de vida ligadas al bosque.',
+        descripcion: 'Asentamientos indígenas a orillas del río donde se pueden conocer tradiciones ancestrales, artesanías y formas de vida ligadas al bosque.',
         tipo: 'imagen',
         imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxGWewQ4IhUxmAEUu9LaezeQHc49vi17Vbg&s',
-        ubicacion: 'Darién, Panamá',
+        ubicacion: 'Comunidades Indígenas, Darién',
       },
     ],
   },

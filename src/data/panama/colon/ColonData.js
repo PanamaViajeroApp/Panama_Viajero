@@ -28,33 +28,33 @@ export const provincias = [
 
     actividades: [
       'Surf',
-      'Bici',
+      'Ciclismo',
       'Playa',
       'Buceo',
-      'Observación de aves',
+      'Avistamiento de aves',
       'Giras históricas',
-      'Snorkel',
+      'Esnórquel',
     ],
 
     resena:
-      'La historia de Colón es un relato de épica colonial y modernidad logística. Fundada en 1852 como terminal del ferrocarril transístmico la ciudad se convirtió rápidamente en un crisol de culturas. Sus fuertes en Portobelo y San Lorenzo protegieron durante siglos las riquezas que España transportaba hacia Europa enfrentando constantes asedios de piratas famosos. Esta herencia bélica convive con la cultura Congo que mantiene viva la resistencia y la alegría de los antepasados africanos. Actualmente la provincia es un pilar fundamental para el comercio global a través de sus puertos y el Canal consolidándose como un destino que combina leyendas antiguas con una actividad económica sin precedentes.',
+      'La historia de Colón es un relato de épica colonial y modernidad logística. Fundada en 1852 como terminal del ferrocarril transístmico, la ciudad se convirtió rápidamente en un crisol de culturas. Sus fuertes en Portobelo y San Lorenzo protegieron durante siglos las riquezas que España transportaba hacia Europa, enfrentando constantes asedios de piratas famosos. Esta herencia bélica convive con la cultura congo, que mantiene viva la resistencia y la alegría de los antepasados africanos. Actualmente, la provincia es un pilar fundamental para el comercio global a través de sus puertos y el Canal, consolidándose como un destino que combina leyendas antiguas con una actividad económica sin precedentes.',
 
     lugaresDestacados: [
       {
         id: 'Cerro_Pavon',
-        nombre: 'Cerro Pavon',
+        nombre: 'Cerro Pavón',
         descripcion: 'Mirador natural con vistas verdes y senderos ideales para caminatas de aventura en la provincia.',
         tipo: 'video',
         imagen: CERRO_PAVON,
-        ubicacion: 'Cerro Pavon, Colón',
+        ubicacion: 'Cerro Pavón, Colón',
       },
       {
         id: 'El_tunel_del_amor',
-        nombre: 'El túnel del amor',
+        nombre: 'El Túnel del Amor',
         descripcion: 'Pasaje costero rodeado de vegetación y aguas tranquilas, perfecto para una experiencia visual diferente.',
         tipo: 'video',
         imagen: TUNEL_AMOR,
-        ubicacion: 'El túnel del amor, Colón',
+        ubicacion: 'El Túnel del Amor, Colón',
       },
       {
         id: 'Lago_Gatun',
@@ -67,7 +67,7 @@ export const provincias = [
       {
         id: 'Portobelo',
         nombre: 'Portobelo',
-        descripcion: 'Pueblo histórico del Caribe panameño con fortalezas coloniales, tradición Congo y una bahía llena de memoria.',
+        descripcion: 'Pueblo histórico del Caribe panameño con fortalezas coloniales, tradición congo y una bahía llena de memoria.',
         tipo: 'video',
         imagen: PORTOBELLO,
         ubicacion: 'Portobelo, Colón',
@@ -75,7 +75,7 @@ export const provincias = [
       {
         id: 'Fuerte_de_San_Fernando',
         nombre: 'Fuerte de San Fernando',
-        descripcion: 'Fortificación colonial que recuerda la defensa del Caribe y el paso de las rutas comerciales españolas.',
+        descripcion: 'Fortificación colonial que recuerda la defense del Caribe y el paso de las rutas comerciales españolas.',
         tipo: 'video',
         imagen: FUERTE_SAN_FERNANDO,
         ubicacion: 'Fuerte de San Fernando, Colón',
@@ -97,7 +97,7 @@ export const provincias = [
       {
         id: 'Isla_Mamey',
         nombre: 'Isla Mamey',
-        descripcion: 'Isla caribeña de aguas claras y ambiente relajado, ideal para playa, snorkel y escapadas de un día.',
+        descripcion: 'Isla caribeña de aguas claras y ambiente relajado, ideal para playa, esnórquel y escapadas de un día.',
         tipo: 'video',
         imagen: ISLA_MAMEY,
         ubicacion: 'Isla Mamey, Colón',

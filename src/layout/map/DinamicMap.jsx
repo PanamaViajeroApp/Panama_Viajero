@@ -34,9 +34,8 @@ function Map() {
         <div className="mx-auto my-28 flex max-w-6xl flex-col items-center text-center md:my-10">
             <div className="w-full rounded-xl md:p-12">
 
-                <div className='flex flex-col mb-5  '>
-                    <label className='font-main text-6xl text-brand-blue'>Panamá</label>
-                    <label className='font-secondary-italic'>Descúbrelo como nunca antes</label>
+                <div className='flex flex-col mb-10  text-center '>
+                    <label className='font-main text-4xl text-brand-red'>¡Conoce Panamá como nunca antes lo viste!</label>
                 </div>
 
                 {/* Map Container */}

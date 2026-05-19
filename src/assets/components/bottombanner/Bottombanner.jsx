@@ -5,7 +5,7 @@ function BottomBanner({ onLogoClick }) {
     return (
         <div className="mt-20 bg-brand-blue py-10 shadow-[0_-12px_30px_rgba(77,76,76,0.18)]">
             <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 text-brand-white">
-                <h1 className="font-main text-center text-2xl md:text-4xl font-bold">Se parte de esta gran aventura</h1>
+                <h1 className="font-main text-center text-2xl md:text-4xl font-bold">Sé parte de esta gran aventura.</h1>
             <button className="cursor-pointer transition hover:scale-110" onClick={onLogoClick}>
                 <img src={LogoCircular} alt="Logo IEPA" className="h-15 md:h-20 w-auto max-w-full" />
             </button>
@@ -37,7 +37,7 @@ function BottomBanner({ onLogoClick }) {
 
             <hr className="w-full border-brand-white opacity-40" />
             <div className="font-body text-center text-xs md:text-md">
-                © 2026 Panamá viajero. Todos los derechos reservados. | Desarrollado por DHM-Asesores | Contacto: <a href="panamaviajero@.com.pa">panamaviajero@.com.pa</a>
+                © 2026 Panamá Viajero. Todos los derechos reservados. | Desarrollado por DHM-Asesores | Contacto: <a href="panamaviajero@.com.pa">panamaviajero@.com.pa</a>
             </div>
             </div>
         </div>

@@ -25,23 +25,23 @@ function AboutUs() {
     <div className="mx-auto mt-20 flex max-w-6xl flex-col items-center justify-center gap-12 px-4 py-14 md:flex-row md:gap-16">
       <div className="flex flex-col items-start gap-5 text-left">
         <div>
-          <h2 className="font-secondary-italic text-2xl text-brand-red md:text-3xl">Guia turistica</h2>
+          <h2 className="font-secondary-italic text-2xl text-brand-red md:text-3xl">Guia turística</h2>
           <h1 className="font-main text-4xl font-bold text-brand-blue md:text-6xl">Explora Panamá</h1>
-          <h1 className="font-main text-4xl font-bold text-brand-charcoal md:text-6xl">y sus costumbres</h1>
+          <h1 className="font-main text-4xl font-bold text-brand-charcoal md:text-6xl">y sus costumbres.</h1>
         </div>
 
         <p className="font-body max-w-xs leading-7 text-brand-charcoal/85 md:max-w-md md:text-lg">
-          Somos un directorio digital turístico que conecta a viajeros nacionales e internacionales 
-          con alojamientos, experiencias, gastronomía y comercios turísticos en todo el país.
+          Somos un directorio digital turístico que conecta a viajeros nacionales e 
+          internacionales con alojamientos, experiencias, gastronomía y comercios turísticos en todo el país.
         </p>
       </div>
 
       <div
-        className="flex items-center justify-center overflow-visible"
+        className="flex items-center justify-center "
         style={{ perspective: '1000px' }}
       >
         <div
-          className="rounded-full  shadow-[0_18px_45px_rgba(73,86,162,0.50)] transition-transform duration-150 ease-out"
+          className="rounded-full  transition-transform duration-150 ease-out"
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
           style={{
@@ -49,7 +49,7 @@ function AboutUs() {
             transformStyle: 'preserve-3d',
           }}
         >
-          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-80 w-auto rounded-full md:h-72 " />
+          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-100  " />
         </div>
       </div>
     </div>
