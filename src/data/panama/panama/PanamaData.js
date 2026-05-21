@@ -37,7 +37,7 @@ export const provincias = [
         nombre: 'Canal de Panamá',
         descripcion: 'Asombrosa obra de ingeniería mundial donde se puede observar el tránsito de barcos neopanamax y entender la conexión comercial entre dos océanos.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Canal_de_Panama.jpg',
+        imagen: '/videos/panama/Canal_de_Panama.avif',
         ubicacion: 'Centro de Visitantes de Miraflores, Panamá',
       },
       {
@@ -45,7 +45,7 @@ export const provincias = [
         nombre: 'Casco Antiguo',
         descripcion: 'Barrio histórico colonial con plazas vibrantes, iglesias centenarias, restaurantes de autor y una rica vida cultural frente a la bahía.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Casco_Antiguo.jpg',
+        imagen: '/videos/panama/Casco_Antiguo.avif',
         ubicacion: 'Casco Antiguo, Ciudad de Panamá',
       },
       {
@@ -53,7 +53,7 @@ export const provincias = [
         nombre: 'Panamá Viejo',
         descripcion: 'Conjunto monumental y sitio arqueológico de la primera ciudad española fundada en el Pacífico en 1519, cuyas ruinas narran el origen de la capital.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Panama_Viejo.jpg',
+        imagen: '/videos/panama/Panama_Viejo.avif',
         ubicacion: 'Panamá Viejo, Ciudad de Panamá',
       },
       {
@@ -69,7 +69,7 @@ export const provincias = [
         nombre: 'Biomuseo',
         descripcion: 'Icónico museo diseñado por Frank Gehry, dedicado a narrar cómo el surgimiento del istmo de Panamá cambió la biodiversidad del planeta entero.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Biomuseo.jpg',
+        imagen: '/videos/panama/Biomuseo.avif',
         ubicacion: 'Calzada de Amador, Ciudad de Panamá',
       },
       {
@@ -77,7 +77,7 @@ export const provincias = [
         nombre: 'Cinta Costera',
         descripcion: 'Extenso paseo urbano frente a la bahía, ideal para actividades al aire libre mientras se contempla la silueta moderna y el Casco Antiguo.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Cinta_Costera.jpg',
+        imagen: '/videos/panama/Cinta_Costera.avif',
         ubicacion: 'Cinta Costera, Ciudad de Panamá',
       },
       {
@@ -85,7 +85,7 @@ export const provincias = [
         nombre: 'Isla Contadora',
         descripcion: 'Exclusiva isla del archipiélago de Las Perlas, famosa por sus playas de arena blanca, aguas turquesas y avistamiento estacional de ballenas.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Isla_Contadora.jpg',
+        imagen: '/videos/panama/Isla_Contadora.avif',
         ubicacion: 'Isla Contadora, Archipiélago de Las Perlas',
       },
       {
@@ -93,7 +93,7 @@ export const provincias = [
         nombre: 'Parque Natural Metropolitano',
         descripcion: 'Santuario natural y único parque natural de Centroamérica ubicado dentro de los límites metropolitanos, con fauna tropical y senderos.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Parque_Natural_Metropolitano.jpg',
+        imagen: '/videos/panama/Parque_Natural_Metropolitano.avif',
         ubicacion: 'Parque Natural Metropolitano, Ciudad de Panamá',
       },
       {
@@ -109,7 +109,7 @@ export const provincias = [
         nombre: 'Isla Flamenco',
         descripcion: 'Punto terminal de la Calzada de Amador que alberga una marina internacional, restaurantes gastronómicos y vistas del istmo.',
         tipo: 'imagen',
-        imagen: '/videos/panama/Isla_Flamenco.jpg',
+        imagen: '/videos/panama/Isla_Flamenco.avif',
         ubicacion: 'Calzada de Amador, Ciudad de Panamá',
       },
       {
@@ -117,7 +117,7 @@ export const provincias = [
         nombre: 'Parque Nacional Soberanía',
         descripcion: 'Parque nacional colindante con el Canal de Panamá, un paraíso mundial para la observación de aves en su célebre Camino de Oleoducto.',
         tipo: 'iamgen',
-        imagen: '/videos/panama/Parque_Natural_Soberania.jpg',
+        imagen: '/videos/panama/Parque_Natural_Soberania.avif',
         ubicacion: 'Parque Nacional Soberanía, Panamá',
       },
     ],

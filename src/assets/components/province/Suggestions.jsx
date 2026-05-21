@@ -30,6 +30,8 @@ function Suggestions({ provinceData }) {
                                     <img
                                         src={lugar.imagen}
                                         alt={lugar.nombre}
+                                        loading="lazy"
+                                        decoding="async"
                                         className="h-full w-full object-cover"
                                     />
                                 )}

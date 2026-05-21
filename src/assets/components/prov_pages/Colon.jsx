@@ -1,4 +1,4 @@
-const colonImage = '/maps/provinces/colon.jpeg';
+const colonImage = '/maps/provinces/colon.avif';
 
 const ColonSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

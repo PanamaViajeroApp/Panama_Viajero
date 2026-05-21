@@ -17,7 +17,7 @@ function ProvinceVideo({ provinceData, videoSrc }) {
                         className="h-screen w-full object-cover object-top"
                         autoPlay
                         poster={poster}
-                        preload="metadata"
+                        preload="none"
                         eager
                     />
                 ) : (

@@ -1,4 +1,4 @@
-const veraguasImage = '/maps/provinces/veraguas.png';
+const veraguasImage = '/maps/provinces/veraguas.avif';
 
 const VeraguasSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

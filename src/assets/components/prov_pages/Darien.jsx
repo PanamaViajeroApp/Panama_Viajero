@@ -1,4 +1,4 @@
-const darienImage = '/maps/provinces/darien.jpg';
+const darienImage = '/maps/provinces/darien.avif';
 
 const DarienSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

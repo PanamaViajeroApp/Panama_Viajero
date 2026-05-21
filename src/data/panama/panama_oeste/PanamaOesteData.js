@@ -44,7 +44,7 @@ export const provincias = [
         nombre: 'Cerro Chame',
         descripcion: 'Una imponente elevación natural que ofrece una caminata exigente pero gratificante, con una vista panorámica espectacular de 360 grados hacia la península de Punta Chame y el Pacífico.',
         tipo: 'imagen',
-        imagen: '/videos/panamaOeste/Cerro_Chame.jpg',
+        imagen: '/videos/panamaOeste/Cerro_Chame.avif',
         ubicacion: 'Chame, Panamá Oeste',
       },
       {
@@ -52,7 +52,7 @@ export const provincias = [
         nombre: 'Cascada El Manglarito',
         descripcion: 'Un hermoso tesoro natural oculto entre densa vegetación, famoso por su espectacular caída de agua y una gran poza profunda perfecta para nadar y relajarse.',
         tipo: 'imagen',
-        imagen: '/videos/panamaOeste/Cascada_El_Manglarito.jpg',
+        imagen: '/videos/panamaOeste/Cascada_El_Manglarito.avif',
         ubicacion: 'Chame, Panamá Oeste',
       },
       {
@@ -60,7 +60,7 @@ export const provincias = [
         nombre: 'Playa El Palmar',
         descripcion: 'Una de las playas más populares y vibrantes para aprender y practicar surf, conocida por sus buenas olas, escuelas de surf locales y un gran ambiente costero.',
         tipo: 'imagen',
-        imagen: '/videos/panamaOeste/Playa_El_Palmar.jpg',
+        imagen: '/videos/panamaOeste/Playa_El_Palmar.avif',
         ubicacion: 'San Carlos, Panamá Oeste',
       },
       {

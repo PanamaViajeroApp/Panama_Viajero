@@ -1,4 +1,4 @@
-const panamaOesteImage = '/maps/provinces/panama-oeste.png';
+const panamaOesteImage = '/maps/provinces/panama-oeste.avif';
 
 const PanamaOesteSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

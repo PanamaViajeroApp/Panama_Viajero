@@ -1,4 +1,4 @@
-const gunaYalaImage = '/maps/provinces/comarca-guna-yala.jpg';
+const gunaYalaImage = '/maps/provinces/comarca-guna-yala.avif';
 
 const GunaYalaSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

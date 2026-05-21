@@ -67,7 +67,7 @@ export const provincias = [
         nombre: 'Cerro Hoya',
         descripcion: 'Parque nacional montañoso que protege el bosque lluvioso más antiguo de Azuero, refugio de especies endémicas y cascadas ocultas.',
         tipo: 'imagen',
-        imagen:'/videos/los_santos/Cerro_Hoya.jpg',
+        imagen:'/videos/los_santos/Cerro_Hoya.avif',
         ubicacion: 'Parque Nacional Cerro Hoya, Los Santos',
       },
       {

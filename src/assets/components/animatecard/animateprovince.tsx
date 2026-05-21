@@ -3,18 +3,18 @@ import PV from '../../img_test/logoCircular.svg'
 
 
 const imageMaps = {
-    'bocas-del-toro': '/maps/provinces/bocas-del-toro.jpeg',
-    'chiriqui': '/maps/provinces/chiriqui.jpg',
-    'cocle': '/maps/provinces/cocle.png',
-    'colon': '/maps/provinces/colon.jpeg',
-    'guna-yala': '/maps/provinces/comarca-guna-yala.jpg',
-    'darien': '/maps/provinces/darien.jpg',
-    'veraguas': '/maps/provinces/veraguas.png',
-    'herrera': '/maps/provinces/herrera.png',
-    'panama': '/maps/provinces/panama.jpg',
-    'panama-oeste': '/maps/provinces/panama-oeste.png',
-    'los-santos': '/maps/provinces/los-santos.jpeg',
-    'comarca-guna-yala': '/maps/provinces/comarca-guna-yala.jpg',
+    'bocas-del-toro': '/maps/provinces/bocas-del-toro.avif',
+    'chiriqui': '/maps/provinces/chiriqui.avif',
+    'cocle': '/maps/provinces/cocle.avif',
+    'colon': '/maps/provinces/colon.avif',
+    'guna-yala': '/maps/provinces/comarca-guna-yala.avif',
+    'darien': '/maps/provinces/darien.avif',
+    'veraguas': '/maps/provinces/veraguas.avif',
+    'herrera': '/maps/provinces/herrera.avif',
+    'panama': '/maps/provinces/panama.avif',
+    'panama-oeste': '/maps/provinces/panama-oeste.avif',
+    'los-santos': '/maps/provinces/los-santos.avif',
+    'comarca-guna-yala': '/maps/provinces/comarca-guna-yala.avif',
     'Panama-viajero': PV,
 }
 
@@ -53,6 +53,8 @@ return (
                     alt={`Mapa de ${provinceData.nombre}`}
                     onMouseMove={onMouseMove}
                     onMouseLeave={onMouseLeave}
+                    loading="lazy"
+                    decoding="async"
                     className="aspect-[4/3] rounded-xl h-full w-full object-cover transition-transform duration-150 ease-out 
                     drop-shadow-[0_25px_35px_rgba(0,0,0,0.4)]"
                     style={{

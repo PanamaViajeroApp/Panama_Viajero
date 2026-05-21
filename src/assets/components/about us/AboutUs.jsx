@@ -52,7 +52,7 @@ function AboutUs() {
             transformStyle: 'preserve-3d',
           }}
         >
-          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-115  " />
+          <img src={LogoCircular} alt="Provincias" loading="lazy" decoding="async" className="h-50 md:h-115  " />
         </div>
       </div>
     </div>

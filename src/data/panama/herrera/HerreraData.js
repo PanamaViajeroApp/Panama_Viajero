@@ -34,7 +34,7 @@ export const provincias = [
         nombre: 'Chitré',
         descripcion: 'Capital provincial reconocida por su vibrante vida comercial, sus emblemáticas fiestas populares y su ambiente hospitalario.',
         tipo: 'imagen',
-        imagen: '/videos/herrera/Chitre.jpg',
+        imagen: '/videos/herrera/Chitre.avif',
         ubicacion: 'Chitré, Herrera',
       },
       {
@@ -50,7 +50,7 @@ export const provincias = [
         nombre: 'Sarigua',
         descripcion: 'Ecosistema de albina y área árida de gran valor científico e histórico, que cuenta con senderos arqueológicos únicos en Azuero.',
         tipo: 'imagen',
-        imagen: '/videos/herrera/Sarigua.jpg',
+        imagen: '/videos/herrera/Sarigua.avif',
         ubicacion: 'Parque Nacional Sarigua, Herrera',
       },
     ],

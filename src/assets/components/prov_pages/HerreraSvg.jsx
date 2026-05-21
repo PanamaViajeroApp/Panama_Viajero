@@ -1,4 +1,4 @@
-const herreraImage = '/maps/provinces/herrera.png';
+const herreraImage = '/maps/provinces/herrera.avif';
 
 const HerreraSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

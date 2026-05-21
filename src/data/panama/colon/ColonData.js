@@ -75,7 +75,7 @@ export const provincias = [
         nombre: 'Sendero Tortuguilla',
         descripcion: 'Sendero natural para caminar entre vegetación tropical y descubrir la biodiversidad costera de Colón.',
         tipo: 'imagen',
-        imagen: '/videos/colon/Sendero_Tortuguilla.jpg',
+        imagen: '/videos/colon/Sendero_Tortuguilla.avif',
         ubicacion: 'Sendero Tortuguilla, Colón',
       },
       {
@@ -83,7 +83,7 @@ export const provincias = [
         nombre: 'Fuerte de San Lorenzo',
         descripcion: 'Imponente fortaleza histórica ubicada frente al Caribe, declarada patrimonio por su valor colonial.',
         tipo: 'imagen',
-        imagen: '/videos/colon/Fuerte_de_San_Lorenzo.jpg',
+        imagen: '/videos/colon/Fuerte_de_San_Lorenzo.avif',
         ubicacion: 'Fuerte de San Lorenzo, Colón',
       },
       {

@@ -1,4 +1,4 @@
-const chiriquiImage = '/maps/provinces/chiriqui.jpg';
+const chiriquiImage = '/maps/provinces/chiriqui.avif';
 
 const ChiriquiSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

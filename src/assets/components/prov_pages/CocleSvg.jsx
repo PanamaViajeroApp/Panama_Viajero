@@ -1,4 +1,4 @@
-const cocleImage = '/maps/provinces/cocle.png';
+const cocleImage = '/maps/provinces/cocle.avif';
 
 const CocleSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

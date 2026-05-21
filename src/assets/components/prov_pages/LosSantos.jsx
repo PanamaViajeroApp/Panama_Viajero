@@ -1,4 +1,4 @@
-const losSantosImage = '/maps/provinces/los-santos.jpeg';
+const losSantosImage = '/maps/provinces/los-santos.avif';
 
 const LosSantos = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

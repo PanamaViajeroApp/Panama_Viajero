@@ -85,6 +85,8 @@ function Home() {
           <img
             src={Logo}
             alt="Logo"
+            fetchPriority="high"
+            decoding="async"
             className="h-7 w-auto max-w-full mb-1 drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:h-15 md:mb-none md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]"
           />
         </div>

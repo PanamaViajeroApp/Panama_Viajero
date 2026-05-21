@@ -8,7 +8,7 @@ function BannerLayout() {
                 muted
                 loop
                 playsInline
-                preload="metadata"
+                preload="none"
                 src='/videos/BannerPrincipal.mp4'
             ></video>
         </div>

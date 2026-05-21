@@ -39,7 +39,7 @@ imagen:'/videos/chiriqui',
         descripcion:
           'Zona fresca de Boquete con senderos, quebradas y paisajes de montaña ideales para caminatas.',
         tipo: 'imagen',  
-        imagen:'/videos/chiriqui/Bajo_mono.jpg',        
+        imagen:'/videos/chiriqui/Bajo_mono.avif',        
         ubicacion: 'Bajo Mono, Boquete',
       },
       
@@ -48,7 +48,7 @@ imagen:'/videos/chiriqui',
         nombre: 'Volcán Barú',
         descripcion:
           'Punto más alto de Panamá, famoso por sus rutas de ascenso y vistas hacia ambos océanos en días despejados.',
-        imagen:'/videos/chiriqui/Volcan_Baru.jpg',        
+        imagen:'/videos/chiriqui/Volcan_Baru.avif',        
         ubicacion: 'Volcán Barú, Volcán',
       },
       {
@@ -56,7 +56,7 @@ imagen:'/videos/chiriqui',
         nombre: 'El Pianista',
         descripcion:
           'Sendero de bosque nuboso en Boquete, rodeado de vegetación, aves y ambiente de montaña.',
-        imagen:'/videos/chiriqui/El_pianista.jpg',
+        imagen:'/videos/chiriqui/El_pianista.avif',
         ubicacion: 'El Pianista, Boquete',
       },
       {

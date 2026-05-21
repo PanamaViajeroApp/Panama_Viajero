@@ -1,4 +1,4 @@
-const panamaImage = '/maps/provinces/panama.jpg';
+const panamaImage = '/maps/provinces/panama.avif';
 
 const PanamaSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

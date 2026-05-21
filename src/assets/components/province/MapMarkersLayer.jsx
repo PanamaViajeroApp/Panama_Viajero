@@ -10,6 +10,8 @@ function MapMarkersLayer({ className = '', style = {} }) {
             <img
                 src={markersSvg}
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full select-none object-contain"
                 draggable="false"
             />

@@ -36,7 +36,7 @@ export const provincias = [
         nombre: 'Parque Nacional Darién',
         descripcion: 'Área protegida de selva tropical, ríos y biodiversidad única, declarada Patrimonio de la Humanidad e ideal para expediciones de naturaleza.',
         tipo: 'imagen',
-        imagen: '/videos/darien/Parque_Nacional_Darien.jpg',
+        imagen: '/videos/darien/Parque_Nacional_Darien.avif',
         ubicacion: 'Parque Nacional Darién, Darién',
       },
       {
@@ -44,7 +44,7 @@ export const provincias = [
         nombre: 'La Palma',
         descripcion: 'Cabecera provincial ubicada frente al golfo de San Miguel, punto de entrada a rutas fluviales y comunidades locales.',
         tipo: 'imagen',
-        imagen: '/videos/darien/La_Palma.jpg',
+        imagen: '/videos/darien/La_Palma.avif',
         ubicacion: 'La Palma, Darién',
       },
       {
@@ -52,7 +52,7 @@ export const provincias = [
         nombre: 'Comunidades Emberá y Wounaan',
         descripcion: 'Asentamientos indígenas a orillas del río donde se pueden conocer tradiciones ancestrales, artesanías y formas de vida ligadas al bosque.',
         tipo: 'imagen',
-        imagen: '/videos/darien/Comunidades_Embera_Wounaan.jpg',
+        imagen: '/videos/darien/Comunidades_Embera_Wounaan.avif',
         ubicacion: 'Comunidades Indígenas, Darién',
       },
     ],

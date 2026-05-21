@@ -35,7 +35,7 @@ export const provincias = [
         id: 'isla-carti',
         nombre: 'Isla Cartí',
         descripcion: 'Comunidad portuaria e isla cultural de acceso frecuente, ideal para conocer de cerca el estilo de vida guna y abordar los botes hacia el archipiélago.',
-        imagen: '/maps/provinces/comarca-guna-yala.jpg',
+        imagen: '/maps/provinces/comarca-guna-yala.avif',
         ubicacion: 'Isla Cartí, Guna Yala',
       },
       {
@@ -43,7 +43,7 @@ export const provincias = [
         nombre: 'Isla Perro (Chichime)',
         descripcion: 'Una de las islas turísticas más famosas, conocida mundialmente por el barco hundido cerca de su orilla, el cual está cubierto de coral y es perfecto para hacer esnórquel.',
         tipo: 'imagen',
-        imagen: '/videos/guna_yala/isla-perro.jpg',
+        imagen: '/videos/guna_yala/isla-perro.avif',
         ubicacion: 'Archipiélago de San Blas, Guna Yala',
       },
     ],

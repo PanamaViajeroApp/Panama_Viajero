@@ -42,7 +42,7 @@ export const provincias = [
         id: 'La_India_Dormida',
         nombre: 'La India Dormida',
         descripcion: 'Montaña emblemática del Valle de Antón con senderos, vistas panorámicas y una silueta cargada de leyenda.',
-        imagen: '/videos/cocle/La_India_Dormida.jpg',
+        imagen: '/videos/cocle/La_India_Dormida.avif',
         ubicacion: 'La India Dormida, Coclé',
       },
       {
@@ -65,7 +65,7 @@ export const provincias = [
         id: 'Chorros_de_Ola',
         nombre: 'Chorros de Ola',
         descripcion: 'Elevación natural con rutas de caminata y vistas abiertas hacia el paisaje interiorano de Coclé.',
-        imagen: '/videos/cocle/Chorros_de_Ola.jpg',
+        imagen: '/videos/cocle/Chorros_de_Ola.avif',
         ubicacion: 'Chorros de Ola, Coclé',
       },
       {
@@ -80,14 +80,14 @@ export const provincias = [
         id: 'Isla_Farallón',
         nombre: 'Isla Farallón',
         descripcion: 'Cascada emblemática del Valle de Antón, popular por su fácil acceso y ambiente de bosque húmedo.',
-        imagen: '/videos/cocle/Isla_Farallón.jpg',
+        imagen: '/videos/cocle/Isla_Farallón.avif',
         ubicacion: 'Isla Farallón, Coclé',
       },
       {
         id: 'Cascada_Pozo_Azul',
         nombre: 'Cascada Pozo Azul',
         descripcion: 'Isla cercana a la costa pacífica, valorada por su paisaje marino y cercanía a zonas de playa.',
-        imagen: '/videos/cocle/Cascada_Pozo_Azul.jpg',
+        imagen: '/videos/cocle/Cascada_Pozo_Azul.avif',
         ubicacion: 'Cascada Pozo Azul, Coclé',
       },
       {
@@ -102,7 +102,7 @@ export const provincias = [
         id: 'Cerro_Picacho',
         nombre: 'Cerro Picacho',
         descripcion: 'Conjunto de chorros naturales rodeados de vegetación, perfecto para una visita de aventura ligera.',
-        imagen: '/videos/cocle/Cerro_Picacho.jpg',
+        imagen: '/videos/cocle/Cerro_Picacho.avif',
         ubicacion: 'Cerro Picacho, Coclé',
       },
     ],
