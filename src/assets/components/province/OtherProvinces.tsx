@@ -27,7 +27,7 @@ function AleatorySuggestions() {
                 </p>
             </div>
 
-            <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 ">
+            <div className="max-w-6xl mx-auto flex  justify-center gap-4 md:gap-8 ">
                 {suggestions.map((province) => (
                     <button
                         key={province.id}
@@ -52,9 +52,11 @@ function AleatorySuggestions() {
                         </div>
                         <div className="mt-4 w-full overflow-hidden text-center">
                             <span
-                                className="inline-block font-accent text-4xl font-bold text-brand-blue
-                                transform translate-y-4 opacity-0 transition-all duration-300 ease-out
-                                group-hover:translate-y-0 group-hover:opacity-100"
+                                className="inline-block font-accent text-2xl md:text-4xl font-bold text-brand-blue
+                                transform translate-y-0 opacity-100 
+                                transition-all duration-300 ease-out
+                                md:translate-y-3 md:opacity-0 
+                                md:group-hover:translate-y-0 md:group-hover:opacity-100"
                             >
                                 {province.nombre}
                             </span>

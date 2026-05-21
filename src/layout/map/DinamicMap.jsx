@@ -14,17 +14,17 @@ import PanamaOeste from '../../assets/components/prov_pages/PanamaOesteSvg.jsx';
 import MapMarkersLayer from '../../assets/components/province/MapMarkersLayer.jsx';
 
 const provinces = [
-    { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos', top: '68.87%', left: '39.90%', width: '11.71%', zIndex: 24 },
-    { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui', top: '28.5%', left: '-0.20%', width: '25.66%' },
+    { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos#video', top: '68.87%', left: '39.90%', width: '11.71%', zIndex: 24 },
+    { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui#video', top: '28.5%', left: '-0.20%', width: '25.66%' },
     { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '-3%', left: '0.50%', width: '32%' },
-    { component: Cocle, alt: 'Cocle', to: '/provincias/cocle', top: '12%', left: '34.75%', width: '21%' },
-    { component: Colon, alt: 'Colon', to: '/provincias/colon', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31 },
-    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23 },
-    { component: Darien, alt: 'Darien', to: '/provincias/darien', top: '18.5%', left: '77.2%', width: '23.5%' },
-    { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22 },
-    { component: Herrera, alt: 'Herrera', to: '/provincias/herrera', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23 },
-    { component: PanamaOeste, alt: 'Panama Oeste', to: '/provincias/panama-oeste', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32 },
-    { component: Panama, alt: 'Panama', to: '/provincias/panama', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29 },
+    { component: Cocle, alt: 'Cocle', to: '/provincias/cocle#video', top: '12%', left: '34.75%', width: '21%' },
+    { component: Colon, alt: 'Colon', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31 },
+    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala#video', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23 },
+    { component: Darien, alt: 'Darien', to: '/provincias/darien#video', top: '18.5%', left: '77.2%', width: '23.5%' },
+    { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas#video', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22 },
+    { component: Herrera, alt: 'Herrera', to: '/provincias/herrera#video', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23 },
+    { component: PanamaOeste, alt: 'Panama Oeste', to: '/provincias/panama-oeste#video', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32 },
+    { component: Panama, alt: 'Panama', to: '/provincias/panama#video', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29 },
 ];
 
 function Map() {
@@ -37,7 +37,6 @@ function Map() {
                 <div className="mb-10 flex flex-col text-center">
                     <label className="font-main text-4xl text-brand-red">¡Conoce Panama como nunca antes lo viste!</label>
                 </div>
-
                 <div className="relative mb-6 aspect-[1025/424] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)]">
                     <MapMarkersLayer
                         className="flex items-center justify-center h-130 w-full mt-[-25px] ml-[-25px]"
