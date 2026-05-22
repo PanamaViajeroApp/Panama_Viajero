@@ -55,17 +55,17 @@ function Preregister() {
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                     <div className="relative">
                         <UserIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
-                        <input type="text" placeholder="Juan" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
+                        <input type="text" placeholder="Juan" required className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                     </div>
 
                     <div className="relative">
                         <UserIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
-                        <input type="text" placeholder="Perez" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
+                        <input type="text" placeholder="Perez" required className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                     </div>
 
                     <div className="relative">
                         <PhoneIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
-                        <input type="text" placeholder="65094159" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
+                        <input type="tel" placeholder="65094159" required className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@ function Preregister() {
                     <div className="flex flex-col gap-4 md:flex-row">
                         <div className="relative flex-1">
                             <MailIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
-                            <input type="email" placeholder="micorreo012@gmail.com" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
+                            <input type="email" placeholder="micorreo012@gmail.com" required className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                         </div>
 
                         <button className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-8 py-3 text-brand-white shadow-[0_12px_25px_rgba(205,46,76,0.25)] transition-colors hover:bg-brand-blue">
