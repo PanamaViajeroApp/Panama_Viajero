@@ -1,5 +1,9 @@
 import 'dotenv/config';
 
+function normalizeUrl(value: string) {
+    return value.trim().replace(/\/+$/, '');
+}
+
 function getEnv(name: string) {
     const value = process.env[name];
 
@@ -12,7 +16,7 @@ function getEnv(name: string) {
 
 export const env = {
     port: Number(process.env.PORT ?? 4000),
-    frontendUrl: process.env.FRONTEND_URL ?? 'http://localhost:5173',
-    supabaseUrl: getEnv('SUPABASE_URL'),
+    frontendUrl: normalizeUrl(process.env.FRONTEND_URL ?? 'http://localhost:5173'),
+    supabaseUrl: normalizeUrl(getEnv('SUPABASE_URL')),
     supabaseServiceRoleKey: getEnv('SUPABASE_SERVICE_ROLE_KEY'),
 };
