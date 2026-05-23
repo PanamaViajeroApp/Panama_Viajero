@@ -91,7 +91,7 @@ function Home() {
           />
         </div>
       </section>
-
+{/* Sobre nosotros */}
       <section id="us" ref={usRef} className="scroll-mt-7 md:scroll-mt-20">
         <DeferredSection fallback={<SectionFallback className="min-h-[320px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[320px]" />}>
