@@ -38,7 +38,7 @@ const provinces = [
 ];
 
 const externalProvinceDecorations = [
-    { alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', lineComponent: LineaBocasDelToroSvg, lineTop: '10%', lineLeft: '13.8%', lineWidth: '1.80%', buttonTop: '7.3%', buttonLeft: '15.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', lineComponent: LineaBocasDelToroSvg, lineTop: '10%', lineLeft: '13.8%', lineWidth: '1.80%', buttonTop: '7.3%', buttonLeft: '15.3%', buttonFontSize: '0.55rem', color: 'text-brand-charcoal/85' },
     { alt: 'Chiriqui', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '49.4%', lineLeft: '7.4%', lineWidth: '2.1%', buttonTop: '62%', buttonLeft: '9.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
     { alt: 'Veraguas', to: '/provincias/veraguas#video', lineComponent: LineaVeraguasSvg, lineTop: '67.2%', lineLeft: '25.4%', lineWidth: '2%', buttonTop: '81.5%', buttonLeft: '19.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
     { alt: 'Los Santos', to: '/provincias/los-santos#video', lineComponent: LineaLosSantosSvg, lineTop: '85%', lineLeft: '48.4%', lineWidth: '2%', buttonTop: '97%', buttonLeft: '50.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
@@ -106,11 +106,10 @@ function Map() {
                         <button
                             key={`${item.alt}-button`}
                             type="button"
-                            className="font-secondary  absolute z-[60] cursor-pointer whitespace-nowrap bg-transparent leading-none tracking-wide transition-transform duration-300"
+                            className="font-secondary absolute z-[60] cursor-pointer whitespace-nowrap bg-transparent leading-none tracking-wide transition-transform duration-300 text-[0.55rem] md:text-[0.85rem]"
                             style={{
                                 top: item.buttonTop,
                                 left: item.buttonLeft,
-                                fontSize: item.buttonFontSize,
                                 color: item.color,
                                 transform: activeProvince === item.alt ? 'scale(1.15)' : 'scale(1)',
                             }}
