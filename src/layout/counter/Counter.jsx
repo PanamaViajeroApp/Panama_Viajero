@@ -1,87 +1,33 @@
-import { useEffect, useState } from 'react';
-
 function CountdownModal({ onClose, onPreregister }) {
-    const launchDate = new Date('2026-10-09T00:00:00-05:00');
+    return (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-brand-charcoal/85 backdrop-blur-sm">
+            <div className="relative w-[90%] max-w-md rounded-xl bg-brand-white/5 p-6 text-center shadow-xl">
+                <button
+                    type="button"
+                    onClick={onClose}
+                    className="absolute top-4 right-4 cursor-pointer rounded-full bg-brand-soft px-3 py-1 text-xl font-bold text-brand-charcoal/70 transition hover:bg-brand-red hover:text-white"
+                    aria-label="Cerrar ventana emergente"
+                >
+                    X
+                </button>
 
-    const getTimeLeft = () => {
-    const now = new Date();
+                <img
+                    src="" //Ingresar imagen cuando la tengas
+                    alt="Promoción"
+                    className="mx-auto mb-6 h-auto w-full rounded-2xl object-cover"
+                />
 
-    if (now >= launchDate) {
-        return { months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
-    }
+                <button
+                    type="button"
+                    onClick={onPreregister}
+                    className="mb-4 w-full rounded-lg bg-brand-red px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-blue"
+                >
+                    Regístrate
+                </button>
 
-    let months = (launchDate.getFullYear() - now.getFullYear()) * 12;
-    months += launchDate.getMonth() - now.getMonth();
-
-    const dateAfterMonths = new Date(now);
-    dateAfterMonths.setMonth(now.getMonth() + months);
-
-    if (dateAfterMonths > launchDate) {
-        months -= 1;
-        dateAfterMonths.setMonth(dateAfterMonths.getMonth() - 1);
-    }
-
-    const difference = launchDate - dateAfterMonths;
-
-    return {
-        months,
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / (1000 * 60)) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-    };
-};
-
-const [timeLeft, setTimeLeft] = useState(getTimeLeft);
-
-useEffect(() => {
-    const timer = setInterval(() => {
-        setTimeLeft(getTimeLeft());
-    }, 1000);
-    
-    return () => clearInterval(timer);
-},);
-
-
-
-return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-brand-charcoal/85 backdrop-blur-sm">
-        <div className="relative w-[90%] max-w-md rounded-xl bg-brand-white p-8 text-center shadow-2xl">
-            <button
-                onClick={onClose}
-                className="absolute top-4 right-4 cursor-pointer text-xl font-bold text-brand-charcoal/60 hover:text-brand-red"
-                aria-label="Cerrar ventana emergente"
-            >X</button>
-            <h2 className="font-main mb-4 text-2xl font-bold text-brand-blue">Lanzamiento muy pronto</h2>
-            <div className="grid grid-cols-5 gap-3 mb-6">
-                <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.months}</span>
-                    <span className="font-secondary text-xs uppercase">Meses</span>
-                </div>
-                <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.days}</span>
-                    <span className="font-secondary text-xs uppercase">Dias</span>
-                </div>
-                <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.hours}</span>
-                    <span className="font-secondary text-xs uppercase">Horas</span>
-                </div>
-                <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.minutes}</span>
-                    <span className="font-secondary text-xs uppercase">Min</span>
-                </div>
-                <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.seconds}</span>
-                    <span className="font-secondary text-xs uppercase">Seg</span>
-                </div>
+                <p className="font-secondary text-sm text-brand-white/75">Y participa por una noche gratis</p>
             </div>
-            <p className="font-body mb-6 text-brand-charcoal/75">No te pierdas nuestra apertura oficial.</p>
-            <button
-                onClick={onPreregister}
-                className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-6 py-3 text-brand-white transition hover:bg-brand-blue"
-            >Preregistrarme ahora</button>
         </div>
-    </div>
     );
 }
 
