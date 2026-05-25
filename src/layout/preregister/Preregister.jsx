@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import politicaDePrivacidadPdf from '../../assets/Politica de privacidad.pdf';
 
-const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:4000';
+const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL ?? '';
 
 const initialForm = {
     firstName: '',
@@ -71,26 +71,38 @@ function Preregister() {
         event.preventDefault();
         setStatus({ loading: true, error: '', success: '' });
 
+        if (!APPS_SCRIPT_URL) {
+            setStatus({
+                loading: false,
+                error: 'Falta configurar VITE_APPS_SCRIPT_URL',
+                success: '',
+            });
+            return;
+        }
+
         try {
-            const response = await fetch(`${API_URL}/api/registrations`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(form),
+            const payload = new URLSearchParams({
+                firstName: form.firstName,
+                lastName: form.lastName,
+                phone: form.phone,
+                email: form.email,
+                acceptedPrivacyPolicy: String(form.acceptedPrivacyPolicy),
             });
 
-            const result = await response.json();
-
-            if (!response.ok) {
-                throw new Error(result.message ?? 'No se pudo completar el registro');
-            }
+            await fetch(APPS_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+                },
+                body: payload.toString(),
+            });
 
             setForm(initialForm);
             setStatus({
                 loading: false,
                 error: '',
-                success: 'Registro completado correctamente.',
+                success: 'Registro enviado correctamente.',
             });
         } catch (error) {
             setStatus({

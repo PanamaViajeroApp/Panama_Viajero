@@ -17,6 +17,8 @@ function getEnv(name: string) {
 export const env = {
     port: Number(process.env.PORT ?? 4000),
     frontendUrl: normalizeUrl(process.env.FRONTEND_URL ?? 'http://localhost:5173'),
-    supabaseUrl: normalizeUrl(getEnv('SUPABASE_URL')),
-    supabaseServiceRoleKey: getEnv('SUPABASE_SERVICE_ROLE_KEY'),
+    brevoApiKey: getEnv('BREVO_API_KEY'),
+    brevoSenderEmail: getEnv('BREVO_SENDER_EMAIL'),
+    brevoSenderName: process.env.BREVO_SENDER_NAME?.trim() || 'Panama Viajero',
+    mailTo: process.env.MAIL_TO?.trim() || 'ed.jimenez0012@gmail.com',
 };

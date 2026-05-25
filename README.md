@@ -179,3 +179,31 @@ Panama Viajero es un directorio enfocado en promover destinos turisticos de Pana
 ## Fase 2: Pagina Oficial
 
 La Fase 2 sera la Pagina Oficial, esta guia turistica sera anexada a esta a la Pagina Oficial. Esa fase se documentara mas adelante con su propia estructura, requerimientos y alcance funcional.
+
+## Preregistro actual con Google Apps Script
+
+El preregistro ya no necesita el backend Node.js para enviar formularios. Ahora el frontend manda los datos a Google Apps Script y ese script envia el correo a `ed.jimenez0012@gmail.com`.
+
+### Configuracion
+
+1. Crea un proyecto nuevo en Google Apps Script.
+2. Pega el contenido de [google-apps-script/Code.gs](C:\Users\deept\Panama_Viajero\google-apps-script\Code.gs).
+3. Despliega como Web App:
+   - `Deploy` > `New deployment`
+   - Tipo: `Web app`
+   - `Execute as`: tu cuenta
+   - `Who has access`: `Anyone`
+4. Copia la URL final que termina en `/exec`.
+5. Coloca esa URL en tu archivo `.env` como `VITE_APPS_SCRIPT_URL`.
+6. Reinicia el frontend.
+
+### Variable de entorno
+
+```env
+VITE_APPS_SCRIPT_URL=https://script.google.com/macros/s/TU_DEPLOYMENT_ID/exec
+```
+
+### Referencias oficiales
+
+- [Web apps | Google Apps Script](https://developers.google.com/apps-script/guides/web)
+- [MailApp | Google Apps Script](https://developers.google.com/apps-script/reference/mail/mail-app)

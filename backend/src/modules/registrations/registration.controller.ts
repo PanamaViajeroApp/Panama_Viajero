@@ -1,17 +1,16 @@
 import type { Request, Response } from 'express';
 import { ZodError } from 'zod';
-import { createRegistration } from './registration.service.js';
+import { sendRegistrationEmail } from './registration.service.js';
 import { registrationSchema } from './registration.schema.js';
 
 export async function registerUser(request: Request, response: Response) {
     try {
         const payload = registrationSchema.parse(request.body);
-        const registration = await createRegistration(payload);
+        await sendRegistrationEmail(payload);
 
         return response.status(201).json({
             ok: true,
-            message: 'Registro guardado correctamente',
-            registration,
+            message: 'Registro enviado correctamente',
         });
     } catch (error) {
         if (error instanceof ZodError) {
@@ -19,13 +18,6 @@ export async function registerUser(request: Request, response: Response) {
                 ok: false,
                 message: 'Datos invalidos',
                 errors: error.flatten().fieldErrors,
-            });
-        }
-
-        if (error instanceof Error && error.message === 'EMAIL_ALREADY_EXISTS') {
-            return response.status(409).json({
-                ok: false,
-                message: 'Este correo ya fue registrado',
             });
         }
 
