@@ -1,7 +1,7 @@
 function CountdownModal({ onClose, onPreregister }) {
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-brand-charcoal/85 backdrop-blur-sm">
-            <div className="relative w-[90%] max-w-md rounded-xl bg-brand-white/5 p-6 text-center shadow-xl">
+            <div className="relative w-[90%] max-w-4xl rounded-xl  p-6 text-center bg-brand-charcoal">
                 <button
                     type="button"
                     onClick={onClose}
@@ -11,7 +11,7 @@ function CountdownModal({ onClose, onPreregister }) {
                     X
                 </button>
                 <img
-                    src="" //Ingresar imagen cuando la tengas
+                    src="/public/VentanaEmergente.svg" //Ingresar imagen cuando la tengas
                     alt="Promoción"
                     className="mx-auto mb-6 h-auto w-full rounded-2xl object-cover"
                 />

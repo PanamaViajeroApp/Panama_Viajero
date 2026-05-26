@@ -1,6 +1,6 @@
-# Panama Viajero
+# Panama Viajero Fase 1
 
-## Fase 1: Guia turistica PANAMA VIAJERO
+## Guia turistica PANAMA VIAJERO
 
 Panama Viajero es un directorio enfocado en promover destinos turisticos de Panama mediante una experiencia Visual, interactiva y optimizada para la navegación por destinos turísticos. Esta fase se concentra en la guía turística digital (página web responsive), contenido multimedia e información sobre algunos destinos turísticos, divididos por provincia para facilitar la navegación del usuario. Además, incluye un formulario de prerregistro para el lanzamiento de la app.
 
@@ -176,34 +176,48 @@ Panama Viajero es un directorio enfocado en promover destinos turisticos de Pana
 - El contenido multimedia es pesado, especialmente por el volumen de videos.
 - El build actual ronda los `193 MB`, por lo que almacenamiento y ancho de banda importan.
 
-## Fase 2: Pagina Oficial
+# Fase 2: Pagina Oficial
 
 La Fase 2 sera la Pagina Oficial, esta guia turistica sera anexada a esta a la Pagina Oficial. Esa fase se documentara mas adelante con su propia estructura, requerimientos y alcance funcional.
 
-## Preregistro actual con Google Apps Script
+# Cliente
 
-El preregistro ya no necesita el backend Node.js para enviar formularios. Ahora el frontend manda los datos a Google Apps Script y ese script envia el correo a `ed.jimenez0012@gmail.com`.
+## Datos personales
 
-### Configuracion
+- Nombre y apellido
+- Nombre de usuario
+- Correo electronico
+- Celular
+- Fecha de nacimiento
+- Nacionalidad
+- Genero
+- Direccion
 
-1. Crea un proyecto nuevo en Google Apps Script.
-2. Pega el contenido de [google-apps-script/Code.gs](C:\Users\deept\Panama_Viajero\google-apps-script\Code.gs).
-3. Despliega como Web App:
-   - `Deploy` > `New deployment`
-   - Tipo: `Web app`
-   - `Execute as`: tu cuenta
-   - `Who has access`: `Anyone`
-4. Copia la URL final que termina en `/exec`.
-5. Coloca esa URL en tu archivo `.env` como `VITE_APPS_SCRIPT_URL`.
-6. Reinicia el frontend.
+## Seguridad del cliente
 
-### Variable de entorno
+- Contraseña
+- Autenticacion de 2 pasos
+- Eliminacion de la cuenta
 
-```env
-VITE_APPS_SCRIPT_URL=https://script.google.com/macros/s/TU_DEPLOYMENT_ID/exec
-```
+## Personalizacion
 
-### Referencias oficiales
+- Idiomas
+- Tema 
+- Divisa (Preferencia de moneda)
 
-- [Web apps | Google Apps Script](https://developers.google.com/apps-script/guides/web)
-- [MailApp | Google Apps Script](https://developers.google.com/apps-script/reference/mail/mail-app)
+# Servicios (Alojamientos y restaurantes)
+
+- Nombre del servicio
+- Mapeo del mapa 
+- Valoracion (A discusion)
+- Favoritos (Opcion de corazon para guardar en lugares favoritos por el cliente)
+- Frase actractiva
+- Tipo de habitaciones (Y su galeria correspondiente)
+- Reseña del servicio
+- Sevicios destacados (Piscina al aire libre, Gimnasio, bar)
+- Tipo de habitaciones
+- Puntos importantes cercanos al servicio (Parques, estadios, restaurantes, etc)
+- Servicios generales (Todos los servicios que ofrece el hotel)
+- Normas del servicio (Hora de entrada y salida, metodos de pago, restricciones, fiestas )
+
+# Alquiler/Transporte (Alquiler de autos y transporte)
