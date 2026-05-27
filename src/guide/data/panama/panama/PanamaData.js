@@ -1,0 +1,125 @@
+export const provincias = [
+  {
+    id: 'panama',
+    nombre: 'Panamá',
+
+    banner: {
+      tipo: 'video',
+      src: '/videos/panama/PanamaBanner.av1.mp4',
+      alt: 'Vista urbana y costera de la provincia de Panamá',
+    },
+
+    descripcionCorta:
+      'La capital es el punto donde los rascacielos de cristal vigilan las ruinas de una ciudad que se negó a desaparecer. Entre el movimiento del Canal y la vibrante vida nocturna en el Casco Antiguo, descubrirás un Panamá cosmopolita que ofrece mil mundos distintos en una sola avenida llena de vida.',
+
+    ubicacionProvincia: {
+      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1595279.2668934553!2d-80.1916458868211!3d8.860426845993237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e535944ba70296f%3A0x22cb5fba7603eb68!2sPanam%C3%A1%20Province!5e1!3m2!1sen!2spa!4v1778780378442!5m2!1sen!2spa',
+    },
+
+    actividades: [
+      'Surf urbano',
+      'Ciclismo de ruta',
+      'Patinaje',
+      'Tours gastronómicos',
+      'Visitas al Canal',
+      'Compras en centros comerciales',
+      'Vida nocturna',
+      'Senderismo tropical',
+      'Snorkel',
+    ],
+
+    resena:
+      'La historia de la Ciudad de Panamá es la de una superviviente que ha sabido reinventarse tras cada ataque de piratas y cada cambio de era. Desde su fundación original in 1519, ha sido el puente que une al mundo entero, primero con el oro colonial y ahora con el comercio global del Canal. Su identidad se construyó piedra sobre piedra en el Casco Antiguo tras el saqueo de Henry Morgan, creando un barrio lleno de balconies y leyendas francesas y españolas. Hoy es una ciudad que no duerme, donde la modernidad más extrema convive con selvas tropicales a pocos minutos de distancia, demostrando que el progreso no tiene por qué borrar las huellas del pasado.',
+
+    lugaresDestacados: [
+      {
+        id: 'Canal_de_Panama',
+        nombre: 'Canal de Panamá',
+        descripcion: 'Asombrosa obra de ingeniería mundial donde se puede observar el tránsito de barcos neopanamax y entender la conexión comercial entre dos océanos.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Canal_de_Panama.avif',
+        ubicacion: 'Centro de Visitantes de Miraflores, Panamá',
+      },
+      {
+        id: 'Casco_Antiguo',
+        nombre: 'Casco Antiguo',
+        descripcion: 'Barrio histórico colonial con plazas vibrantes, iglesias centenarias, restaurantes de autor y una rica vida cultural frente a la bahía.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Casco_Antiguo.avif',
+        ubicacion: 'Casco Antiguo, Ciudad de Panamá',
+      },
+      {
+        id: 'Panama_Viejo',
+        nombre: 'Panamá Viejo',
+        descripcion: 'Conjunto monumental y sitio arqueológico de la primera ciudad española fundada en el Pacífico en 1519, cuyas ruinas narran el origen de la capital.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Panama_Viejo.avif',
+        ubicacion: 'Panamá Viejo, Ciudad de Panamá',
+      },
+      {
+        id: 'Cerro_Ancon',
+        nombre: 'Cerro Ancón',
+        descripcion: 'El punto más alto de la ciudad, un mirador natural protegido famoso por su imponente bandera nacional, senderos ecológicos y vistas del skyline capitalino.',
+        tipo: 'video',
+        imagen: '/videos/panama/Cerro_Ancon.av1.mp4',
+        ubicacion: 'Cerro Ancón, Ciudad de Panamá',
+      },
+      {
+        id: 'Biomuseo',
+        nombre: 'Biomuseo',
+        descripcion: 'Icónico museo diseñado por Frank Gehry, dedicado a narrar cómo el surgimiento del istmo de Panamá cambió la biodiversidad del planeta entero.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Biomuseo.avif',
+        ubicacion: 'Calzada de Amador, Ciudad de Panamá',
+      },
+      {
+        id: 'Cinta_Costera',
+        nombre: 'Cinta Costera',
+        descripcion: 'Extenso paseo urbano frente a la bahía, ideal para actividades al aire libre mientras se contempla la silueta moderna y el Casco Antiguo.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Cinta_Costera.avif',
+        ubicacion: 'Cinta Costera, Ciudad de Panamá',
+      },
+      {
+        id: 'Isla_Contadora',
+        nombre: 'Isla Contadora',
+        descripcion: 'Exclusiva isla del archipiélago de Las Perlas, famosa por sus playas de arena blanca, aguas turquesas y avistamiento estacional de ballenas.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Isla_Contadora.avif',
+        ubicacion: 'Isla Contadora, Archipiélago de Las Perlas',
+      },
+      {
+        id: 'Parque_Natural_Metropolitano',
+        nombre: 'Parque Natural Metropolitano',
+        descripcion: 'Santuario natural y único parque natural de Centroamérica ubicado dentro de los límites metropolitanos, con fauna tropical y senderos.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Parque_Natural_Metropolitano.avif',
+        ubicacion: 'Parque Natural Metropolitano, Ciudad de Panamá',
+      },
+      {
+        id: 'Isla_Taboga',
+        nombre: 'Isla Taboga',
+        descripcion: 'Conocida como la isla de las flores, es una joya histórica cercana a la capital con senderos pintorescos y playas tranquilas.',
+        tipo: 'video',
+        imagen: '/videos/panama/Isla_Taboga.av1.mp4',
+        ubicacion: 'Isla Taboga, Panamá',
+      },
+      {
+        id: 'Isla_Flamenco',
+        nombre: 'Isla Flamenco',
+        descripcion: 'Punto terminal de la Calzada de Amador que alberga una marina internacional, restaurantes gastronómicos y vistas del istmo.',
+        tipo: 'imagen',
+        imagen: '/videos/panama/Isla_Flamenco.avif',
+        ubicacion: 'Calzada de Amador, Ciudad de Panamá',
+      },
+      {
+        id: 'Parque_Natural_Soberania',
+        nombre: 'Parque Nacional Soberanía',
+        descripcion: 'Parque nacional colindante con el Canal de Panamá, un paraíso mundial para la observación de aves en su célebre Camino de Oleoducto.',
+        tipo: 'video',
+        imagen: '/videos/panama/Parque_Natural_Soberania.av1.mp4',
+        ubicacion: 'Parque Nacional Soberanía, Panamá',
+      },
+    ],
+  },
+];
