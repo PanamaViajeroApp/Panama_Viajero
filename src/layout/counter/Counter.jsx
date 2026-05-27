@@ -15,6 +15,7 @@ function CountdownModal({ onClose, onPreregister }) {
                     alt="Promoción"
                     className="mx-auto mb-6 h-auto w-full rounded-2xl object-cover"
                 />
+                
                 <button
                     type="button"
                     onClick={onPreregister}
