@@ -47,8 +47,8 @@ const externalProvinceDecorations = [
     { alt: 'Colón', to: '/provincias/colon#video', lineComponent: LineaColonSvg, lineTop: '4.5%', lineLeft: '40.7%', lineWidth: '3%', buttonTop: '4.4%', buttonLeft: '43.4%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
     { alt: 'Panamá Oeste', to: '/provincias/panama-oeste#video', lineComponent: LineaPanamaOesteSvg, lineTop: '35.5%', lineLeft: '53%', lineWidth: '4%', buttonTop: '49.5%', buttonLeft: '55.9%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
     { alt: 'Panamá', to: '/provincias/panama#video', lineComponent: LineaPanamaSvg, lineTop: '23%', lineLeft: '61.1%', lineWidth: '4%', buttonTop: '37.3%', buttonLeft: '64%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', lineComponent: LineaGunaYalaSvg, lineTop: '4.5%', lineLeft: '81.5%', lineWidth: '3%', buttonTop: '5.4%', buttonLeft: '85%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Darien', to: '/provincias/darien#video', lineComponent: LineaDarienSvg, lineTop: '67.8%', lineLeft: '77.3%', lineWidth: '4%', buttonTop: '82.6%', buttonLeft: '74.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' }
+    { alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', lineComponent: LineaGunaYalaSvg, lineTop: '3.1%', lineLeft: '81%', lineWidth: '5%', buttonTop: '5.4%', buttonLeft: '84.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Darien', to: '/provincias/darien#video', lineComponent: LineaDarienSvg, lineTop: '67.8%', lineLeft: '77.3%', lineWidth: '4%', buttonTop: '82.6%', buttonLeft: '74.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' }
 ];
 
 function Map() {
