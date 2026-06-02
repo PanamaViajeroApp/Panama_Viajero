@@ -111,7 +111,7 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
 
     return(
         /* Fondo del menu */
-        <div className="bg-gradient-to-b from-brand-charcoal/80 via-brand-charcoal/45 to-transparent pb-7 backdrop-blur-[1px]">
+        <div className="relative z-[100] bg-gradient-to-b from-brand-charcoal/80 via-brand-charcoal/45 to-transparent pb-7 backdrop-blur-[1px]">
             {/* Justificacion del menu */}
             <div className="flex justify-between items-center pt-5 md:pt-5 px-3 md:pl-10 md:pr-30 text-brand-white text-lg">
                 <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>

@@ -1,7 +1,8 @@
 function Activities({ provinceData }) {
     return (
         <div className="mx-auto flex w-full max-w-6xl flex-col px-4 py-16">
-            <h1 className="font-main text-3xl font-bold text-brand-white md:text-4xl">Actividades</h1>
+            <h1 className="font-main text-3xl font-bold text-brand-white md:text-4xl "
+            style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.9)'}}>Actividades</h1>
             <div className="overflow-hidden py-5 md:mt-2 [mask-image:linear-gradient(to_right,transparent,black_3%,black_90%,transparent)]">
                 <div className="flex w-max animate-marquee-right hover:[animation-play-state:paused]">
                     {[0, 1].map((grupo) => (

@@ -66,7 +66,7 @@ function GuideHome() {
       )}
 
       <div
-        className={`fixed top-0 z-30 w-full transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 z-[200] w-full transition-transform duration-300 ease-in-out ${
           showMenu ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
@@ -108,7 +108,7 @@ function GuideHome() {
         </DeferredSection>
       </section>
 
-      <section id="suggestions" ref={suggestionsRef} className="scroll-mt-1/2 md:scroll-mt-15">
+      <section id="suggestions" ref={suggestionsRef} className="scroll-mt-24 md:scroll-mt-28">
         <DeferredSection fallback={<SectionFallback className="min-h-[480px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
             <AleatorySuggestions />

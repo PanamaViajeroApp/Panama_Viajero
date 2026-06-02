@@ -25,30 +25,30 @@ import LineaVeraguasSvg from '../../components/prov_pages/LineaVeraguasSvg.jsx';
 
 const provinces = [
     { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos#video', top: '68.87%', left: '39.90%', width: '11.71%', zIndex: 24, useExternalTrigger: true },
-    { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui#video', top: '28.5%', left: '-0.20%', width: '25.66%', useExternalTrigger: true },
+    { component: ChiriquiSvg, alt: 'Chiriquí', to: '/provincias/chiriqui#video', top: '28.5%', left: '-0.20%', width: '25.66%', useExternalTrigger: true },
     { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '-3%', left: '0.50%', width: '32%', useExternalTrigger: true },
-    { component: Cocle, alt: 'Cocle', to: '/provincias/cocle#video', top: '12%', left: '34.75%', width: '21%', useExternalTrigger: true },
-    { component: Colon, alt: 'Colon', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31, useExternalTrigger: true },
+    { component: Cocle, alt: 'Coclé', to: '/provincias/cocle#video', top: '12%', left: '34.75%', width: '21%', useExternalTrigger: true },
+    { component: Colon, alt: 'Colón', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31, useExternalTrigger: true, hoverScale: true },
     { component: GunaYala, alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23, useExternalTrigger: true },
-    { component: Darien, alt: 'Darien', to: '/provincias/darien#video', top: '18.5%', left: '77.2%', width: '23.5%', useExternalTrigger: true },
+    { component: Darien, alt: 'Darién', to: '/provincias/darien#video', top: '18.5%', left: '77.2%', width: '23.5%', useExternalTrigger: true },
     { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas#video', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22, useExternalTrigger: true },
     { component: Herrera, alt: 'Herrera', to: '/provincias/herrera#video', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23, useExternalTrigger: true },
-    { component: PanamaOeste, alt: 'Panama Oeste', to: '/provincias/panama-oeste#video', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32, useExternalTrigger: true },
-    { component: Panama, alt: 'Panama', to: '/provincias/panama#video', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29, useExternalTrigger: true },
+    { component: PanamaOeste, alt: 'Panamá Oeste', to: '/provincias/panama-oeste#video', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32, useExternalTrigger: true, hoverScale: true },
+    { component: Panama, alt: 'Panamá', to: '/provincias/panama#video', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29, useExternalTrigger: true },
 ];
 
 const externalProvinceDecorations = [
     { alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', lineComponent: LineaBocasDelToroSvg, lineTop: '13%', lineLeft: '13.8%', lineWidth: '4%', buttonTop: '13%', buttonLeft: '16.5%', buttonFontSize: '0.55rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Chiriqui', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '51.9%', lineLeft: '7.4%', lineWidth: '4%', buttonTop: '62.6%', buttonLeft: '10.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Chiriquí', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '51.9%', lineLeft: '7.4%', lineWidth: '4%', buttonTop: '62.6%', buttonLeft: '10.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
     { alt: 'Veraguas', to: '/provincias/veraguas#video', lineComponent: LineaVeraguasSvg, lineTop: '71.4%', lineLeft: '25.4%', lineWidth: '4%', buttonTop: '86%', buttonLeft: '20.7%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
     { alt: 'Los Santos', to: '/provincias/los-santos#video', lineComponent: LineaLosSantosSvg, lineTop: '85%', lineLeft: '48.4%', lineWidth: '4%', buttonTop: '95%', buttonLeft: '51.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
     { alt: 'Herrera', to: '/provincias/herrera#video', lineComponent: LineaHerreraSvg, lineTop: '64.7%', lineLeft: '43%', lineWidth: '4%', buttonTop: '64.8%', buttonLeft: '46.8%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
-    { alt: 'Cocle', to: '/provincias/cocle#video', lineComponent: LineaCocleSvg, lineTop: '43%', lineLeft: '48.5%', lineWidth: '4%', buttonTop: '56.6%', buttonLeft: '51.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Coclé', to: '/provincias/cocle#video', lineComponent: LineaCocleSvg, lineTop: '43%', lineLeft: '48.5%', lineWidth: '4%', buttonTop: '56.6%', buttonLeft: '51.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
     { alt: 'Colón', to: '/provincias/colon#video', lineComponent: LineaColonSvg, lineTop: '4.5%', lineLeft: '40.7%', lineWidth: '3%', buttonTop: '4.4%', buttonLeft: '43.4%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
     { alt: 'Panamá Oeste', to: '/provincias/panama-oeste#video', lineComponent: LineaPanamaOesteSvg, lineTop: '35.5%', lineLeft: '53%', lineWidth: '4%', buttonTop: '49.5%', buttonLeft: '55.9%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
     { alt: 'Panamá', to: '/provincias/panama#video', lineComponent: LineaPanamaSvg, lineTop: '23%', lineLeft: '61.1%', lineWidth: '4%', buttonTop: '37.3%', buttonLeft: '64%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
     { alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', lineComponent: LineaGunaYalaSvg, lineTop: '3.1%', lineLeft: '81%', lineWidth: '5%', buttonTop: '5.4%', buttonLeft: '84.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Darien', to: '/provincias/darien#video', lineComponent: LineaDarienSvg, lineTop: '67.8%', lineLeft: '77.3%', lineWidth: '4%', buttonTop: '82.6%', buttonLeft: '74.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' }
+    { alt: 'Darién', to: '/provincias/darien#video', lineComponent: LineaDarienSvg, lineTop: '67.8%', lineLeft: '77.3%', lineWidth: '4%', buttonTop: '82.6%', buttonLeft: '74.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' }
 ];
 
 function Map() {
@@ -93,7 +93,7 @@ function Map() {
                         >
                             {province.component ? (
                                 <province.component
-                                    className="pointer-events-none h-auto w-full"
+                                    className={`pointer-events-none h-auto w-full ${province.hoverScale ? 'origin-center transition-transform duration-300 ease-out hover:scale-105' : ''}`}
                                     onMouseEnter={province.useExternalTrigger ? undefined : () => setActiveProvince(province.alt)}
                                     onMouseLeave={province.useExternalTrigger ? undefined : () => setActiveProvince(null)}
                                     onClick={() => navigate(province.to)}

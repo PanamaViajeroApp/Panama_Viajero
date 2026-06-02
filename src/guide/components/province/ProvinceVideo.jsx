@@ -37,7 +37,8 @@ function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false }) {
                 </div>
                 <div className="pointer-events-none absolute inset-0 z-10 flex items-start px-4 md:items-center">
                     <div className="mt-24 max-w-md rounded-xl p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 md:ml-15">
-                        <h1 className="font-main text-6xl font-bold brightness-150 text-brand-white md:pb-4 md:text-6xl">
+                        <h1 className="font-main text-6xl font-bold brightness-150 text-brand-white md:pb-4 md:text-6xl"
+                        style={{  textShadow: '0 0 6px rgba(39, 39, 75, 0.9)'}}>
                             {provinceData.nombre}
                         </h1>
                         <p className="font-body text-lg leading-7 text-brand-white/90">
@@ -55,7 +56,8 @@ function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false }) {
                 {media}
                 <div className="absolute inset-0 z-10 flex items-start bg-gradient-to-r from-brand-charcoal/55 via-brand-charcoal/20 to-transparent px-4 md:items-center">
                     <div className="mt-24 max-w-md rounded-xl p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 md:ml-15">
-                        <h1 className="font-main text-6xl font-bold brightness-150 text-brand-white md:pb-4 md:text-6xl">
+                        <h1 className="font-main text-6xl font-bold brightness-150 text-brand-white md:pb-4 md:text-6xl"
+                        >
                             {provinceData.nombre}
                         </h1>
                         <p className="font-body text-lg leading-7 text-brand-white/90">

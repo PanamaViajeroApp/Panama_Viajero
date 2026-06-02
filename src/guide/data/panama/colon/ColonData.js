@@ -1,6 +1,6 @@
 export const provincias = [
   {
-    id: 'colon',
+    id: 'colón',
     nombre: 'Colón',
 
     banner: {
