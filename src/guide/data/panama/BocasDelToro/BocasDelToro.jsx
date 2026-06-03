@@ -4,7 +4,7 @@ import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import ProvinceVideoJSX from '../../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../../components/destinations/Activities.jsx';
-import Sitios from '../../../components/destinations/Sitios.jsx';
+import Sitios from '../../../layout/sites/Sitios.jsx';
 import OtherProvinces from '../../../components/destinations/OtherProvinces.tsx';
 import { provincias } from './BocasDelToro.js';
 

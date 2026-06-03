@@ -9,8 +9,8 @@ import CountdownModal from './layout/counter/Counter.jsx'
 
 const AboutUs = lazy(() => import('./components/about us/AboutUs.jsx'))
 const Map = lazy(() => import('./layout/map/DinamicMap.jsx'))
-const AleatorySuggestions = lazy(() => import('./layout/sitiosInfo/Suggestions.tsx'))
-const SiteInfo = lazy(() => import('./layout/sitiosInfo/SiteInfo.jsx'))
+const AleatorySuggestions = lazy(() => import('./layout/sites/Suggestions.tsx'))
+const SiteInfo = lazy(() => import('./layout/sites/SiteInfo.jsx'))
 const Preregister = lazy(() => import('./layout/preregister/Preregister.jsx'))
 const BottomBanner = lazy(() => import('./components/bottombanner/Bottombanner.jsx'))
 const BannerLayout = lazy(() => import('./layout/banner/BannerLayout.jsx'))
