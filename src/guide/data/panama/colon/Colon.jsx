@@ -37,7 +37,9 @@ function Colon() {
             <Activities provinceData={provinceData} />
             <Sitios provinceData={provinceData} />
             <OtherProvinces provincias={provincias} />
-            <BottomBanner onLogoClick={() => navigate('/#home')} />
+            <div className="mt-40">
+                <BottomBanner onLogoClick={() => navigate('/#home')} />
+            </div>
         </div>
     );
 }

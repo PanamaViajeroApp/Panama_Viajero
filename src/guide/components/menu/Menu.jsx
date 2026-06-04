@@ -79,6 +79,7 @@ function Menu({
     onUsClick,
     onSuggestionsClick,
     autoHideOnScroll = false,
+    hideMobileMenu = false,
 }) {
     const [isOpen, setIsOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
@@ -193,45 +194,50 @@ function Menu({
                     </button>
                 </div>
                 {/* Menu Responsive */}
-                <button className="md:hidden rounded-full bg-brand-white/15 px-3 py-1 transition-all duration-300 ease-out hover:bg-brand-red hover:shadow-[0_8px_24px_rgba(255,255,255,0.15)]" onClick={() => setIsOpen(true)}>
-                    ☰
-                </button>
+                {!hideMobileMenu && (
+                    <button className="md:hidden rounded-full bg-brand-white/15 px-3 py-1 transition-all duration-300 ease-out hover:bg-brand-red hover:shadow-[0_8px_24px_rgba(255,255,255,0.15)]" onClick={() => setIsOpen(true)}>
+                        ☰
+                    </button>
+                )}
                 
                 <div className="hidden md:block "></div>
-                
-                <div
-                    className={`fixed inset-0 z-40 bg-black/50 transition-opacity h-screen duration-300 ${
-                        isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-                    }`}
-                    onClick={closeMenu}
-                ></div>
+                {!hideMobileMenu && (
+                    <>
+                        <div
+                            className={`fixed inset-0 z-40 bg-black/50 transition-opacity h-screen duration-300 ${
+                                isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+                            }`}
+                            onClick={closeMenu}
+                        ></div>
 
-                <div
-                    className={`fixed inset-y-0 right-0 z-50 h-screen w-2/3 bg-brand-charcoal text-brand-white shadow-2xl shadow-black/60 transition-transform duration-300 ease-in-out sm:w-1/2 ${
-                        isOpen ? 'translate-x-0' : 'translate-x-full'
-                    }`}
-                >{/* Menu Responsive */}
-                    <div className="flex flex-col gap-8 py-6">
-                        <div className="flex flex-col items-center gap-3">
-                            <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>
-                                <img src={LogoVertical} alt="Logo IEPA" className="h-25 w-auto max-w-full" />
-                            </button>
-                        </div>
+                        <div
+                            className={`fixed inset-y-0 right-0 z-50 h-screen w-2/3 bg-brand-charcoal text-brand-white shadow-2xl shadow-black/60 transition-transform duration-300 ease-in-out sm:w-1/2 ${
+                                isOpen ? 'translate-x-0' : 'translate-x-full'
+                            }`}
+                        >{/* Menu Responsive */}
+                            <div className="flex flex-col gap-8 py-6">
+                                <div className="flex flex-col items-center gap-3">
+                                    <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>
+                                        <img src={LogoVertical} alt="Logo IEPA" className="h-25 w-auto max-w-full" />
+                                    </button>
+                                </div>
 
-                        <div className="font-secondary flex flex-col items-start ml-3 gap-2.5">
-                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToUs}>Nosotros</button>
-                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToMap}>Provincias</button>
-                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToSuggestions}>Sugerencia</button>
-                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>Registro</button>
-                        </div>
+                                <div className="font-secondary flex flex-col items-start ml-3 gap-2.5">
+                                    <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToUs}>Nosotros</button>
+                                    <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToMap}>Provincias</button>
+                                    <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToSuggestions}>Sugerencia</button>
+                                    <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>Registro</button>
+                                </div>
 
-                        <div className="flex justify-center mt-15">
-                            <button className="font-secondary rounded-lg bg-brand-red text-brand-white px-5 py-2 transition-all duration-300 ease-out hover:bg-brand-blue hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>
-                                Registrarme
-                            </button>
+                                <div className="flex justify-center mt-15">
+                                    <button className="font-secondary rounded-lg bg-brand-red text-brand-white px-5 py-2 transition-all duration-300 ease-out hover:bg-brand-blue hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>
+                                        Registrarme
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </>
+                )}
             </div>
         </div>
     )

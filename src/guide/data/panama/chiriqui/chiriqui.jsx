@@ -41,7 +41,9 @@ function Chiriqui() {
                 <Activities provinceData={provinceData} />
                 <Sitios provinceData={provinceData} />
                 <OtherProvinces provincias={provincias} />
+                <div className="mt-40">
                 <BottomBanner onLogoClick={() => navigate('/#home')} />
+            </div>
             </div>
         </div>
     );

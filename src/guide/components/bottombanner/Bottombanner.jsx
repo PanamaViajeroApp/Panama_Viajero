@@ -3,7 +3,7 @@ import {FaInstagram, FaTiktok, FaFacebook} from "react-icons/fa6"
 import LogoCircular from "../../img_test/LogoRectangular.svg";
 function BottomBanner({ onLogoClick }) {
     return (
-        <div className="mt-40 bg-brand-blue py-10 shadow-[0_-12px_30px_rgba(77,76,76,0.18)]">
+        <div className=" bg-brand-blue py-10 shadow-[0_-12px_30px_rgba(77,76,76,0.18)]">
             <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 text-brand-white">
                 <h1 className="font-main text-center text-2xl md:text-4xl font-bold">Sé parte de esta gran aventura.</h1>
             <button className="cursor-pointer transition hover:scale-110" onClick={onLogoClick}>
