@@ -8,6 +8,7 @@ import SiteDescription from './components/SiteDescription.jsx'
 import SiteGallery from './components/SiteGallery.jsx'
 import SiteHero from './components/SiteHero.jsx'
 import SiteMap from './components/SiteMap.jsx'
+import DeferredSection from '../layout/layout-components/DeferredSection.jsx'
 
 function SiteInfo() {
   const navigate = useNavigate()
@@ -61,11 +62,19 @@ function SiteInfo() {
           </div>
 
           <div className="relative z-20 px-4 md:px-10">
-            <div className="mx-auto flex max-w-6xl flex-col gap-50 ">
-              <SiteDescription description={site.descripcion} />
-              <SiteActivities activities={site.actividades} featuredImage={featuredActivityImage} />
-              <SiteGallery gallery={gallery} siteName={site.nombre} />
-              <SiteMap site={site} />
+            <div className="mx-auto flex max-w-6xl flex-col gap-50">
+              <DeferredSection fallback={<div className="min-h-[220px]" />} rootMargin="200px">
+                <SiteDescription description={site.descripcion} />
+              </DeferredSection>
+              <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
+                <SiteActivities activities={site.actividades} featuredImage={featuredActivityImage} />
+              </DeferredSection>
+              <DeferredSection fallback={<div className="min-h-[520px]" />} rootMargin="350px">
+                <SiteGallery gallery={gallery} siteName={site.nombre} />
+              </DeferredSection>
+              <DeferredSection fallback={<div className="min-h-[360px]" />} rootMargin="420px">
+                <SiteMap site={site} />
+              </DeferredSection>
             </div>
           </div>
 

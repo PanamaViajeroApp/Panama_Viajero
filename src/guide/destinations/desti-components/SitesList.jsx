@@ -1,9 +1,8 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
-import { siteRegistry } from '../../sites/dataSites/siteRegistry.js'
+import { bocasSiteRegistry } from '../../sites/dataSites/bocas-del-toro/siteRegistry.js'
 
 function SitesList({ provinceData }) {
-  const targets = Object.values(siteRegistry)
-    .filter((site) => site.provinceId === provinceData.id)
+  const targets = Object.values(bocasSiteRegistry)
     .map((site) => ({
       id: site.id,
       nombre: site.nombre,

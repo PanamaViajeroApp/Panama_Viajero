@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 
 function BannerLayout() {
     const [shouldLoadVideo, setShouldLoadVideo] = useState(false)
+    const isMobile = window.matchMedia?.('(max-width: 767px)').matches ?? false
 
     useEffect(() => {
-        const idleCallback = window.requestIdleCallback?.(() => setShouldLoadVideo(true), { timeout: 1200 })
-        const timeoutId = window.setTimeout(() => setShouldLoadVideo(true), 900)
+        const delay = isMobile ? 2400 : 1200
+        const idleCallback = window.requestIdleCallback?.(() => setShouldLoadVideo(true), { timeout: delay })
+        const timeoutId = window.setTimeout(() => setShouldLoadVideo(true), delay)
 
         return () => {
             if (idleCallback) {
@@ -13,7 +15,7 @@ function BannerLayout() {
             }
             window.clearTimeout(timeoutId)
         }
-    }, [])
+    }, [isMobile])
 
     return (
         <div className="relative aspect-[1920/1080] w-full overflow-hidden bg-black/20 md:aspect-[1920/775]">

@@ -28,6 +28,7 @@ function ProvinceTargetCard({ target, onClick, fallbackPoster, mode = 'sites-onl
             alt={target.nombre}
             loading="lazy"
             decoding="async"
+            fetchPriority="low"
             className={`h-full w-full object-cover ${mode === 'zones-only' ? 'opacity-20' : ''}`}
           />
         )}
