@@ -1,0 +1,81 @@
+const elValleDeAntonImageBase = '/images/destinations/cocle/el-valle-de-anton'
+
+export const elValleDeAnton = {
+    id: 'el-valle-de-anton',
+    provinceId: 'cocle',
+    nombre: 'El Valle de Antón',
+    banner: {
+        src: `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.jpg`,
+        alt: 'Banner de El Valle de Antón',
+    },
+    gallery: [
+        `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g1-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g2-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g3-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g4-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g5-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g6-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g7-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g8-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g9-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/gallery/g10-el-valle-de-anton.jpg`,
+    ],
+    descripcion:
+        'Un santuario natural místico ubicado en el cráter de un volcán extinto, donde la primavera eterna cobija un bosque nuboso de biodiversidad única. Un pintoresco pueblo de montaña rodeado de cerros sagrados, caídas de agua cristalina y una vibrante cultura local, invitando al descanso, la aventura ecológica y la renovación espiritual absoluta.',
+    previewDescripcion:
+        'Un fascinante y fresco destino de montaña asentado sobre un cráter volcánico inactivo, célebre por su biodiversidad, cascadas y senderos ecológicos.',
+    previewUbicacion: 'Chiriquí, El Valle de Antón',
+    actividades: [
+        {
+            nombre: 'Senderismo de montaña',
+            descripcion:
+                'Asciende por las laderas del cerro la India Dormida para contemplar vistas espectaculares de todo el valle.',
+            icono: '',
+        },
+        {
+            nombre: 'Expedición ecológica',
+            descripcion:
+                'Visita los santuarios locales para conocer de cerca a la emblemática y protegida rana dorada de la zona.',
+            icono: '',
+        },
+        {
+            nombre: 'Fotografía de cascadas',
+            descripcion:
+                'Captura la majestuosa belleza del Chorro El Macho enmarcado por una densa y húmeda vegetación tropical.',
+            icono: '',
+        },
+        {
+            nombre: 'Compras artesanales',
+            descripcion:
+                'Explora el colorido mercado dominical adquiriendo hermosas plantas exóticas y recuerdos hechos a mano.',
+            icono: '',
+        },
+        {
+            nombre: 'Relajación termal',
+            descripcion:
+                'Renueva tus energías sumergiéndote en las místicas pozas de aguas termales ricas en minerales naturales.',
+            icono: '',
+        },
+        {
+            nombre: 'Caminata boscosa',
+            descripcion:
+                'Recorre senderos cubiertos de neblina descubriendo los secretos botánicos del bosque de árboles cuadrados.',
+            icono: '',
+        },
+        {
+            nombre: 'Avistamiento de aves',
+            descripcion:
+                'Observa exóticas especies y coloridos tucanes que revolotean entre las altas copas del bosque nuboso.',
+            icono: '',
+        },
+        {
+            nombre: 'Descanso contemplativo',
+            descripcion:
+                'Disfruta del clima fresco en las cafeterías del pueblo compartiendo las tradiciones de la gente local.',
+            icono: '',
+        },
+    ],
+    ubicacion:
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.000000000000!2d-82.60000000000000!3d8.60000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzYnMDAuMCJOIDgywrAzNycwMC4wIlc!5e1!3m2!1sen!2spa!4v1781026000000!5m2!1sen!2spa',
+}

@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { provinceMedia } from '../../destinations/desti-data/panama/provinceMedia.js'
+import { provinceMedia } from '../../destinations/destinations-pages/provinceMedia.js'
 
 function getRandomItems(items, limit) {
   const shuffled = [...items]
@@ -15,7 +15,6 @@ function getRandomItems(items, limit) {
 
 function Suggestions() {
   const navigate = useNavigate()
-
   const suggestions = useMemo(() => {
     const provincesWithVideoBanner = provinceMedia.filter((province) => province.banner)
     return getRandomItems(provincesWithVideoBanner, 3)

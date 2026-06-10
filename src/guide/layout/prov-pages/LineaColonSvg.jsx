@@ -1,4 +1,4 @@
-const lineaColonSvg = new URL('../../srcProvincias/colon/LineaColon.svg', import.meta.url).href;
+const lineaColonSvg = new URL('../../img_test/srcProvincias/colon/LineaColon.svg', import.meta.url).href;
 
 function LineaColonSvg({ className = '' }) {
     return <img src={lineaColonSvg} alt="" aria-hidden="true" className={className} />;
