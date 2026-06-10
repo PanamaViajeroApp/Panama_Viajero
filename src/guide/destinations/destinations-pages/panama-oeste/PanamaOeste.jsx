@@ -35,7 +35,7 @@ function PanamaOeste() {
                 />
             </div>
             <ProvinceVideo provinceData={provinceData} fixedBackground />
-            <section className="relative z-10 pt-[100vh]">
+            <section className="relative z-10">
                 <Activities provinceData={provinceData} />
                 <ProvinceZonesAndSites provinceData={provinceData} />
                 <OtherProvinces provincias={provincias} />
