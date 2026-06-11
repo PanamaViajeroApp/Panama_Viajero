@@ -46,5 +46,4 @@ function Cocle() {
         </div>
     );
 }
-
 export default Cocle;
