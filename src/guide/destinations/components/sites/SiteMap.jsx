@@ -8,7 +8,7 @@ function SiteMap({ site }) {
         <iframe
           title={`Mapa de ${site.nombre}`}
           src={site.ubicacion}
-          className="h-[300px] w-full border-0 md:h-[300px]"
+          className="h-[300px] w-full border-0 md:h-[350px]"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />

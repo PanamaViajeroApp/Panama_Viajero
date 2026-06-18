@@ -1,6 +1,6 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
 
-function ProvinceZonesOnly({ provinceData, title = 'Zonas' }) {
+function ProvinceZonesOnly({ provinceData, title = 'Costas' }) {
   const targets = provinceData?.targets?.filter((target) => target.type === 'zone') ?? []
 
   return (

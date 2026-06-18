@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { lazy, Suspense, useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import DeferredSection from './layout/layout-components/DeferredSection.jsx'
 import Menu from './components/menu/Menu.jsx'
 import useHomeNavigation from './layout/layout-components/functions/useHomeNavigation.js'
@@ -139,6 +139,12 @@ function GuideHome() {
 }
 
 function GuideApp() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [location.pathname])
+
   return (
     <Suspense fallback={<RouteFallback />}>
       <Routes>

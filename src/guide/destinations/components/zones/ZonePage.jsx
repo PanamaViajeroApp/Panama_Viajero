@@ -90,13 +90,15 @@ function ZonePage() {
 
       <section className="relative z-10 pt-[100vh]">
         <div className="mx-auto max-w-6xl px-4 md:px-10">
-          <p className="mb-50 text-center text-2xl font-secondary-italic text-brand-white/95 backdrop-blur-sm">
-            {safeDescription}
-          </p>
+          <div className="mx-auto mb-50 max-w-4xl rounded-[1.75rem] border border-white/15 bg-black/25 px-6 py-6 text-center shadow-[0_18px_50px_rgba(0,0,0,0.28)] backdrop-blur-md md:px-10 md:py-8">
+            <p className="font-secondary-italic text-xl leading-relaxed text-brand-white/95 md:text-2xl md:leading-[1.9rem]">
+              {safeDescription}
+            </p>
+          </div>
 
           <div className="mt-8 flex flex-col gap-12">
             <ProvinceTargetsGrid
-              title="Sitios Turisticos"
+              title="Lugares turísticos"
               targets={sitios.map(toTarget)}
               fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
               mode="sites-only"

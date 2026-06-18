@@ -6,12 +6,12 @@ function SiteActivities({ activities = [], featuredImage }) {
   const secondaryActivities = activities.slice(1)
 
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(0,0,0,0.72),rgba(73,86,162,0.34)_48%,rgba(205,46,76,0.24))] p-5 shadow-[0_24px_70px_rgba(0,0,0,0.42)] backdrop-blur-md md:p-8">
-      <div className="pointer-events-none absolute inset-0 opacity-45 [background-image:linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:42px_42px]" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-red via-brand-white to-brand-blue" />
+    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(0,0,0,0.72),rgba(73,86,162,0.34)_48%,rgba(205,46,76,0.24))] p-5 shadow-[0_24px_70px_rgba(0,0,0,0.42)] backdrop-blur-md md:p-15">
+      <div className="pointer-events-none absolute inset-0 opacity-45 [background-image:linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:42px_42px] " />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-red via-brand-white to-brand-blue " />
 
       <div className="relative">
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between ">
           <div>
             <p className="font-secondary text-xs uppercase tracking-[0.28em] text-white/65">
               Experiencias
@@ -28,11 +28,11 @@ function SiteActivities({ activities = [], featuredImage }) {
           </div>
         </div>
 
-        <div className="mt-8 grid gap-4 lg:grid-cols-[1.05fr_1.35fr]">
+        <div className="mt-8 flex flex-col gap-4 ">
           {featuredActivity && FeaturedActivityIcon && (
-            <article className="group relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-brand-white text-brand-charcoal shadow-[0_24px_60px_rgba(0,0,0,0.28)]">
+            <article className="group relative w-full overflow-hidden rounded-[1.75rem] border border-white/15 bg-brand-white text-brand-charcoal shadow-[0_24px_60px_rgba(0,0,0,0.28)]">
               <div className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-brand-red to-brand-blue" />
-              <div className="relative h-44 overflow-hidden md:h-52">
+              <div className="relative h-44 overflow-hidden md:h-75">
                 <img
                   src={featuredImage}
                   alt=""
@@ -42,7 +42,8 @@ function SiteActivities({ activities = [], featuredImage }) {
                 <span className="font-main absolute right-5 top-3 text-7xl leading-none text-white/60 md:text-8xl">
                   01
                 </span>
-                <div className="absolute bottom-5 left-5 flex h-24 w-24 items-center justify-center rounded-3xl bg-brand-blue text-brand-white shadow-[0_18px_35px_rgba(0,0,0,0.35)] transition duration-500 group-hover:-translate-y-1 group-hover:bg-brand-red md:h-28 md:w-28">
+                <div className="absolute bottom-5 left-5 flex h-24 w-24 items-center justify-center rounded-3xl bg-brand-blue 
+                text-brand-white shadow-[0_18px_35px_rgba(0,0,0,0.35)] transition duration-500 group-hover:-translate-y-1 group-hover:bg-brand-red md:h-28 md:w-28">
                   <FeaturedActivityIcon className="h-14 w-14 md:h-16 md:w-16" />
                 </div>
               </div>

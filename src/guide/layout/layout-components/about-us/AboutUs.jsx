@@ -4,8 +4,12 @@ import SimuladorApp from '../../../img_test/Simulador_app_P1.svg'
 
 function AboutUs() {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
+  const baseRotation = { x: 5, y: -15, z: 4 };
 
   const onMouseMove = (event) => {
+    if (!isHovered) setIsHovered(true);
+
     const rect = event.currentTarget.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
@@ -13,18 +17,19 @@ function AboutUs() {
     const py = y / rect.height;
 
     setRotation({
-      x: (0.5 - py) * 25,
+      x: (0.5 - py)* 25,
       y: (px - 0.5) * 25,
     });
   };
 
   const onMouseLeave = () => {
     setRotation({ x: 0, y: 0 });
+    setIsHovered(false);
   };
 
   return (
     <div className="mx-auto pt-40 pb-40 flex max-w-full flex-col items-center justify-center gap-12 px-4 
-    py-14 md:flex-row md:gap-16 bg-gradient-to-r from-[#4956A2] to-[#000000]">
+    py-14 md:flex-row md:gap-30 bg-gradient-to-r from-[#4956A2] to-[#000000]">
       <div className="flex flex-col items-start gap-5 text-left max-w-6xl">
         <div>
           <h2 className="font-secondary-italic text-2xl text-[#FFFFFF] md:text-3xl ">Directorio turístico</h2>
@@ -51,14 +56,17 @@ function AboutUs() {
       >
         <div
           className="rounded-full  transition-transform duration-150 ease-out"
+          onMouseEnter={() => setIsHovered(true)}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
           style={{
-            transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.05)`,
+            transform: isHovered
+            ? `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.05)`
+            : `rotateX(${baseRotation.x}deg) rotateY(${baseRotation.y}deg) rotateZ(${baseRotation.z}deg) scale(1.05)`,
             transformStyle: 'preserve-3d',
           }}
         >
-          <img src={SimuladorApp} alt="Provincias" loading="lazy" decoding="async" className="h-45 md:h-130  " />
+          <img src={SimuladorApp} alt="Provincias" loading="lazy" decoding="async" className="h-100 md:h-130" />
           {/* LogoRectangular */}
         </div>
       </div>
