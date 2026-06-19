@@ -9,69 +9,69 @@ export const portobelo = {
         alt: 'Banner de Portobelo',
     },
     descripcion:
-        'Un tesoro histórico del Caribe panameño donde fortalezas coloniales, tradiciones afrodescendientes y paisajes costeros se unen en una experiencia única. Declarado Patrimonio de la Humanidad por la UNESCO, Portobelo cautiva con su riqueza cultural, su legado histórico y su vibrante identidad caribeña.',
+        'Un histórico tesoro del Caribe panameño donde fortalezas coloniales, tradiciones afrocaribeñas y paisajes costeros se combinan en una experiencia única. Portobelo destaca por su legado cultural, su riqueza histórica y su vibrante identidad caribeña.',
     previewDescripcion:
-        'Historia, cultura afrocaribeña y fortalezas coloniales en uno de los destinos más emblemáticos de Panamá.',
+        'Historia, cultura afrocaribeña y patrimonio colonial en uno de los destinos más emblemáticos de Panamá.',
     previewUbicacion: 'Colón, Costa Arriba',
     actividades: [
         {
             nombre: 'Visita a las fortificaciones históricas',
             descripcion:
-                'Explora las antiguas estructuras defensivas construidas durante la época colonial española.',
+                'Explora antiguas estructuras defensivas construidas durante la época colonial española y descubre su valor histórico.',
             icono: '',
         },
         {
             nombre: 'Recorrido por el centro histórico',
             descripcion:
-                'Descubre calles, plazas y monumentos que conservan siglos de historia.',
+                'Camina entre calles, plazas y monumentos que conservan siglos de historia y tradición.',
             icono: '',
         },
         {
             nombre: 'Turismo cultural',
             descripcion:
-                'Conoce las tradiciones, costumbres y expresiones afrocaribeñas que distinguen a Portobelo.',
+                'Conoce las tradiciones afrocaribeñas, su música, gastronomía y expresiones culturales únicas.',
             icono: '',
         },
         {
             nombre: 'Visita a la Iglesia de San Felipe',
             descripcion:
-                'Admira uno de los lugares religiosos más importantes del país y hogar del Cristo Negro.',
+                'Descubre uno de los sitios religiosos más importantes del país y hogar del Cristo Negro.',
             icono: '',
         },
         {
             nombre: 'Fotografía patrimonial',
             descripcion:
-                'Captura la belleza de las ruinas históricas y los paisajes costeros del Caribe.',
+                'Captura la belleza de las ruinas históricas y la atmósfera caribeña de Portobelo.',
             icono: '',
         },
         {
             nombre: 'Paseos en lancha',
             descripcion:
-                'Explora las costas, bahías y atractivos naturales cercanos al pueblo.',
+                'Explora bahías, costas y atractivos naturales cercanos desde el mar Caribe.',
             icono: '',
         },
         {
             nombre: 'Gastronomía caribeña',
             descripcion:
-                'Disfruta platos típicos con influencia afroantillana y sabores locales.',
+                'Disfruta platos típicos con sabores afroantillanos y productos frescos del mar.',
             icono: '',
         },
         {
             nombre: 'Observación de paisajes costeros',
             descripcion:
-                'Admira la combinación de mar Caribe, colinas verdes y patrimonio histórico.',
+                'Admira la combinación entre mar Caribe, colinas verdes y patrimonio histórico.',
             icono: '',
         },
         {
             nombre: 'Festividades religiosas',
             descripcion:
-                'Participa en celebraciones tradicionales reconocidas a nivel nacional.',
+                'Participa en celebraciones tradicionales y eventos culturales reconocidos a nivel nacional.',
             icono: '',
         },
         {
-            nombre: 'Exploración de atractivos cercanos',
+            nombre: 'Exploración de destinos cercanos',
             descripcion:
-                'Utiliza Portobelo como punto de partida para visitar playas, islas y arrecifes de la Costa Arriba.',
+                'Usa Portobelo como punto de partida para descubrir playas, islas y arrecifes de la Costa Arriba.',
             icono: '',
         },
     ],

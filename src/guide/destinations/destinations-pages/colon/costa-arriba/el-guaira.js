@@ -9,21 +9,41 @@ export const elGuaira = {
         alt: 'Banner de El Guaira',
     },
     descripcion:
-        'Un encantador destino costero de la Costa Arriba de Colón, rodeado de exuberante vegetación tropical y aguas caribeñas. Es ideal para quienes buscan tranquilidad, paisajes naturales y una auténtica experiencia caribeña lejos de las multitudes.',
+        'Un tranquilo rincón costero de la Costa Arriba de Colón, rodeado de vegetación tropical y aguas caribeñas que invitan al descanso y la conexión con la naturaleza. El Guaira es ideal para quienes buscan playas serenas y una experiencia auténtica lejos de las zonas más concurridas.',
     previewDescripcion:
-        'Naturaleza tropical, playas caribeñas y tranquilidad en la Costa Arriba de Colón.',
+        'Playas tranquilas, naturaleza tropical y ambiente relajado en la Costa Arriba de Colón.',
     previewUbicacion: 'Colón, Costa Arriba',
     actividades: [
-        { nombre: 'Disfrutar de la playa', descripcion: 'Relájate en un entorno natural y tranquilo.', icono: '' },
-        { nombre: 'Natación', descripcion: 'Refresca tu día en las aguas del Caribe.', icono: '' },
-        { nombre: 'Fotografía de naturaleza', descripcion: 'Captura paisajes tropicales y costeros.', icono: '' },
-        { nombre: 'Paseos costeros', descripcion: 'Recorre la costa y disfruta del paisaje.', icono: '' },
-        { nombre: 'Observación de aves', descripcion: 'Descubre especies propias de la región.', icono: '' },
-        { nombre: 'Turismo ecológico', descripcion: 'Explora los ecosistemas tropicales cercanos.', icono: '' },
-        { nombre: 'Gastronomía local', descripcion: 'Disfruta sabores tradicionales del Caribe panameño.', icono: '' },
-        { nombre: 'Picnic frente al mar', descripcion: 'Comparte momentos especiales junto a la playa.', icono: '' },
-        { nombre: 'Observación de atardeceres', descripcion: 'Admira los colores del Caribe al final del día.', icono: '' },
-        { nombre: 'Escapada de descanso', descripcion: 'Desconéctate en un ambiente natural y relajante.', icono: '' },
+        {
+            nombre: 'Disfrutar de la playa',
+            descripcion:
+                'Relájate en un entorno costero sereno, ideal para desconectarse y disfrutar del Caribe.',
+            icono: '',
+        },
+        {
+            nombre: 'Natación',
+            descripcion:
+                'Aprovecha sus aguas tranquilas y cálidas para refrescarte y disfrutar del mar.',
+            icono: '',
+        },
+        {
+            nombre: 'Paseos costeros',
+            descripcion:
+                'Recorre la costa y descubre paisajes naturales rodeados de vegetación tropical.',
+            icono: '',
+        },
+        {
+            nombre: 'Turismo ecológico',
+            descripcion:
+                'Explora los ecosistemas tropicales cercanos y conecta con la biodiversidad de la región.',
+            icono: '',
+        },
+        {
+            nombre: 'Gastronomía local',
+            descripcion:
+                'Prueba platos tradicionales y mariscos frescos con auténtico sabor caribeño.',
+            icono: '',
+        },
     ],
     ubicacion:
         'https://www.google.com/maps?q=El%20Guaira%20Colon%20Panama&output=embed',

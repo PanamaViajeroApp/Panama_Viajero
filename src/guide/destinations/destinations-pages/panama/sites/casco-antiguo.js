@@ -9,21 +9,48 @@ export const cascoAntiguo = {
         alt: 'Banner de Casco Antiguo',
     },
     descripcion:
-        'El corazón histórico de la ciudad de Panamá y uno de los destinos más emblemáticos del país. Sus calles empedradas, arquitectura colonial, plazas, iglesias y vibrante vida cultural hacen de este sitio Patrimonio de la Humanidad un lugar imprescindible para visitar.',
+        'El corazón histórico de la ciudad de Panamá y uno de los destinos más emblemáticos del país. Sus calles empedradas, arquitectura colonial, plazas, iglesias y vibrante vida cultural convierten este Patrimonio de la Humanidad en una parada imprescindible para descubrir la esencia histórica y moderna de la capital.',
     previewDescripcion:
         'Historia, arquitectura colonial y vida cultural en el corazón de Panamá.',
     previewUbicacion: 'Panamá, Capital',
     actividades: [
-        { nombre: 'Recorrido histórico', descripcion: 'Descubre plazas, iglesias y edificios con siglos de historia.', icono: '' },
-        { nombre: 'Fotografía urbana', descripcion: 'Captura la arquitectura colonial y las vistas panorámicas de la ciudad.', icono: '' },
-        { nombre: 'Visita a museos', descripcion: 'Explora espacios culturales e históricos de gran importancia.', icono: '' },
-        { nombre: 'Gastronomía', descripcion: 'Disfruta restaurantes, cafés y rooftops con gran variedad culinaria.', icono: '' },
-        { nombre: 'Vida nocturna', descripcion: 'Experimenta bares, terrazas y música en vivo en un ambiente único.', icono: '' },
-        { nombre: 'Compras artesanales', descripcion: 'Encuentra souvenirs y productos locales en tiendas tradicionales.', icono: '' },
-        { nombre: 'Visita a iglesias históricas', descripcion: 'Admira templos coloniales que forman parte del patrimonio panameño.', icono: '' },
-        { nombre: 'Paseos culturales', descripcion: 'Conoce galerías, eventos y expresiones artísticas del área.', icono: '' },
-        { nombre: 'Observación de atardeceres', descripcion: 'Disfruta vistas espectaculares desde la costa o rooftops.', icono: '' },
-        { nombre: 'Turismo patrimonial', descripcion: 'Conéctate con la historia viva de la ciudad de Panamá.', icono: '' },
+        {
+            nombre: 'Recorrido histórico',
+            descripcion:
+                'Explora plazas, calles y edificios coloniales que conservan siglos de historia y tradición panameña.',
+            icono: '',
+        },
+        {
+            nombre: 'Visita a museos',
+            descripcion:
+                'Descubre espacios culturales e históricos que narran la evolución de Panamá y su legado.',
+            icono: '',
+        },
+        {
+            nombre: 'Gastronomía',
+            descripcion:
+                'Disfruta de restaurantes, cafés y rooftops con propuestas gastronómicas locales e internacionales.',
+            icono: '',
+        },
+        {
+            nombre: 'Vida nocturna',
+            descripcion:
+                'Vive la energía de bares, terrazas y música en vivo en uno de los ambientes más vibrantes de la ciudad.',
+            icono: '',
+        },
+        {
+            nombre: 'Compras artesanales',
+            descripcion:
+                'Encuentra souvenirs, arte local y productos tradicionales en tiendas y mercados del casco histórico.',
+            icono: '',
+        },
+        {
+            nombre: 'Visita a iglesias históricas',
+            descripcion:
+                'Admira templos coloniales que forman parte del patrimonio religioso y arquitectónico de Panamá.',
+            icono: '',
+        },
     ],
-    ubicacion: 'https://www.google.com/maps?q=Casco%20Antiguo%20Panama&output=embed',
+    ubicacion:
+        'https://www.google.com/maps?q=Casco%20Antiguo%20Panama&output=embed',
 }

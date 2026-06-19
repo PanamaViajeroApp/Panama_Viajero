@@ -9,21 +9,47 @@ export const puertoLindo = {
         alt: 'Banner de Puerto Lindo',
     },
     descripcion:
-        'Un pintoresco pueblo costero rodeado de naturaleza y aguas caribeñas, conocido por ser punto de partida hacia hermosas islas y destinos marinos. Su ambiente tranquilo y sus paisajes tropicales atraen a viajeros de todo el mundo.',
+        'Un encantador pueblo costero del Caribe panameño rodeado de naturaleza tropical y aguas cristalinas, reconocido como punto de partida hacia algunas de las islas y playas más hermosas de la Costa Arriba. Su ambiente relajado y su conexión con el mar lo convierten en un destino ideal para la aventura y la exploración.',
     previewDescripcion:
-        'Naturaleza, mar Caribe y acceso a impresionantes destinos insulares.',
+        'Naturaleza, mar Caribe y acceso a islas paradisíacas desde uno de los puertos más emblemáticos de Colón.',
     previewUbicacion: 'Colón, Costa Arriba',
     actividades: [
-        { nombre: 'Paseos en lancha', descripcion: 'Explora las islas y playas cercanas.', icono: '' },
-        { nombre: 'Snorkel', descripcion: 'Descubre la biodiversidad marina del Caribe.', icono: '' },
-        { nombre: 'Pesca recreativa', descripcion: 'Disfruta jornadas junto al mar.', icono: '' },
-        { nombre: 'Fotografía paisajística', descripcion: 'Captura la belleza natural de la costa.', icono: '' },
-        { nombre: 'Visita a playas cercanas', descripcion: 'Accede fácilmente a destinos paradisíacos.', icono: '' },
-        { nombre: 'Gastronomía caribeña', descripcion: 'Prueba mariscos frescos y platos típicos.', icono: '' },
-        { nombre: 'Turismo comunitario', descripcion: 'Conoce la vida local y sus tradiciones.', icono: '' },
-        { nombre: 'Observación de fauna marina', descripcion: 'Explora ecosistemas costeros únicos.', icono: '' },
-        { nombre: 'Natación', descripcion: 'Disfruta de las cálidas aguas caribeñas.', icono: '' },
-        { nombre: 'Escapada de aventura', descripcion: 'Combina playa, mar y exploración en un solo lugar.', icono: '' },
+        {
+            nombre: 'Paseos en lancha',
+            descripcion:
+                'Explora islas, playas y rincones escondidos del Caribe que parten desde Puerto Lindo.',
+            icono: '',
+        },
+        {
+            nombre: 'Snorkel',
+            descripcion:
+                'Descubre arrecifes y vida marina en aguas claras y llenas de biodiversidad.',
+            icono: '',
+        },
+        {
+            nombre: 'Pesca recreativa',
+            descripcion:
+                'Vive la experiencia de pescar en las tranquilas aguas caribeñas junto a guías o pescadores locales.',
+            icono: '',
+        },
+        {
+            nombre: 'Visita a playas cercanas',
+            descripcion:
+                'Accede fácilmente a playas e islas cercanas ideales para pasar el día en contacto con el mar.',
+            icono: '',
+        },
+        {
+            nombre: 'Gastronomía caribeña',
+            descripcion:
+                'Disfruta mariscos frescos y platos típicos con auténtico sabor afrocaribeño.',
+            icono: '',
+        },
+        {
+            nombre: 'Turismo comunitario',
+            descripcion:
+                'Conoce la vida local, sus tradiciones y la hospitalidad de las comunidades costeras.',
+            icono: '',
+        },
     ],
     ubicacion:
         'https://www.google.com/maps?q=Puerto%20Lindo%20Colon%20Panama&output=embed',

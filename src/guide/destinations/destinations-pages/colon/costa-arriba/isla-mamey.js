@@ -9,21 +9,41 @@ export const islaMamey = {
         alt: 'Banner de Isla Mamey',
     },
     descripcion:
-        'Una pequeña joya del Caribe panameño famosa por sus aguas cristalinas, arena blanca y ambiente tranquilo. Su cercanía a Portobelo la convierte en una excelente opción para disfrutar de un día de playa rodeado de naturaleza.',
+        'Una pequeña joya del Caribe panameño reconocida por sus aguas cristalinas, arena blanca y ambiente sereno. Su cercanía a Portobelo la convierte en una escapada perfecta para quienes buscan disfrutar de playa, mar y naturaleza en un entorno tropical.',
     previewDescripcion:
-        'Aguas cristalinas y playas tropicales en una de las islas más visitadas de Colón.',
+        'Aguas cristalinas, arena blanca y un ambiente tropical ideal para desconectarse en el Caribe panameño.',
     previewUbicacion: 'Colón, Costa Arriba',
     actividades: [
-        { nombre: 'Disfrutar de la playa', descripcion: 'Relájate en sus tranquilas costas caribeñas.', icono: '' },
-        { nombre: 'Snorkel', descripcion: 'Observa peces tropicales y vida marina.', icono: '' },
-        { nombre: 'Natación', descripcion: 'Nada en aguas claras y calmadas.', icono: '' },
-        { nombre: 'Fotografía costera', descripcion: 'Captura paisajes paradisíacos.', icono: '' },
-        { nombre: 'Paseos en lancha', descripcion: 'Disfruta el recorrido desde Portobelo.', icono: '' },
-        { nombre: 'Picnic frente al mar', descripcion: 'Comparte momentos especiales junto al Caribe.', icono: '' },
-        { nombre: 'Turismo de naturaleza', descripcion: 'Conecta con un entorno natural protegido.', icono: '' },
-        { nombre: 'Observación de fauna marina', descripcion: 'Descubre especies propias del Caribe.', icono: '' },
-        { nombre: 'Descanso tropical', descripcion: 'Disfruta de un ambiente relajado y acogedor.', icono: '' },
-        { nombre: 'Excursión de un día', descripcion: 'Ideal para una escapada rápida desde Portobelo.', icono: '' },
+        {
+            nombre: 'Disfrutar de la playa',
+            descripcion:
+                'Relájate en sus playas de arena clara y disfruta de un entorno tranquilo rodeado de mar Caribe.',
+            icono: '',
+        },
+        {
+            nombre: 'Snorkel',
+            descripcion:
+                'Explora sus aguas transparentes y observa peces tropicales y pequeños arrecifes cercanos.',
+            icono: '',
+        },
+        {
+            nombre: 'Natación',
+            descripcion:
+                'Nada en aguas calmadas y cristalinas, ideales para refrescarse y disfrutar del mar.',
+            icono: '',
+        },
+        {
+            nombre: 'Paseos en lancha',
+            descripcion:
+                'Disfruta del recorrido marítimo desde Portobelo y contempla la belleza natural de la costa.',
+            icono: '',
+        },
+        {
+            nombre: 'Gastronomía local',
+            descripcion:
+                'Prueba mariscos frescos y sabores caribeños ofrecidos por pequeños negocios locales.',
+            icono: '',
+        },
     ],
     ubicacion:
         'https://www.google.com/maps?q=Isla%20Mamey%20Colon%20Panama&output=embed',
