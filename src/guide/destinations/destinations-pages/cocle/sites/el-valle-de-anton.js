@@ -5,18 +5,18 @@ export const elValleDeAnton = {
     provinceId: 'cocle',
     nombre: 'El Valle de Antón',
     banner: {
-        src: `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.jpg`,
+        src: `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.webp`,
         alt: 'Banner de El Valle de Antón',
     },
     gallery: [
-        `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g1-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g2-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g3-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g4-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g5-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g6-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g7-el-valle-de-anton.jpg`,
+        `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/gallery/g1-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/gallery/g2-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/gallery/g3-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/gallery/g4-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/gallery/g5-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/gallery/g6-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/gallery/g7-el-valle-de-anton.webp`,
 
     ],
     descripcion:

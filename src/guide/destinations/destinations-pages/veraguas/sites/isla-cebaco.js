@@ -5,7 +5,7 @@ export const islaCebaco = {
     provinceId: 'veraguas',
     nombre: 'Isla Cébaco',
     banner: {
-        src: `${islaCebacoImageBase}/bg-isla-cebaco.jpg`,
+        src: `${islaCebacoImageBase}/bg-isla-cebaco.webp`,
         alt: 'Banner de Isla Cébaco',
     },
     descripcion:

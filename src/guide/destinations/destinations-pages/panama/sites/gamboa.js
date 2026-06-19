@@ -5,7 +5,7 @@ export const gamboa = {
     provinceId: 'panama',
     nombre: 'Gamboa',
     banner: {
-        src: `${gamboaImageBase}/bg-gamboa.jpeg`,
+        src: `${gamboaImageBase}/bg-gamboa.webp`,
         alt: 'Banner de Gamboa',
     },
     descripcion:

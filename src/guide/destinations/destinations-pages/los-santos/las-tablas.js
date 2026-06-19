@@ -5,7 +5,7 @@ export const lasTablas = {
     provinceId: 'los-santos',
     nombre: 'Las Tablas',
     banner: {
-        src: `${lasTablasImageBase}/bg-las-tablas.jpg`,
+        src: `${lasTablasImageBase}/bg-las-tablas.webp`,
         alt: 'Banner de Las Tablas',
     },
     descripcion:

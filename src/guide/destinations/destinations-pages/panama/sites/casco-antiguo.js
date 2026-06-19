@@ -5,7 +5,7 @@ export const cascoAntiguo = {
     provinceId: 'panama',
     nombre: 'Casco Antiguo',
     banner: {
-        src: `${cascoAntiguoImageBase}/bg-casco-antiguo.jpg`,
+        src: `${cascoAntiguoImageBase}/bg-casco-antiguo.webp`,
         alt: 'Banner de Casco Antiguo',
     },
     descripcion:

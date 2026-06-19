@@ -5,6 +5,7 @@ function useHomeNavigation() {
   const location = useLocation();
   const [showCountdown, setShowCountdown] = useState(true);
   const [showMenu, setShowMenu] = useState(true);
+  const menuOffset = 140;
   const homeRef = useRef(null);
   const preregisterRef = useRef(null);
   const lastScrollY = useRef(0);
@@ -70,14 +71,34 @@ function useHomeNavigation() {
 
     setShowCountdown(false);
 
-    const timer = setTimeout(() => {
-      targetRef.current?.scrollIntoView({
-        behavior: 'smooth',
-        block: location.hash === '#map' ? 'center' : 'start',
-      });
-    }, 0);
+    let cancelled = false;
+    const scrollToTarget = () => {
+      if (cancelled) return;
 
-    return () => clearTimeout(timer);
+      const target = targetRef.current;
+      if (!target) return;
+
+      const targetTop = target.getBoundingClientRect().top + window.scrollY - menuOffset;
+      window.scrollTo({
+        top: Math.max(targetTop, 0),
+        left: 0,
+        behavior: 'instant',
+      });
+
+      if (location.hash === '#map' && window.scrollY > 0) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }
+    };
+
+    const frame1 = requestAnimationFrame(() => {
+      const frame2 = requestAnimationFrame(scrollToTarget);
+      if (cancelled) cancelAnimationFrame(frame2);
+    });
+
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(frame1);
+    };
   }, [location.hash]);
 
   return {

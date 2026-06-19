@@ -5,7 +5,7 @@ export const cintaCostera = {
     provinceId: 'panama',
     nombre: 'Cinta Costera',
     banner: {
-        src: `${cintaCosteraImageBase}/bg-cinta-costera.jpg`,
+        src: `${cintaCosteraImageBase}/bg-cinta-costera.webp`,
         alt: 'Banner de Cinta Costera',
     },
     descripcion:

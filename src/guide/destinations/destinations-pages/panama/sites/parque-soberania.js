@@ -5,7 +5,7 @@ export const parqueSoberania = {
     provinceId: 'panama',
     nombre: 'Parque Nacional Soberanía',
     banner: {
-        src: `${parqueSoberaniaImageBase}/bg-parque-soberania.jpg`,
+        src: `${parqueSoberaniaImageBase}/bg-parque-soberania.webp`,
         alt: 'Banner de Parque Nacional Soberanía',
     },
     descripcion:

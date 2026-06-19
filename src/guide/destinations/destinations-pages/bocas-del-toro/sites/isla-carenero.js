@@ -5,16 +5,16 @@ export const islaCarenero = {
     provinceId: 'bocas-del-toro',
     nombre: 'Isla Carenero',
     banner: {
-        src: `${islaCareneroImageBase}/banner/bg-isla-carenero.jpg`,
+        src: `${islaCareneroImageBase}/banner/bg-isla-carenero.webp`,
         alt: 'Banner de Isla Carenero',
     },
     gallery: [
-        `${islaCareneroImageBase}/banner/bg-isla-carenero.jpg`,
-        `${islaCareneroImageBase}/gallery/g1-isla-carenero.jpg`,
-        `${islaCareneroImageBase}/gallery/g2-isla-carenero.jpg`,
-        `${islaCareneroImageBase}/gallery/g3-isla-carenero.jpg`,
-        `${islaCareneroImageBase}/gallery/g4-isla-carenero.jpg`,
-        `${islaCareneroImageBase}/gallery/g5-isla-carenero.jpg`,
+        `${islaCareneroImageBase}/banner/bg-isla-carenero.webp`,
+        `${islaCareneroImageBase}/gallery/g1-isla-carenero.webp`,
+        `${islaCareneroImageBase}/gallery/g2-isla-carenero.webp`,
+        `${islaCareneroImageBase}/gallery/g3-isla-carenero.webp`,
+        `${islaCareneroImageBase}/gallery/g4-isla-carenero.webp`,
+        `${islaCareneroImageBase}/gallery/g5-isla-carenero.webp`,
     ],
     descripcion:
         'Un oasis de serenidad a solo minutos del bullicio, donde las palmeras se inclinan ante un mar esmeralda. Un refugio íntimo que combina la paz de sus playas calmadas con una sutil propuesta gastronómica y hotelera sobre el agua, perfecta para un escape idílico y romántico.',

@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-rivera-pacifica.jpg'
+const base = '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp'
 
 export const coronado = {
   id: 'coronado',

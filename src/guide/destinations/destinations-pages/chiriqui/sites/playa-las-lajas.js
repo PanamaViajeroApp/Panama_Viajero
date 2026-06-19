@@ -5,7 +5,7 @@ export const playaLasLajas = {
   provinceId: 'chiriqui',
   nombre: 'Playa Las Lajas',
   banner: {
-    src: `${playaLasLajasImageBase}/bg-playa-las-lajas.jpg`,
+    src: `${playaLasLajasImageBase}/bg-playa-las-lajas.webp`,
     alt: 'Banner de Playa Las Lajas',
   },
   descripcion:

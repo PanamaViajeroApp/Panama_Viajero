@@ -4,7 +4,7 @@ export const santiago = {
     provinceId: 'veraguas',
     nombre: 'Santiago',
     banner: {
-        src: `${santiagoImageBase}/bg-santiago.jpg`,
+        src: `${santiagoImageBase}/bg-santiago.webp`,
         alt: 'Banner de Santiago',
     },
     descripcion:

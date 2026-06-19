@@ -5,7 +5,7 @@ export const playaMorrillo = {
   provinceId: 'veraguas',
   nombre: 'Playa Morrillo',
   banner: {
-    src: `${playaMorrilloImageBase}/bg-playa-morrillo.jpg`,
+    src: `${playaMorrilloImageBase}/bg-playa-morrillo.webp`,
     alt: 'Banner de Playa Morrillo',
   },
   descripcion:

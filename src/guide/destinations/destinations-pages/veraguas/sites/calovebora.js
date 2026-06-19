@@ -5,7 +5,7 @@ export const calovebora = {
     provinceId: 'veraguas',
     nombre: 'Calóvebora',
     banner: {
-        src: `${caloveboraImageBase}/bg-calovebora.jpg`,
+        src: `${caloveboraImageBase}/bg-calovebora.webp`,
         alt: 'Banner de Calovebora',
     },
     descripcion:

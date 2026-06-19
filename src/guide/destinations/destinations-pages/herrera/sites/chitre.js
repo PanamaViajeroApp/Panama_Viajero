@@ -5,7 +5,7 @@ export const chitre = {
   provinceId: 'herrera',
   nombre: 'Chitré',
   banner: {
-    src: `${chitreImageBase}/bg-chitre.jpg`,
+    src: `${chitreImageBase}/bg-chitre.webp`,
     alt: 'Banner de Chitré',
   },
   descripcion:

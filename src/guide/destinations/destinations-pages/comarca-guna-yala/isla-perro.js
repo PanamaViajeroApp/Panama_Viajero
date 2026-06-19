@@ -5,7 +5,7 @@ export const islaPerro = {
     provinceId: 'guna-yala',
     nombre: 'Isla Perro',
     banner: {
-        src: `${islaPerroImageBase}/bg-isla-perro.jpeg`,
+        src: `${islaPerroImageBase}/bg-isla-perro.webp`,
         alt: 'Banner de Isla Perro',
     },
     descripcion:

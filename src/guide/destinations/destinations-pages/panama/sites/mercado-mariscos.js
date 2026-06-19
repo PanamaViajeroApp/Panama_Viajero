@@ -5,7 +5,7 @@ export const mercadoMariscos = {
     provinceId: 'panama',
     nombre: 'Mercado de Mariscos',
     banner: {
-        src: `${mercadoMariscosImageBase}/bg-mercado-mariscos.jpg`,
+        src: `${mercadoMariscosImageBase}/bg-mercado-mariscos.webp`,
         alt: 'Banner del Mercado de Mariscos',
     },
     descripcion:

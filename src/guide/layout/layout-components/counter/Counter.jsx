@@ -1,5 +1,5 @@
 import { RxCross2 } from 'react-icons/rx';
-import VentanaEmergente from '../../../img_test/VE.webp';
+import VentanaEmergente from '../../../img_test/VEMERGENTE.webp';
 
 const preloadedPopupImage = new Image();
 preloadedPopupImage.src = VentanaEmergente;

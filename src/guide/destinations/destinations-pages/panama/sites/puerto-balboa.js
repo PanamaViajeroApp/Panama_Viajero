@@ -5,7 +5,7 @@ export const puertoBalboa = {
     provinceId: 'panama',
     nombre: 'Puerto de Balboa',
     banner: {
-        src: `${puertoBalboaImageBase}/bg-puerto-balboa.jpg`,
+        src: `${puertoBalboaImageBase}/bg-puerto-balboa.webp`,
         alt: 'Banner de Puerto de Balboa',
     },
     descripcion:

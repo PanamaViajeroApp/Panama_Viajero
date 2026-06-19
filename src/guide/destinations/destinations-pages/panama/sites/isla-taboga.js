@@ -5,7 +5,7 @@ export const islaTaboga = {
     provinceId: 'panama',
     nombre: 'Isla Taboga',
     banner: {
-        src: `${islaTabogaImageBase}/bg-isla-taboga.jpg`,
+        src: `${islaTabogaImageBase}/bg-isla-taboga.webp`,
         alt: 'Banner de Isla Taboga',
     },
     descripcion:

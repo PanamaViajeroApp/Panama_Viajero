@@ -90,11 +90,11 @@ function BottomBanner({ onLogoClick }) {
 
                     {/* Créditos y Contacto */}
                     <div className="flex flex-wrap justify-center gap-x-2 gap-y-1">
-                        <span>Desarrollado por <span className="text-brand-white">DHM-Asesores</span></span>
+                        <span>Desarrollado por <span className="text-brand-white">Davis Marketing</span></span>
                         <span className="hidden md:inline text-brand-white/30">|</span>
                         <span>Contacto: 
-                            <a href="mailto:panamaviajero@gmail.com" className="text-brand-white underline underline-offset-4 hover:text-brand-white/80 transition ml-1">
-                                panamaviajero@gmail.com
+                            <a href="mailto:hola@panamaviajero.app" className="text-brand-white underline underline-offset-4 hover:text-brand-white/80 transition ml-1">
+                                hola@panamaviajero.app
                             </a>
                         </span>
                     </div>

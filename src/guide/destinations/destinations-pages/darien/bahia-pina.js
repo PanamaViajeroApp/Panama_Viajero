@@ -5,7 +5,7 @@ export const bahiaPina = {
     provinceId: 'darien',
     nombre: 'Bahía Piña',
     banner: {
-        src: `${bahiaPinaImageBase}/bg-bahia-pina.jpg`,
+        src: `${bahiaPinaImageBase}/bg-bahia-pina.webp`,
         alt: 'Banner de Bahía Piña',
     },
     descripcion:

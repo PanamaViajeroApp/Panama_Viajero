@@ -5,7 +5,7 @@ export const pasoAncho = {
   provinceId: 'chiriqui',
   nombre: 'Paso Ancho',
   banner: {
-    src: `${pasoAnchoImageBase}/bg-paso-ancho.jpg`,
+    src: `${pasoAnchoImageBase}/bg-paso-ancho.webp`,
     alt: 'Banner de Paso Ancho',
   },
   descripcion:

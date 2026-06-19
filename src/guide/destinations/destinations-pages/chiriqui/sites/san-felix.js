@@ -5,7 +5,7 @@ export const sanFelix = {
   provinceId: 'chiriqui',
   nombre: 'San Félix',
   banner: {
-    src: `${sanFelixImageBase}/bg-san-felix.jpg`,
+    src: `${sanFelixImageBase}/bg-san-felix.webp`,
     alt: 'Banner de San Félix',
   },
   descripcion:

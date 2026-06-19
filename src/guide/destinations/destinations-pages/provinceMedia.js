@@ -24,8 +24,8 @@ export const provinceMedia = [
     id: 'rivera-pacifica',
     nombre: 'Rivera Pacífica',
     path: '/rivera-pacifica',
-    banner: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.jpg',
-    poster: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.jpg',
+    banner: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',
+    poster: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',
   },
   {
     id: 'colon',

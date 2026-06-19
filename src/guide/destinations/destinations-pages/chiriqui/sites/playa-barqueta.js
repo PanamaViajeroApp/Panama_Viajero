@@ -5,7 +5,7 @@ export const playaBarqueta = {
   provinceId: 'chiriqui',
   nombre: 'Playa Barqueta',
   banner: {
-    src: `${playaBarquetaImageBase}/bg-playa-barqueta.jpg`,
+    src: `${playaBarquetaImageBase}/bg-playa-barqueta.webp`,
     alt: 'Banner de Playa Barqueta',
   },
   descripcion:

@@ -5,7 +5,7 @@ export const puertoArmuelles = {
   provinceId: 'chiriqui',
   nombre: 'Puerto Armuelles',
   banner: {
-    src: `${puertoArmuellesImageBase}/bg-puerto-armuelles.jpg`,
+    src: `${puertoArmuellesImageBase}/bg-puerto-armuelles.webp`,
     alt: 'Banner de Puerto Armuelles',
   },
   descripcion:

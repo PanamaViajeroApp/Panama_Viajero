@@ -5,7 +5,7 @@ export const panamaViejo = {
     provinceId: 'panama',
     nombre: 'Panamá Viejo',
     banner: {
-        src: `${panamaViejoImageBase}/bg-panama-viejo.jpg`,
+        src: `${panamaViejoImageBase}/bg-panama-viejo.webp`,
         alt: 'Banner de Panamá Viejo',
     },
     descripcion:

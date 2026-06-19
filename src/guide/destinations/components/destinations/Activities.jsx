@@ -41,7 +41,7 @@ function getActivityIcon(activity) {
 
 function Activities({ provinceData }) {
     return (
-        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 py-16">
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 mb-16 mt-[-110px]">
             <h1
                 className="font-main text-3xl font-bold text-brand-white md:text-4xl "
                 style={{ textShadow: '0 0 6px rgba(0, 0, 0, 0.9)' }}

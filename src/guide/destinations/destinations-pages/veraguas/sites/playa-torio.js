@@ -5,7 +5,7 @@ export const playaTorio = {
   provinceId: 'veraguas',
   nombre: 'Playa Torio',
   banner: {
-    src: `${playaTorioImageBase}/bg-playa-torio.jpg`,
+    src: `${playaTorioImageBase}/bg-playa-torio.webp`,
     alt: 'Banner de Playa Torio',
   },
   descripcion:

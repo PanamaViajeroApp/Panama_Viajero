@@ -5,7 +5,7 @@ export const bocaChica = {
   provinceId: 'chiriqui',
   nombre: 'Boca Chica',
   banner: {
-    src: `${bocaChicaImageBase}/bg-boca-chica.jpg`,
+    src: `${bocaChicaImageBase}/bg-boca-chica.webp`,
     alt: 'Banner de Boca Chica',
   },
   descripcion:

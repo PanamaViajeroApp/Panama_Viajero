@@ -5,7 +5,7 @@ export const islaChichime = {
     provinceId: 'guna-yala',
     nombre: 'Isla Chichime',
     banner: {
-        src: `${islaChichimeImageBase}/bg-isla-chichime.jpeg`,
+        src: `${islaChichimeImageBase}/bg-isla-chichime.webp`,
         alt: 'Banner de Isla Chichime',
     },
     descripcion:

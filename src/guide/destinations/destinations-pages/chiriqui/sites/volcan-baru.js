@@ -5,7 +5,7 @@ export const volcanBaru = {
   provinceId: 'chiriqui',
   nombre: 'Volcán Barú',
   banner: {
-    src: `${volcanBaruImageBase}/bg-volcan-baru.jpg`,
+    src: `${volcanBaruImageBase}/bg-volcan-baru.webp`,
     alt: 'Banner del Volcán Barú',
   },
   descripcion:

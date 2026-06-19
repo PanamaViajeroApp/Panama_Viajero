@@ -5,7 +5,7 @@ export const davidCentro = {
   provinceId: 'chiriqui',
   nombre: 'David',
   banner: {
-    src: `${davidCentroImageBase}/bg-david.jpg`,
+    src: `${davidCentroImageBase}/bg-david.webp`,
     alt: 'Banner de David Centro',
   },
   descripcion:

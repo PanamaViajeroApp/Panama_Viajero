@@ -5,7 +5,7 @@ export const gualaca = {
   provinceId: 'chiriqui',
   nombre: 'Gualaca',
   banner: {
-    src: `${gualacaImageBase}/bg-gualaca.jpg`,
+    src: `${gualacaImageBase}/bg-gualaca.webp`,
     alt: 'Banner de Gualaca',
   },
   descripcion:

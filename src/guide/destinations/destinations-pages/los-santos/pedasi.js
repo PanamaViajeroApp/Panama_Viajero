@@ -5,7 +5,7 @@ export const pedasi = {
     provinceId: 'los-santos',
     nombre: 'Pedasí',
     banner: {
-        src: `${pedasiImageBase}/bg-pedasi.png`,
+        src: `${pedasiImageBase}/bg-pedasi.webp`,
         alt: 'Banner de Pedasí',
     },
     descripcion:

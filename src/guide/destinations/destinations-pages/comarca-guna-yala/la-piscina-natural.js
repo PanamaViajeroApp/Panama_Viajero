@@ -5,7 +5,7 @@ export const laPiscinaNatural = {
     provinceId: 'guna-yala',
     nombre: 'La Piscina Natural',
     banner: {
-        src: `${laPiscinaNaturalImageBase}/bg-la-piscina-natural.jpg`,
+        src: `${laPiscinaNaturalImageBase}/bg-la-piscina-natural.webp`,
         alt: 'Banner de La Piscina Natural',
     },
     descripcion:

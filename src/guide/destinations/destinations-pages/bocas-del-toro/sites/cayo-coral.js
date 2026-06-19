@@ -5,18 +5,18 @@ export const cayoCoral = {
     provinceId: 'bocas-del-toro',
     nombre: 'Cayo Coral',
     banner: {
-        src: `${cayoCoralImageBase}/banner/bg-cayo-coral.jpg`,
+        src: `${cayoCoralImageBase}/banner/bg-cayo-coral.webp`,
         alt: 'Banner de Cayo Coral',
     },
     gallery: [
-        `${cayoCoralImageBase}/banner/bg-cayo-coral.jpg`,
-        `${cayoCoralImageBase}/gallery/g1-cayo-coral.jpg`,
-        `${cayoCoralImageBase}/gallery/g2-cayo-coral.jpg`,
-        `${cayoCoralImageBase}/gallery/g3-cayo-coral.jpg`,
-        `${cayoCoralImageBase}/gallery/g4-cayo-coral.jpg`,
-        `${cayoCoralImageBase}/gallery/g5-cayo-coral.jpg`,
-        `${cayoCoralImageBase}/gallery/g6-cayo-coral.jpg`,
-        `${cayoCoralImageBase}/gallery/g7-cayo-coral.jpg`
+        `${cayoCoralImageBase}/banner/bg-cayo-coral.webp`,
+        `${cayoCoralImageBase}/gallery/g1-cayo-coral.webp`,
+        `${cayoCoralImageBase}/gallery/g2-cayo-coral.webp`,
+        `${cayoCoralImageBase}/gallery/g3-cayo-coral.webp`,
+        `${cayoCoralImageBase}/gallery/g4-cayo-coral.webp`,
+        `${cayoCoralImageBase}/gallery/g5-cayo-coral.webp`,
+        `${cayoCoralImageBase}/gallery/g6-cayo-coral.webp`,
+        `${cayoCoralImageBase}/gallery/g7-cayo-coral.webp`
         
     ],
     descripcion:

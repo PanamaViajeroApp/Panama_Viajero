@@ -5,7 +5,7 @@ export const biomuseo = {
     provinceId: 'panama',
     nombre: 'Biomuseo',
     banner: {
-        src: `${biomuseoImageBase}/bg-biomuseo.jpg`,
+        src: `${biomuseoImageBase}/bg-biomuseo.webp`,
         alt: 'Banner de Biomuseo',
     },
     descripcion:

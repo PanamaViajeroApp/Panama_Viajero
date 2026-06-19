@@ -5,7 +5,7 @@ export const cerroAncon = {
     provinceId: 'panama',
     nombre: 'Cerro Ancón',
     banner: {
-        src: `${cerroAnconImageBase}/bg-cerro-ancon.jpg`,
+        src: `${cerroAnconImageBase}/bg-cerro-ancon.webp`,
         alt: 'Banner de Cerro Ancón',
     },
     descripcion:

@@ -5,7 +5,7 @@ export const boqueteCentro = {
   provinceId: 'chiriqui',
   nombre: 'Boquete',
   banner: {
-    src: `${boqueteCentroImageBase}/bg-boquete-centro.jpg`,
+    src: `${boqueteCentroImageBase}/bg-boquete-centro.webp`,
     alt: 'Banner de Boquete',
   },
   descripcion:

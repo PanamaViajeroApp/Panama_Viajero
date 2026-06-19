@@ -6,7 +6,7 @@ export const talleresDeArtesanosDeDiablicos = {
   provinceId: 'herrera',
   nombre: 'Talleres de Artesanos de Diablicos',
   banner: {
-    src: `${talleresDeArtesanosDeDiablicosImageBase}/bg-artesanos-de-diablicos.jpg`,
+    src: `${talleresDeArtesanosDeDiablicosImageBase}/bg-artesanos-de-diablicos.webp`,
     alt: 'Banner de Talleres de Artesanos de Diablicos',
   },
   descripcion:

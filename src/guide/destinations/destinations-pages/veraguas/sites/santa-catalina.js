@@ -5,7 +5,7 @@ export const santaCatalina = {
   provinceId: 'veraguas',
   nombre: 'Santa Catalina',
   banner: {
-    src: `${santaCatalinaImageBase}/bg-santa-catalina.jpg`,
+    src: `${santaCatalinaImageBase}/bg-santa-catalina.webp`,
     alt: 'Banner de Santa Catalina',
   },
   descripcion:

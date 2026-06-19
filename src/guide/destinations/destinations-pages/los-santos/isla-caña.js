@@ -5,7 +5,7 @@ export const islaCanas = {
     provinceId: 'los-santos',
     nombre: 'Isla Cañas',
     banner: {
-        src: `${islaCanasImageBase}/bg-isla-cañas.jpg`,
+        src: `${islaCanasImageBase}/bg-isla-cañas.webp`,
         alt: 'Banner de Isla Cañas',
     },
     descripcion:

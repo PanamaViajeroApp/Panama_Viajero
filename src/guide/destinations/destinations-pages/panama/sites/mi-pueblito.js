@@ -5,7 +5,7 @@ export const miPueblito = {
     provinceId: 'panama',
     nombre: 'Mi Pueblito',
     banner: {
-        src: `${miPueblitoImageBase}/bg-mi-pueblito.jpg`,
+        src: `${miPueblitoImageBase}/bg-mi-pueblito.webp`,
         alt: 'Banner de Mi Pueblito',
     },
     descripcion:

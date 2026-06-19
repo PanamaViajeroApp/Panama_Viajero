@@ -5,7 +5,7 @@ export const islaMamey = {
     provinceId: 'colon',
     nombre: 'Isla Mamey',
     banner: {
-        src: `${islaMameyImageBase}/bg-isla-mamey.jpg`,
+        src: `${islaMameyImageBase}/bg-isla-mamey.webp`,
         alt: 'Banner de Isla Mamey',
     },
     descripcion:

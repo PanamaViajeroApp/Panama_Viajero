@@ -5,7 +5,7 @@ export const bambito = {
   provinceId: 'chiriqui',
   nombre: 'Bambito',
   banner: {
-    src: `${bambitoImageBase}/bg-bambito.jpg`,
+    src: `${bambitoImageBase}/bg-bambito.webp`,
     alt: 'Banner de Bambito',
   },
   descripcion:

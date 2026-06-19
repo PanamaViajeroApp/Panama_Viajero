@@ -5,7 +5,7 @@ export const playaElEstero = {
   provinceId: 'veraguas',
   nombre: 'Playa El Estero',
   banner: {
-    src: `${playaElEsteroImageBase}/bg-playa-el-estero.jpg`,
+    src: `${playaElEsteroImageBase}/bg-playa-el-estero.webp`,
     alt: 'Banner de Playa El Estero',
   },
   descripcion:

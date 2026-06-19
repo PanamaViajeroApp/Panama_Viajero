@@ -5,7 +5,7 @@ export const reservaForestalElMontuoso = {
   provinceId: 'herrera',
   nombre: 'Reserva Forestal El Montuoso',
   banner: {
-    src: `${reservaForestalElMontuosoImageBase}/bg-el-montuoso.jpg`,
+    src: `${reservaForestalElMontuosoImageBase}/bg-el-montuoso.webp`,
     alt: 'Banner de Reserva Forestal El Montuoso',
   },
   descripcion:

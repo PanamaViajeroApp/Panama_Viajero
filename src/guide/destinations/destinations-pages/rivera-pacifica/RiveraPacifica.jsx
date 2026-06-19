@@ -12,9 +12,9 @@ const riveraPacificaProvince = {
   nombre: 'Rivera Pacífica',
   banner: {
     tipo: 'image',
-    src: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.jpg',
+    src: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',
     alt: 'Vista de Rivera Pacífica',
-    poster: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.jpg',
+    poster: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',
   },
   descripcionCorta:
     'Un corredor costero compartido entre Coclé y Panamá Oeste, con playas extensas, olas consistentes y paisajes pensados para surf, descanso y recorridos de litoral.',
@@ -62,7 +62,7 @@ function RiveraPacifica() {
 
       <section className="relative z-10 -mt-10 bg-brand-charcoal pt-10 text-brand-white">
         <div className="mx-auto max-w-6xl px-4 md:px-10">
-          <ProvinceSitesOnly provinceData={riveraPacificaProvince} title="Sitios de Rivera Pacífica" />
+          <ProvinceSitesOnly provinceData={riveraPacificaProvince} title="Lugares Turísticos" />
           <OtherProvinces provincias={provinceMedia} />
         </div>
       </section>

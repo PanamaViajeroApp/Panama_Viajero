@@ -5,7 +5,7 @@ export const puntaPaitilla = {
     provinceId: 'panama',
     nombre: 'Punta Paitilla',
     banner: {
-        src: `${puntaPaitillaImageBase}/bg-punta-paitilla.jpg`,
+        src: `${puntaPaitillaImageBase}/bg-punta-paitilla.webp`,
         alt: 'Banner de Punta Paitilla',
     },
     descripcion:

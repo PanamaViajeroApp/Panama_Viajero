@@ -5,7 +5,7 @@ export const cerroPuntaCentro = {
   provinceId: 'chiriqui',
   nombre: 'Cerro Punta',
   banner: {
-    src: `${cerroPuntaCentroImageBase}/bg-cerro-punta.jpg`,
+    src: `${cerroPuntaCentroImageBase}/bg-cerro-punta.webp`,
     alt: 'Banner de Cerro Punta',
   },
   descripcion:

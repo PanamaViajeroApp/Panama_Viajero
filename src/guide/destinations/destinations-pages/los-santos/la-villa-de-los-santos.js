@@ -5,7 +5,7 @@ export const laVilla = {
     provinceId: 'los-santos',
     nombre: 'La Villa de Los Santos',
     banner: {
-        src: `${laVillaImageBase}/bg-villa-de-los-santos.jpg`,
+        src: `${laVillaImageBase}/bg-villa-de-los-santos.webp`,
         alt: 'Banner de La Villa de Los Santos',
     },
     descripcion:

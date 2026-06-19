@@ -5,7 +5,7 @@ export const playaVenao = {
     provinceId: 'los-santos',
     nombre: 'Playa Venao',
     banner: {
-        src: `${playaVenaoImageBase}/bg-playa-venao.jpg`,
+        src: `${playaVenaoImageBase}/bg-playa-venao.webp`,
         alt: 'Banner de Playa Venao',
     },
     descripcion:
