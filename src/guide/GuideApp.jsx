@@ -1,8 +1,7 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import DeferredSection from './layout/layout-components/DeferredSection.jsx'
 import Menu from './components/menu/Menu.jsx'
-import useHomeNavigation from './layout/layout-components/functions/useHomeNavigation.js'
 import './App.css'
 import Logo from './img_test/LogoRectangular.svg'
 import CountdownModal from './layout/layout-components/counter/Counter.jsx'
@@ -41,21 +40,83 @@ function SectionFallback({ className = '' }) {
 }
 
 function GuideHome() {
-  const {
-    homeRef,
-    mapRef,
-    preregisterRef,
-    scrollToHome,
-    scrollToMap,
-    scrollToPreregister,
-    scrollToSuggestions,
-    scrollToUs,
-    setShowCountdown,
-    showCountdown,
-    showMenu,
-    suggestionsRef,
-    usRef,
-  } = useHomeNavigation()
+  const location = useLocation()
+  const [showCountdown, setShowCountdown] = useState(true)
+
+  const homeRef = useRef(null)
+  const preregisterRef = useRef(null)
+  const mapRef = useRef(null)
+  const suggestionsRef = useRef(null)
+  const usRef = useRef(null)
+
+  const menuOffset = 0
+  const sectionOffsets = {
+    '#home': 0,
+    '#us': 30,
+    '#map': 30,
+    '#suggestions': -100,
+    '#preregister': -100,
+  }
+
+  const scrollToSection = (ref) => {
+    setShowCountdown(false)
+    const target = ref.current
+    if (!target) return
+    const top = target.getBoundingClientRect().top + window.scrollY - menuOffset
+    window.scrollTo({ top: Math.max(top, 0), left: 0, behavior: 'instant' })
+  }
+
+  const scrollToHome = () => scrollToSection(homeRef)
+  const scrollToMap = () => {
+    setShowCountdown(false)
+    const target = mapRef.current
+    if (!target) return
+    const top = target.getBoundingClientRect().top + window.scrollY + sectionOffsets['#map']
+    window.scrollTo({ top: Math.max(top, 0), left: 0, behavior: 'instant' })
+  }
+  const scrollToPreregister = () => scrollToSection(preregisterRef)
+  const scrollToUs = () => scrollToSection(usRef)
+  const scrollToSuggestions = () => scrollToSection(suggestionsRef)
+
+
+  useEffect(() => {
+    const sectionRefs = {
+      '#home': homeRef,
+      '#us': usRef,
+      '#map': mapRef,
+      '#suggestions': suggestionsRef,
+      '#preregister': preregisterRef,
+    }
+
+    const targetRef = sectionRefs[location.hash]
+    if (!targetRef) return
+
+    setShowCountdown(false)
+
+    let cancelled = false
+    const frame1 = requestAnimationFrame(() => {
+      const frame2 = requestAnimationFrame(() => {
+        if (cancelled) return
+
+        const target = targetRef.current
+        if (!target) return
+
+        const top =
+          target.getBoundingClientRect().top +
+          window.scrollY -
+          menuOffset +
+          (sectionOffsets[location.hash] ?? 0)
+        window.scrollTo({ top: Math.max(top, 0), left: 0, behavior: 'instant' })
+      })
+
+      if (cancelled) cancelAnimationFrame(frame2)
+    })
+
+    return () => {
+      cancelled = true
+      cancelAnimationFrame(frame1)
+    }
+  }, [location.hash])
 
   return (
     <div className="relative bg-brand-soft text-brand-charcoal">
@@ -69,8 +130,7 @@ function GuideHome() {
       )}
 
       <div
-        className={`fixed top-0 z-[200] w-full transition-transform duration-300 ease-in-out ${
-          showMenu ? 'translate-y-0' : '-translate-y-full'
+        className={`fixed top-0 z-[200] w-full transition-transform duration-300 ease-in-out 
         }`}
       >
         <Menu
@@ -95,7 +155,7 @@ function GuideHome() {
         </div>
       </section>
 
-      <section id="us" ref={usRef} className="scroll-mt-7 md:scroll-mt-20">
+      <section id="us" ref={usRef} className="">
         <DeferredSection fallback={<SectionFallback className="min-h-[320px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[320px]" />}>
             <AboutUs />
@@ -103,28 +163,24 @@ function GuideHome() {
         </DeferredSection>
       </section>
 
-      <section id="map" ref={mapRef} className='max-w-full '>
-        <DeferredSection fallback={<SectionFallback className="min-h-[560px]" />}>
+      <section id="map" ref={mapRef} className='max-w-full'>
+        
           <Suspense fallback={<SectionFallback className="min-h-[560px]" />}>
             <Map />
           </Suspense>
-        </DeferredSection>
+        
       </section>
 
-      <section id="suggestions" ref={suggestionsRef} className="scroll-mt-24 md:scroll-mt-28 mt-[-50px]">
-        <DeferredSection fallback={<SectionFallback className="min-h-[480px]" />}>
-          <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
+      <section id="suggestions" ref={suggestionsRef} className="mt-[-50px]">
+        <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
             <Suggestions />
           </Suspense>
-        </DeferredSection>
       </section>
 
-      <section id="preregister" ref={preregisterRef} className="scroll-mt-30 ">
-        <DeferredSection fallback={<SectionFallback className="min-h-[440px]" />}>
-          <Suspense fallback={<SectionFallback className="min-h-[440px]" />}>
+      <section id="preregister" ref={preregisterRef} className="">
+        <Suspense fallback={<SectionFallback className="min-h-[440px]" />}>
             <Preregister />
           </Suspense>
-        </DeferredSection>
       </section>
 
       <DeferredSection fallback={<SectionFallback className="min-h-[120px]" />} rootMargin="200px">

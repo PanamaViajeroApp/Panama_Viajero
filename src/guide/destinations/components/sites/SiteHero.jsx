@@ -14,12 +14,17 @@ function SiteHero({ site, scrollProgress }) {
           transform: `translateY(${scrollProgress * -28}px)`,
         }}
       >
-        <h1
-          className="font-main text-5xl text-brand-white md:text-7xl"
-          style={{ textShadow: '0 0 3px rgba(0, 0, 0, 0.9)' }}
-        >
-          {site.nombre}
-        </h1>
+        <div className="max-w-3xl rounded-[28px] border border-white/15 bg-black/35 px-6 py-8 backdrop-blur-md md:px-10 md:py-10">
+          <h1
+            className="font-main text-5xl text-brand-white md:text-7xl"
+            style={{ textShadow: '0 0 3px rgba(0, 0, 0, 0.9)' }}
+          >
+            {site.nombre}
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl font-body text-base leading-7 text-brand-white/90 md:text-lg">
+            {site.descripcion}
+          </p>
+        </div>
       </div>
     </section>
   )

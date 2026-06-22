@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import politicaDePrivacidadPdf from '../../../Politica-de-privacidad.pdf';
-/* C:\Users\deept\Panama_Viajero\src\guide\Politica-de-privacidad.pdf */
+
 
 const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL ?? '';
 
@@ -115,11 +115,11 @@ function Preregister() {
     }
 
     return (
-        <div className='max-w-full  p-30'>
+        <div className='max-w-full p-30'>
             <div className="mx-auto max-w-4xl rounded-xl border border-brand-blue/15 bg-brand-white p-8 shadow-[0_18px_45px_rgba(77,76,76,0.15)]">
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="flex flex-col gap-2 border-b border-brand-soft pb-4 md:flex-row md:items-baseline md:justify-end">
-                    <span className="font-body text-xl text-brand-charcoal/90">Regístrate y participa por </span>
+                    <span className="font-body text-xl text-brand-charcoal/90">Regístrate y participa por</span>
                     <span className="font-main text-3xl font-bold text-brand-red">UNA NOCHE GRATIS</span>
                 </div>
 

@@ -4,7 +4,6 @@ import Menu from '../../../components/menu/Menu.jsx'
 import ButtomBanner from '../../../components/bottombanner/Bottombanner.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 import SiteActivities from './SiteActivities.jsx'
-import SiteDescription from './SiteDescription.jsx'
 import SiteHero from './SiteHero.jsx'
 import SiteMap from './SiteMap.jsx'
 import DeferredSection from '../../../layout/layout-components/DeferredSection.jsx'
@@ -46,6 +45,7 @@ function SiteInfo() {
       </div>
 
       <SiteHero site={site} scrollProgress={scrollProgress} />
+      
 
       <section className="relative z-10 mt-[115vh] shadow-[0_0_125px_99px_rgba(0,0,0,0.36)]">
         <div className="relative min-h-screen">
@@ -55,9 +55,6 @@ function SiteInfo() {
 
           <div className="relative z-20 px-4 md:px-10">
             <div className="mx-auto flex max-w-6xl flex-col gap-50">
-              <DeferredSection fallback={<div className="min-h-[220px]" />} rootMargin="200px">
-                <SiteDescription description={site.descripcion} />
-              </DeferredSection>
               <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
                 <SiteActivities activities={site.actividades} featuredImage={site.banner.src} />
               </DeferredSection>

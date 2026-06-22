@@ -2,97 +2,109 @@ import { getActivityIcon } from './activityIcons.js'
 
 function SiteActivities({ activities = [], featuredImage }) {
   const featuredActivity = activities[0]
-  const FeaturedActivityIcon = featuredActivity ? getActivityIcon(featuredActivity.nombre).Icon : null
   const secondaryActivities = activities.slice(1)
+  const FeaturedActivityIcon = featuredActivity ? getActivityIcon(featuredActivity.nombre).Icon : null
 
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(0,0,0,0.72),rgba(73,86,162,0.34)_48%,rgba(205,46,76,0.24))] p-5 shadow-[0_24px_70px_rgba(0,0,0,0.42)] backdrop-blur-md md:p-15">
-      <div className="pointer-events-none absolute inset-0 opacity-45 [background-image:linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:42px_42px] " />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-red via-brand-white to-brand-blue " />
-
-      <div className="relative">
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between ">
-          <div>
-            <p className="font-secondary text-xs uppercase tracking-[0.28em] text-white/65">
-              Experiencias
-            </p>
-            <h2 className="font-main mt-2 text-4xl text-brand-white md:text-6xl">
-              Lo que te espera
-            </h2>
-          </div>
-          <div className="flex w-fit items-end gap-3 rounded-2xl border border-white/15 bg-white/10 px-5 py-4 text-brand-white shadow-[0_18px_45px_rgba(0,0,0,0.22)] backdrop-blur-md">
-            <span className="font-main text-5xl leading-none">{activities.length}</span>
-            <span className="font-secondary mb-1 max-w-24 text-xs uppercase tracking-[0.18em] text-white/75">
-              planes por descubrir
-            </span>
-          </div>
+    <section className="mx-auto w-full max-w-6xl px-4 pb-16">
+      <div className="rounded-[28px] border border-[#4D4C4C]/10 bg-[#FFFFFF]/85 shadow-[0_20px_55px_rgba(77,76,76,0.10)]">
+        <div className="border-b border-[#4D4C4C]/10 px-6 py-5 sm:px-8 ">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#CD2E4C]">
+            Experiencias
+          </p>
+          <h2 className="mt-2 font-main text-3xl font-bold text-[#4D4C4C] sm:text-4xl">
+            Lo que te espera
+          </h2>
         </div>
 
-        <div className="mt-8 flex flex-col gap-4 ">
-          {featuredActivity && FeaturedActivityIcon && (
-            <article className="group relative w-full overflow-hidden rounded-[1.75rem] border border-white/15 bg-brand-white text-brand-charcoal shadow-[0_24px_60px_rgba(0,0,0,0.28)]">
-              <div className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-brand-red to-brand-blue" />
-              <div className="relative h-44 overflow-hidden md:h-75">
-                <img
-                  src={featuredImage}
-                  alt=""
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/75 via-brand-charcoal/25 to-transparent" />
-                <span className="font-main absolute right-5 top-3 text-7xl leading-none text-white/60 md:text-8xl">
-                  01
-                </span>
-                <div className="absolute bottom-5 left-5 flex h-24 w-24 items-center justify-center rounded-3xl bg-brand-blue 
-                text-brand-white shadow-[0_18px_35px_rgba(0,0,0,0.35)] transition duration-500 group-hover:-translate-y-1 group-hover:bg-brand-red md:h-28 md:w-28">
-                  <FeaturedActivityIcon className="h-14 w-14 md:h-16 md:w-16" />
-                </div>
-              </div>
-              <div className="relative p-6 md:p-8">
-                <p className="font-secondary text-xs uppercase tracking-[0.22em] text-brand-red">
-                  recomendado
-                </p>
-                <h3 className="font-secondary-italic mt-3 text-4xl leading-tight text-brand-blue md:text-5xl">
-                  {featuredActivity.nombre}
-                </h3>
-                <p className="font-body mt-5 max-w-xl text-base leading-8 text-brand-charcoal/85 md:text-lg">
-                  {featuredActivity.descripcion}
-                </p>
-              </div>
-            </article>
-          )}
-
-          <div className="grid gap-4 sm:grid-cols-2">
-            {secondaryActivities.map((actividad, index) => {
-              const { Icon } = getActivityIcon(actividad.nombre)
-              const activityNumber = String(index + 2).padStart(2, '0')
-
-              return (
-                <article
-                  key={actividad.nombre}
-                  className="group relative min-h-[230px] overflow-hidden rounded-[1.5rem] border border-white/12 bg-black/38 p-5 text-brand-white shadow-[0_16px_38px_rgba(0,0,0,0.22)] backdrop-blur-sm transition duration-500 hover:-translate-y-1 hover:border-white/25 hover:bg-black/48"
-                >
-                  <div className="absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-brand-red to-brand-blue opacity-75" />
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-brand-white transition duration-500 group-hover:bg-brand-white group-hover:text-brand-blue">
-                      <Icon className="h-8 w-8" />
-                    </div>
-                    <span className="font-main text-4xl leading-none text-white/30">
-                      {activityNumber}
-                    </span>
+        <div className="grid gap-0 md:grid-cols-[0.88fr_1.12fr] ">
+          <div className="border-b border-[#4D4C4C]/10 bg-[#EBEBEB]/30 p-5 sm:p-6 md:border-b-0 md:border-r rounded-bl-[28px]">
+            {featuredActivity ? (
+              <article className="flex h-full flex-col ">
+                <div className="relative overflow-hidden rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF]">
+                  <img
+                    src={featuredImage}
+                    alt=""
+                    className="h-52 w-full object-cover sm:h-60 md:h-[280px]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent " />
+                  <div className="absolute left-4 top-4 rounded-full bg-[#FFFFFF]/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#4D4C4C]">
+                    Recomendado
                   </div>
-                  <h3 className="font-secondary-italic mt-6 text-2xl leading-tight text-brand-white md:text-3xl">
-                    {actividad.nombre}
+                  {FeaturedActivityIcon ? (
+                    <div className="absolute bottom-4 left-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#4956A2] text-white shadow-[0_10px_24px_rgba(0,0,0,0.16)]">
+                      <FeaturedActivityIcon className="h-7 w-7" />
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className="pt-6 ">
+                  <h3 className="font-secondary text-2xl font-bold leading-tight text-[#4D4C4C] sm:text-3xl">
+                    {featuredActivity.nombre}
                   </h3>
-                  <p className="font-body mt-4 text-sm leading-7 text-white/78 md:text-base">
-                    {actividad.descripcion}
+                  <p className="mt-4 max-w-xl font-body text-sm leading-7 text-[#4D4C4C]/78 sm:text-base">
+                    {featuredActivity.descripcion}
                   </p>
-                </article>
-              )
-            })}
+                </div>
+              </article>
+            ) : null}
+          </div>
+
+          <div className="bg-[#FFFFFF]/50 p-5 sm:p-6 md:p-8 rounded-br-[28px]">
+            <div className="flex items-center justify-between gap-2 border-b border-[#4D4C4C]/10 pb-4">
+              <div>
+                <p className="text-md font-semibold uppercase tracking-[0.26em] text-[#4956A2]">
+                  Catálogo
+                </p>
+                <p className=" text-md text-[#4D4C4C]/75">
+                  {activities.length} nuevas experiencias
+                </p>
+              </div>
+              <div className="rounded-full border border-[#4D4C4C]/10 bg-[#EBEBEB] px-4 py-2 text-sm font-semibold text-[#4D4C4C]">
+                {activities.length}
+              </div>
+            </div>
+
+            <div className="mt-5 max-h-[430px] space-y-3 overflow-y-auto pr-1 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
+              {secondaryActivities.map((actividad, index) => {
+                const { Icon } = getActivityIcon(actividad.nombre)
+                const number = String(index + 2).padStart(2, '0')
+                const accent = index % 3 === 0 ? '#4956A2' : index % 3 === 1 ? '#CD2E4C' : '#4D4C4C'
+
+                return (
+                  <article
+                    key={actividad.nombre}
+                    className="flex items-start gap-4 rounded-[18px] border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-4 transition duration-300 hover:border-[#4956A2]/25 hover:bg-[#FBFBFB]"
+                  >
+                    <div
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl text-white"
+                      style={{ backgroundColor: accent }}
+                    >
+                      <Icon className="h-5 w-5" />
+                    </div>
+
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center justify-between gap-3">
+                        <h4 className="font-secondary-italic leading-tight text-[#4D4C4C] sm:text-xl">
+                          {actividad.nombre}
+                        </h4>
+                        <span className="font-secondary text-sm font-bold tracking-[0.2em] text-[#4D4C4C]/25">
+                          {number}
+                        </span>
+                      </div>
+                      <p className="mt-2 max-w-2xl font-body text-sm leading-7 text-[#4D4C4C]/72">
+                        {actividad.descripcion}
+                      </p>
+                      <div className="mt-3 h-px w-20 rounded-full" style={{ backgroundColor: accent }} />
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
