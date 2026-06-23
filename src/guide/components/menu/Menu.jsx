@@ -94,10 +94,6 @@ function Menu({
     }, [isOpen]);
 
     useEffect(() => {
-        if (!autoHideOnScroll) {
-            setIsVisible(true);
-            return undefined;
-        }
 
         const handleScroll = () => {
             const currentScrollY = window.scrollY;

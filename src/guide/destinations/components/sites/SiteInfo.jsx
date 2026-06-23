@@ -5,16 +5,12 @@ import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 import SiteActivities from './SiteActivities.jsx'
 import SiteMap from './SiteMap.jsx'
 import DeferredSection from '../../../layout/layout-components/DeferredSection.jsx'
+import { FiMapPin } from 'react-icons/fi'
 
 function SiteInfo() {
   const navigate = useNavigate()
   const { siteId } = useParams()
   const site = siteId ? siteRegistry[decodeURIComponent(siteId)] ?? null : null
-
-  const scrollToMap = () => {
-    const mapElement = document.getElementById('site-map')
-    mapElement?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
 
   if (!site) {
     return <main className="min-h-screen bg-brand-soft" />
@@ -48,25 +44,20 @@ function SiteInfo() {
           <div className="max-w-md rounded-xl border border-white/15 bg-black/35 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-15">
             <h1
               className="font-main text-5xl text-brand-white md:text-6xl"
-              style={{ textShadow: '0 0 3px rgba(0, 0, 0, 0.9)' }}
+              style={{ textShadow: '0 0 3px #e1e1e1e6' }}
             >
               {site.nombre}
             </h1>
+            <div className="mt-2 flex items-center gap-1 text-[#f1f1f1e6]">
+              <FiMapPin className="h-4 w-4 " />
+              <p className="text-md text-center font-secondary-italic leading-6">
+                {site.previewUbicacion ?? 'Ubicación no disponible'}
+              </p>
+            </div>
             <p className="mx-auto mt-5 max-w-2xl font-body leading-7 text-brand-white/90 md:text-lg">
               {site.descripcion}
             </p>
-            <button
-              type="button"
-              onClick={scrollToMap}
-              className="mt-10 cursor-pointer rounded-full bg-[#CD2E4C]/80 px-3 py-1 text-[0.7rem] font-secondary-italic 
-              uppercase tracking-[0.2em] text-white shadow-[0_10px_28px_rgba(0,0,0,0.18)] backdrop-blur-md
-              hover:translate-y-[-2px] duration-300 hover:bg-[#CD2E4C] 
-              "
-            >
-                {site.previewUbicacion ?? 'Ubicación no disponible'}
-              
-              
-            </button>
+
           </div>
         </div>
       </section>
