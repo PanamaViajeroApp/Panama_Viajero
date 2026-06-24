@@ -5,7 +5,7 @@ export const parita = {
     provinceId: 'herrera',
     nombre: 'Parita',
     banner: {
-        src: `${paritaImageBase}/bg-parita.jpg`,
+        src: `${paritaImageBase}/bg-parita.webp`,
         alt: 'Banner de Parita',
     },
     descripcion:
