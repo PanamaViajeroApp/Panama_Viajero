@@ -5,7 +5,7 @@ export const veracruz = {
     provinceId: 'panama-oeste',
     nombre: 'Veracruz',
     banner: {
-        src: `${veracruzImageBase}/bg-veracruz.jpg`,
+        src: `${veracruzImageBase}/bg-veracruz.webp`,
         alt: 'Banner de Veracruz',
     },
     descripcion:

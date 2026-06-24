@@ -5,7 +5,7 @@ export const gorgona = {
     provinceId: 'panama-oeste',
     nombre: 'Gorgona',
     banner: {
-        src: `${gorgonaImageBase}/bg-gorgona.jpg`,
+        src: `${gorgonaImageBase}/bg-gorgona.webp`,
         alt: 'Banner de Gorgona',
     },
     descripcion:

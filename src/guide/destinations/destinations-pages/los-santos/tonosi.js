@@ -5,7 +5,7 @@ export const tonosi = {
     provinceId: 'los-santos',
     nombre: 'Tonosí',
     banner: {
-        src: `${tonosiImageBase}/bg-tonosi.png`,
+        src: `${tonosiImageBase}/bg-tonosi.webp`,
         alt: 'Banner de Tonosí',
     },
     descripcion:
