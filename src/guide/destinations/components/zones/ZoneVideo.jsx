@@ -36,7 +36,7 @@ function ZoneVideo({ provinceData, zone, videoSrc, fixedBackground = false, scro
       <div className="relative z-0">
         {media}
         <div className="absolute inset-0 z-10 flex items-start bg-gradient-to-r from-brand-charcoal/70 via-brand-charcoal/35 to-transparent bg-cover bg-center bg-no-repeat px-4 md:items-center">
-          <div className="mt-24 max-w-md rounded-xl border border-white/15 bg-black/35 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-15">
+          <div className="mt-24 max-w-md rounded-xl border border-white/15  p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-15">
             <h1 className="font-main text-6xl font-bold brightness-150 text-brand-white md:pb-4 md:text-6xl">
               {heading}
             </h1>

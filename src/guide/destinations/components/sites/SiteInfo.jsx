@@ -40,25 +40,25 @@ function SiteInfo() {
       </div>
 
       <section className="relative min-h-[82vh] overflow-hidden mt-5">
-        <div className="relative flex min-h-[82vh] items-center px-4 mt-15 max-w-6xl">
-          <div className="max-w-md rounded-xl border border-white/15 bg-black/35 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-15">
+        <div className="relative flex min-h-[82vh] items-center px-4 mt-15 max-w-8xl justify-between">
+          <div className="max-w-md rounded-xl border border-white/15 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-15">
             <h1
               className="font-main text-5xl text-brand-white md:text-6xl"
               style={{ textShadow: '0 0 3px #e1e1e1e6' }}
             >
               {site.nombre}
             </h1>
-            <div className="mt-2 flex items-center gap-1 text-[#f1f1f1e6]">
+            <div className="flex items-center gap-1 text-[#f1f1f1e6]/85">
               <FiMapPin className="h-4 w-4 " />
-              <p className="text-md text-center font-secondary-italic leading-6">
+              <p className="text-sm text-center font-secondary-italic leading-6">
                 {site.previewUbicacion ?? 'Ubicación no disponible'}
               </p>
             </div>
             <p className="mx-auto mt-5 max-w-2xl font-body leading-7 text-brand-white/90 md:text-lg">
               {site.descripcion}
             </p>
-
           </div>
+          <div className='mr-15'><SiteMap site={site} /></div>
         </div>
       </section>
 
@@ -67,9 +67,6 @@ function SiteInfo() {
           <div className="mx-auto flex max-w-6xl flex-col gap-50">
             <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
               <SiteActivities activities={site.actividades} featuredImage={site.banner.src} />
-            </DeferredSection>
-            <DeferredSection fallback={<div className="min-h-[360px]" />} rootMargin="350px">
-              <SiteMap site={site} />
             </DeferredSection>
           </div>
         </div>

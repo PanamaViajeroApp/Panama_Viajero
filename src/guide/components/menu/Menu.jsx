@@ -148,7 +148,7 @@ function Menu({
             style={autoHideOnScroll && !isVisible ? { pointerEvents: 'none' } : undefined}
         >
             {/* Justificacion del menu */}
-            <div className="flex justify-between items-center pt-5 md:pt-5 px-3 md:pl-10 md:pr-30 text-brand-white text-md">
+            <div className="flex justify-between items-center md:pt-5 px-3 md:pl-10 md:pr-30 text-brand-white text-md">
                 <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>
                     <img src={LogoCuadrado} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
                 </button>

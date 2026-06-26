@@ -8,89 +8,93 @@ const preloadedPopupImage = new Image()
 preloadedPopupImage.src = VentanaEmergente
 
 function CountdownModal({ onClose, onPreregister }) {
-  return (
-    <div className="fixed inset-0 z-[500] flex items-center justify-center bg-[#0b1020]/55 px-3 py-4 backdrop-blur-md sm:px-4">
-      <div className="relative w-full max-w-[1280px] overflow-hidden rounded-[28px] border border-white/20 bg-white shadow-[0_30px_100px_rgba(0,0,0,0.35)]">
-        <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-brand-red via-[#5864c7] to-brand-red" />
+    return (
+        <div className="fixed inset-0 z-[500] flex md:items-center md:justify-center bg-[#081020]/70 px-4 py-2 backdrop-blur-md">
+            <div className="relative w-full max-w-6xl overflow-hidden rounded-[30px] border border-white/20 bg-white shadow-[0_35px_120px_rgba(0,0,0,0.45)]">
+                <div className="absolute inset-x-0 top-0 z-30 h-2 bg-gradient-to-r from-brand-red via-[#5864c7] to-brand-red" />
 
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute right-4 top-4 z-20 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white text-brand-charcoal shadow-[0_8px_24px_rgba(0,0,0,0.12)] transition duration-200 hover:scale-105 sm:right-5 sm:top-5 sm:h-11 sm:w-11"
-          aria-label="Cerrar ventana emergente"
-        >
-          <RxCross2 className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true" />
-        </button>
-
-        <div className="grid gap-0 md:grid-cols-[1.08fr_0.92fr]">
-          <div className="relative bg-[#f5f7ff] sm:px-6 sm:pt-14 md:min-h-[640px] md:px-8 md:py-8">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(88,100,199,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(205,46,76,0.08),transparent_30%)]" />
-
-            <div className="relative flex h-full flex-col items-center md:items-start">
-              <img
-                className="absolute left-4 top-4 z-20 h-10 w-auto sm:h-12 md:left-0 md:top-0 md:h-14"
-                src={Logo}
-                alt=""
-              />
-
-              <img
-                src={VentanaEmergente}
-                alt="Promocion"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                className="abosulute md:relative z-10 mt-14 w-full max-w-[200px] object-contain drop-shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:mt-16 sm:max-w-[520px] md:mt-10 md:max-w-[780px]"
-              />
-
-              <div className="relative z-20 mt-3 flex w-full flex-col items-center text-center md:absolute md:bottom-8 md:left-8 md:mt-0 md:items-start md:text-left">
-                <h1 className="text-xl font-bold text-brand-blue sm:text-2xl md:text-[1.7rem]">
-                  ¡Espéralo pronto!
-                </h1>
-                <h2 className="mt-1 text-lg font-secondary-italic text-brand-red/80 sm:text-xl">
-                  Ago - 2026
-                </h2>
-
-                <div className="mt-3 flex items-center justify-center gap-2 sm:gap-3 md:justify-start">
-                  <img className="h-12 w-auto sm:h-14 md:h-16" src={Playstore} alt="Google Play" />
-                  <img className="h-12 w-auto sm:h-14 md:h-16" src={Applestore} alt="App Store" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center gap-5 bg-gradient-to-br from-[#1c2140] via-[#2c3568] to-[#4f5fbf] px-6 py-8 text-white sm:px-8 sm:py-10 md:px-10 md:py-12">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/85">
-              Muy pronto
-            </div>
-
-            <div>
-              <div className="space-y-3">
-                <h2 className="font-secondary text-3xl leading-none sm:text-4xl md:text-[3.6rem]">
-                  ¡Descubre Panamá
-                  <span className="block text-[#ff8fa2]">como nunca</span>
-                  <span className="block text-[#ff8fa2]">antes lo viste!</span>
-                </h2>
-              </div>
-
-              <div className="mt-8 flex flex-col gap-3 justify-center sm:flex-row md:mt-12">
                 <button
-                  type="button"
-                  onClick={onPreregister}
-                  className="peer cursor-pointer rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-charcoal transition duration-200 hover:translate-y-[-3px] hover:bg-white/95"
+                    type="button"
+                    onClick={onClose}
+                    className="absolute right-4 top-4 z-40 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white/90 text-brand-charcoal shadow-[0_10px_28px_rgba(0,0,0,0.18)] backdrop-blur transition duration-200 hover:scale-105 hover:bg-white sm:right-5 sm:top-5 sm:h-11 sm:w-11"
+                    aria-label="Cerrar ventana emergente"
                 >
-                  Regístrate
+                    <RxCross2 className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true" />
                 </button>
 
-                <p className="font-body text-md transition-all duration-300 text-white/85 peer-hover:text-white">
-                  Y participa por una noche gratis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+                <div className="grid md:grid-cols-[1fr_0.95fr]">
+                    <div className="relative flex min-h-[360px] flex-col items-center justify-between overflow-hidden bg-[#f6f7ff] px-5  sm:min-h-[460px] sm:px-8 sm:pb-8 md:min-h-[620px] md:items-start md:px-10 md:pt-10">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(88,100,199,0.16),transparent_36%),radial-gradient(circle_at_bottom_right,rgba(205,46,76,0.12),transparent_35%)]" />
 
+                        <img
+                            className="absolute left-5 top-5 z-20 h-10 w-auto sm:h-12 md:left-8 md:top-8 md:h-14"
+                            src={Logo}
+                            alt=""
+                        />
+
+                        <div className="relative z-10 flex w-full flex-1 items-center justify-center mt-10">
+                            <img
+                                src={VentanaEmergente}
+                                alt="Promoción"
+                                loading="eager"
+                                fetchPriority="high"
+                                decoding="async"
+                                className="w-full max-w-[280px] object-contain drop-shadow-[0_22px_45px_rgba(0,0,0,0.18)] sm:max-w-[430px] md:max-w-[620px] lg:max-w-[700px]"
+                            />
+                        </div>
+
+                        <div className="relative z-20 mt-[-15px] flex w-full flex-col items-start text-center  md:text-left">
+                            <h1 className=" text-md font-bold text-brand-blue" >
+                                ¡Espéralo pronto!
+                            </h1>
+                            <h2 className=" text-2xl font-secondary-italic text-brand-red/80 ">
+                                Agosto - 2026
+                            </h2>
+                            <div className='border-1 w-45 mt-[-3px] border-brand-blue/50 '></div>
+                            <div className="flex items-center ml-[-14px] mt-[-10px] justify-center md:justify-start">
+                                <img className="h-15 w-auto sm:h-13 md:h-17 mr-[-15px]" src={Playstore} alt="Google Play" />
+                                <img className="h-15 w-auto sm:h-13 md:h-17" src={Applestore} alt="App Store" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="relative overflow-hidden bg-gradient-to-br from-[#141936] via-[#2c3568] to-[#5864c7] px-6 py-8 text-white sm:px-9 sm:py-10 md:flex md:flex-col md:justify-center md:px-11 md:py-14">
+                        <div className="absolute -right-20 -top-20 h-52 w-52 rounded-full bg-white/10 blur-3xl" />
+                        <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-brand-red/20 blur-3xl" />
+
+                        <div className="relative z-10 mx-auto max-w-md text-center md:mx-0 md:text-left">
+                            <div className= "mx-auto inline-flex w-fit items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 backdrop-blur md:mx-0">
+                                Muy pronto
+                            </div>
+
+                            <h2 className="mt-6 font-secondary text-4xl leading-[0.95] sm:text-5xl md:text-[3.7rem]">
+                                Descubre Panamá
+                                <span className="block text-[#ff8fa2]">como nunca</span>
+                                <span className="block text-[#ff8fa2]">antes lo viste</span>
+                            </h2>
+
+                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0 md:block hidden">
+                                Una nueva forma de explorar destinos, experiencias y lugares increíbles dentro de Panamá.
+                            </p>
+
+                            <div className="md:mt-8 mt-2 flex flex-col items-center gap-4 sm:flex-row sm:justify-center md:justify-start">
+                                <button
+                                    type="button"
+                                    onClick={onPreregister}
+                                    className="w-full cursor-pointer rounded-full bg-white px-7 py-3.5 text-sm font-bold text-brand-charcoal shadow-[0_14px_30px_rgba(0,0,0,0.22)] transition duration-200 hover:-translate-y-1 hover:bg-white/95 sm:w-auto"
+                                >
+                                    Regístrate
+                                </button>
+
+                                <p className="max-w-[220px] font-body text-sm leading-5 text-white/80">
+                                    Y participa por una noche gratis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 export default CountdownModal

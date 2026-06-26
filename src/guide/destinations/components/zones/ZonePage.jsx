@@ -91,7 +91,7 @@ function ZonePage() {
           <ZoneVideo provinceData={provinceData} zone={zone} fixedBackground scrollProgress={scrollProgress} />
         </div>
         <div className="relative z-10 flex min-h-screen items-start px-4 md:items-center max-w-lg">
-          <div className="mt-24 max-w-2xl rounded-xl border border-white/15 bg-black/40 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-10">
+          <div className="mt-24 max-w-2xl rounded-xl border border-white/15 bg-black/25 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-10">
             <h1
               className="font-main text-5xl font-bold text-brand-white brightness-150 md:text-6xl"
               style={{ textShadow: '0 0 6px rgba(39, 39, 75, 0.9)' }}
