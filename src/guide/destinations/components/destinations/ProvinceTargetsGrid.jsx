@@ -41,7 +41,7 @@ function ProvinceTargetsGrid({
         {title}
       </h1>
 
-      <div className="mx-auto flex max-w-6xl flex-wrap justify-start gap-6 px-4 sm:px-0">
+      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 px-4 sm:px-0">
         {targets.map((target) => {
           const isVideo = target.type === 'video'
           const resolvedTarget = provinceId && target.type === 'zone' && !target.provinceId

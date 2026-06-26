@@ -41,7 +41,7 @@ function BocasDelToro() {
 
             <Activities provinceData={bocasDelToro} />
 
-            <ProvinceSitesOnly provinceData={bocasDelToro} />
+            <ProvinceSitesOnly provinceData={bocasDelToro} className="ml-200"/>
 
             <OtherProvinces provincias={provincias} />
 

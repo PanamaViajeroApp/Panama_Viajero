@@ -40,8 +40,8 @@ function SiteInfo() {
       </div>
 
       <section className="relative min-h-[82vh] overflow-hidden mt-5">
-        <div className="relative flex min-h-[82vh] items-center px-4 mt-15 max-w-8xl justify-between">
-          <div className="max-w-md rounded-xl border border-white/15 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-15">
+        <div className="relative md:flex  ms:flex-col  min-h-[82vh] items-center px-4 mt-15 max-w-8xl justify-between">
+          <div className="max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 md:ml-15">
             <h1
               className="font-main text-5xl text-brand-white md:text-6xl"
               style={{ textShadow: '0 0 3px #e1e1e1e6' }}
@@ -58,7 +58,7 @@ function SiteInfo() {
               {site.descripcion}
             </p>
           </div>
-          <div className='mr-15'><SiteMap site={site} /></div>
+          <div className='md:mr-15'><SiteMap site={site} /></div>
         </div>
       </section>
 

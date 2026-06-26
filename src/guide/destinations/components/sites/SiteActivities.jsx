@@ -29,10 +29,10 @@ function SiteActivities({ activities = [], featuredImage }) {
           </h2>
         </div>
 
-        <div className="grid gap-0 md:grid-cols-[0.88fr_1.12fr] ">
+        <div className="grid gap-0 md:grid-cols-[0.88fr_1.12fr]">
           <div className="border-b border-[#4D4C4C]/10 rounded-bl-[28px] bg-[#EBEBEB]/30 p-4 sm:p-5 md:border-b-0 md:border-r">
             {featuredActivity ? (
-              <article className="flex h-full flex-col ">
+              <article className="mx-auto flex h-full w-full max-w-md flex-col">
                 <div className="relative overflow-hidden rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF]">
                   <img
                     src={featuredImage}
@@ -63,7 +63,7 @@ function SiteActivities({ activities = [], featuredImage }) {
           </div>
 
           <div className="rounded-br-[28px] bg-[#FFFFFF]/50 p-4 sm:p-5 md:p-6">
-            <div className="flex items-center justify-between gap-2 border-b border-[#4D4C4C]/10 pb-4">
+            <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-2 border-b border-[#4D4C4C]/10 pb-4">
               <div>
                 <p className="text-md font-semibold uppercase tracking-[0.26em] text-[#4956A2]">
                   Catálogo
@@ -77,7 +77,7 @@ function SiteActivities({ activities = [], featuredImage }) {
               </div>
             </div>
 
-            <div className="mt-4 max-h-[360px] space-y-3 overflow-y-auto pr-1 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
+            <div className="mx-auto mt-4 max-h-[360px] w-full max-w-2xl space-y-3 overflow-y-auto pr-1 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
               {secondaryActivities.map((actividad, index) => {
                 const { Icon } = getActivityIcon(actividad.nombre)
                 const number = String(index + 1).padStart(2, '0')
@@ -86,7 +86,7 @@ function SiteActivities({ activities = [], featuredImage }) {
                 return (
                   <article
                     key={actividad.nombre}
-                    className="group flex items-center gap-4 rounded-full border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-2.5 transition duration-300 hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
+                    className="group flex w-full items-center gap-4 rounded-full border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-2.5 transition duration-300 hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
                   >
                     <div
                       className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 group-hover:scale-105"

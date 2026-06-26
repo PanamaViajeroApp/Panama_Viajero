@@ -1,6 +1,6 @@
 function SiteMap({ site }) {
   return (
-    <div id="site-map" className="text-center">
+    <div id="site-map" className="text-center mt-15 md:mt-0">
       <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-3xl border-3 border-[#ffffff]/30">
         <iframe
           title={`Mapa de ${site.nombre}`}
