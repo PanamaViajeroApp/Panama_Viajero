@@ -50,7 +50,7 @@ function CountdownModal({ onClose, onPreregister }) {
                             <h2 className=" text-2xl font-secondary-italic text-brand-red/80 ">
                                 Agosto - 2026
                             </h2>
-                            <div className='border-1 w-45 mt-[-3px] border-brand-blue/50 '></div>
+                            <div className='border-1 w-45 mt-[1px] border-brand-blue/50 '></div>
                             <div className="flex items-center ml-[-14px] mt-[-10px] justify-center md:justify-start">
                                 <img className="h-15 w-auto sm:h-13 md:h-17 mr-[-15px]" src={Playstore} alt="Google Play" />
                                 <img className="h-15 w-auto sm:h-13 md:h-17" src={Applestore} alt="App Store" />
