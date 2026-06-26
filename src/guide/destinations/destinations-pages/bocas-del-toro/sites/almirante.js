@@ -22,57 +22,57 @@ export const almirante = {
         `${almiranteImageBase}/gallery/g10-almirante.webp`,
     ],
     descripcion:
-        'La puerta de entrada dorada hacia el paraíso caribeño, donde la historia colonial y la cultura viva se entrelazan. Un destino de paso vibrante y lleno de contrastes, rodeado de colinas verdes y el murmullo de un puerto histórico que late con la auténtica energía del comercio y la tradición local.',
+        'La puerta de entrada hacia el paraíso caribeño de Bocas del Toro, donde la historia, la cultura afroantillana y la actividad portuaria se mezclan en un ambiente vibrante. Rodeado de colinas verdes y con una fuerte identidad local, Almirante es el punto clave de conexión entre tierra firme y las islas.',
     previewDescripcion:
-        'La puerta de entrada dorada hacia el paraíso caribeño.',
+        'La principal puerta de entrada hacia las islas de Bocas del Toro.',
     previewUbicacion: 'Almirante, Bocas del Toro',
     actividades: [
         {
-            nombre: 'Expedición histórica',
+            nombre: 'Recorrido histórico',
             descripcion:
-                'Descubre la arquitectura de madera y el legado del auge bananero que definió la región.',
+                'Descubre la arquitectura tradicional de madera y el legado bananero que marcó la historia de la región.',
             icono: '',
         },
         {
-            nombre: 'Caminata por el puerto',
+            nombre: 'Caminata',
             descripcion:
-                'Recorre el dinámico muelle admirando el constante vaivén de embarcaciones hacia las islas.',
+                'Recorre el área portuaria observando el movimiento constante de embarcaciones y la dinámica local.',
             icono: '',
         },
         {
-            nombre: 'Gastronomía bocatoreña',
+            nombre: 'Gastronomía',
             descripcion:
-                'Deleita tu paladar con auténticos platillos caribeños sazonados con leche de coco y curry.',
+                'Prueba auténticos platillos caribeños con sabores afroantillanos y mariscos frescos.',
             icono: '',
         },
         {
-            nombre: 'Intercambio cultural',
+            nombre: 'Turismo cultural',
             descripcion:
-                'Comparte con las comunidades locales y conecta con las raíces de la cultura afroantillana.',
+                'Conoce las tradiciones y raíces afrocaribeñas que forman parte esencial de la identidad de Almirante.',
             icono: '',
         },
         {
-            nombre: 'Fotografía urbana',
+            nombre: 'Fotografía',
             descripcion:
-                'Captura los colores intensos, los murales y la vibrante vida cotidiana de este punto clave.',
+                'Captura la vida cotidiana, los colores del puerto y la esencia auténtica del Caribe bocatoreño.',
             icono: '',
         },
         {
-            nombre: 'Navegación costera',
+            nombre: 'Paseos en lancha',
             descripcion:
-                'Embarca en un viaje panorámico en lancha rápida cruzando las hermosas aguas de la bahía.',
+                'Embárcate hacia Isla Colón y otros destinos del archipiélago disfrutando del paisaje marino.',
             icono: '',
         },
         {
             nombre: 'Avistamiento de aves',
             descripcion:
-                'Observa especies costeras y marinas que sobrevuelan los manglares cercanos al puerto.',
+                'Observa especies costeras y aves tropicales que habitan los manglares y zonas cercanas.',
             icono: '',
         },
         {
-            nombre: 'Compra de artesanías',
+            nombre: 'Artesanías',
             descripcion:
-                'Adquiere piezas únicas y recuerdos elaborados a mano por talentosos artesanos de la zona.',
+                'Encuentra recuerdos y piezas elaboradas por artesanos locales que reflejan la cultura de la región.',
             icono: '',
         },
     ],

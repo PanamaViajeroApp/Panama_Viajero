@@ -1,8 +1,10 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 
 import { getActivityIcon } from './activityIcons.js'
 
 function SiteActivities({ activities = [], featuredImage }) {
+  const [activeActivity, setActiveActivity] = useState(null)
+
   const { featuredActivity, secondaryActivities } = useMemo(() => {
     if (!activities.length) {
       return { featuredActivity: null, secondaryActivities: [] }
@@ -15,6 +17,7 @@ function SiteActivities({ activities = [], featuredImage }) {
       secondaryActivities: activities.filter((_, index) => index !== featuredIndex),
     }
   }, [activities])
+
   const FeaturedActivityIcon = featuredActivity ? getActivityIcon(featuredActivity.nombre).Icon : null
 
   return (
@@ -30,7 +33,7 @@ function SiteActivities({ activities = [], featuredImage }) {
         </div>
 
         <div className="grid gap-0 md:grid-cols-[0.88fr_1.12fr]">
-          <div className="border-b border-[#4D4C4C]/10 rounded-bl-[28px] bg-[#EBEBEB]/30 p-4 sm:p-5 md:border-b-0 md:border-r">
+          <div className="rounded-bl-[28px] border-b border-[#4D4C4C]/10 bg-[#EBEBEB]/30 p-4 sm:p-5 md:border-b-0 md:border-r">
             {featuredActivity ? (
               <article className="mx-auto flex h-full w-full max-w-md flex-col">
                 <div className="relative overflow-hidden rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF]">
@@ -39,7 +42,7 @@ function SiteActivities({ activities = [], featuredImage }) {
                     alt=""
                     className="h-44 w-full object-cover sm:h-52 md:h-[275px]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent " />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
                   <div className="absolute left-4 top-4 rounded-full bg-[#FFFFFF]/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#4D4C4C]">
                     Recomendado
                   </div>
@@ -51,7 +54,7 @@ function SiteActivities({ activities = [], featuredImage }) {
                 </div>
 
                 <div className="pt-5">
-                  <h3 className="font-secondary text-2xl  leading-tight text-[#4D4C4C] sm:text-3xl">
+                  <h3 className="font-secondary text-2xl leading-tight text-[#4D4C4C] sm:text-3xl">
                     {featuredActivity.nombre}
                   </h3>
                   <p className="mt-4 max-w-xl font-body text-sm leading-7 text-[#4D4C4C]/78 sm:text-base">
@@ -62,13 +65,13 @@ function SiteActivities({ activities = [], featuredImage }) {
             ) : null}
           </div>
 
-          <div className="rounded-[28px] bg-[#FFFFFF]/50 p-4 sm:p-5 md:p-6">
+          <div className="bg-[#FFFFFF]/50 p-3 sm:p-4 md:p-5">
             <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-2 border-b border-[#4D4C4C]/10 pb-4">
               <div>
                 <p className="text-md font-semibold uppercase tracking-[0.26em] text-[#4956A2]">
                   Catálogo
                 </p>
-                <p className=" text-md text-[#4D4C4C]/75">
+                <p className="text-md text-[#4D4C4C]/75">
                   {activities.length} nuevas experiencias
                 </p>
               </div>
@@ -77,35 +80,49 @@ function SiteActivities({ activities = [], featuredImage }) {
               </div>
             </div>
 
-            <div className="mx-auto mt-4 max-h-[360px] w-full max-w-2xl space-y-3 overflow-y-auto pr-1 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
+            <div className="mx-auto mt-4 max-h-[380px] w-full max-w-2xl columns-1 gap-3 overflow-y-auto pr-1 sm:columns-2 lg:columns-2 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
               {secondaryActivities.map((actividad, index) => {
                 const { Icon } = getActivityIcon(actividad.nombre)
-                const number = String(index + 1).padStart(2, '0')
                 const accent = index % 3 === 0 ? '#4956A2' : index % 3 === 1 ? '#CD2E4C' : '#4D4C4C'
+                const isOpen = activeActivity === actividad.nombre
 
                 return (
-                  <article
+                  <button
                     key={actividad.nombre}
-                    className="group flex w-full items-center gap-4 rounded-full border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-2.5 transition duration-300 hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
+                    type="button"
+                    aria-expanded={isOpen}
+                    onClick={() => setActiveActivity(isOpen ? null : actividad.nombre)}
+                    className="group mb-3 inline-flex w-full break-inside-avoid cursor-pointer flex-col rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-3 text-left transition duration-300 hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
                   >
-                    <div
-                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 group-hover:scale-105"
-                      style={{ backgroundColor: accent }}
-                    >
-                      <Icon className="h-5 w-5" />
-                    </div>
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 group-hover:scale-105"
+                        style={{ backgroundColor: accent }}
+                      >
+                        <Icon className="h-5 w-5" />
+                      </div>
 
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center justify-between gap-3">
-                        <h4 className="truncate font-secondary-italic leading-tight text-[#4D4C4C] sm:text-lg">
-                          {actividad.nombre}
-                        </h4>
-                        <span className="font-secondary text-xs font-bold tracking-[0.2em] text-[#4D4C4C]/25">
-                          {number}
-                        </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-start justify-between gap-3">
+                          <h4 className="truncate font-secondary-italic leading-tight text-[#4D4C4C] sm:text-md">
+                            {actividad.nombre}
+                          </h4>
+                        </div>
                       </div>
                     </div>
-                  </article>
+
+                    <div
+                      className={`grid transition-all duration-300 ease-out ${
+                        isOpen ? 'mt-3 grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="font-body text-sm leading-6 text-[#4D4C4C]/75">
+                          {actividad.descripcion}
+                        </p>
+                      </div>
+                    </div>
+                  </button>
                 )
               })}
             </div>

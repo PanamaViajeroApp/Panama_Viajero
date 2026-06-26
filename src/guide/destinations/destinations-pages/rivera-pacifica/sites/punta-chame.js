@@ -41,21 +41,21 @@ export const puntaChame = {
       icono: '',
     },
     {
-      nombre: 'Caminatas por la playa',
+      nombre: 'Caminata',
       descripcion:
         'Recorre kilómetros de arena mientras contemplas el océano y la belleza natural de la península.',
       icono: '',
     },
     {
-      nombre: 'Fotografía de paisajes',
+      nombre: 'Fotografía',
       descripcion:
         'Captura impresionantes vistas del mar, las montañas y los deportes acuáticos en acción.',
       icono: '',
     },
     {
-      nombre: 'Observación de atardeceres',
+      nombre: 'Atardeceres',
       descripcion:
-        'Disfruta de puestas de sol espectaculares que convierten el horizonte en un espectáculo inolvidable.',
+        'Disfruta de puestas de sol espectaculares que convierten el horizonte en uno de los mayores atractivos del lugar.',
       icono: '',
     },
     {
@@ -65,17 +65,11 @@ export const puntaChame = {
       icono: '',
     },
     {
-      nombre: 'Camping de playa',
+      nombre: 'Camping',
       descripcion:
         'Vive una experiencia diferente pasando la noche junto al mar bajo un cielo despejado.',
-      icono: '',
-    },
-    {
-      nombre: 'Escapada de aventura',
-      descripcion:
-        'Ideal para quienes buscan combinar deporte, naturaleza y relajación en un solo destino.',
-      icono: '',
-    },
+      icono: ''
+    }
   ],
   ubicacion:
     'https://www.google.com/maps?q=Punta%20Chame%20Panama%20Oeste&output=embed',

@@ -25,58 +25,46 @@ export const playaElPalmar = {
     {
       nombre: 'Clases de surf',
       descripcion:
-        'Encuentra escuelas y guías locales que ofrecen lecciones para principiantes y niveles intermedios.',
+        'Encuentra escuelas y guías locales que ofrecen lecciones para principiantes y surfistas de nivel intermedio.',
       icono: '',
     },
     {
-      nombre: 'Caminatas por la playa',
+      nombre: 'Caminata',
       descripcion:
-        'Recorre la extensa costa disfrutando del paisaje, la arena y la energía del océano.',
+        'Recorre la extensa costa disfrutando del paisaje, la arena y la energía natural del océano.',
       icono: '',
     },
     {
       nombre: 'Natación',
       descripcion:
-        'Disfruta de un baño refrescante en sus aguas cálidas, siempre tomando en cuenta las condiciones del mar.',
+        'Disfruta de un baño refrescante en sus aguas cálidas, siempre considerando las condiciones del mar.',
       icono: '',
     },
     {
-      nombre: 'Fotografía costera',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura la acción de los surfistas, los paisajes marinos y los impresionantes atardeceres del Pacífico.',
+        'Captura la acción de los surfistas, los paisajes marinos y los impresionantes escenarios costeros.',
       icono: '',
     },
     {
-      nombre: 'Observación de atardeceres',
+      nombre: 'Atardeceres',
       descripcion:
-        'Disfruta de puestas de sol espectaculares que convierten la playa en un escenario inolvidable.',
+        'Disfruta de puestas de sol espectaculares que convierten la playa en uno de los mejores puntos para cerrar el día.',
       icono: '',
     },
     {
-      nombre: 'Yoga frente al mar',
+      nombre: 'Yoga',
       descripcion:
-        'Participa en sesiones de relajación y bienestar aprovechando la tranquilidad y energía natural de la playa.',
+        'Participa en sesiones de relajación frente al mar aprovechando la tranquilidad y la energía natural de la playa.',
       icono: '',
     },
     {
-      nombre: 'Gastronomía local',
+      nombre: 'Gastronomía',
       descripcion:
-        'Descubre restaurantes y pequeños cafés donde disfrutar mariscos frescos y cocina típica de playa.',
-      icono: '',
-    },
-    {
-      nombre: 'Ambiente surfero',
-      descripcion:
-        'Vive la cultura local del surf, con un entorno joven, relajado y lleno de energía.',
-      icono: '',
-    },
-    {
-      nombre: 'Escapada de aventura',
-      descripcion:
-        'Ideal para quienes buscan combinar deporte, naturaleza y descanso en un solo destino.',
-      icono: '',
-    },
+        'Descubre restaurantes y pequeños cafés donde disfrutar mariscos frescos y cocina típica costera.',
+      icono: ''
+    }
   ],
   ubicacion:
-    'https://www.google.com/maps?q=Playa%20El%20Palmar%20Panama%20Oeste&output=embed',
+    'https://www.google.com/maps?q=Playa%20El%20Palmar%20Panama%20Oeste&output=embed'
 }

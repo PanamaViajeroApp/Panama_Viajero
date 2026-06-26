@@ -17,27 +17,27 @@ export const playaSeaCliff = {
   previewUbicacion: 'San Carlos, Panamá Oeste',
   actividades: [
     {
-      nombre: 'Caminata por la costa',
+      nombre: 'Caminata',
       descripcion:
         'Recorre la extensa línea de playa mientras disfrutas de la brisa marina y la sombra natural de las palmeras.',
       icono: '',
     },
     {
-      nombre: 'Natación en aguas mansas',
+      nombre: 'Natación',
       descripcion:
-        'Sumérgete en aguas cálidas y tranquilas, perfectas para refrescarte y relajarte con seguridad.',
+        'Sumérgete en aguas cálidas y tranquilas, ideales para refrescarte y relajarte frente al mar.',
       icono: '',
     },
     {
-      nombre: 'Fotografía de acantilados',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura la impresionante geografía costera y las formaciones rocosas que hacen único este destino.',
+        'Captura la impresionante geografía costera, los acantilados y las formaciones naturales que hacen único este destino.',
       icono: '',
     },
     {
-      nombre: 'Pícnic bajo las palmeras',
+      nombre: 'Pícnic',
       descripcion:
-        'Disfruta de un almuerzo o merienda frente al mar en un ambiente natural y tranquilo.',
+        'Disfruta de un almuerzo o merienda frente al mar en un entorno natural y tranquilo.',
       icono: '',
     },
     {
@@ -47,36 +47,24 @@ export const playaSeaCliff = {
       icono: '',
     },
     {
-      nombre: 'Senderismo de playa',
+      nombre: 'Senderismo',
       descripcion:
-        'Explora los extremos de la playa y descubre rincones escondidos entre acantilados y vegetación.',
+        'Explora senderos y rincones naturales entre acantilados y vegetación costera con vistas al Pacífico.',
       icono: '',
     },
     {
-      nombre: 'Deportes de playa',
+      nombre: 'Descanso',
       descripcion:
-        'Aprovecha la amplitud y firmeza de la arena para practicar actividades recreativas al aire libre.',
+        'Relájate escuchando el sonido de las olas mientras contemplas el amplio horizonte del océano.',
       icono: '',
     },
     {
-      nombre: 'Descanso en la orilla',
-      descripcion:
-        'Relájate escuchando el sonido de las olas mientras contemplas el amplio horizonte del Pacífico.',
-      icono: '',
-    },
-    {
-      nombre: 'Observación de atardeceres',
+      nombre: 'Atardeceres',
       descripcion:
         'Disfruta de espectaculares puestas de sol que transforman el paisaje con colores intensos y memorables.',
-      icono: '',
-    },
-    {
-      nombre: 'Conexión con la naturaleza',
-      descripcion:
-        'Vive una experiencia de tranquilidad y belleza natural en uno de los rincones costeros más encantadores de la Rivera Pacífica.',
-      icono: '',
-    },
+      icono: ''
+    }
   ],
   ubicacion:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.9957362853474!2d-80.0920309255067!3d8.383577198758966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facffff82c39a15%3A0x61204fa9d11f21bb!2sPlaya%20Sea%20Cliff!5e1!3m2!1sen!2spa!4v1781113117376!5m2!1sen!2spa',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.9957362853474!2d-80.0920309255067!3d8.383577198758966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facffff82c39a15%3A0x61204fa9d11f21bb!2sPlaya%20Sea%20Cliff!5e1!3m2!1sen!2spa!4v1781113117376!5m2!1sen!2spa'
 }

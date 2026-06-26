@@ -40,7 +40,7 @@ function SiteInfo() {
       </div>
 
       <section className="relative min-h-[82vh] overflow-hidden mt-5">
-        <div className="relative md:flex  ms:flex-col  min-h-[82vh] items-center px-4 mt-15 max-w-8xl justify-between">
+        <div className="relative md:flex  ms:flex-col  min-h-[82vh] items-center px-4 md:mt-15 mt-100 md:mb-0 max-w-8xl justify-between">
           <div className="max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 md:ml-15">
             <h1
               className="font-main text-5xl text-brand-white md:text-6xl"
@@ -50,7 +50,7 @@ function SiteInfo() {
             </h1>
             <div className="flex items-center gap-1 text-[#f1f1f1e6]/85">
               <FiMapPin className="h-4 w-4 " />
-              <p className="text-sm text-center font-secondary-italic leading-6">
+              <p className="text-sm text-center font-secondary leading-6">
                 {site.previewUbicacion ?? 'Ubicación no disponible'}
               </p>
             </div>
@@ -58,7 +58,7 @@ function SiteInfo() {
               {site.descripcion}
             </p>
           </div>
-          <div className='md:mr-15'><SiteMap site={site} /></div>
+          <div className='md:mr-15 mt-20'><SiteMap site={site} /></div>
         </div>
       </section>
 

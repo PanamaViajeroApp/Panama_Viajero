@@ -31,11 +31,11 @@ export const playaMalibu = {
     {
       nombre: 'Bodyboard',
       descripcion:
-        'Disfruta de la fuerza de las olas con una alternativa dinámica y divertida para todas las edades.',
+        'Disfruta de la fuerza de las olas con una alternativa dinámica y divertida para diferentes niveles.',
       icono: '',
     },
     {
-      nombre: 'Caminatas por la playa',
+      nombre: 'Caminata',
       descripcion:
         'Recorre la costa mientras disfrutas de la brisa marina y el sonido constante de las olas.',
       icono: '',
@@ -43,39 +43,27 @@ export const playaMalibu = {
     {
       nombre: 'Natación',
       descripcion:
-        'Relájate en sus aguas en momentos de marea más tranquila y disfruta del ambiente natural.',
+        'Relájate en sus aguas durante momentos de marea más tranquila y disfruta del entorno natural.',
       icono: '',
     },
     {
-      nombre: 'Fotografía costera',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura la energía de los surfistas, los paisajes del Pacífico y espectaculares puestas de sol.',
+        'Captura la energía de los surfistas, los paisajes del Pacífico y las impresionantes vistas costeras.',
       icono: '',
     },
     {
-      nombre: 'Observación de atardeceres',
+      nombre: 'Atardeceres',
       descripcion:
-        'Disfruta de sunsets impresionantes que convierten el horizonte en un espectáculo inolvidable.',
+        'Disfruta de puestas de sol espectaculares que convierten el horizonte en uno de los mayores atractivos del lugar.',
       icono: '',
     },
     {
-      nombre: 'Ambiente surfero',
-      descripcion:
-        'Vive la cultura del surf en uno de los spots más emblemáticos de Panamá Oeste.',
-      icono: '',
-    },
-    {
-      nombre: 'Gastronomía local',
+      nombre: 'Gastronomía',
       descripcion:
         'Prueba mariscos frescos y comida típica en pequeños restaurantes cercanos a la playa.',
-      icono: '',
-    },
-    {
-      nombre: 'Escapada de aventura',
-      descripcion:
-        'Ideal para quienes buscan combinar deporte, naturaleza y desconexión en una sola experiencia.',
-      icono: '',
-    },
+      icono: ''
+    }
   ],
   ubicacion:
     'https://www.google.com/maps?q=Playa%20Malibu%20Panama%20Oeste&output=embed',
