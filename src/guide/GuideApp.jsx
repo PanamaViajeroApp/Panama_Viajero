@@ -5,6 +5,7 @@ import Menu from './components/menu/Menu.jsx'
 import './App.css'
 import Logo from './img_test/LogoRectangular.svg'
 import CountdownModal from './layout/layout-components/counter/Counter.jsx'
+import Descarga from './fase_2/descarga.jsx'
 
 const AboutUs = lazy(() => import('./layout/layout-components/about-us/AboutUs.jsx'))
 const Map = lazy(() => import('./layout/layout-components/map/DinamicMap.jsx'))
@@ -120,6 +121,7 @@ function GuideHome() {
 
   return (
     <div className="relative bg-brand-soft text-brand-charcoal">
+      <Descarga/>
       {showCountdown && (
         <Suspense fallback={null}>
           <CountdownModal
