@@ -144,7 +144,7 @@ function CountdownModal({ onClose, onPreregister }) {
                             <h1 className=" text-sm  font-bold text-brand-blue" >
                                 ¡Espéralo pronto!
                             </h1>
-                            <h2 className=" text-2xl font-secondary-italic text-brand-red/80 ">
+                            <h2 className=" text-2xl font-secondary text-brand-red/80 ">
                                 Agosto - 2026
                             </h2>
                             <div className='border-1 w-45 mt-[1px] border-brand-blue/50 '></div>
