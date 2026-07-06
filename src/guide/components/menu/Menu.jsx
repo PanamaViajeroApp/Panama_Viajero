@@ -136,8 +136,8 @@ function Menu({
 
   return (
     <div
-      className={`relative z-[100] bg-gradient-to-b from-brand-charcoal/80 pt-3 via-brand-charcoal/45 to-transparent pb-5 backdrop-blur-[1px] transition-transform duration-300 ease-in-out ${
-        autoHideOnScroll && !isVisible ? 'md:-translate-y-full md:pointer-events-none' : 'translate-y-0'
+      className={`relative z-[100] bg-gradient-to-b from-brand-charcoal/80 pt-3 via-brand-charcoal/45 to-transparent pb-5 backdrop-blur-[1px] transition-[transform,opacity] duration-300 ease-in-out ${
+        autoHideOnScroll && !isVisible ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
       }`}
     >
       <div className="flex w-full items-center justify-between px-3  text-md text-brand-white md:pt-0 md:pl-10 md:pr-30">
@@ -180,7 +180,9 @@ function Menu({
           <button
             type="button"
             aria-label="Abrir menu"
-            className="ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/20 bg-brand-charcoal/70 text-brand-white shadow-[0_8px_24px_rgba(0,0,0,0.22)] transition-all duration-300 ease-out hover:bg-brand-red hover:shadow-[0_8px_24px_rgba(255,255,255,0.15)] md:hidden"
+            className="mr-3 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border 
+            border-white/20 bg-brand-charcoal/70 text-brand-white shadow-[0_8px_24px_rgba(0,0,0,0.22)] 
+            transition-all duration-300 ease-out hover:bg-brand-red hover:shadow-[0_8px_24px_rgba(255,255,255,0.15)] md:hidden"
             onClick={() => setIsOpen(true)}
           >
             <FiMenu className="h-6 w-6" aria-hidden="true" strokeWidth={2.5} />

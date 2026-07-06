@@ -130,10 +130,10 @@ function GuideHome() {
       )}
 
       <div
-        className={`fixed top-0 z-[200] w-full transition-transform duration-300 ease-in-out 
-        }`}
+        className="fixed top-0 z-[200] w-full"
       >
         <Menu
+          autoHideOnScroll
           onLogoClick={scrollToHome}
           onPreregisterClick={scrollToPreregister}
           onMapClick={scrollToMap}

@@ -30,7 +30,6 @@ function SiteInfo() {
       <div className="fixed top-0 z-50 w-full">
         <Menu
           autoHideOnScroll
-          hideMobileMenu
           onLogoClick={() => navigate('/#home')}
           onUsClick={() => navigate('/#us')}
           onMapClick={() => navigate('/#map')}
@@ -41,7 +40,7 @@ function SiteInfo() {
 
       <section className="relative min-h-[82vh] overflow-hidden mt-5">
         <div className="relative md:flex  ms:flex-col  min-h-[82vh] items-center px-4 md:mt-15 mt-100 md:mb-0 max-w-8xl justify-between">
-          <div className="max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 md:ml-15">
+          <div className="max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 mt-[-200px] md:ml-15">
             <h1
               className="font-main text-5xl text-brand-white md:text-6xl"
             >
