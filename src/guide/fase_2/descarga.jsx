@@ -30,7 +30,7 @@ function Descarga() {
     }
 
     return (
-        <div className="fixed z-[500] bottom-6 right-5 flex flex-col items-center gap-4">
+        <div className="fixed z-[500] bottom-3 right-5 flex flex-col items-center">
             <div style={{ perspective: '1000px' }}>
                 <div
                     className="
@@ -47,7 +47,7 @@ function Descarga() {
                             rotateX(${baseRotation.x + rotation.x}deg)
                             rotateY(${baseRotation.y + rotation.y}deg)
                             rotateZ(${baseRotation.z}deg)
-                            scale(1.05)
+                            scale(0.92)
                         `,
                         transformStyle: 'preserve-3d',
                     }}
@@ -55,7 +55,7 @@ function Descarga() {
                     <img
                         src={CELULAR}
                         alt="Descargar app"
-                        className="w-45 h-auto object-contain"
+                        className="w-40 h-auto object-contain md:block hidden"
                     />
                 </div>
             </div>
@@ -64,8 +64,8 @@ function Descarga() {
                 className="
                     pointer-events-auto
                     rounded-full
-                    px-8 py-4
-                    text-base font-semibold
+                    px-4 py-4
+                    text-md font-semibold
                     text-brand-white
                     bg-[linear-gradient(270deg,#4956A2,#000000,#CD2E4C,#4956A2)]
                     bg-[length:400%_400%]

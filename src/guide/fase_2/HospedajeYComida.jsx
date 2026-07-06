@@ -32,7 +32,7 @@ function HospedajeYComida({ fallbackImage = '' }) {
 
             <div className="relative h-60 w-60 shrink-0" style={{ perspective: '1000px' }}>
               <div
-                className="absolute inset-0 transition-transform duration-700 ease-in-out"
+                className="ml-[-130px] absolute inset-0 transition-transform duration-700 ease-in-out"
                 style={{
                   transform:
                     activeTab === 'hoteles'
@@ -47,17 +47,17 @@ function HospedajeYComida({ fallbackImage = '' }) {
                     backfaceVisibility: 'hidden',
                   }}
                 >
-                  <FiHome className="block h-60 w-60" />
+                  <FiHome className="block h-30 w-30 md:h-60 md:w-60" />
                 </div>
 
                 <div
-                  className="absolute mt-4.5 inset-0 flex items-center justify-center"
+                  className=" absolute mt-4.5 inset-0 flex items-center justify-center"
                   style={{
                     transform: 'rotateY(180deg)',
                     backfaceVisibility: 'hidden',
                   }}
                 >
-                  <FiCoffee className="block h-60 w-60" />
+                  <FiCoffee className="block h-30 w-30 md:h-60 md:w-60" />
                 </div>
               </div>
             </div>
@@ -115,42 +115,49 @@ function HospedajeYComida({ fallbackImage = '' }) {
                     </div>
                   </div>
 
-                  <div className="flex flex-col px-5 pb-5 pt-5 sm:px-6 sm:pb-6">
+                  <div className="flex flex-col px-5 pb-5 pt-5 ">
                     <h3 className="font-main text-3xl leading-tight text-[#474B53]">
                       {item.nombre}
                     </h3>
-                    <p className="mt-2 text-base font-medium text-[#70757F]">
+                    <p className="mt-[-7px] text-base font-medium text-[#70757F]">
                       {item.tipo}
                     </p>
 
-                    <div className="my-5 h-px w-full bg-[#E6E7EE]" />
+                    <div className="mt-2 mb-4 h-px w-full bg-[#E6E7EE]" />
 
                     <div className="grid grid-cols-2 gap-3 text-[#4D4C4C]/80">
-                      <div className="flex items-start gap-3 rounded-2xl bg-[#F7F8FC] px-4 py-3">
-                        <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#4956A2] shadow-sm">
+                      <div className="flex flex-col  rounded-2xl bg-[#F7F8FC] px-4 py-3">
+                        <div className='flex items-center gap-3'>
+                          <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#4956A2] shadow-sm">
                           <FiTag className="h-4 w-4" />
                         </div>
                         <p className="text-sm leading-6">
                           <span className="block font-medium text-[#70757F]">Desde</span>
-                          <span className="block text-base font-semibold text-[#4A4F59]">{priceText}</span>
                         </p>
+                        </div>
+                        <span className="block text-base font-semibold text-[#4A4F59] mt-2">{priceText}</span>
                       </div>
 
-                      <div className="flex items-start gap-3 rounded-2xl bg-[#F7F8FC] px-4 py-3">
-                        <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#4956A2] shadow-sm">
+                      <div className="flex flex-col items-start gap-2 rounded-2xl bg-[#F7F8FC] px-4 py-3">
+                        <div className='flex items-center gap-3'>
+                          <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#4956A2] shadow-sm">
                           <FiMapPin className="h-4 w-4" />
                         </div>
                         <p className="text-sm leading-6">
-                          <span className="block text-base font-medium text-[#4A4F59]">
-                            {item.ubicacion}
+                          <span className="block font-medium text-[#4A4F59]">
+                            Cerca de
                           </span>
                         </p>
+                        </div>
+                        <span className="block text-base font-medium text-[#4A4F59] ml-1">
+                          {item.ubicacion}
+                        </span>
                       </div>
                     </div>
 
                     <button
                       type="button"
-                      className="mt-6 inline-flex w-full items-center justify-center gap-3 rounded-[10px] bg-[#4956A2] px-5 py-4 text-lg font-semibold text-white transition duration-300 cursor-pointer hover:-translate-y-[1px] hover:bg-brand-red"
+                      className="mt-4 inline-flex w-full items-center justify-center gap-3 rounded-[10px] bg-[#4956A2] px-5 py-4 text-lg font-semibold text-white transition duration-300 cursor-pointer hover:-translate-y-[1px] hover:bg-brand-red"
                     >
                       Ver detalles
                       <FiChevronRight className="h-4 w-4" />
