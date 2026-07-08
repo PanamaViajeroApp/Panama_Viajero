@@ -32,7 +32,7 @@ function CountdownModal({ onClose, onPreregister }) {
                             alt=""
                         />
 
-                        <div className="relative z-10 flex w-full flex-1 items-center justify-center md:mb-0 md:mt-30 mb-[-100px]">
+                        <div className="relative z-10 flex md:w-full w-80 flex-1 items-center justify-center md:mb-0 md:mt-30 md:mb-[-100px] mb-[-60px]">
                             <img
                                 src={VentanaEmergente}
                                 alt="Promoción"
@@ -60,17 +60,17 @@ function CountdownModal({ onClose, onPreregister }) {
                         <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-brand-red/20 blur-3xl" />
 
                         <div className="relative z-10 mx-auto max-w-md text-center md:mx-0 md:text-left">
-                            <div className="mx-auto inline-flex w-fit items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 backdrop-blur md:mx-0">
+                            <div className="hidden  mx-auto md:inline-flex w-fit items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 backdrop-blur md:mx-0">
                                 Muy pronto
                             </div>
 
-                            <h2 className="mt-6 font-secondary text-4xl leading-[0.95] sm:text-5xl md:text-[3.7rem]">
+                            <h2 className="md:mt-6 font-secondary text-4xl leading-[0.95] sm:text-5xl md:text-[3.7rem] ">
                                 Descubre Panamá
                                 <span className="block text-[#ff8fa2]">como nunca</span>
                                 <span className="block text-[#ff8fa2]">antes lo viste</span>
                             </h2>
 
-                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0">
+                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0 hidden md:block">
                                 Una nueva forma de explorar destinos, experiencias y lugares increíbles dentro de Panamá.
                             </p>
 
