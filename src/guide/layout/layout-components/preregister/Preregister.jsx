@@ -182,7 +182,7 @@ function Preregister() {
                         <button
                             type="submit"
                             disabled={status.loading}
-                            className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-8 py-3 text-brand-white shadow-[0_12px_25px_rgba(205,46,76,0.25)] transition-colors hover:bg-brand-blue disabled:cursor-not-allowed disabled:opacity-70"
+                            className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-8 py-3 text-brand-white transition-colors hover:bg-brand-blue disabled:cursor-not-allowed disabled:opacity-70"
                         >
                             {status.loading ? 'Registrando...' : 'Registrarme'}
                         </button>
