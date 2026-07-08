@@ -4,7 +4,7 @@ import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import ProvinceVideoJSX from '../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../components/destinations/Activities.jsx';
-import ActivityFilter from '../../components/destinations/ActivityFilter.jsx';
+import SelectedActivitiesBar from '../../components/destinations/SelectedActivitiesBar.jsx';
 import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx';
 import OtherProvinces from '../../components/destinations/OtherProvinces.tsx';
 import { provincias } from './BocasDelToro.js';
@@ -14,6 +14,59 @@ function BocasDelToro() {
     const location = useLocation();
     const bocasDelToro = provincias[0];
     const [selectedActivities, setSelectedActivities] = useState([]);
+
+    const toggleSelectedActivity = (activity) => {
+        setSelectedActivities((current) => {
+            const currentList = Array.isArray(current) ? current : current ? [current] : [];
+            const normalizedActivity = activity
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .trim();
+
+            const alreadySelected = currentList.some(
+                (item) =>
+                    String(item)
+                        .toLowerCase()
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '')
+                        .trim() === normalizedActivity,
+            );
+
+            if (alreadySelected) {
+                return currentList.filter(
+                    (item) =>
+                        String(item)
+                            .toLowerCase()
+                            .normalize('NFD')
+                            .replace(/[\u0300-\u036f]/g, '')
+                            .trim() !== normalizedActivity,
+                );
+            }
+
+            return [...currentList, activity];
+        });
+    };
+
+    const removeSelectedActivity = (activityToRemove) => {
+        setSelectedActivities((current) => {
+            const currentList = Array.isArray(current) ? current : current ? [current] : [];
+            const targetKey = String(activityToRemove)
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .trim();
+
+            return currentList.filter(
+                (item) =>
+                    String(item)
+                        .toLowerCase()
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '')
+                        .trim() !== targetKey,
+            );
+        });
+    };
 
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
@@ -41,18 +94,19 @@ function BocasDelToro() {
 
             <ProvinceVideoJSX provinceData={bocasDelToro} fixedBackground />
 
-            <Activities
+            <Activities 
                 provinceData={bocasDelToro}
                 selectedActivities={selectedActivities}
-                onActivitySelect={setSelectedActivities}
+                onActivitySelect={toggleSelectedActivity}
             />
 
-            <ActivityFilter
+            <SelectedActivitiesBar
                 selectedActivities={selectedActivities}
-                onActivitySelect={setSelectedActivities}
+                onRemoveActivity={removeSelectedActivity}
+                onClearAll={() => setSelectedActivities([])}
             />
 
-            <ProvinceSitesOnly
+            <ProvinceSitesOnly 
                 provinceData={bocasDelToro}
                 selectedActivities={selectedActivities}
                 className="ml-200"

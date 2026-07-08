@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import politicaDePrivacidadPdf from '../../../Politica-de-privacidad.pdf';
 
-
 const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL ?? '';
 
 const initialForm = {
-    firstName: '',
-    lastName: '',
+    fullName: '',
     phone: '',
     email: '',
     acceptedPrivacyPolicy: false,
@@ -55,7 +53,7 @@ function MailIcon({ className = '' }) {
     );
 }
 
-function Preregister() {
+function Preregister({ onViewSite = null }) {
     const [form, setForm] = useState(initialForm);
     const [status, setStatus] = useState({ loading: false, error: '', success: '' });
 
@@ -83,8 +81,7 @@ function Preregister() {
 
         try {
             const payload = new URLSearchParams({
-                firstName: form.firstName,
-                lastName: form.lastName,
+                fullName: form.fullName,
                 phone: form.phone,
                 email: form.email,
                 acceptedPrivacyPolicy: String(form.acceptedPrivacyPolicy),
@@ -115,112 +112,118 @@ function Preregister() {
     }
 
     return (
-        <div className='max-w-full md:p-30'>
+        <div className="max-w-full md:p-30">
             <div className="mx-auto max-w-4xl rounded-xl border border-brand-blue/15 bg-brand-white p-8 shadow-[0_18px_45px_rgba(77,76,76,0.15)]">
-            <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="flex flex-col gap-2 border-b border-brand-soft pb-4 md:flex-row md:items-baseline md:justify-end">
-                    <span className="font-body text-xl text-brand-charcoal/90">Regístrate y participa por</span>
-                    <span className="font-main text-3xl font-bold text-brand-red">UNA NOCHE GRATIS</span>
-                </div>
-
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                    <div className="relative">
-                        <UserIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
-                        <input
-                            type="text"
-                            name="firstName"
-                            value={form.firstName}
-                            onChange={handleChange}
-                            placeholder="Juan"
-                            required
-                            className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90"
-                        />
+                <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="flex flex-col border-b border-brand-soft pb-4 md:flex-row md:items-baseline md:justify-end">
+                        <div className="flex flex-col items-end">
+                            <div className="flex items-baseline gap-2 justify-start">
+                                <span className="font-body text-xl text-brand-charcoal/90">Registrate y participa por una</span>
+                                <span className="font-main text-3xl font-bold text-brand-red">ESTADÍA GRATIS</span>
+                            </div>
+                            <span className="font-body text-xl text-brand-charcoal/90">para 2 personas.</span>
+                        </div>
                     </div>
 
-                    <div className="relative">
-                        <UserIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
-                        <input
-                            type="text"
-                            name="lastName"
-                            value={form.lastName}
-                            onChange={handleChange}
-                            placeholder="Pérez"
-                            required
-                            className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90"
-                        />
-                    </div>
-
-                    <div className="relative">
-                        <PhoneIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
-                        <input
-                            type="tel"
-                            name="phone"
-                            value={form.phone}
-                            onChange={handleChange}
-                            placeholder="65094159"
-                            required
-                            className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90"
-                        />
-                    </div>
-                </div>
-
-                <div className="flex flex-col gap-4">
-                    <div className="flex flex-col gap-4 md:flex-row">
-                        <div className="relative flex-1">
-                            <MailIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <div className="relative">
+                            <UserIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
                             <input
-                                type="email"
-                                name="email"
-                                value={form.email}
+                                type="text"
+                                name="fullName"
+                                value={form.fullName}
                                 onChange={handleChange}
-                                placeholder="micorreo012@gmail.com"
+                                placeholder="Nombre completo"
                                 required
                                 className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90"
                             />
                         </div>
 
-                        <button
-                            type="submit"
-                            disabled={status.loading}
-                            className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-8 py-3 text-brand-white transition-colors hover:bg-brand-blue disabled:cursor-not-allowed disabled:opacity-70"
-                        >
-                            {status.loading ? 'Registrando...' : 'Registrarme'}
-                        </button>
+                        <div className="relative">
+                            <PhoneIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
+                            <input
+                                type="tel"
+                                name="phone"
+                                value={form.phone}
+                                onChange={handleChange}
+                                placeholder="Celular"
+                                required
+                                className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90"
+                            />
+                        </div>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm text-brand-charcoal/90">
-                        <input
-                            type="checkbox"
-                            id="terms"
-                            name="acceptedPrivacyPolicy"
-                            checked={form.acceptedPrivacyPolicy}
-                            onChange={handleChange}
-                            required
-                            className="h-4 w-4 cursor-pointer accent-brand-blue"
-                        />
-                        <label htmlFor="terms" className="font-body">
-                            He leído y acepto la{' '}
-                            <a
-                                href={politicaDePrivacidadPdf}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="cursor-pointer underline hover:text-brand-blue"
+                    <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-4 md:flex-row">
+                            <div className="relative flex-1">
+                                <MailIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    value={form.email}
+                                    onChange={handleChange}
+                                    placeholder="Correo electrónico"
+                                    required
+                                    className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90"
+                                />
+                            </div>
+
+                            <button
+                                type="submit"
+                                disabled={status.loading}
+                                className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-8 py-3 text-brand-white transition-colors hover:bg-brand-blue disabled:cursor-not-allowed disabled:opacity-70"
                             >
-                                política de privacidad
-                            </a>
-                        </label>
+                                {status.loading ? 'Registrando...' : 'Registrarme'}
+                            </button>
+                        </div>
+
+                        <div className="flex items-center gap-2 text-sm text-brand-charcoal/90">
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="acceptedPrivacyPolicy"
+                                checked={form.acceptedPrivacyPolicy}
+                                onChange={handleChange}
+                                required
+                                className="h-4 w-4 cursor-pointer accent-brand-blue"
+                            />
+                            <label htmlFor="terms" className="font-body">
+                                He leido y acepto la{' '}
+                                <a
+                                    href={politicaDePrivacidadPdf}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="cursor-pointer underline hover:text-brand-blue"
+                                >
+                                    politica de privacidad
+                                </a>
+                            </label>
+                        </div>
+
+                        {status.error ? (
+                            <p className="font-body text-sm text-brand-red">{status.error}</p>
+                        ) : null}
+
+                        {status.success ? (
+                            <div className="flex flex-col gap-3">
+                                <p className="font-body text-base font-semibold text-brand-red md:text-lg">
+                                    {status.success}
+                                </p>
+
+                                {typeof onViewSite === 'function' ? (
+                                    <button
+                                        type="button"
+                                        onClick={onViewSite}
+                                        className="w-full cursor-pointer rounded-full bg-gradient-to-r from-[#5864c7] to-[#cd2e4c] px-6 py-3 text-sm font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-2xl active:scale-100 sm:w-fit"
+                                    >
+                                        Ver sitio
+                                    </button>
+                                ) : null}
+                            </div>
+                        ) : null}
                     </div>
-
-                    {status.error ? (
-                        <p className="font-body text-sm text-brand-red">{status.error}</p>
-                    ) : null}
-
-                    {status.success ? (
-                        <p className="font-body text-sm text-brand-blue">{status.success}</p>
-                    ) : null}
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
         </div>
     );
 }

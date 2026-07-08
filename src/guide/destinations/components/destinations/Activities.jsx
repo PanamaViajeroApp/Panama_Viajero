@@ -178,9 +178,9 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
     };
 
     return (
-        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 mb-16 mt-[-65px]">
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 mt-[-65px]">
             <h1
-                className="font-main text-3xl font-bold text-brand-white md:text-4xl "
+                className="font-main text-3xl font-bold text-brand-white md:text-4xl mb-[-60px]"
                 style={{ textShadow: '0 0 6px rgba(0, 0, 0, 0.9)' }}
             >
                 Actividades
@@ -190,7 +190,7 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
             >
                 <div
                     ref={contentRef}
-                    className="flex w-max cursor-grab select-none active:cursor-grabbing will-change-transform"
+                    className="flex w-max cursor-grab select-none active:cursor-grabbing will-change-transform py-20"
                     style={{ touchAction: 'pan-y' }}
                     onPointerDown={handlePointerDown}
                     onPointerMove={handlePointerMove}
@@ -207,28 +207,24 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
                             {provinceData.actividades.map((actividad) => {
                                 const { Icon } = getActivityIcon(actividad);
                                 const activityKey = normalizeActivity(actividad);
-                                const currentSelectedActivities = Array.isArray(selectedActivities)
-                                    ? selectedActivities
-                                    : selectedActivities
-                                        ? [selectedActivities]
-                                        : [];
                                 const isSelected = selectedActivityKeys.has(activityKey);
-                                const nextSelectedActivities = isSelected
-                                    ? currentSelectedActivities.filter(
-                                        (item) => normalizeActivity(typeof item === 'string' ? item : '') !== activityKey,
-                                    )
-                                    : [...currentSelectedActivities, actividad];
 
                                 return (
                                     <button
                                         key={`${grupo}-${actividad}`}
                                         type="button"
                                         aria-pressed={isSelected}
-                                        onClick={() => onActivitySelect(nextSelectedActivities)}
-                                        className={`font-secondary inline-flex cursor-pointer items-center gap-2 whitespace-nowrap rounded-full border px-4 py-2 text-sm shadow-sm transition focus:outline-none focus:ring-2 focus:bg-brand-red focus:text-brand-white focus:ring-offset-2 ${
+                                        onPointerDown={(event) => event.stopPropagation()}
+                                        onClick={(event) => {
+                                            event.stopPropagation();
+                                            onActivitySelect(actividad);
+                                        }}
+                                        className={`font-secondary inline-flex cursor-pointer items-center gap-2 whitespace-nowrap 
+                                            rounded-full px-4 py-2 text-sm shadow-sm transition 
+                                            ${
                                             isSelected
-                                                ? 'border-brand-blue bg-brand-red text-brand-white'
-                                                : 'border-brand-blue/20 bg-brand-white text-brand-charcoal hover:bg-brand-red hover:text-brand-white'
+                                                ? ' bg-brand-red text-brand-white'
+                                                : 'bg-brand-white text-brand-charcoal hover:bg-brand-red hover:text-brand-white'
                                         }`}
                                     >
                                         <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />

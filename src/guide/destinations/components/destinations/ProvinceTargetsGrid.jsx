@@ -51,7 +51,7 @@ function ProvinceTargetsGrid({
   const selectedActivityKeys = new Set(normalizeActivitySelection(selectionSource))
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 mt-10">
       <h1
         className="font-main flex justify-center text-3xl font-bold text-brand-white/95 md:pb-4 md:text-6xl"
         style={{ textShadow: '0 0 6px rgba(0, 0, 0, 0.9)' }}
@@ -146,18 +146,18 @@ function ProvinceTargetsGrid({
 
               {mode === 'sites-only' && (
                 <div className={`flex flex-1 flex-col p-5 ${cardIsHighlighted ? 'bg-brand-blue' : 'bg-brand-white'}`}>
-                  <h3 className={`font-secondary-italic mt-2 text-2xl ${cardIsHighlighted ? 'text-black' : 'text-brand-blue/95'}`}>
+                  <h3 className={`font-secondary-italic mt-2 text-2xl ${cardIsHighlighted ? 'text-brand-white' : 'text-brand-blue/95'}`}>
                     {target.nombre}
                   </h3>
 
                   {description && (
-                    <p className={`font-body mt-3 text-sm leading-6 ${cardIsHighlighted ? 'text-black/80' : 'text-black'}`}>
+                    <p className={`font-body mt-3 text-sm leading-6 ${cardIsHighlighted ? 'text-brand-white/85' : 'text-black'}`}>
                       {description}
                     </p>
                   )}
 
                   {target.ubicacion && (
-                    <p className={`font-secondary-italic mt-auto pt-4 text-sm ${cardIsHighlighted ? 'text-black/90' : 'text-brand-red/95'}`}>
+                    <p className={`font-secondary-italic mt-auto pt-4 text-sm ${cardIsHighlighted ? 'text-brand-white/90' : 'text-brand-red/95'}`}>
                       {target.ubicacion}
                     </p>
                   )}

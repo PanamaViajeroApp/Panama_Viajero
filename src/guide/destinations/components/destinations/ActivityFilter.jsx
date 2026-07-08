@@ -8,7 +8,7 @@ function normalizeActivity(activity = '') {
 
 function normalizeActivitySelection(selection = []) {
     const items = Array.isArray(selection) ? selection : selection ? [selection] : [];
-    return items.filter(Boolean);
+    return [...new Set(items.filter(Boolean))];
 }
 
 function ActivityFilter({ selectedActivities = [], onActivitySelect = () => {} }) {

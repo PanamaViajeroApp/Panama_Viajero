@@ -3,8 +3,7 @@ const RECIPIENT_EMAIL = 'ed.jimenez0012@gmail.com';
 function doPost(e) {
   try {
     const data = {
-      firstName: getValue_(e, 'firstName'),
-      lastName: getValue_(e, 'lastName'),
+      fullName: getValue_(e, 'fullName'),
       phone: getValue_(e, 'phone'),
       email: getValue_(e, 'email'),
       acceptedPrivacyPolicy: getValue_(e, 'acceptedPrivacyPolicy') === 'true',
@@ -22,8 +21,7 @@ function doPost(e) {
     const body =
       'Se recibio un nuevo preregistro en Panama Viajero.\n\n' +
       'Fecha: ' + submittedAt + '\n' +
-      'Nombre: ' + data.firstName + '\n' +
-      'Apellido: ' + data.lastName + '\n' +
+      'Nombre completo: ' + data.fullName + '\n' +
       'Telefono: ' + data.phone + '\n' +
       'Correo: ' + data.email + '\n' +
       'Acepto politica: ' + (data.acceptedPrivacyPolicy ? 'Si' : 'No');
@@ -55,8 +53,7 @@ function getValue_(event, key) {
 }
 
 function validate_(data) {
-  if (data.firstName.length < 2) throw new Error('Nombre invalido');
-  if (data.lastName.length < 2) throw new Error('Apellido invalido');
+  if (data.fullName.length < 3) throw new Error('Nombre completo invalido');
   if (data.phone.length < 7) throw new Error('Telefono invalido');
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) throw new Error('Correo invalido');
   if (!data.acceptedPrivacyPolicy) throw new Error('Debes aceptar la politica de privacidad');

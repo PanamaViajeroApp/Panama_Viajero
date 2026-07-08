@@ -32,7 +32,7 @@ function CountdownModal({ onClose, onPreregister }) {
                             alt=""
                         />
 
-                        <div className="relative z-10 flex md:w-full w-80 flex-1 items-center justify-center md:mb-0 md:mt-30 md:mb-[-100px] mb-[-60px]">
+                        <div className="relative z-10 flex md:w-full w-80 flex-1 items-center justify-center md:mb-0 md:mb-[-100px] mb-[-60px]">
                             <img
                                 src={VentanaEmergente}
                                 alt="Promoción"
@@ -45,7 +45,7 @@ function CountdownModal({ onClose, onPreregister }) {
 
                         <div className="relative z-20 mt-[-15px] flex w-full flex-col items-start text-center md:text-left">
                             <h1 className="text-sm font-bold text-brand-blue">¡Espéralo pronto!</h1>
-                            <h2 className="text-2xl font-secondary text-brand-red/80">Agosto - 2026</h2>
+                            <h2 className="text-2xl font-secondary text-[#CD2E4C]">Septiembre - 2026</h2>
                             <div className="mt-[1px] w-45 border-1 border-brand-blue/50" />
 
                             <div className="mt-[-10px] ml-[-14px] flex items-center justify-center md:justify-start">
@@ -66,8 +66,8 @@ function CountdownModal({ onClose, onPreregister }) {
 
                             <h2 className="md:mt-6 font-secondary text-4xl leading-[0.95] sm:text-5xl md:text-[3.7rem] ">
                                 Descubre Panamá
-                                <span className="block text-[#ff8fa2]">como nunca</span>
-                                <span className="block text-[#ff8fa2]">antes lo viste</span>
+                                <span className="block text-[#CD2E4C]">como nunca</span>
+                                <span className="block text-[#CD2E4C]">antes lo viste</span>
                             </h2>
 
                             <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0 hidden md:block">
@@ -84,7 +84,7 @@ function CountdownModal({ onClose, onPreregister }) {
                                 </button>
 
                                 <p className="max-w-[220px] font-body text-sm leading-5 text-white/80">
-                                    Y participa por una noche gratis.
+                                    y participa por una estadía gratis para 2 personas.
                                 </p>
                             </div>
                         </div>
