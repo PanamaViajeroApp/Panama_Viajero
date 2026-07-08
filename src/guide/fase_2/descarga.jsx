@@ -76,7 +76,7 @@ function Descarga() {
                     cursor-pointer
                 "
                 style={{
-                    animation: 'gradient 8s ease infinite',
+                    animation: 'gradient 6s ease infinite',
                 }}
             >
                 Descarga la app

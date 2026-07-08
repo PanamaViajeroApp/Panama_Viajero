@@ -96,7 +96,7 @@ function HospedajeYComida({ fallbackImage = '' }) {
             {items.map((item) => {
               const imageSrc = item.imagen || fallbackImage
               const label = activeTab === 'hoteles' ? 'Alojamiento' : 'Restaurante'
-              const priceText = item.precio.replace(/^Desde\s*/i, '')
+              const priceText = item.precio
 
               return (
                 <article
