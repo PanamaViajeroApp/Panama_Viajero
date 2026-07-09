@@ -51,12 +51,6 @@ export const esclusasAguaClara = {
             icono: '',
         },
         {
-            nombre: 'Experiencia cultural',
-            descripcion:
-                'Descubre el impacto histórico y económico del Canal en Panamá y el mundo.',
-            icono: '',
-        },
-        {
             nombre: 'Paseo turístico',
             descripcion:
                 'Recorre las áreas habilitadas del centro mientras disfrutas del entorno caribeño.',

@@ -15,12 +15,6 @@ export const gualaca = {
   previewUbicacion: 'Gualaca, Chiriquí',
   actividades: [
     {
-      nombre: 'Natación',
-      descripcion:
-        'Disfruta de aguas frescas y cristalinas rodeadas de vegetación y paisajes naturales.',
-      icono: '',
-    },
-    {
       nombre: 'Los Cangilones',
       descripcion:
         'Descubre esta formación rocosa esculpida por el río Estí, uno de los atractivos más conocidos de la zona.',

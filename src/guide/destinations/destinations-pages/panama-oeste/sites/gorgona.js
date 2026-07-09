@@ -27,12 +27,6 @@ export const gorgona = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Disfruta de zonas de mar tranquilas ideales para refrescarte y pasar el día.',
-            icono: '',
-        },
-        {
             nombre: 'Gastronomía local',
             descripcion:
                 'Prueba mariscos frescos y ceviches en restaurantes y pequeños locales frente al mar.',

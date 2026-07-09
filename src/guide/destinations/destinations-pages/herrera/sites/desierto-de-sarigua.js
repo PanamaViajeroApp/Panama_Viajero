@@ -15,12 +15,6 @@ export const desiertoSarigua = {
     previewUbicacion: 'Parita, Herrera',
     actividades: [
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Explora las extensas planicies secas y agrietadas que forman uno de los paisajes más peculiares de Panamá.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía',
             descripcion:
                 'Captura escenarios áridos, formaciones naturales y horizontes abiertos ideales para fotografía.',

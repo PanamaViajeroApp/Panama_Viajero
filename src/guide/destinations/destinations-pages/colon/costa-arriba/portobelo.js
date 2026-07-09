@@ -27,12 +27,6 @@ export const portobelo = {
             icono: '',
         },
         {
-            nombre: 'Turismo cultural',
-            descripcion:
-                'Conoce las tradiciones afrocaribeñas, su música, gastronomía y expresiones culturales únicas.',
-            icono: '',
-        },
-        {
             nombre: 'Visita a la Iglesia de San Felipe',
             descripcion:
                 'Descubre uno de los sitios religiosos más importantes del país y hogar del Cristo Negro.',
@@ -68,12 +62,7 @@ export const portobelo = {
                 'Participa en celebraciones tradicionales y eventos culturales reconocidos a nivel nacional.',
             icono: '',
         },
-        {
-            nombre: 'Exploración de destinos cercanos',
-            descripcion:
-                'Usa Portobelo como punto de partida para descubrir playas, islas y arrecifes de la Costa Arriba.',
-            icono: '',
-        },
+
     ],
     ubicacion:
         'https://www.google.com/maps?q=Portobelo%2C%20Colon%2C%20Panama&output=embed',

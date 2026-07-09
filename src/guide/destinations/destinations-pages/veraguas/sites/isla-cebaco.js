@@ -50,18 +50,6 @@ export const islaCebaco = {
                 'Captura selva tropical, playas remotas y panorámicas amplias del océano.',
             icono: '',
         },
-        {
-            nombre: 'Caminata',
-            descripcion:
-                'Explora senderos naturales que atraviesan la vegetación y permiten apreciar la riqueza ambiental del lugar.',
-            icono: '',
-        },
-        {
-            nombre: 'Descanso',
-            descripcion:
-                'Disfruta de la tranquilidad de una isla poco desarrollada donde predominan el silencio y la naturaleza.',
-            icono: '',
-        },
     ],
     ubicacion:
         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229083.1262407891!2d-81.46071165267858!3d7.532141408594837!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fb1e7e58df217c7%3A0xf96d05e7855c619c!2sIsla%20C%C3%A9baco!5e1!3m2!1sen!2spa!4v1781277667476!5m2!1sen!2spa',

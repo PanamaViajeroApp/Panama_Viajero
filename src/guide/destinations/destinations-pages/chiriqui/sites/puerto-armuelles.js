@@ -15,12 +15,6 @@ export const puertoArmuelles = {
   previewUbicacion: 'Barú, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre la ciudad y descubre la historia, la cultura y las tradiciones que la formaron.',
-      icono: '',
-    },
-    {
       nombre: 'Playa',
       descripcion:
         'Relájate en la costa del Pacífico y disfruta de amplios paisajes marinos.',
@@ -66,12 +60,6 @@ export const puertoArmuelles = {
       nombre: 'Paseo',
       descripcion:
         'Recorre la costa mientras disfrutas de la brisa marina y el paisaje.',
-      icono: '',
-    },
-    {
-      nombre: 'Cultura',
-      descripcion:
-        'Conoce la identidad y el estilo de vida de esta histórica comunidad costera.',
       icono: '',
     },
   ],

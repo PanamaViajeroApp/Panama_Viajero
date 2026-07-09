@@ -15,21 +15,9 @@ export const playaBarqueta = {
   previewUbicacion: 'Alanje, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre kilómetros de costa mientras disfrutas de la brisa marina y el paisaje abierto.',
-      icono: '',
-    },
-    {
       nombre: 'Atardecer',
       descripcion:
         'Contempla puestas de sol sobre el océano Pacífico con vistas amplias y despejadas.',
-      icono: '',
-    },
-    {
-      nombre: 'Descanso',
-      descripcion:
-        'Disfruta de un ambiente tranquilo ideal para relajarte y desconectarte.',
       icono: '',
     },
     {

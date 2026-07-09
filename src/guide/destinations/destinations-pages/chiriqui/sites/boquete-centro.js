@@ -15,12 +15,6 @@ export const boqueteCentro = {
   previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre el centro del pueblo y descubre su ambiente tranquilo, sus comercios y la vida cotidiana rodeada de montañas.',
-      icono: '',
-    },
-    {
       nombre: 'Café',
       descripcion:
         'Degusta café de altura en cafeterías y tostadores locales que muestran el valor de la producción chiricana.',

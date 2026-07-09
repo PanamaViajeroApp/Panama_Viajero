@@ -14,21 +14,9 @@ export const playaFarallon = {
   previewUbicacion: 'Antón, Coclé',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre la orilla de la playa mientras contemplas de cerca las enormes formaciones rocosas que caracterizan el paisaje.',
-      icono: '',
-    },
-    {
       nombre: 'Fotografía',
       descripcion:
         'Captura la fuerza del océano, los acantilados y los impresionantes contrastes naturales de la costa.',
-      icono: '',
-    },
-    {
-      nombre: 'Natación',
-      descripcion:
-        'Disfruta de un baño refrescante en las zonas más tranquilas y seguras de la playa.',
       icono: '',
     },
     {
@@ -49,18 +37,6 @@ export const playaFarallon = {
         'Comparte un momento de descanso frente al mar con vistas privilegiadas hacia las formaciones rocosas.',
       icono: '',
     },
-    {
-      nombre: 'Exploración',
-      descripcion:
-        'Descubre pequeñas cuevas, grietas y rincones naturales formados por la acción constante del mar.',
-      icono: '',
-    },
-    {
-      nombre: 'Descanso',
-      descripcion:
-        'Relájate con la brisa marina y el sonido de las olas en uno de los paisajes más llamativos de la región.',
-      icono: ''
-    }
   ],
   ubicacion:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14288.905848965396!2d-80.14203446029927!3d8.358427446765674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fadaacd50aa8079%3A0xec6f7a99d1e57622!2sPlaya%20Farall%C3%B3n!5e1!3m2!1sen!2spa!4v1781111828704!5m2!1sen!2spa'

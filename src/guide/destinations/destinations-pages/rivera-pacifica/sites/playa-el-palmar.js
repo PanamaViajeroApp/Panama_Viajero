@@ -29,27 +29,9 @@ export const playaElPalmar = {
       icono: '',
     },
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre la extensa costa disfrutando del paisaje, la arena y la energía natural del océano.',
-      icono: '',
-    },
-    {
-      nombre: 'Natación',
-      descripcion:
-        'Disfruta de un baño refrescante en sus aguas cálidas, siempre considerando las condiciones del mar.',
-      icono: '',
-    },
-    {
       nombre: 'Fotografía',
       descripcion:
         'Captura la acción de los surfistas, los paisajes marinos y los impresionantes escenarios costeros.',
-      icono: '',
-    },
-    {
-      nombre: 'Atardeceres',
-      descripcion:
-        'Disfruta de puestas de sol espectaculares que convierten la playa en uno de los mejores puntos para cerrar el día.',
       icono: '',
     },
     {

@@ -51,12 +51,6 @@ export const bocaChica = {
       icono: '',
     },
     {
-      nombre: 'Descanso',
-      descripcion:
-        'Relájate junto al mar en un entorno tranquilo, alejado del turismo masivo.',
-      icono: '',
-    },
-    {
       nombre: 'Fotografía',
       descripcion:
         'Captura vistas del océano, las islas y los atardeceres del Pacífico.',

@@ -15,10 +15,8 @@ export const playaElEstero = {
   previewUbicacion: 'Soná, Veraguas',
   actividades: [
     { nombre: 'Surf', descripcion: 'Disfruta de olas constantes que sirven tanto para aprender como para practicar con más nivel.', icono: '' },
-    { nombre: 'Caminata', descripcion: 'Recorre largos tramos de arena mientras contemplas el paisaje costero y la inmensidad del océano.', icono: '' },
     { nombre: 'Atardecer', descripcion: 'Observa puestas de sol que tiñen el horizonte con colores intensos cada tarde.', icono: '' },
     { nombre: 'Fotografía', descripcion: 'Captura escenas donde se combinan mar, arena, vegetación y cielos muy abiertos.', icono: '' },
-    { nombre: 'Descanso', descripcion: 'Encuentra espacios tranquilos para descansar, leer o simplemente escuchar el sonido de las olas.', icono: '' },
     { nombre: 'Fauna', descripcion: 'Aprecia aves marinas y otras especies que frecuentan la playa y sus alrededores.', icono: '' },
     { nombre: 'Ejercicio', descripcion: 'Aprovecha la amplitud de la playa para correr, caminar o practicar actividades recreativas.', icono: '' },
     { nombre: 'Escapada', descripcion: 'Disfruta de un entorno natural ideal para desconectarte y vivir la esencia de la costa veragüense.', icono: '' },

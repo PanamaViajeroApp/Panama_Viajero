@@ -27,12 +27,6 @@ export const islaMamey = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Nada en aguas calmadas y cristalinas, ideales para refrescarse y disfrutar del mar.',
-            icono: '',
-        },
-        {
             nombre: 'Paseos en lancha',
             descripcion:
                 'Disfruta del recorrido marítimo desde Portobelo y contempla la belleza natural de la costa.',

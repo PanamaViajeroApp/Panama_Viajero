@@ -16,11 +16,9 @@ export const playaMorrillo = {
   actividades: [
     { nombre: 'Surf', descripcion: 'Aprovecha algunas de las olas más consistentes y desafiantes de la costa pacífica panameña.', icono: '' },
     { nombre: 'Atardecer', descripcion: 'Disfruta puestas de sol que iluminan el océano y los paisajes costeros.', icono: '' },
-    { nombre: 'Caminata', descripcion: 'Recorre la playa mientras contemplas la belleza natural de la costa.', icono: '' },
     { nombre: 'Fotografía', descripcion: 'Captura escenas donde se combinan olas, acantilados y naturaleza tropical.', icono: '' },
     { nombre: 'Fauna', descripcion: 'Observa aves costeras y otras especies que frecuentan los ecosistemas marinos de la región.', icono: '' },
     { nombre: 'Costa', descripcion: 'Descubre rincones naturales, formaciones rocosas y playas cercanas poco visitadas.', icono: '' },
-    { nombre: 'Descanso', descripcion: 'Disfruta del sonido constante de las olas en un entorno alejado de las grandes multitudes.', icono: '' },
     { nombre: 'Naturaleza', descripcion: 'Conecta con uno de los escenarios costeros más auténticos y menos intervenidos de Panamá.', icono: '' },
   ],
   ubicacion:

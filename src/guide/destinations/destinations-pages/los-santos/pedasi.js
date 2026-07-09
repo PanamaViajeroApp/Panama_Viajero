@@ -45,12 +45,6 @@ export const pedasi = {
             icono: '',
         },
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Descubre la arquitectura tradicional y el ambiente acogedor de Pedasí.',
-            icono: '',
-        },
-        {
             nombre: 'Gastronomía',
             descripcion:
                 'Prueba mariscos frescos y platos típicos de la región santeña.',

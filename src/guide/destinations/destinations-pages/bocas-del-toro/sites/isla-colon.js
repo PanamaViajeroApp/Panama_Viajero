@@ -12,14 +12,11 @@ export const islaColon = {
     `${islaColonImageBase}/banner/bg-isla-colon.webp`,
     `${islaColonImageBase}/gallery/g1-isla-colon.webp`,
     `${islaColonImageBase}/gallery/g2-isla-colon.webp`,
-    `${islaColonImageBase}/gallery/g3-isla-colon.webp`,
     `${islaColonImageBase}/gallery/g4-isla-colon.webp`,
     `${islaColonImageBase}/gallery/g5-Isla-colon.webp`,
     `${islaColonImageBase}/gallery/g6-isla-colon.webp`,
-    `${islaColonImageBase}/gallery/g7-isla-colon.webp`,
     `${islaColonImageBase}/gallery/g8-isla-colon.webp`,
     `${islaColonImageBase}/gallery/g9-isla-colon.webp`,
-    `${islaColonImageBase}/gallery/g10-isla-colon.webp`,
   ],
   descripcion:
     'El corazón vibrante de Bocas del Toro, donde playas caribeñas, vida nocturna, gastronomía y naturaleza tropical se unen en un solo destino. Isla Colón es el punto principal para explorar el archipiélago, disfrutar de aventuras marinas y vivir la esencia auténtica del Caribe panameño.',
@@ -56,12 +53,6 @@ export const islaColon = {
       descripcion:
         'Vive una experiencia única observando aguas que brillan naturalmente durante recorridos nocturnos.',
       icono: 'spark',
-    },
-    {
-      nombre: 'Tour de cacao',
-      descripcion:
-        'Descubre el proceso artesanal del cacao y conoce comunidades locales que mantienen viva esta tradición.',
-      icono: 'cacao',
     },
     {
       nombre: 'Buceo',

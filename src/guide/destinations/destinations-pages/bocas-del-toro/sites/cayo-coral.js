@@ -60,18 +60,6 @@ export const cayoCoral = {
                 'Explora los alrededores del cayo y otros rincones cercanos de Bocas del Toro.',
             icono: '',
         },
-        {
-            nombre: 'Natación',
-            descripcion:
-                'Relájate y disfruta de aguas cálidas y tranquilas ideales para nadar.',
-            icono: '',
-        },
-        {
-            nombre: 'Vida marina',
-            descripcion:
-                'Descubre peces tropicales, corales y ecosistemas marinos que hacen de este lugar un acuario natural.',
-            icono: '',
-        },
     ],
     ubicacion:
         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14254.757493154393!2d-82.14810130184355!3d9.243854853219348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa8a931e8332763%3A0xc821bdd87663ee15!2sCrawl%20Cay%2C%20Bocas%20del%20Toro%20Province!5e1!3m2!1sen!2spa!4v1780695649986!5m2!1sen!2spa',

@@ -21,12 +21,6 @@ export const lasTablas = {
             icono: '',
         },
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Explora calles, plazas y edificios que reflejan la historia de la ciudad.',
-            icono: '',
-        },
-        {
             nombre: 'Folclore',
             descripcion:
                 'Conoce tradiciones, costumbres y expresiones culturales que distinguen a la región.',
@@ -66,12 +60,6 @@ export const lasTablas = {
             nombre: 'Compras',
             descripcion:
                 'Encuentra recuerdos y productos elaborados por artesanos locales.',
-            icono: '',
-        },
-        {
-            nombre: 'Cultura',
-            descripcion:
-                'Sumérgete en la hospitalidad y el estilo de vida tradicional de Los Santos.',
             icono: '',
         },
     ],

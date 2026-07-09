@@ -18,9 +18,7 @@ export const provincias = [
     actividades: [
       'Gastronomía',
       'Senderismo',
-      'Caminata',
       'Iglesias',
-      'Cultura',
       'Compras',
       'Museos',
       'Fotografía',

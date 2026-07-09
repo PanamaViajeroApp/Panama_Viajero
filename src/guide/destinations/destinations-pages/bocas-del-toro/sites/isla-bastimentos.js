@@ -46,12 +46,6 @@ export const islaBastimentos = {
             icono: '',
         },
         {
-            nombre: 'Cultura',
-            descripcion:
-                'Conoce la esencia afrocaribeña de Old Bank, su música, gastronomía y tradiciones locales.',
-            icono: '',
-        },
-        {
             nombre: 'Snorkel',
             descripcion:
                 'Sumérgete en arrecifes llenos de coral y descubre una gran variedad de vida marina tropical.',
@@ -61,12 +55,6 @@ export const islaBastimentos = {
             nombre: 'Senderismo',
             descripcion:
                 'Recorre senderos de selva tropical donde podrás observar fauna silvestre y exuberante vegetación.',
-            icono: '',
-        },
-        {
-            nombre: 'Descanso',
-            descripcion:
-                'Relájate en playas tranquilas y poco concurridas rodeadas de un entorno natural único.',
             icono: '',
         },
     ],

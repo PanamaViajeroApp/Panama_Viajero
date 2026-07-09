@@ -15,7 +15,7 @@ export const lugaresPanama = [
   {
     id: 'casco-antiguo',
     nombre: 'Casco Antiguo',
-    categoria: ['Historia', 'Gastronomía', 'Vida nocturna', 'Caminatas urbanas'],
+    categoria: ['Historia', 'Gastronomía', 'Vida nocturna'],
     descripcion:
       'Centro histórico de la capital, conocido por sus calles empedradas, plazas, iglesias, arquitectura colonial, restaurantes, cafés y terrazas.',
     imagen: '',
@@ -54,7 +54,7 @@ export const lugaresPanama = [
   {
     id: 'parque-natural-metropolitano',
     nombre: 'Parque Natural Metropolitano',
-    categoria: ['Naturaleza', 'Miradores', 'Caminatas urbanas', 'Fotografía'],
+    categoria: ['Naturaleza', 'Miradores', 'Fotografía'],
     descripcion:
       'Bosque tropical dentro de la ciudad, con senderos, miradores y oportunidades para observar aves, mamíferos y vegetación nativa.',
     imagen: '',
@@ -67,7 +67,7 @@ export const lugaresPanama = [
   {
     id: 'calzada-de-amador',
     nombre: 'Calzada de Amador',
-    categoria: ['Gastronomía', 'Fotografía', 'Caminatas urbanas', 'Vida nocturna'],
+    categoria: ['Gastronomía', 'Fotografía', 'Vida nocturna'],
     descripcion:
       'Paseo junto al mar con vistas al Canal, al Puente de las Américas y al skyline de la ciudad; ideal para caminar, comer y pasear en bicicleta.',
     imagen: '',
@@ -93,7 +93,7 @@ export const lugaresPanama = [
   {
     id: 'cinta-costera',
     nombre: 'Cinta Costera',
-    categoria: ['Caminatas urbanas', 'Fotografía', 'Gastronomía'],
+    categoria: ['Fotografía', 'Gastronomía'],
     descripcion:
       'Espacio público frente a la bahía con áreas para caminar, correr, montar bicicleta y disfrutar vistas de la ciudad.',
     imagen: '',

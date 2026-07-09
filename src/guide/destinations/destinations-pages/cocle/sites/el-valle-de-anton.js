@@ -32,12 +32,6 @@ export const elValleDeAnton = {
             icono: '',
         },
         {
-            nombre: 'Expedición ecológica',
-            descripcion:
-                'Visita los santuarios locales para conocer de cerca a la emblemática y protegida rana dorada de la zona.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía de cascadas',
             descripcion:
                 'Captura la majestuosa belleza del Chorro El Macho enmarcado por una densa y húmeda vegetación tropical.',
@@ -56,21 +50,9 @@ export const elValleDeAnton = {
             icono: '',
         },
         {
-            nombre: 'Caminata boscosa',
-            descripcion:
-                'Recorre senderos cubiertos de neblina descubriendo los secretos botánicos del bosque de árboles cuadrados.',
-            icono: '',
-        },
-        {
             nombre: 'Avistamiento de aves',
             descripcion:
                 'Observa exóticas especies y coloridos tucanes que revolotean entre las altas copas del bosque nuboso.',
-            icono: '',
-        },
-        {
-            nombre: 'Descanso contemplativo',
-            descripcion:
-                'Disfruta del clima fresco en las cafeterías del pueblo compartiendo las tradiciones de la gente local.',
             icono: '',
         },
     ],

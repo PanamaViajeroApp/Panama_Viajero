@@ -34,18 +34,6 @@ export const cayoZapatilla = {
             icono: '',
         },
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Recorre senderos naturales y disfruta del entorno virgen rodeado de vegetación tropical.',
-            icono: '',
-        },
-        {
-            nombre: 'Exploración',
-            descripcion:
-                'Descubre rincones naturales, playas escondidas y ecosistemas protegidos de gran belleza.',
-            icono: '',
-        },
-        {
             nombre: 'Avistamiento de tortugas',
             descripcion:
                 'Durante ciertas temporadas, es posible observar tortugas marinas en áreas protegidas de la isla.',
@@ -67,12 +55,6 @@ export const cayoZapatilla = {
             nombre: 'Paseos en lancha',
             descripcion:
                 'Llega y explora el área disfrutando del paisaje caribeño desde el mar.',
-            icono: '',
-        },
-        {
-            nombre: 'Natación',
-            descripcion:
-                'Relájate en aguas cálidas, tranquilas y cristalinas ideales para disfrutar del Caribe.',
             icono: '',
         },
     ],

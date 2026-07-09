@@ -5,21 +5,16 @@ export const bahiaDeLosDelfines = {
     provinceId: 'bocas-del-toro',
     nombre: 'Bahía de los Delfines',
     banner: {
-        src: `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-delfines.png`,
+        src: `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-delfines.webp`,
         alt: 'Banner de Bahía de los Delfines',
     },
     gallery: [
-        `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-delfines.png`,
+        `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-delfines.webp`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g1-bahia-de-los-delfines.webp`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g2-bahia-de-los-delfines.webp`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g3-bahia-de-los-delfines.webp`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g4-bahia-de-los-delfines.webp`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g5-bahia-de-los-delfines.webp`,
-        `${bahiaDeLosDelfinesImageBase}/gallery/g6-bahia-de-los-delfines.webp`,
-        `${bahiaDeLosDelfinesImageBase}/gallery/g7-bahia-de-los-delfines.webp`,
-        `${bahiaDeLosDelfinesImageBase}/gallery/g8-bahia-de-los-delfines.webp`,
-        `${bahiaDeLosDelfinesImageBase}/gallery/g9-bahia-de-los-delfines.webp`,
-        `${bahiaDeLosDelfinesImageBase}/gallery/g10-bahia-de-los-delfines.webp`,
     ],
     descripcion:
         'Un santuario idílico donde las aguas calmas y los manglares crean el escenario de un ballet natural eterno. Un rincón mágico rodeado de una costa exuberante, diseñado para conmover tu alma al presenciar la libertad y la gracia en el estado más puro y fascinante del Caribe.',

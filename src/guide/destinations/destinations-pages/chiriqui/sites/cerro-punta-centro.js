@@ -15,12 +15,6 @@ export const cerroPuntaCentro = {
   previewUbicacion: 'Tierras Altas, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre la comunidad y conoce su ambiente tranquilo, marcado por la vida de montaña.',
-      icono: '',
-    },
-    {
       nombre: 'Fincas agrícolas',
       descripcion:
         'Conoce cultivos de hortalizas, flores y fresas que distinguen a la región.',
@@ -36,12 +30,6 @@ export const cerroPuntaCentro = {
       nombre: 'Aves',
       descripcion:
         'Explora un entorno favorable para observar aves propias de la zona de altura.',
-      icono: '',
-    },
-    {
-      nombre: 'Descanso',
-      descripcion:
-        'Relájate en uno de los lugares más frescos y agradables de Panamá.',
       icono: '',
     },
     {
@@ -68,12 +56,7 @@ export const cerroPuntaCentro = {
         'Contempla algunos de los escenarios naturales más impresionantes de Chiriquí.',
       icono: '',
     },
-    {
-      nombre: 'Base de exploración',
-      descripcion:
-        'Usa Cerro Punta como base para visitar Bambito, Paso Ancho y el Parque Internacional La Amistad.',
-      icono: '',
-    },
+
   ],
   ubicacion: 'https://www.google.com/maps?q=Cerro%20Punta%20Chiriqui&output=embed',
 }

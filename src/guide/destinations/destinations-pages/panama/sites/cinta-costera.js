@@ -15,12 +15,6 @@ export const cintaCostera = {
     previewUbicacion: 'Bella Vista, Ciudad de Panamá',
     actividades: [
         {
-            nombre: 'Caminatas',
-            descripcion:
-                'Recorre kilómetros de paseo marítimo mientras disfrutas de vistas abiertas al mar y la ciudad.',
-            icono: '',
-        },
-        {
             nombre: 'Ciclismo',
             descripcion:
                 'Aprovecha sus amplias rutas para pedalear junto a la costa con una vista privilegiada del skyline.',
@@ -48,12 +42,6 @@ export const cintaCostera = {
             nombre: 'Eventos y festivales',
             descripcion:
                 'Participa en conciertos, actividades culturales y eventos públicos que suelen celebrarse en este importante espacio urbano.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación de atardeceres',
-            descripcion:
-                'Disfruta de impresionantes puestas de sol sobre la Bahía de Panamá, uno de los momentos más especiales del lugar.',
             icono: '',
         },
     ],

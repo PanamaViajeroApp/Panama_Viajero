@@ -33,12 +33,6 @@ export const islaContadora = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Disfruta de aguas cálidas y calmadas, ideales para nadar y relajarse.',
-            icono: '',
-        },
-        {
             nombre: 'Observación de fauna marina',
             descripcion:
                 'Descubre aves marinas, peces y otras especies que habitan en el entorno costero de la isla.',

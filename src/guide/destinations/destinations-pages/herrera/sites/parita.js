@@ -15,12 +15,6 @@ export const parita = {
     previewUbicacion: 'Parita, Herrera',
     actividades: [
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Explora calles y edificaciones coloniales que conservan siglos de historia.',
-            icono: '',
-        },
-        {
             nombre: 'Iglesia',
             descripcion:
                 'Conoce uno de los templos coloniales más importantes de Panamá y su valor patrimonial.',
@@ -32,12 +26,7 @@ export const parita = {
                 'Captura plazas, fachadas antiguas y detalles arquitectónicos únicos del pueblo.',
             icono: '',
         },
-        {
-            nombre: 'Cultura',
-            descripcion:
-                'Descubre tradiciones, costumbres y expresiones culturales propias de la región de Azuero.',
-            icono: '',
-        },
+
         {
             nombre: 'Festividades',
             descripcion:

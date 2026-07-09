@@ -27,12 +27,6 @@ export const islaPerro = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Nada en aguas tranquilas y cristalinas ideales para disfrutar del Caribe panameño.',
-            icono: '',
-        },
-        {
             nombre: 'Vida marina',
             descripcion:
                 'Descubre peces tropicales, corales y otras especies marinas que habitan alrededor de la isla.',

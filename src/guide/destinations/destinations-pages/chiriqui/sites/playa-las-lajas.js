@@ -15,12 +15,6 @@ export const playaLasLajas = {
   previewUbicacion: 'San Félix, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre kilómetros de arena mientras disfrutas de la brisa del océano.',
-      icono: '',
-    },
-    {
       nombre: 'Descanso',
       descripcion:
         'Relájate frente a las aguas del Pacífico y disfruta del entorno natural.',

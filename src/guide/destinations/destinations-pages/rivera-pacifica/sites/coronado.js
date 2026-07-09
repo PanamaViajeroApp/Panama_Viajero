@@ -23,18 +23,6 @@ export const coronado = {
       icono: '',
     },
     {
-      nombre: 'Natación',
-      descripcion:
-        'Aprovecha sus aguas para refrescarte y disfrutar de una experiencia relajante en el Pacífico.',
-      icono: '',
-    },
-    {
-      nombre: 'Caminatas por la orilla',
-      descripcion:
-        'Recorre la extensa línea costera mientras disfrutas de la brisa marina y vistas abiertas al océano.',
-      icono: '',
-    },
-    {
       nombre: 'Gastronomía frente al mar',
       descripcion:
         'Descubre restaurantes y cafés con mariscos frescos, cocina internacional y sabores locales.',
@@ -68,12 +56,6 @@ export const coronado = {
       nombre: 'Escapadas de fin de semana',
       descripcion:
         'Ideal para una visita rápida desde la ciudad con todas las comodidades necesarias para una estancia completa.',
-      icono: '',
-    },
-    {
-      nombre: 'Observación de atardeceres',
-      descripcion:
-        'Disfruta de puestas de sol espectaculares que convierten el horizonte del Pacífico en un espectáculo inolvidable.',
       icono: '',
     },
   ],

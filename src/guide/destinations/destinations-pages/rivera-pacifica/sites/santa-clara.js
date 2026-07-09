@@ -17,18 +17,6 @@ export const santaClara = {
   previewUbicacion: 'Antón, Coclé',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre kilómetros de arena suave mientras disfrutas de la brisa marina, el sonido de las olas y las vistas abiertas del océano Pacífico.',
-      icono: '',
-    },
-    {
-      nombre: 'Natación',
-      descripcion:
-        'Disfruta de sus aguas tranquilas y poco profundas, ideales para refrescarse y compartir en familia con seguridad.',
-      icono: '',
-    },
-    {
       nombre: 'Pícnic',
       descripcion:
         'Organiza un día de playa con familia o amigos en un ambiente cómodo y relajado, ideal para compartir junto al mar.',
@@ -38,18 +26,6 @@ export const santaClara = {
       nombre: 'Fotografía',
       descripcion:
         'Captura la belleza natural de la playa, sus paisajes abiertos y los colores vibrantes del cielo al amanecer o al atardecer.',
-      icono: '',
-    },
-    {
-      nombre: 'Atardeceres',
-      descripcion:
-        'Contempla espectaculares puestas de sol que convierten el horizonte en uno de los momentos más especiales del día.',
-      icono: '',
-    },
-    {
-      nombre: 'Descanso',
-      descripcion:
-        'Relájate bajo la sombra o junto a la orilla, disfrutando de un ambiente tranquilo y natural lejos de la rutina.',
       icono: '',
     },
     {

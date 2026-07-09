@@ -15,18 +15,6 @@ export const fuerteSherman = {
     previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
-            nombre: 'Recorrido histórico',
-            descripcion:
-                'Conoce el legado militar y estratégico de esta antigua zona en Colón.',
-            icono: '',
-        },
-        {
-            nombre: 'Exploración de áreas naturales',
-            descripcion:
-                'Disfruta paisajes rodeados de bosque tropical y ambiente caribeño.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía de paisajes',
             descripcion:
                 'Captura escenarios donde se mezclan historia, naturaleza y costa.',
@@ -36,12 +24,6 @@ export const fuerteSherman = {
             nombre: 'Observación de aves',
             descripcion:
                 'Descubre especies que habitan los bosques cercanos a la antigua base.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo cultural',
-            descripcion:
-                'Aprende sobre la importancia histórica de la zona dentro del desarrollo canalero.',
             icono: '',
         },
         {

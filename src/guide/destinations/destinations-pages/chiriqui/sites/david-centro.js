@@ -15,12 +15,6 @@ export const davidCentro = {
   previewUbicacion: 'David, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre el centro y descubre plazas, calles y espacios que reflejan la vida cotidiana de la ciudad.',
-      icono: '',
-    },
-    {
       nombre: 'Gastronomía',
       descripcion:
         'Disfruta restaurantes, cafeterías y platillos tradicionales de la región chiricana.',
@@ -36,12 +30,6 @@ export const davidCentro = {
       nombre: 'Parques',
       descripcion:
         'Relájate en espacios públicos ideales para pasear y observar el ambiente local.',
-      icono: '',
-    },
-    {
-      nombre: 'Cultura',
-      descripcion:
-        'Descubre las costumbres, tradiciones y el estilo de vida de la región chiricana.',
       icono: '',
     },
     {

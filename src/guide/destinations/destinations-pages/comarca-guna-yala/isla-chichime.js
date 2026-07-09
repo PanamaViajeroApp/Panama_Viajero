@@ -27,27 +27,9 @@ export const islaChichime = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Nada en aguas tranquilas, cálidas y transparentes ideales para disfrutar con calma.',
-            icono: '',
-        },
-        {
-            nombre: 'Vida marina',
-            descripcion:
-                'Descubre peces tropicales y otras especies marinas en uno de los ecosistemas más atractivos del Caribe panameño.',
-            icono: '',
-        },
-        {
             nombre: 'Islas',
             descripcion:
                 'Visita otros cayos cercanos del archipiélago y amplía la experiencia de explorar Guna Yala.',
-            icono: '',
-        },
-        {
-            nombre: 'Descanso',
-            descripcion:
-                'Relájate bajo la sombra de las palmeras con la brisa del Caribe y el sonido del mar.',
             icono: '',
         },
     ],

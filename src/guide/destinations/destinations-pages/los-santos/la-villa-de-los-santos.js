@@ -27,18 +27,6 @@ export const laVilla = {
             icono: '',
         },
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Recorre calles con arquitectura tradicional y un ambiente colonial bien conservado.',
-            icono: '',
-        },
-        {
-            nombre: 'Cultura',
-            descripcion:
-                'Sumérgete en las costumbres, tradiciones y expresiones folclóricas de la región.',
-            icono: '',
-        },
-        {
             nombre: 'Iglesias',
             descripcion:
                 'Admira templos emblemáticos que forman parte de la herencia religiosa del país.',

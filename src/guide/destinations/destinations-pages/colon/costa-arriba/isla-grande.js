@@ -33,12 +33,6 @@ export const islaGrande = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Disfruta de aguas tranquilas y cálidas, perfectas para refrescarse y relajarse.',
-            icono: '',
-        },
-        {
             nombre: 'Kayak',
             descripcion:
                 'Explora la costa desde el agua y vive una experiencia activa rodeado de paisajes caribeños.',
@@ -48,12 +42,6 @@ export const islaGrande = {
             nombre: 'Gastronomía local',
             descripcion:
                 'Prueba mariscos frescos y platos tradicionales con auténtica influencia afrocaribeña.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo cultural',
-            descripcion:
-                'Conoce la música, tradiciones y estilo de vida de la comunidad afrocaribeña local.',
             icono: '',
         },
     ],

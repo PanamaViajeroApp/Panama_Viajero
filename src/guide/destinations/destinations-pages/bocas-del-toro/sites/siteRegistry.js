@@ -4,7 +4,6 @@ import { cayoZapatilla } from './cayos-zapatilla.js'
 import { islaCarenero } from './isla-carenero.js'
 import { bahiaDeLosDelfines } from './bahia-de-los-delfines.js'
 import { cayoCoral } from './cayo-coral.js'
-/* import { almirante } from './almirante.js' */
 
 export const bocasSiteRegistry = {
   [islaColon.id]: islaColon,
@@ -13,5 +12,4 @@ export const bocasSiteRegistry = {
   [islaCarenero.id]: islaCarenero,
   [bahiaDeLosDelfines.id]: bahiaDeLosDelfines,
   [cayoCoral.id]: cayoCoral,
-  /* [almirante.id]: almirante, */
 }

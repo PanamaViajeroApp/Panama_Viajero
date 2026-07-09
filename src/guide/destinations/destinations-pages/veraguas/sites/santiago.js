@@ -15,12 +15,6 @@ export const santiago = {
     previewUbicacion: 'Santiago, Veraguas',
     actividades: [
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Recorre las calles principales y descubre el ambiente comercial, las plazas y la vida local de la ciudad.',
-            icono: '',
-        },
-        {
             nombre: 'Catedral',
             descripcion:
                 'Conoce uno de los puntos religiosos más representativos de la ciudad y aprecia su valor cultural dentro de la comunidad.',
@@ -48,12 +42,6 @@ export const santiago = {
             nombre: 'Fotografía',
             descripcion:
                 'Captura arquitectura, calles activas y rincones que muestran la identidad de Santiago.',
-            icono: '',
-        },
-        {
-            nombre: 'Cultura',
-            descripcion:
-                'Participa en ferias, actividades comunitarias y eventos tradicionales que reflejan el carácter del interior panameño.',
             icono: '',
         },
     ],

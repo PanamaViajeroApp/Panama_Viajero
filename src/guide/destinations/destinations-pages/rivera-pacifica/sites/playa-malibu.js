@@ -35,27 +35,9 @@ export const playaMalibu = {
       icono: '',
     },
     {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre la costa mientras disfrutas de la brisa marina y el sonido constante de las olas.',
-      icono: '',
-    },
-    {
-      nombre: 'Natación',
-      descripcion:
-        'Relájate en sus aguas durante momentos de marea más tranquila y disfruta del entorno natural.',
-      icono: '',
-    },
-    {
       nombre: 'Fotografía',
       descripcion:
         'Captura la energía de los surfistas, los paisajes del Pacífico y las impresionantes vistas costeras.',
-      icono: '',
-    },
-    {
-      nombre: 'Atardeceres',
-      descripcion:
-        'Disfruta de puestas de sol espectaculares que convierten el horizonte en uno de los mayores atractivos del lugar.',
       icono: '',
     },
     {

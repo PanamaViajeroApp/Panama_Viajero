@@ -14,9 +14,7 @@ export const chitre = {
     'La capital cultural de Azuero, reconocida por sus tradiciones, gastronomía y hospitalidad.',
   previewUbicacion: 'Chitré, Herrera',
   actividades: [
-    { nombre: 'Caminata', descripcion: 'Explora calles, plazas y edificios emblemáticos que reflejan la historia y el desarrollo de la ciudad.', icono: '' },
     { nombre: 'Iglesias', descripcion: 'Conoce templos tradicionales que forman parte del patrimonio cultural de la región.', icono: '' },
-    { nombre: 'Cultura', descripcion: 'Sumérgete en las tradiciones, costumbres y expresiones folclóricas que caracterizan a Herrera.', icono: '' },
     { nombre: 'Gastronomía', descripcion: 'Degusta platos tradicionales y especialidades locales en restaurantes y fondas de la ciudad.', icono: '' },
     { nombre: 'Compras', descripcion: 'Encuentra productos regionales, recuerdos y artículos representativos de la cultura panameña.', icono: '' },
     { nombre: 'Museos', descripcion: 'Aprende sobre la historia, el folclore y las raíces culturales de la región de Azuero.', icono: '' },

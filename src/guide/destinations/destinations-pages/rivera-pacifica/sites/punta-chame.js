@@ -35,27 +35,9 @@ export const puntaChame = {
       icono: '',
     },
     {
-      nombre: 'Natación',
-      descripcion:
-        'Relájate y refresca en sus aguas, ideales para disfrutar del mar en un ambiente amplio y natural.',
-      icono: '',
-    },
-    {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre kilómetros de arena mientras contemplas el océano y la belleza natural de la península.',
-      icono: '',
-    },
-    {
       nombre: 'Fotografía',
       descripcion:
         'Captura impresionantes vistas del mar, las montañas y los deportes acuáticos en acción.',
-      icono: '',
-    },
-    {
-      nombre: 'Atardeceres',
-      descripcion:
-        'Disfruta de puestas de sol espectaculares que convierten el horizonte en uno de los mayores atractivos del lugar.',
       icono: '',
     },
     {

@@ -16,18 +16,7 @@ export const playaSeaCliff = {
     'Un elegante escape de playa rodeado de acantilados, palmeras y paisajes costeros perfectos para relajarse.',
   previewUbicacion: 'San Carlos, Panamá Oeste',
   actividades: [
-    {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre la extensa línea de playa mientras disfrutas de la brisa marina y la sombra natural de las palmeras.',
-      icono: '',
-    },
-    {
-      nombre: 'Natación',
-      descripcion:
-        'Sumérgete en aguas cálidas y tranquilas, ideales para refrescarte y relajarte frente al mar.',
-      icono: '',
-    },
+
     {
       nombre: 'Fotografía',
       descripcion:
@@ -52,18 +41,6 @@ export const playaSeaCliff = {
         'Explora senderos y rincones naturales entre acantilados y vegetación costera con vistas al Pacífico.',
       icono: '',
     },
-    {
-      nombre: 'Descanso',
-      descripcion:
-        'Relájate escuchando el sonido de las olas mientras contemplas el amplio horizonte del océano.',
-      icono: '',
-    },
-    {
-      nombre: 'Atardeceres',
-      descripcion:
-        'Disfruta de espectaculares puestas de sol que transforman el paisaje con colores intensos y memorables.',
-      icono: ''
-    }
   ],
   ubicacion:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.9957362853474!2d-80.0920309255067!3d8.383577198758966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facffff82c39a15%3A0x61204fa9d11f21bb!2sPlaya%20Sea%20Cliff!5e1!3m2!1sen!2spa!4v1781113117376!5m2!1sen!2spa'

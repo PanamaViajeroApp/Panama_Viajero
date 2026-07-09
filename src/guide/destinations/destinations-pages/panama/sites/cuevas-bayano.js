@@ -26,14 +26,9 @@ export const cuevasBayano = {
                 'Adéntrate en un sistema de cuevas lleno de formaciones rocosas, estalactitas y estalagmitas impresionantes.',
             icono: '',
         },
+
         {
-            nombre: 'Natación en ríos subterráneos',
-            descripcion:
-                'Nada en aguas cristalinas dentro de la cueva, viviendo una experiencia única bajo tierra.',
-            icono: '',
-        },
-        {
-            nombre: 'Kayak en el lago Bayano',
+            nombre: 'Kayak',
             descripcion:
                 'Explora las aguas del lago cercano y disfruta de una perspectiva diferente de la zona.',
             icono: '',

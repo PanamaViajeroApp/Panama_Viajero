@@ -29,12 +29,6 @@ export const islaCarenero = {
             icono: '',
         },
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Recorre la isla a pie disfrutando de senderos costeros y vistas panorámicas del Caribe.',
-            icono: '',
-        },
-        {
             nombre: 'Kayak',
             descripcion:
                 'Navega por las aguas tranquilas que rodean la isla y disfruta de una perspectiva diferente del paisaje.',
@@ -56,18 +50,6 @@ export const islaCarenero = {
             nombre: 'Fotografía',
             descripcion:
                 'Captura paisajes tropicales, playas de arena blanca y atardeceres únicos del Caribe.',
-            icono: '',
-        },
-        {
-            nombre: 'Atardeceres',
-            descripcion:
-                'Disfruta de espectaculares puestas de sol en un ambiente relajado junto al mar.',
-            icono: '',
-        },
-        {
-            nombre: 'Descanso',
-            descripcion:
-                'Relájate en sus playas tranquilas y disfruta de un entorno perfecto para desconectarte.',
             icono: '',
         },
     ],

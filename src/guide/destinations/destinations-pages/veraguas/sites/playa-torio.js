@@ -14,7 +14,6 @@ export const playaTorio = {
     'Playa tranquila del Pacífico rodeada de naturaleza, ideal para surf y descanso.',
   previewUbicacion: 'Mariato, Veraguas',
   actividades: [
-    { nombre: 'Descanso', descripcion: 'Relájate en una costa tranquila rodeada de naturaleza y alejada de las grandes concentraciones turísticas.', icono: '' },
     { nombre: 'Surf', descripcion: 'Aprovecha las condiciones del mar para practicar surf en un ambiente más tranquilo que otros destinos populares.', icono: '' },
     { nombre: 'Atardecer', descripcion: 'Contempla puestas de sol sobre el océano Pacífico desde la playa o los miradores cercanos.', icono: '' },
     { nombre: 'Senderismo', descripcion: 'Explora caminos y colinas cercanas que ofrecen vistas panorámicas de la costa veragüense.', icono: '' },

@@ -27,12 +27,6 @@ export const laPiscinaNatural = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Nada y relájate en una enorme piscina natural rodeada de aguas turquesas del Caribe panameño.',
-            icono: '',
-        },
-        {
             nombre: 'Lancha',
             descripcion:
                 'Llega a este atractivo como parte de excursiones que recorren distintas islas y cayos del archipiélago.',

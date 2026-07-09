@@ -57,12 +57,6 @@ export const playaVenao = {
             icono: '',
         },
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Recorre la costa y disfruta del ambiente relajado que caracteriza a Playa Venao.',
-            icono: '',
-        },
-        {
             nombre: 'Fauna',
             descripcion:
                 'Observa aves y especies marinas que habitan la región costera.',

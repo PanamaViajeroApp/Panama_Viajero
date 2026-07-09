@@ -20,7 +20,6 @@ export const santaCatalina = {
     { nombre: 'Atardecer', descripcion: 'Relájate frente al mar y contempla cómo el sol se oculta sobre el horizonte del Pacífico.', icono: '' },
     { nombre: 'Kayak', descripcion: 'Rema por la costa o hacia la cercana Isla Santa Catalina mientras disfrutas de un entorno tranquilo.', icono: '' },
     { nombre: 'Pesca', descripcion: 'Acompaña a pescadores locales en una jornada tradicional ligada a la vida del pueblo costero.', icono: '' },
-    { nombre: 'Caminata', descripcion: 'Recorre el pueblo y su costa en un ambiente relajado, con ritmo sencillo y mar siempre cerca.', icono: '' },
     { nombre: 'Coiba', descripcion: 'Usa Santa Catalina como punto de partida para explorar uno de los parques marinos más importantes del país.', icono: '' },
   ],
   ubicacion:

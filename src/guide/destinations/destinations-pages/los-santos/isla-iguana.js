@@ -50,12 +50,7 @@ export const islaIguana = {
                 'Captura paisajes costeros, fauna silvestre y escenarios marinos únicos.',
             icono: '',
         },
-        {
-            nombre: 'Natación',
-            descripcion:
-                'Aprovecha las aguas turquesas para refrescarte y disfrutar del entorno.',
-            icono: '',
-        },
+
         {
             nombre: 'Ballenas',
             descripcion:
@@ -66,12 +61,6 @@ export const islaIguana = {
             nombre: 'Ecoturismo',
             descripcion:
                 'Conoce uno de los refugios de vida silvestre más importantes de Panamá.',
-            icono: '',
-        },
-        {
-            nombre: 'Exploración',
-            descripcion:
-                'Recorre la isla y descubre sus paisajes naturales y áreas protegidas.',
             icono: '',
         },
     ],

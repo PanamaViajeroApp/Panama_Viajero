@@ -15,12 +15,6 @@ export const cascoAntiguo = {
     previewUbicacion: 'San Felipe, Ciudad de Panamá',
     actividades: [
         {
-            nombre: 'Recorrido histórico',
-            descripcion:
-                'Explora plazas, calles y edificios coloniales que conservan siglos de historia y tradición panameña.',
-            icono: '',
-        },
-        {
             nombre: 'Visita a museos',
             descripcion:
                 'Descubre espacios culturales e históricos que narran la evolución de Panamá y su legado.',

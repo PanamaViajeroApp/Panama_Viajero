@@ -27,12 +27,6 @@ export const veracruz = {
             icono: '',
         },
         {
-            nombre: 'Observación de atardeceres',
-            descripcion:
-                'Contempla algunos de los atardeceres más atractivos de la costa pacífica cercana a la capital.',
-            icono: '',
-        },
-        {
             nombre: 'Vida nocturna',
             descripcion:
                 'Descubre bares, música en vivo y un ambiente costero animado durante la noche.',

@@ -21,21 +21,9 @@ export const islaTaboga = {
             icono: '',
         },
         {
-            nombre: 'Caminatas históricas',
-            descripcion:
-                'Recorre calles llenas de historia, arquitectura colonial y rincones tradicionales de la isla.',
-            icono: '',
-        },
-        {
             nombre: 'Senderismo',
             descripcion:
                 'Sube a miradores naturales y disfruta de impresionantes vistas panorámicas del océano y la costa.',
-            icono: '',
-        },
-        {
-            nombre: 'Natación',
-            descripcion:
-                'Aprovecha sus aguas tranquilas y cálidas para refrescarte y disfrutar del mar.',
             icono: '',
         },
         {
@@ -48,12 +36,6 @@ export const islaTaboga = {
             nombre: 'Paseos en bote',
             descripcion:
                 'Explora la costa de la isla y descubre otras perspectivas del paisaje marino.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación de atardeceres',
-            descripcion:
-                'Contempla espectaculares puestas de sol que hacen de Taboga uno de los mejores puntos para cerrar el día.',
             icono: '',
         },
     ],

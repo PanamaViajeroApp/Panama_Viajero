@@ -57,12 +57,6 @@ export const islaCanas = {
             icono: '',
         },
         {
-            nombre: 'Caminata',
-            descripcion:
-                'Recorre extensas playas naturales alejadas del turismo masivo.',
-            icono: '',
-        },
-        {
             nombre: 'Educación ambiental',
             descripcion:
                 'Aprende sobre la conservación de las tortugas marinas y los ecosistemas costeros.',

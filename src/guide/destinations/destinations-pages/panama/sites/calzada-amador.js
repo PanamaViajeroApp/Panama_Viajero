@@ -15,12 +15,6 @@ export const calzadaAmador = {
     previewUbicacion: 'Amador, Ciudad de Panamá',
     actividades: [
         {
-            nombre: 'Caminatas',
-            descripcion:
-                'Recorre la calzada junto al mar mientras disfrutas de vistas panorámicas del skyline y la bahía de Panamá.',
-            icono: '',
-        },
-        {
             nombre: 'Ciclismo',
             descripcion:
                 'Aprovecha sus amplias rutas para pedalear con vistas abiertas al océano y al Canal.',
@@ -42,12 +36,6 @@ export const calzadaAmador = {
             nombre: 'Gastronomía frente al mar',
             descripcion:
                 'Descubre restaurantes y terrazas con vistas al Pacífico y una variada oferta culinaria.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación de atardeceres',
-            descripcion:
-                'Vive uno de los mejores puntos de la ciudad para contemplar el sol cayendo sobre el océano.',
             icono: '',
         },
         {

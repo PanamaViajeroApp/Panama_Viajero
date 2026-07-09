@@ -50,18 +50,6 @@ export const calovebora = {
                 'Experimenta el recorrido hacia la región a través de caminos rurales rodeados por exuberante naturaleza.',
             icono: '',
         },
-        {
-            nombre: 'Cultura',
-            descripcion:
-                'Conoce comunidades cercanas y descubre tradiciones vinculadas a la región y a la cultura indígena.',
-            icono: '',
-        },
-        {
-            nombre: 'Descanso',
-            descripcion:
-                'Desconéctate del ritmo urbano en uno de los lugares más aislados y tranquilos del país.',
-            icono: '',
-        },
     ],
     ubicacion:
         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14273.047536052176!2d-81.21895167905076!3d8.780638686606254!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faec10365c9b313%3A0xb544ef41ef081e40!2zQ2Fsb3bDqWJvcmEsIE5nw6RiZS1CdWdsw6kgQ29tYXJjYQ!5e1!3m2!1sen!2spa!4v1781277820311!5m2!1sen!2spa',

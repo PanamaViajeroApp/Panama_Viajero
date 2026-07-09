@@ -21,12 +21,6 @@ export const elGuaira = {
             icono: '',
         },
         {
-            nombre: 'Natación',
-            descripcion:
-                'Aprovecha sus aguas tranquilas y cálidas para refrescarte y disfrutar del mar.',
-            icono: '',
-        },
-        {
             nombre: 'Paseos costeros',
             descripcion:
                 'Recorre la costa y descubre paisajes naturales rodeados de vegetación tropical.',

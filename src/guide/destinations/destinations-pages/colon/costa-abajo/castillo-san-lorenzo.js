@@ -15,12 +15,6 @@ export const castilloSanLorenzo = {
     previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
-            nombre: 'Recorrido histórico',
-            descripcion:
-                'Explora las ruinas del fuerte y descubre su importancia en la época colonial.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía patrimonial',
             descripcion:
                 'Captura las murallas, cañones y paisajes que rodean este sitio histórico.',
@@ -30,12 +24,6 @@ export const castilloSanLorenzo = {
             nombre: 'Observación del río Chagres',
             descripcion:
                 'Admira la desembocadura del río y su conexión con el mar Caribe.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo cultural',
-            descripcion:
-                'Conoce parte esencial de la historia defensiva y comercial de Panamá.',
             icono: '',
         },
         {

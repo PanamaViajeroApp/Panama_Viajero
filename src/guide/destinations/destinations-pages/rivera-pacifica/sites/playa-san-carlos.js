@@ -23,24 +23,6 @@ export const playaSanCarlos = {
       icono: '',
     },
     {
-      nombre: 'Natación',
-      descripcion:
-        'Disfruta de refrescantes jornadas en las aguas del Pacífico en un entorno costero tranquilo.',
-      icono: '',
-    },
-    {
-      nombre: 'Caminata',
-      descripcion:
-        'Recorre la playa mientras disfrutas de la brisa marina y de amplios paisajes naturales.',
-      icono: '',
-    },
-    {
-      nombre: 'Atardeceres',
-      descripcion:
-        'Contempla impresionantes puestas de sol sobre el océano, uno de los mayores atractivos de la playa.',
-      icono: '',
-    },
-    {
       nombre: 'Fotografía',
       descripcion:
         'Captura escenas únicas de playa, mar y naturaleza costera en un entorno abierto y relajado.',

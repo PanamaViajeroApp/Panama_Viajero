@@ -25,27 +25,9 @@ export const penonome = {
     previewUbicacion: 'Penonomé, Coclé',
     actividades: [
         {
-            nombre: 'Caminata colonial',
-            descripcion:
-                'Recorre el pintoresco barrio de San Antonio admirando las antiguas casonas y el trazado urbano tradicional.',
-            icono: '',
-        },
-        {
-            nombre: 'Expedición histórica',
-            descripcion:
-                'Visita los museos locales para descubrir las invaluables piezas de oro y cerámica de las épocas precolombinas.',
-            icono: '',
-        },
-        {
             nombre: 'Compras artesanales',
             descripcion:
                 'Adquiere auténticos sombreros pintaos y coloridas figuras de piedra jabón labradas por los maestros locales.',
-            icono: '',
-        },
-        {
-            nombre: 'Natación en ríos',
-            descripcion:
-                'Disfruta de un baño refrescante en los balnearios naturales de aguas cristalinas que bajan de las montañas.',
             icono: '',
         },
         {
@@ -64,12 +46,6 @@ export const penonome = {
             nombre: 'Senderismo de colina',
             descripcion:
                 'Asciende por senderos rurales hacia miradores naturales para contemplar la inmensidad del valle central.',
-            icono: '',
-        },
-        {
-            nombre: 'Intercambio cultural',
-            descripcion:
-                'Comparte con la hospitalaria población local conociendo las leyendas del cacique que dio nombre al pueblo.',
             icono: '',
         },
     ],

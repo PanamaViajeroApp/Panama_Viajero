@@ -14,18 +14,6 @@ previewDescripcion:
   previewUbicacion: 'Antón, Coclé',
 actividades: [
   {
-    nombre: 'Caminata',
-    descripcion:
-      'Recorre el litoral de arenas claras mientras disfrutas de la tranquilidad y la brisa marina.',
-    icono: '',
-  },
-  {
-    nombre: 'Natación',
-    descripcion:
-      'Disfruta de un baño refrescante en sus aguas calmadas y perfectas para relajarse.',
-    icono: '',
-  },
-  {
     nombre: 'Snorkel',
     descripcion:
       'Explora zonas cercanas de aguas transparentes y descubre la vida marina del área.',
