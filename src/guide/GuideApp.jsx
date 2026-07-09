@@ -48,7 +48,6 @@ function GuideHome() {
   const homeRef = useRef(null)
   const preregisterRef = useRef(null)
   const mapRef = useRef(null)
-  const suggestionsRef = useRef(null)
   const usRef = useRef(null)
 
   const menuOffset = 0
@@ -80,7 +79,6 @@ function GuideHome() {
   }
   const scrollToPreregister = () => scrollToSection(preregisterRef)
   const scrollToUs = () => scrollToSection(usRef)
-  const scrollToSuggestions = () => scrollToSection(suggestionsRef)
   const openRegisterFlot = () => {
     setShowCountdown(false)
     setShowRegisterFlot(true)
@@ -92,7 +90,6 @@ function GuideHome() {
       '#home': homeRef,
       '#us': usRef,
       '#map': mapRef,
-      '#suggestions': suggestionsRef,
       '#preregister': preregisterRef,
     }
 
@@ -153,7 +150,6 @@ function GuideHome() {
           onPreregisterClick={scrollToPreregister}
           onMapClick={scrollToMap}
           onUsClick={scrollToUs}
-          onSuggestionsClick={scrollToSuggestions}
         />
       </div>
 
@@ -186,7 +182,7 @@ function GuideHome() {
         
       </section>
 
-      <section id="suggestions" ref={suggestionsRef} className="mt-[-50px]">
+      <section id="suggestions" className="mt-[-50px]">
         <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
             <Suggestions />
           </Suspense>

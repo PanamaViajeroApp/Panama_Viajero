@@ -5,11 +5,11 @@ export const bahiaDeLosDelfines = {
     provinceId: 'bocas-del-toro',
     nombre: 'Bahía de los Delfines',
     banner: {
-        src: `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-de-los-delfines.webp`,
+        src: `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-delfines.png`,
         alt: 'Banner de Bahía de los Delfines',
     },
     gallery: [
-        `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-de-los-delfines.webp`,
+        `${bahiaDeLosDelfinesImageBase}/banner/bg-bahia-delfines.png`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g1-bahia-de-los-delfines.webp`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g2-bahia-de-los-delfines.webp`,
         `${bahiaDeLosDelfinesImageBase}/gallery/g3-bahia-de-los-delfines.webp`,
@@ -34,45 +34,14 @@ export const bahiaDeLosDelfines = {
             icono: '',
         },
         {
-            nombre: 'Snorkel en arrecifes',
+            nombre: 'Snorkel',
             descripcion:
                 'Descubre los vivos colores del fondo marino que bordea este santuario ecológico.',
             icono: '',
-        },
-        {
-            nombre: 'Kayak entre manglares',
+        },        {
+            nombre: 'Kayak',
             descripcion:
                 'Deslízate en un silencio absoluto por canales verdes que desbordan vida tropical.',
-            icono: '',
-        },
-        {
-            nombre: 'Expedición fotográfica',
-            descripcion:
-                'Captura el salto de los delfines con el fondo infinito de la selva caribeña.',
-            icono: '',
-        },
-        {
-            nombre: 'Caminata costera',
-            descripcion:
-                'Explora los senderos ecológicos cercanos para conectar con la flora de la bahía.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación de medusas',
-            descripcion:
-                'Admira las fascinantes y pacíficas medusas invertidas que habitan en los manglares.',
-            icono: '',
-        },
-        {
-            nombre: 'Navegación al atardecer',
-            descripcion:
-                'Disfruta el reflejo del sol poniente sobre las aguas más tranquilas del archipiélago.',
-            icono: '',
-        },
-        {
-            nombre: 'Intercambio comunitario',
-            descripcion:
-                'Conoce de cerca el estilo de vida y las tradiciones de los lugareños de la bahía.',
             icono: '',
         },
     ],

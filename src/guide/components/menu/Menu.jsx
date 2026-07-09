@@ -44,18 +44,6 @@ function MapPinIcon(props) {
   )
 }
 
-function MegaphoneIcon(props) {
-  return (
-    <span {...props}>
-      <IconBase>
-        <path d="m3 11 14-5v12L3 13z" />
-        <path d="M11 18v4" />
-        <path d="M7 14.5V18a2 2 0 0 0 2 2h2" />
-        <path d="M21 9v6" />
-      </IconBase>
-    </span>
-  )
-}
 
 function ClipboardPenIcon(props) {
   return (
@@ -77,7 +65,6 @@ function Menu({
   onPreregisterClick,
   onMapClick,
   onUsClick,
-  onSuggestionsClick,
   autoHideOnScroll = false,
   hideMobileMenu = false,
 }) {
@@ -129,14 +116,10 @@ function Menu({
     closeMenu()
     onUsClick?.()
   }
-  const goToSuggestions = () => {
-    closeMenu()
-    onSuggestionsClick?.()
-  }
 
   return (
     <div
-      className={`relative z-[100] bg-gradient-to-b from-brand-charcoal/80 pt-3 via-brand-charcoal/45 to-transparent pb-5 backdrop-blur-[1px] transition-[transform,opacity] duration-300 ease-in-out ${
+      className={`relative z-[100] bg-gradient-to-b from-brand-charcoal/80 pt-3 to-transparent pb-5 backdrop-blur-[1px] transition-[transform,opacity] duration-300 ease-in-out ${
         autoHideOnScroll && !isVisible ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
       }`}
     >
@@ -159,13 +142,6 @@ function Menu({
           >
             <MapPinIcon className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
             <span>Provincias</span>
-          </button>
-          <button
-            className="group flex cursor-pointer items-center gap-2 rounded-full px-3 py-2 transition-all ease-out hover:scale-105 hover:bg-brand-white/15 hover:text-brand-white hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
-            onClick={goToSuggestions}
-          >
-            <MegaphoneIcon className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
-            <span>Recomendaciones</span>
           </button>
           <button
             className="group flex cursor-pointer items-center gap-2 rounded-full px-3 py-2 transition-all ease-out hover:scale-105 hover:bg-brand-white/15 hover:text-brand-white hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
@@ -218,9 +194,6 @@ function Menu({
                   </button>
                   <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToMap}>
                     Provincias
-                  </button>
-                  <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToSuggestions}>
-                    Sugerencia
                   </button>
                   <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>
                     Registro

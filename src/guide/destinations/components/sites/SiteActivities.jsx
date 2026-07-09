@@ -1,24 +1,64 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 import { getActivityIcon } from './activityIcons.js'
 
-function SiteActivities({ activities = [], featuredImage }) {
+function SiteActivities({ site = null }) {
   const [activeActivity, setActiveActivity] = useState(null)
+  const [activeImageIndex, setActiveImageIndex] = useState(0)
+  const [isImageVisible, setIsImageVisible] = useState(true)
 
-  const { featuredActivity, secondaryActivities } = useMemo(() => {
-    if (!activities.length) {
-      return { featuredActivity: null, secondaryActivities: [] }
+  const activities = Array.isArray(site?.actividades) ? site.actividades : []
+  const gallery = useMemo(() => {
+    const images = Array.isArray(site?.gallery) ? site.gallery.filter(Boolean) : []
+    if (images.length > 0) {
+      return images
     }
 
-    const featuredIndex = Math.floor(Math.random() * activities.length)
+    return site?.banner?.src ? [site.banner.src] : []
+  }, [site?.banner?.src, site?.gallery])
+
+  useEffect(() => {
+    setActiveImageIndex(0)
+    setIsImageVisible(true)
+  }, [gallery.length, site?.id])
+
+  const { leftColumnActivities, rightColumnActivities } = useMemo(() => {
+    const left = []
+    const right = []
+
+    activities.forEach((activity, index) => {
+      if (index % 2 === 0) {
+        left.push(activity)
+      } else {
+        right.push(activity)
+      }
+    })
 
     return {
-      featuredActivity: activities[featuredIndex],
-      secondaryActivities: activities.filter((_, index) => index !== featuredIndex),
+      leftColumnActivities: left,
+      rightColumnActivities: right,
     }
   }, [activities])
 
-  const FeaturedActivityIcon = featuredActivity ? getActivityIcon(featuredActivity.nombre).Icon : null
+  const currentImage = gallery[activeImageIndex] ?? site?.banner?.src ?? ''
+  const totalImages = gallery.length
+
+  const moveImage = (direction) => {
+    if (totalImages <= 1) {
+      return
+    }
+
+    const nextIndex = (activeImageIndex + direction + totalImages) % totalImages
+    setIsImageVisible(false)
+
+    window.setTimeout(() => {
+      setActiveImageIndex(nextIndex)
+      window.requestAnimationFrame(() => {
+        setIsImageVisible(true)
+      })
+    }, 180)
+  }
 
   return (
     <section className="mx-auto w-full max-w-6xl px-4 pb-12">
@@ -34,32 +74,50 @@ function SiteActivities({ activities = [], featuredImage }) {
 
         <div className="grid gap-0 md:grid-cols-[0.88fr_1.12fr]">
           <div className="rounded-bl-[28px] border-b border-[#4D4C4C]/10 bg-[#EBEBEB]/30 p-4 sm:p-5 md:border-b-0 md:border-r">
-            {featuredActivity ? (
+            {totalImages > 0 ? (
               <article className="mx-auto flex h-full w-full max-w-md flex-col">
-                <div className="relative overflow-hidden rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF]">
-                  <img
-                    src={featuredImage}
-                    alt=""
-                    className="h-44 w-full object-cover sm:h-52 md:h-[275px]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
-                  <div className="absolute left-4 top-4 rounded-full bg-[#FFFFFF]/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#4D4C4C]">
-                    Recomendado
-                  </div>
-                  {FeaturedActivityIcon ? (
-                    <div className="absolute bottom-4 left-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#4956A2] text-white shadow-[0_10px_24px_rgba(0,0,0,0.16)]">
-                      <FeaturedActivityIcon className="h-10 w-7" />
-                    </div>
-                  ) : null}
-                </div>
+                <div className="relative overflow-hidden rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] shadow-[0_16px_34px_rgba(77,76,76,0.08)]">
+                  <div
+                    className={`relative h-44 w-full overflow-hidden sm:h-52 md:h-[275px] ${
+                      isImageVisible ? 'opacity-100' : 'opacity-0'
+                    } transition-[opacity,transform] duration-300 ease-out`}
+                  >
+                    <img
+                      src={currentImage}
+                      alt={site?.nombre ?? 'Galería del sitio'}
+                      className="h-full w-full object-cover object-center transition-transform duration-500 ease-out"
+                    />
 
+                    <button
+                      type="button"
+                      onClick={() => moveImage(-1)}
+                      aria-label="Imagen anterior"
+                      className="cursor-pointer absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-sm transition duration-200 hover:scale-105 hover:bg-black/50"
+                    >
+                      <FiChevronLeft className="h-5 w-5" />
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => moveImage(1)}
+                      aria-label="Imagen siguiente"
+                      className="cursor-pointer absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-sm transition duration-200 hover:scale-105 hover:bg-black/50"
+                    >
+                      <FiChevronRight className="h-5 w-5" />
+                    </button>
+
+                    <div className="absolute right-3 top-3 z-10 rounded-full bg-black/45 px-3 py-1 text-xs font-semibold tracking-[0.18em] text-white backdrop-blur-sm">
+                      {activeImageIndex + 1} / {totalImages}
+                    </div>
+                  </div>
+                </div>
                 <div className="pt-5">
-                  <h3 className="font-secondary text-2xl leading-tight text-[#4D4C4C] sm:text-3xl">
-                    {featuredActivity.nombre}
-                  </h3>
-                  <p className="mt-4 max-w-xl font-body text-md leading-7 text-[#4D4C4C]/78 sm:text-base">
-                    {featuredActivity.descripcion}
-                  </p>
+                  <div className="flex w-fit flex-col">
+                    <h3 className="font-secondary text-2xl leading-tight text-[#4D4C4C] sm:text-4xl">
+                      {site?.nombre ?? 'Sitio turístico'}
+                    </h3>
+                    <div className="h-[5px] w-[70%] bg-brand-red"></div>
+                  </div>
                 </div>
               </article>
             ) : null}
@@ -80,55 +138,100 @@ function SiteActivities({ activities = [], featuredImage }) {
               </div>
             </div>
 
-            <div className="mx-auto mt-4 max-h-[350px] w-full max-w-2xl columns-1 gap-3 overflow-y-auto pr-1 sm:columns-2 lg:columns-2 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
-              {secondaryActivities.map((actividad, index) => {
-                const { Icon } = getActivityIcon(actividad.nombre)
-                const accent = index % 3 === 0 ? '#4956A2' : index % 3 === 1 ? '#CD2E4C' : '#4D4C4C'
-                const isOpen = activeActivity === actividad.nombre
+            <div className="mx-auto mt-4 flex max-h-[350px] w-full max-w-2xl gap-3 overflow-y-auto overflow-x-hidden pr-2 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
+              <div className="flex w-full min-w-0 flex-1 flex-col gap-3">
+                {leftColumnActivities.map((actividad, index) => {
+                  const { Icon } = getActivityIcon(actividad.nombre)
+                  const accent = index % 3 === 0 ? '#4956A2' : index % 3 === 1 ? '#CD2E4C' : '#4D4C4C'
+                  const isOpen = activeActivity === actividad.nombre
 
-                return (
-                  <button
-                    key={actividad.nombre}
-                    type="button"
-                    aria-expanded={isOpen}
-                    onClick={() => setActiveActivity(isOpen ? null : actividad.nombre)}
-                    className="group mb-3 inline-flex w-full break-inside-avoid cursor-pointer flex-col 
-                    rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] 
-                    px-4 py-3 text-left transition duration-300 
-                    hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] 
-                    hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
-                  >
-                    <div className="flex items-center gap-2">
-                      <div
-                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 group-hover:scale-105"
-                        style={{ backgroundColor: accent }}
-                      >
-                        <Icon className="h-5 w-5" />
-                      </div>
+                  return (
+                    <button
+                      key={actividad.nombre}
+                      type="button"
+                      aria-expanded={isOpen}
+                      onClick={() => setActiveActivity(isOpen ? null : actividad.nombre)}
+                      className="group inline-flex w-full min-w-0 cursor-pointer flex-col rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-3 text-left transition duration-300 hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
+                    >
+                      <div className="flex items-center gap-2">
+                        <div
+                          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 group-hover:scale-105"
+                          style={{ backgroundColor: accent }}
+                        >
+                          <Icon className="h-5 w-5" />
+                        </div>
 
-                      <div className="min-w-0 flex-1">
-                        <div className="flex items-start justify-between gap-3">
-                          <h4 className="font-secondary-italic leading-tight text-[#4D4C4C] sm:text-md">
-                            {actividad.nombre}
-                          </h4>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-start justify-between gap-3">
+                            <h4 className="font-secondary-italic leading-tight text-[#4D4C4C] sm:text-md">
+                              {actividad.nombre}
+                            </h4>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div
-                      className={`grid transition-all duration-300 ease-out ${
-                        isOpen ? 'mt-3 grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
-                      }`}
-                    >
-                      <div className="overflow-hidden">
-                        <p className="font-body text-sm leading-6 text-[#4D4C4C]/75">
-                          {actividad.descripcion}
-                        </p>
+                      <div
+                        className={`grid transition-all duration-300 ease-out ${
+                          isOpen ? 'mt-3 grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                        }`}
+                      >
+                        <div className="overflow-hidden">
+                          <p className="font-body text-sm leading-6 text-[#4D4C4C]/75">
+                            {actividad.descripcion}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </button>
-                )
-              })}
+                    </button>
+                  )
+                })}
+              </div>
+
+              <div className="flex w-full min-w-0 flex-1 flex-col gap-3">
+                {rightColumnActivities.map((actividad, index) => {
+                  const { Icon } = getActivityIcon(actividad.nombre)
+                  const accent = index % 3 === 0 ? '#4956A2' : index % 3 === 1 ? '#CD2E4C' : '#4D4C4C'
+                  const isOpen = activeActivity === actividad.nombre
+
+                  return (
+                    <button
+                      key={actividad.nombre}
+                      type="button"
+                      aria-expanded={isOpen}
+                      onClick={() => setActiveActivity(isOpen ? null : actividad.nombre)}
+                      className="group inline-flex w-full min-w-0 cursor-pointer flex-col rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-3 text-left transition duration-300 hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
+                    >
+                      <div className="flex items-center gap-2">
+                        <div
+                          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 group-hover:scale-105"
+                          style={{ backgroundColor: accent }}
+                        >
+                          <Icon className="h-5 w-5" />
+                        </div>
+
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-start justify-between gap-3">
+                            <h4 className="font-secondary-italic leading-tight text-[#4D4C4C] sm:text-md">
+                              {actividad.nombre}
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        className={`grid transition-all duration-300 ease-out ${
+                          isOpen ? 'mt-3 grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                        }`}
+                      >
+                        <div className="overflow-hidden">
+                          <p className="font-body text-sm leading-6 text-[#4D4C4C]/75">
+                            {actividad.descripcion}
+                          </p>
+                        </div>
+                      </div>
+                    </button>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>
