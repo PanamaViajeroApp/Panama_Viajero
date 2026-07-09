@@ -27,12 +27,6 @@ export const veracruz = {
             icono: '',
         },
         {
-            nombre: 'Vida nocturna',
-            descripcion:
-                'Descubre bares, música en vivo y un ambiente costero animado durante la noche.',
-            icono: '',
-        },
-        {
             nombre: 'Paseos costeros',
             descripcion:
                 'Recorre la zona y disfruta del ambiente relajado junto al mar.',

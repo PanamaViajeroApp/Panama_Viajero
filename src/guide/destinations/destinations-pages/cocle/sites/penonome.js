@@ -25,13 +25,13 @@ export const penonome = {
     previewUbicacion: 'Penonomé, Coclé',
     actividades: [
         {
-            nombre: 'Compras artesanales',
+            nombre: 'Artesanías',
             descripcion:
                 'Adquiere auténticos sombreros pintaos y coloridas figuras de piedra jabón labradas por los maestros locales.',
             icono: '',
         },
         {
-            nombre: 'Fotografía de paisajes',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura los imponentes cerros y las turbinas eólicas que rompen el horizonte verde de las amplias llanuras.',
             icono: '',

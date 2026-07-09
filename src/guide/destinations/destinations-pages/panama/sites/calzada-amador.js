@@ -38,12 +38,6 @@ export const calzadaAmador = {
                 'Descubre restaurantes y terrazas con vistas al Pacífico y una variada oferta culinaria.',
             icono: '',
         },
-        {
-            nombre: 'Visita a islas cercanas',
-            descripcion:
-                'Explora Naos, Perico y Flamenco, conectadas por la misma calzada y llenas de atractivos turísticos.',
-            icono: '',
-        },
     ],
     ubicacion:
         'https://www.google.com/maps?q=Calzada%20de%20Amador%20Panama&output=embed',

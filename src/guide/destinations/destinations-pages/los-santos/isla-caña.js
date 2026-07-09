@@ -33,7 +33,7 @@ export const islaCanas = {
             icono: '',
         },
         {
-            nombre: 'Aves',
+            nombre: 'Avistamiento aves',
             descripcion:
                 'Observa especies residentes y migratorias en su entorno natural.',
             icono: '',
@@ -60,12 +60,6 @@ export const islaCanas = {
             nombre: 'Educación ambiental',
             descripcion:
                 'Aprende sobre la conservación de las tortugas marinas y los ecosistemas costeros.',
-            icono: '',
-        },
-        {
-            nombre: 'Paisajes',
-            descripcion:
-                'Disfruta de un entorno tranquilo rodeado de mar, manglares y vida silvestre.',
             icono: '',
         },
     ],

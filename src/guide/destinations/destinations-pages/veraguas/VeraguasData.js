@@ -41,7 +41,6 @@ export const provincias = [
       'Coiba',
       'Catedral',
       'Parques',
-      'Compras',
     ],
 
     directSiteIds: [

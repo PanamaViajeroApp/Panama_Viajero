@@ -39,12 +39,6 @@ export const playaVenao = {
             icono: '',
         },
         {
-            nombre: 'Vida nocturna',
-            descripcion:
-                'Disfruta restaurantes, bares y espacios de entretenimiento frente al mar.',
-            icono: '',
-        },
-        {
             nombre: 'Bienestar',
             descripcion:
                 'Participa en actividades enfocadas en la relajación y la conexión con la naturaleza.',

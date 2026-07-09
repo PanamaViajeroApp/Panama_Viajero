@@ -21,12 +21,6 @@ export const davidCentro = {
       icono: '',
     },
     {
-      nombre: 'Compras',
-      descripcion:
-        'Explora centros comerciales, mercados y tiendas con una amplia variedad de productos.',
-      icono: '',
-    },
-    {
       nombre: 'Parques',
       descripcion:
         'Relájate en espacios públicos ideales para pasear y observar el ambiente local.',
@@ -48,12 +42,6 @@ export const davidCentro = {
       nombre: 'Mercados',
       descripcion:
         'Encuentra productos frescos, artesanías y especialidades regionales.',
-      icono: '',
-    },
-    {
-      nombre: 'Vida nocturna',
-      descripcion:
-        'Disfruta bares, restaurantes y espacios de entretenimiento al caer la noche.',
       icono: '',
     },
     {

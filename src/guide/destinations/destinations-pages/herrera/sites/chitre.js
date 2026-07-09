@@ -16,7 +16,6 @@ export const chitre = {
   actividades: [
     { nombre: 'Iglesias', descripcion: 'Conoce templos tradicionales que forman parte del patrimonio cultural de la región.', icono: '' },
     { nombre: 'Gastronomía', descripcion: 'Degusta platos tradicionales y especialidades locales en restaurantes y fondas de la ciudad.', icono: '' },
-    { nombre: 'Compras', descripcion: 'Encuentra productos regionales, recuerdos y artículos representativos de la cultura panameña.', icono: '' },
     { nombre: 'Museos', descripcion: 'Aprende sobre la historia, el folclore y las raíces culturales de la región de Azuero.', icono: '' },
     { nombre: 'Fotografía', descripcion: 'Captura la arquitectura, los espacios públicos y la vida cotidiana de una de las ciudades más importantes del interior.', icono: '' },
     { nombre: 'Festividades', descripcion: 'Disfruta de eventos culturales, desfiles y celebraciones que mantienen viva la identidad herrerana.', icono: '' },

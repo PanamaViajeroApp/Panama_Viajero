@@ -51,12 +51,6 @@ export const puertoArmuelles = {
       icono: '',
     },
     {
-      nombre: 'Fauna marina',
-      descripcion:
-        'Descubre diversas especies que habitan las aguas del Pacífico chiricano.',
-      icono: '',
-    },
-    {
       nombre: 'Paseo',
       descripcion:
         'Recorre la costa mientras disfrutas de la brisa marina y el paisaje.',

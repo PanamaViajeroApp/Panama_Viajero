@@ -29,21 +29,9 @@ export const coronado = {
       icono: '',
     },
     {
-      nombre: 'Compras y comercio',
-      descripcion:
-        'Explora centros comerciales, tiendas y supermercados que hacen de Coronado un punto completo para visitantes.',
-      icono: '',
-    },
-    {
       nombre: 'Golf',
       descripcion:
         'Disfruta de campos de golf reconocidos que complementan la experiencia exclusiva de la zona.',
-      icono: '',
-    },
-    {
-      nombre: 'Vida nocturna',
-      descripcion:
-        'Encuentra bares, restaurantes y espacios para disfrutar de un ambiente animado al caer la noche.',
       icono: '',
     },
     {

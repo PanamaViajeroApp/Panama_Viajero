@@ -14,7 +14,7 @@ export const provincias = [
     },
     actividades: [
       'Selva',
-      'Aves',
+      'Avistamiento aves',
       'Fotografía',
       'Pesca deportiva',
       'Fauna marina',

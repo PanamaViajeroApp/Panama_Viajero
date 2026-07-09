@@ -21,12 +21,6 @@ export const bahiaPina = {
             icono: '',
         },
         {
-            nombre: 'Fauna marina',
-            descripcion:
-                'Observa delfines, tortugas y otras especies marinas que habitan las aguas de la región.',
-            icono: '',
-        },
-        {
             nombre: 'Lancha',
             descripcion:
                 'Explora bahías, costas y zonas naturales donde la selva tropical se encuentra con el océano.',
@@ -39,7 +33,7 @@ export const bahiaPina = {
             icono: '',
         },
         {
-            nombre: 'Aves',
+            nombre: 'Avistamiento aves',
             descripcion:
                 'Descubre especies tropicales y migratorias propias de una de las regiones más biodiversas de Panamá.',
             icono: '',

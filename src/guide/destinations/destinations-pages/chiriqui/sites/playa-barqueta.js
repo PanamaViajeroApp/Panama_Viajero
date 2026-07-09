@@ -27,7 +27,7 @@ export const playaBarqueta = {
       icono: '',
     },
     {
-      nombre: 'Aves',
+      nombre: 'Avistamiento aves',
       descripcion:
         'Descubre especies costeras que habitan en los alrededores de la playa.',
       icono: '',

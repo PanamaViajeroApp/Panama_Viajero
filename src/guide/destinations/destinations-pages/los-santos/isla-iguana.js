@@ -21,19 +21,13 @@ export const islaIguana = {
             icono: '',
         },
         {
-            nombre: 'Fauna marina',
-            descripcion:
-                'Admira peces tropicales, tortugas marinas y otras especies que habitan la zona.',
-            icono: '',
-        },
-        {
             nombre: 'Playa',
             descripcion:
                 'Relájate en playas de arena blanca rodeadas de aguas cristalinas.',
             icono: '',
         },
         {
-            nombre: 'Aves',
+            nombre: 'Avistamiento aves',
             descripcion:
                 'Observa aves marinas que encuentran refugio en este ecosistema protegido.',
             icono: '',

@@ -15,7 +15,6 @@ export const provincias = [
     actividades: [
       'Playa',
       'Snorkel',
-      'Islas',
       'Lancha',
       'Excursión',
       'Baño',

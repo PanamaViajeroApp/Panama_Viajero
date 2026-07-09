@@ -21,12 +21,6 @@ export const bocaChica = {
       icono: '',
     },
     {
-      nombre: 'Islas',
-      descripcion:
-        'Explora playas de arena clara y aguas cristalinas en las islas cercanas a Boca Chica.',
-      icono: '',
-    },
-    {
       nombre: 'Pesca deportiva',
       descripcion:
         'Vive una jornada de pesca en una zona reconocida por su riqueza marina y sus aguas productivas.',
@@ -54,18 +48,6 @@ export const bocaChica = {
       nombre: 'Fotografía',
       descripcion:
         'Captura vistas del océano, las islas y los atardeceres del Pacífico.',
-      icono: '',
-    },
-    {
-      nombre: 'Fauna marina',
-      descripcion:
-        'Descubre delfines, tortugas marinas y otras especies que frecuentan la zona costera.',
-      icono: '',
-    },
-    {
-      nombre: 'Excursión al golfo',
-      descripcion:
-        'Explora uno de los entornos marinos más valiosos y diversos de Panamá.',
       icono: '',
     },
   ],

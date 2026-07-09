@@ -15,13 +15,7 @@ export const fuerteSherman = {
     previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
-            nombre: 'Fotografía de paisajes',
-            descripcion:
-                'Captura escenarios donde se mezclan historia, naturaleza y costa.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación de aves',
+            nombre: 'Avistamiento aves',
             descripcion:
                 'Descubre especies que habitan los bosques cercanos a la antigua base.',
             icono: '',

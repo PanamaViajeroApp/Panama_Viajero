@@ -27,12 +27,6 @@ export const castilloSanLorenzo = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento de paisajes',
-            descripcion:
-                'Disfruta vistas panorámicas de la costa, el río y la vegetación tropical.',
-            icono: '',
-        },
-        {
             nombre: 'Visita a ruinas coloniales',
             descripcion:
                 'Camina entre estructuras antiguas que conservan siglos de historia.',
@@ -45,7 +39,7 @@ export const castilloSanLorenzo = {
             icono: '',
         },
         {
-            nombre: 'Observación de aves',
+            nombre: 'Avistamiento aves',
             descripcion:
                 'Descubre especies que habitan los bosques cercanos al castillo.',
             icono: '',

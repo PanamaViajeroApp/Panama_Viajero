@@ -15,7 +15,7 @@ export const lugaresPanama = [
   {
     id: 'casco-antiguo',
     nombre: 'Casco Antiguo',
-    categoria: ['Historia', 'Gastronomía', 'Vida nocturna'],
+    categoria: ['Historia', 'Gastronomía',],
     descripcion:
       'Centro histórico de la capital, conocido por sus calles empedradas, plazas, iglesias, arquitectura colonial, restaurantes, cafés y terrazas.',
     imagen: '',
@@ -67,7 +67,7 @@ export const lugaresPanama = [
   {
     id: 'calzada-de-amador',
     nombre: 'Calzada de Amador',
-    categoria: ['Gastronomía', 'Fotografía', 'Vida nocturna'],
+    categoria: ['Gastronomía', 'Fotografía',],
     descripcion:
       'Paseo junto al mar con vistas al Canal, al Puente de las Américas y al skyline de la ciudad; ideal para caminar, comer y pasear en bicicleta.',
     imagen: '',

@@ -33,12 +33,6 @@ export const calovebora = {
             icono: '',
         },
         {
-            nombre: 'Fauna',
-            descripcion:
-                'Encuentra aves tropicales, mariposas y diversas especies que habitan los ecosistemas de la región.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía',
             descripcion:
                 'Captura escenarios donde se combinan montañas, selva, ríos y costa en un entorno prácticamente intacto.',

@@ -45,7 +45,7 @@ export const playaLasLajas = {
       icono: '',
     },
     {
-      nombre: 'Aves',
+      nombre: 'Avistamiento aves',
       descripcion:
         'Descubre especies costeras que frecuentan la zona durante todo el año.',
       icono: '',

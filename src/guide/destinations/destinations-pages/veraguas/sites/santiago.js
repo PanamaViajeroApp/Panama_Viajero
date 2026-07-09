@@ -33,12 +33,6 @@ export const santiago = {
             icono: '',
         },
         {
-            nombre: 'Compras',
-            descripcion:
-                'Explora tiendas y puntos de venta con productos locales, recuerdos y artesanías.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía',
             descripcion:
                 'Captura arquitectura, calles activas y rincones que muestran la identidad de Santiago.',

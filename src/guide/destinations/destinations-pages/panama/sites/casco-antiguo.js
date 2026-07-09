@@ -27,13 +27,7 @@ export const cascoAntiguo = {
             icono: '',
         },
         {
-            nombre: 'Vida nocturna',
-            descripcion:
-                'Vive la energía de bares, terrazas y música en vivo en uno de los ambientes más vibrantes de la ciudad.',
-            icono: '',
-        },
-        {
-            nombre: 'Compras artesanales',
+            nombre: 'Artesanías',
             descripcion:
                 'Encuentra souvenirs, arte local y productos tradicionales en tiendas y mercados del casco histórico.',
             icono: '',

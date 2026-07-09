@@ -39,7 +39,7 @@ export const volcanBaru = {
       icono: '',
     },
     {
-      nombre: 'Aves',
+      nombre: 'Avistamiento aves',
       descripcion:
         'Explora uno de los mejores lugares de Panamá para observar aves de altura.',
       icono: '',

@@ -15,19 +15,13 @@ export const cerroPuntaCentro = {
   previewUbicacion: 'Tierras Altas, Chiriquí',
   actividades: [
     {
-      nombre: 'Fincas agrícolas',
-      descripcion:
-        'Conoce cultivos de hortalizas, flores y fresas que distinguen a la región.',
-      icono: '',
-    },
-    {
       nombre: 'Fotografía',
       descripcion:
         'Captura valles, montañas y campos de cultivo con escenas típicas de las tierras altas.',
       icono: '',
     },
     {
-      nombre: 'Aves',
+      nombre: 'Avistamiento aves',
       descripcion:
         'Explora un entorno favorable para observar aves propias de la zona de altura.',
       icono: '',
@@ -39,21 +33,9 @@ export const cerroPuntaCentro = {
       icono: '',
     },
     {
-      nombre: 'Productos agrícolas',
-      descripcion:
-        'Adquiere frutas, vegetales y flores cultivados en las fértiles tierras altas.',
-      icono: '',
-    },
-    {
       nombre: 'Senderismo',
       descripcion:
         'Accede a senderos y atractivos naturales de la región cercana.',
-      icono: '',
-    },
-    {
-      nombre: 'Paisajes',
-      descripcion:
-        'Contempla algunos de los escenarios naturales más impresionantes de Chiriquí.',
       icono: '',
     },
 

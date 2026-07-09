@@ -51,12 +51,6 @@ export const portobelo = {
             icono: '',
         },
         {
-            nombre: 'Observación de paisajes costeros',
-            descripcion:
-                'Admira la combinación entre mar Caribe, colinas verdes y patrimonio histórico.',
-            icono: '',
-        },
-        {
             nombre: 'Festividades religiosas',
             descripcion:
                 'Participa en celebraciones tradicionales y eventos culturales reconocidos a nivel nacional.',

@@ -7,7 +7,6 @@ import {
   LuFish,
   LuMapPinned,
   LuMountain,
-  LuPartyPopper,
   LuShipWheel,
   LuStore,
   LuSparkles,
@@ -26,7 +25,6 @@ const activityIconRules = [
   { test: /(pesca)/, Icon: LuFish },
   { test: /(ciclismo|patinaje|ruta|bicicleta)/, Icon: LuBike },
   { test: /(gastron|comida|restaur|sabores|culin)/, Icon: LuUtensilsCrossed },
-  { test: /(vida nocturna|nocturna|fiesta|noche)/, Icon: LuPartyPopper },
   { test: /(senderismo|monta|trek)/, Icon: LuMountain },
   { test: /(bosque|naturaleza|parque)/, Icon: LuTrees },
   { test: /(estrella|estrellas)/, Icon: LuSparkles },
@@ -38,7 +36,6 @@ const activityIconRules = [
   { test: /(isla|islote)/, Icon: LuTreePalm },
   { test: /(isla|islote|costa|costera|marino)/, Icon: LuShipWheel },
   { test: /(fotograf|paisaje|foto|mirador)/, Icon: LuCamera },
-  { test: /(compra|compras|shopping|centros comerciales|mall)/, Icon: LuStore },
   { test: /.*/, Icon: LuCompass },
 ]
 

@@ -26,12 +26,6 @@ export const islaChichime = {
                 'Explora arrecifes cercanos y descubre la vida marina que rodea la isla.',
             icono: '',
         },
-        {
-            nombre: 'Islas',
-            descripcion:
-                'Visita otros cayos cercanos del archipiélago y amplía la experiencia de explorar Guna Yala.',
-            icono: '',
-        },
     ],
     ubicacion:
         'https://www.google.com/maps?q=Isla%20Chichime%20Guna%20Yala%20Panama&output=embed',

@@ -56,12 +56,6 @@ export const lasTablas = {
                 'Conoce templos históricos que forman parte del patrimonio religioso de la región.',
             icono: '',
         },
-        {
-            nombre: 'Compras',
-            descripcion:
-                'Encuentra recuerdos y productos elaborados por artesanos locales.',
-            icono: '',
-        },
     ],
     ubicacion:
         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57238.4822424472!2d-80.35896906450316!3d7.772707897267863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fad8f544ae54379%3A0xccabee6cac1bbfee!2sLas%20Tablas%2C%20Los%20Santos%20Province!5e1!3m2!1sen!2spa!4v1781555499920!5m2!1sen!2spa',

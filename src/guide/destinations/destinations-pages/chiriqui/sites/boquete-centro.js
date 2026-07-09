@@ -15,13 +15,7 @@ export const boqueteCentro = {
   previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
     {
-      nombre: 'Café',
-      descripcion:
-        'Degusta café de altura en cafeterías y tostadores locales que muestran el valor de la producción chiricana.',
-      icono: '',
-    },
-    {
-      nombre: 'Compras artesanales',
+      nombre: 'Artesanías',
       descripcion:
         'Explora tiendas con artesanías, productos gourmet y artículos elaborados por emprendedores locales.',
       icono: '',
@@ -36,24 +30,6 @@ export const boqueteCentro = {
       nombre: 'Gastronomía',
       descripcion:
         'Disfruta restaurantes y cafés con platos locales e internacionales preparados con productos frescos de la región.',
-      icono: '',
-    },
-    {
-      nombre: 'Parque central',
-      descripcion:
-        'Pasa un rato tranquilo en el corazón del pueblo mientras observas el ritmo cotidiano de la comunidad.',
-      icono: '',
-    },
-    {
-      nombre: 'Mercados locales',
-      descripcion:
-        'Conoce productores, agricultores y artesanos que ofrecen café, frutas, vegetales y otros productos de la zona.',
-      icono: '',
-    },
-    {
-      nombre: 'Vida nocturna',
-      descripcion:
-        'Disfruta bares, terrazas y espacios relajados para cerrar el día con el clima fresco de montaña.',
       icono: '',
     },
   ],

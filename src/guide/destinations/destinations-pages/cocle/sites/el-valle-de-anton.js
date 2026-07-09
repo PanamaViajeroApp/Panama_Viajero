@@ -38,15 +38,9 @@ export const elValleDeAnton = {
             icono: '',
         },
         {
-            nombre: 'Compras artesanales',
+            nombre: 'Artesanías',
             descripcion:
                 'Explora el colorido mercado dominical adquiriendo hermosas plantas exóticas y recuerdos hechos a mano.',
-            icono: '',
-        },
-        {
-            nombre: 'Relajación termal',
-            descripcion:
-                'Renueva tus energías sumergiéndote en las místicas pozas de aguas termales ricas en minerales naturales.',
             icono: '',
         },
         {

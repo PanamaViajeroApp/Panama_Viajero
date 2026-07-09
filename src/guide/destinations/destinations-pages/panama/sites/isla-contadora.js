@@ -33,12 +33,6 @@ export const islaContadora = {
             icono: '',
         },
         {
-            nombre: 'Observación de fauna marina',
-            descripcion:
-                'Descubre aves marinas, peces y otras especies que habitan en el entorno costero de la isla.',
-            icono: '',
-        },
-        {
             nombre: 'Avistamiento de ballenas',
             descripcion:
                 'Durante la temporada, observa ballenas jorobadas que migran por las aguas del Pacífico panameño.',
@@ -48,12 +42,6 @@ export const islaContadora = {
             nombre: 'Gastronomía marina',
             descripcion:
                 'Disfruta mariscos frescos y cocina local en restaurantes con vistas al mar.',
-            icono: '',
-        },
-        {
-            nombre: 'Excursiones entre islas',
-            descripcion:
-                'Explora otras islas del Archipiélago de las Perlas y amplía la experiencia en este paraíso insular.',
             icono: '',
         },
     ],

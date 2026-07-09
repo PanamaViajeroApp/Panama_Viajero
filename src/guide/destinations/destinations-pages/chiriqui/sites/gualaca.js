@@ -33,7 +33,7 @@ export const gualaca = {
       icono: '',
     },
     {
-      nombre: 'Aves',
+      nombre: 'Avistamiento aves',
       descripcion:
         'Encuentra diversas especies que habitan los bosques y áreas ribereñas.',
       icono: '',
