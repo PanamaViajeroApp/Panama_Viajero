@@ -27,7 +27,7 @@ export const desiertoSarigua = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento aves',
+            nombre: 'Avistamiento de aves',
             descripcion:
                 'Descubre especies migratorias y aves costeras que habitan en los alrededores del parque.',
             icono: '',

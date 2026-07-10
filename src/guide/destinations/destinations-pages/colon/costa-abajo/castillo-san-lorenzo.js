@@ -39,7 +39,7 @@ export const castilloSanLorenzo = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento aves',
+            nombre: 'Avistamiento de aves',
             descripcion:
                 'Descubre especies que habitan los bosques cercanos al castillo.',
             icono: '',

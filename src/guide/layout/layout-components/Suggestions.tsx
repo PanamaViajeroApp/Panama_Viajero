@@ -46,7 +46,7 @@ function Suggestions() {
             key={province.id}
             type="button"
             aria-label={`Explorar ${province.nombre}`}
-            onClick={() => navigate(`${province.path}#video`)}
+            onClick={() => navigate(`${province.path}#video`, { state: { breadcrumbSourceLabel: 'Sugerencias' } })}
             className="group flex w-full max-w-md cursor-pointer flex-col items-center md:w-[355px]"
           >
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-brand-soft transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.20)]">

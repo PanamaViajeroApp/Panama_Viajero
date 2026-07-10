@@ -24,7 +24,7 @@ const activityRules = [
     { test: /(nataci|nado|nadar|swim|surf|snorkel|buce|kayak|ballena|tortuga|mar|arrecife)/, Icon: LuWaves },
     { test: /(paseo(?:s)? en lancha|lancha|bote|boat)/, Icon: IoBoat },
     { test: /(pesca)/, Icon: LuFish },
-    { test: /(ciclismo|patinaje|ruta|bicicleta)/, Icon: LuBike },
+    { test: /(Alquiler de bicicletas|patinaje|ruta|bicicleta)/, Icon: LuBike },
     { test: /(gastron|comida|restaur|sabores|culin)/, Icon: LuUtensilsCrossed },
     { test: /(senderismo|monta|trek)/, Icon: LuMountain },
     { test: /(bosque|naturaleza|parque)/, Icon: LuTrees },

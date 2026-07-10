@@ -33,7 +33,7 @@ export const islaCanas = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento aves',
+            nombre: 'Avistamiento de aves',
             descripcion:
                 'Observa especies residentes y migratorias en su entorno natural.',
             icono: '',

@@ -14,6 +14,8 @@ function BocasDelToro() {
     const location = useLocation();
     const bocasDelToro = provincias[0];
     const [selectedActivities, setSelectedActivities] = useState([]);
+    const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa';
+    const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map';
 
     const toggleSelectedActivity = (activity) => {
         setSelectedActivities((current) => {
@@ -92,7 +94,14 @@ function BocasDelToro() {
                 />
             </div>
 
-            <ProvinceVideoJSX provinceData={bocasDelToro} fixedBackground />
+            <ProvinceVideoJSX
+                provinceData={bocasDelToro}
+                fixedBackground
+                breadcrumbItems={[
+                    { label: breadcrumbSourceLabel, to: breadcrumbSourceTo },
+                    { label: 'Bocas del Toro' },
+                ]}
+            />
 
             <Activities 
                 provinceData={bocasDelToro}
@@ -109,6 +118,8 @@ function BocasDelToro() {
             <ProvinceSitesOnly 
                 provinceData={bocasDelToro}
                 selectedActivities={selectedActivities}
+                breadcrumbSourceLabel={breadcrumbSourceLabel}
+                provinceLabel={bocasDelToro.nombre}
                 className="ml-200"
             />
 

@@ -1,20 +1,21 @@
 import { useEffect } from 'react'
 import { FiMapPin } from 'react-icons/fi'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx'
 import Menu from '../../../components/menu/Menu.jsx'
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx'
 import OtherProvinces from '../../components/destinations/OtherProvinces.tsx'
+import BreadcrumbNav from '../../components/destinations/BreadcrumbNav.jsx'
 import { provinceMedia } from '../provinceMedia.js'
 import { riveraPacificaSiteRegistry } from './siteRegistry.js'
 
 const riveraPacificaProvince = {
   id: 'rivera-pacifica',
-  nombre: 'Rivera Pacífica',
+  nombre: 'Riviera Pacífica',
   banner: {
     tipo: 'image',
     src: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',
-    alt: 'Vista de Rivera Pacífica',
+    alt: 'Vista de Riviera Pacífica',
     poster: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',
   },
   descripcionCorta:
@@ -25,6 +26,9 @@ const riveraPacificaProvince = {
 
 function RiveraPacifica() {
   const navigate = useNavigate()
+  const location = useLocation()
+  const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa'
+  const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map'
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
@@ -56,18 +60,24 @@ function RiveraPacifica() {
         <div className="relative z-10 flex min-h-screen items-center px-4 md:px-10">
           <div className="max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm text-white">
             <h1 className="font-main text-5xl md:text-7xl">Riviera Pacífica</h1>
-            <div className="flex gap-1 items-center text-[#f1f1f1e6]/85">
+            <div className="flex items-center gap-1 text-[#f1f1f1e6]/85">
               <FiMapPin className="h-4 w-4 " />
               <p className="mt-1 text-sm font-secondary leading-6">Costas de Coclé y Panamá Oeste</p>
             </div>
             <p className="mt-5 text-lg leading-8 text-brand-white/90">
               {riveraPacificaProvince.descripcionCorta}
             </p>
+            <BreadcrumbNav
+              items={[
+                { label: breadcrumbSourceLabel, to: breadcrumbSourceTo },
+                { label: 'Riviera Pacífica' },
+              ]}
+            />
           </div>
         </div>
       </section>
 
-      <section className="relative z-10 -mt-10  pt-10 text-brand-white  ">
+      <section className="relative z-10 -mt-10 pt-10 text-brand-white">
         <div className="mx-auto max-w-6xl px-4 md:px-10">
           <ProvinceSitesOnly provinceData={riveraPacificaProvince} title="Lugares Turísticos" />
           <OtherProvinces provincias={provinceMedia} />

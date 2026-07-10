@@ -33,7 +33,7 @@ export const bahiaPina = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento aves',
+            nombre: 'Avistamiento de aves',
             descripcion:
                 'Descubre especies tropicales y migratorias propias de una de las regiones más biodiversas de Panamá.',
             icono: '',

@@ -15,11 +15,9 @@ export const reservaForestalElMontuoso = {
   previewUbicacion: 'Las Minas, Herrera',
   actividades: [
     { nombre: 'Senderismo', descripcion: 'Recorre caminos naturales rodeados de vegetación y descubre la riqueza ambiental de la reserva.', icono: '' },
-    { nombre: 'Avistamiento aves', descripcion: 'Identifica especies residentes y migratorias que encuentran refugio en los bosques del área protegida.', icono: '' },
+    { nombre: 'Avistamiento de aves', descripcion: 'Identifica especies residentes y migratorias que encuentran refugio en los bosques del área protegida.', icono: '' },
     { nombre: 'Fotografía', descripcion: 'Captura paisajes montañosos, bosques nubosos y la biodiversidad característica del lugar.', icono: '' },
-    { nombre: 'Fauna', descripcion: 'Observa mamíferos, reptiles e insectos que forman parte de los ecosistemas de la reserva.', icono: '' },
-    { nombre: 'Cascadas', descripcion: 'Descubre pequeñas caídas de agua y quebradas escondidas entre la vegetación tropical.', icono: '' },
-    { nombre: 'Educación', descripcion: 'Aprende sobre la importancia de la conservación y los recursos naturales de la región.', icono: '' },
+    { nombre: 'Fauna', descripcion: 'Observa mamíferos, reptiles e insectos que forman parte de los ecosistemas de la reserva.', icono: '' },    { nombre: 'Educación', descripcion: 'Aprende sobre la importancia de la conservación y los recursos naturales de la región.', icono: '' },
     { nombre: 'Naturaleza', descripcion: 'Vive una experiencia de tranquilidad y desconexión en uno de los espacios naturales más valiosos de Herrera.', icono: '' },
   ],
   ubicacion:

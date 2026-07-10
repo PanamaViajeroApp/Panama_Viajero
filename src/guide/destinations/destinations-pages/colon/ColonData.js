@@ -5,17 +5,17 @@ export const provincias = [
     banner: {
       tipo: 'video',
       src: '/videos/colon/ColonBanner.av1.mp4',
-      alt: 'Vista de la provincia de Colón',
+      alt: 'Vista del destino de Colón',
     },
     descripcionCorta:
-      'Colón combina historia, Caribe, islas y paisajes vinculados al Canal de Panamá. Es una provincia ideal para conocer fortificaciones, playas y destinos naturales con identidad propia.',
+      'Colón combina historia, Caribe, islas y paisajes vinculados al Canal de Panamá. Es un destino ideal para conocer fortificaciones, playas y destinos naturales con identidad propia.',
     ubicacionProvincia: {
       src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797024.4492928673!2d-80.63741947944797!3d9.139537273998036!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fab25f6fbeed405%3A0xbc032eadbbacf29a!2sCol%C3%B3n%20Province!5e1!3m2!1sen!2spa!4v1778602312976!5m2!1sen!2spa',
     },
     actividades: [
       'Snorkel',
       'Senderismo natural',
-      'Avistamiento aves',
+      'Avistamiento de aves',
       'Observación de fauna',
       'Recorridos interpretativos',
       'Visita combinada con San Lorenzo',

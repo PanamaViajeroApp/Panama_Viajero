@@ -37,7 +37,7 @@ export const islaColon = {
       icono: 'dolphin',
     },
     {
-      nombre: 'Ciclismo',
+      nombre: 'Alquiler de bicicletas',
       descripcion:
         'Recorre senderos costeros y caminos naturales mientras descubres rincones únicos de la isla.',
       icono: 'bike',
@@ -65,6 +65,12 @@ export const islaColon = {
       descripcion:
         'Observa aves tropicales y especies exóticas en senderos rodeados de selva y naturaleza.',
       icono: 'bird',
+    },
+    {
+      nombre: 'Gastronomía',
+      descripcion:
+        'Disfruta mariscos frescos, cocina caribeña y una variada oferta de restaurantes con sabores locales e internacionales.',
+      icono: '',
     },
   ],
   ubicacion:

@@ -5,7 +5,7 @@ export const provincias = [
     banner: {
       tipo: 'video',
       src: '/videos/darien/DarienBanner.av1.mp4',
-      alt: 'Vista de la provincia de Darién',
+      alt: 'Vista del destino de Darién',
     },
     descripcionCorta:
       'Darién es una de las regiones más salvajes y menos intervenidas de Panamá, con selva tropical, ríos y comunidades que mantienen una relación cercana con la naturaleza. Es un destino para quienes buscan aventura, biodiversidad y experiencia cultural auténtica.',
@@ -14,7 +14,7 @@ export const provincias = [
     },
     actividades: [
       'Selva',
-      'Avistamiento aves',
+      'Avistamiento de aves',
       'Fotografía',
       'Pesca deportiva',
       'Fauna marina',

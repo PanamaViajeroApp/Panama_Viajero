@@ -141,7 +141,7 @@ function Menu({
             onClick={goToMap}
           >
             <MapPinIcon className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
-            <span>Provincias</span>
+            <span>Destinos</span>
           </button>
           <button
             className="group flex cursor-pointer items-center gap-2 rounded-full px-3 py-2 transition-all ease-out hover:scale-105 hover:bg-brand-white/15 hover:text-brand-white hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
@@ -193,7 +193,7 @@ function Menu({
                     Nosotros
                   </button>
                   <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToMap}>
-                    Provincias
+                    Destinos
                   </button>
                   <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>
                     Registro

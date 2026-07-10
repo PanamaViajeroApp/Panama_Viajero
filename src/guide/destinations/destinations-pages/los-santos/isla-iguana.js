@@ -27,7 +27,7 @@ export const islaIguana = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento aves',
+            nombre: 'Avistamiento de aves',
             descripcion:
                 'Observa aves marinas que encuentran refugio en este ecosistema protegido.',
             icono: '',

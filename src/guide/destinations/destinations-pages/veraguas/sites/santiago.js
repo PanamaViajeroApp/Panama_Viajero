@@ -9,9 +9,9 @@ export const santiago = {
         alt: 'Banner de Santiago',
     },
     descripcion:
-        'Santiago es el principal centro urbano de Veraguas y una base práctica para explorar la provincia. Su vida comercial, sus espacios públicos y su papel como punto de conexión hacia la costa y el interior la convierten en una parada útil y representativa.',
+        'Santiago es el principal centro urbano de Veraguas y una base práctica para explorar el destino. Su vida comercial, sus espacios públicos y su papel como punto de conexión hacia la costa y el interior la convierten en una parada útil y representativa.',
     previewDescripcion:
-        'La capital de Veraguas, útil para moverse por la provincia y conocer su vida urbana.',
+        'La capital de Veraguas, útil para moverse por el destino y conocer su vida urbana.',
     previewUbicacion: 'Santiago, Veraguas',
     actividades: [
         {

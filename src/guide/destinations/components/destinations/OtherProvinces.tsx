@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { provinceMedia } from '../../destinations-pages/provinceMedia.js';
 
 function getRandomItems(items, limit) {
@@ -15,6 +15,8 @@ function getRandomItems(items, limit) {
 
 function AleatorySuggestions() {
     const navigate = useNavigate();
+    const location = useLocation();
+    const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa';
     const suggestions = useMemo(() => {
         const riveraPacifica = provinceMedia.find((province) => province.id === 'rivera-pacifica');
         const others = provinceMedia.filter((province) => province.poster && province.id !== 'rivera-pacifica');
@@ -27,7 +29,7 @@ function AleatorySuggestions() {
             <div className="mb-8 flex flex-col items-end ">
                 <h2 className="font-main md:text-2xl text-4xl text-brand-white/95 md:text-5xl"
                 style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.5)'}}>
-                    Otras provincias
+                    Otros destinos
                 </h2>
                 <p className="font-secondary-italic text-right  mt-3 max-w-3xl text-brand-white/95 md:text-lg"
                 style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.5)'}}>
@@ -40,7 +42,7 @@ function AleatorySuggestions() {
                         key={province.id}
                         type="button"
                         aria-label={`Explorar ${province.nombre}`}
-                        onClick={() => navigate(`${province.path}#video`)}
+                        onClick={() => navigate(`${province.path}#video`, { state: { breadcrumbSourceLabel } })}
                         className="group flex w-full max-w-md cursor-pointer flex-col items-center md:w-[355px]"
                     >
                         <div

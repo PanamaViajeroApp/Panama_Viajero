@@ -14,6 +14,8 @@ function Chiriqui() {
     const location = useLocation();
     const provinceData = chiriquiProvinceData[0];
     const [selectedActivities, setSelectedActivities] = useState([]);
+    const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa';
+    const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map';
 
     const toggleSelectedActivity = (activity) => {
         setSelectedActivities((current) => {
@@ -91,7 +93,14 @@ function Chiriqui() {
                     onPreregisterClick={() => navigate('/#preregister')}
                 />
             </div>
-            <ProvinceVideo provinceData={provinceData} fixedBackground />
+            <ProvinceVideo
+                provinceData={provinceData}
+                fixedBackground
+                breadcrumbItems={[
+                    { label: breadcrumbSourceLabel, to: breadcrumbSourceTo },
+                    { label: 'Chiriquí' },
+                ]}
+            />
             <section className="relative z-10 ">
                 <Activities
                     provinceData={provinceData}
@@ -103,7 +112,12 @@ function Chiriqui() {
                     onRemoveActivity={removeSelectedActivity}
                     onClearAll={() => setSelectedActivities([])}
                 />
-                <ProvinceSitesOnly provinceData={provinceData} selectedActivities={selectedActivities} />
+                <ProvinceSitesOnly
+                    provinceData={provinceData}
+                    selectedActivities={selectedActivities}
+                    breadcrumbSourceLabel={breadcrumbSourceLabel}
+                    provinceLabel={provinceData.nombre}
+                />
                 <OtherProvinces provincias={chiriquiProvinceData} />
                 <div className="mt-40">
                     <BottomBanner onLogoClick={() => navigate('/#home')} />

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import ProvinceVideo from '../../components/destinations/ProvinceVideo.jsx'
 import Activities from '../../components/destinations/Activities.jsx'
 import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx'
@@ -10,7 +10,10 @@ import { provincias } from './VeraguasData.js'
 
 function Veraguas() {
   const navigate = useNavigate()
+  const location = useLocation()
   const provinceData = provincias[0]
+  const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa'
+  const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map'
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
@@ -35,9 +38,20 @@ function Veraguas() {
           onPreregisterClick={() => navigate('/#preregister')}
         />
       </div>
-      <ProvinceVideo provinceData={provinceData} fixedBackground />
+      <ProvinceVideo
+        provinceData={provinceData}
+        fixedBackground
+        breadcrumbItems={[
+          { label: breadcrumbSourceLabel, to: breadcrumbSourceTo },
+          { label: provinceData.nombre },
+        ]}
+      />
       <Activities provinceData={provinceData} />
-      <ProvinceSitesOnly provinceData={provinceData} />
+      <ProvinceSitesOnly
+        provinceData={provinceData}
+        breadcrumbSourceLabel={breadcrumbSourceLabel}
+        provinceLabel={provinceData.nombre}
+      />
       <OtherProvinces provincias={provincias} />
       <div className="mt-40">
         <BottomBanner onLogoClick={() => navigate('/#home')} />

@@ -21,7 +21,7 @@ export const bosqueProtectorSanLorenzo = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento aves',
+            nombre: 'Avistamiento de aves',
             descripcion:
                 'Explora uno de los mejores puntos de avistamiento para observar especies tropicales y aves migratorias.',
             icono: '',

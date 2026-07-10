@@ -6,11 +6,11 @@ export const provincias = [
     banner: {
       tipo: 'video',
       src: '/videos/herrera/HerreraBanner.av1.mp4',
-      alt: 'Vista de la provincia de Herrera',
+      alt: 'Vista del destino de Herrera',
     },
 
     descripcionCorta:
-      'Herrera combina tradición, cultura y paisajes naturales en una provincia de fuerte identidad interiorana. Destaca por sus pueblos históricos, su vida folclórica y la Reserva El Montuoso.',
+      'Herrera combina tradición, cultura y paisajes naturales en un destino de fuerte identidad interiorana. Destaca por sus pueblos históricos, su vida folclórica y la Reserva El Montuoso.',
 
     ubicacionProvincia: {
       src: 'https://www.google.com/maps?q=Herrera%2C%20Panam%C3%A1&output=embed',
@@ -23,12 +23,11 @@ export const provincias = [
       'Fotografía',
       'Festividades',
       'Arqueología',
-      'Avistamiento aves',
+      'Avistamiento de aves',
       'Manglares',
       'Interpretación',
       'Iglesia',
       'Fauna',
-      'Cascadas',
       'Educación',
       'Naturaleza',
     ],

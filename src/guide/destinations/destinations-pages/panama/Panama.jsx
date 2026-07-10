@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../components/destinations/Activities.jsx';
 import Sitios from '../../components/destinations/SitesList.jsx';
@@ -10,7 +10,10 @@ import { provincias} from './PanamaData.js';
 
 function Panama() {
     const navigate = useNavigate();
+    const location = useLocation();
     const provinceData = provincias[0];
+    const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa';
+    const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map';
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -34,9 +37,16 @@ function Panama() {
                     onPreregisterClick={() => navigate('/#preregister')}
                 />
             </div>
-            <ProvinceVideo provinceData={provinceData} fixedBackground />
+            <ProvinceVideo
+                provinceData={provinceData}
+                fixedBackground
+                breadcrumbItems={[
+                    { label: breadcrumbSourceLabel, to: breadcrumbSourceTo },
+                    { label: provinceData.nombre },
+                ]}
+            />
             <Activities provinceData={provinceData} />
-            <Sitios provinceData={provinceData} />
+            <Sitios provinceData={provinceData} breadcrumbSourceLabel={breadcrumbSourceLabel} />
             <OtherProvinces provincias={provincias} />
             <div className="mt-40">
                 <BottomBanner onLogoClick={() => navigate('/#home')} />

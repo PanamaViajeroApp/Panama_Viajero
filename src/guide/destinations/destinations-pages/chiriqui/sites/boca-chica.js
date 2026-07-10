@@ -1,4 +1,4 @@
-const bocaChicaImageBase = '/images/destinations/chiriqui/boquete'
+const bocaChicaImageBase = '/images/destinations/chiriqui/boca-chica'
 
 export const bocaChica = {
   id: 'boca-chica',
@@ -8,6 +8,15 @@ export const bocaChica = {
     src: `${bocaChicaImageBase}/bg-boca-chica.webp`,
     alt: 'Banner de Boca Chica',
   },
+  gallery: [
+    `${bocaChicaImageBase}/bg-boca-chica.webp`,
+    `${bocaChicaImageBase}/g1-boca-chica.webp`,
+    `${bocaChicaImageBase}/g2-boca-chica.webp`,
+    `${bocaChicaImageBase}/g3-boca-chica.webp`,
+    `${bocaChicaImageBase}/g4-boca-chica.webp`,
+    `${bocaChicaImageBase}/g5-boca-chica.webp`,
+    `${bocaChicaImageBase}/g6-boca-chica.webp`,
+  ],
   descripcion:
     'Boca Chica es la puerta de entrada al Golfo de Chiriquí, con aguas tranquilas, islas cercanas y un entorno marino ideal para actividades de naturaleza. Su atractivo está en la navegación, el avistamiento de fauna y las escapadas a playas e islotes del Pacífico chiricano.',
   previewDescripcion:

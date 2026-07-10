@@ -15,7 +15,7 @@ export const cintaCostera = {
     previewUbicacion: 'Bella Vista, Ciudad de Panamá',
     actividades: [
         {
-            nombre: 'Ciclismo',
+            nombre: 'Alquiler de bicicletas',
             descripcion:
                 'Aprovecha sus amplias rutas para pedalear junto a la costa con una vista privilegiada del skyline.',
             icono: '',

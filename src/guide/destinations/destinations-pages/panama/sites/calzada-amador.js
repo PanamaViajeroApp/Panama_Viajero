@@ -15,7 +15,7 @@ export const calzadaAmador = {
     previewUbicacion: 'Amador, Ciudad de Panamá',
     actividades: [
         {
-            nombre: 'Ciclismo',
+            nombre: 'Alquiler de bicicletas',
             descripcion:
                 'Aprovecha sus amplias rutas para pedalear con vistas abiertas al océano y al Canal.',
             icono: '',

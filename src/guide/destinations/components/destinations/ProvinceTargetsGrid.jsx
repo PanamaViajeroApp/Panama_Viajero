@@ -42,13 +42,34 @@ function ProvinceTargetsGrid({
   fallbackPoster,
   mode = 'sites-only',
   provinceId,
+  provinceLabel,
+  zoneLabel,
   selectedActivities = [],
   selectedActivity = null,
+  breadcrumbSourceLabel = 'Mapa',
 }) {
   const navigate = useNavigate()
   const selectionSource =
     Array.isArray(selectedActivities) && selectedActivities.length > 0 ? selectedActivities : selectedActivity
   const selectedActivityKeys = new Set(normalizeActivitySelection(selectionSource))
+  const visibleTargets =
+    mode === 'sites-only' && selectedActivityKeys.size > 0
+      ? targets.filter((target) => {
+          const targetActivities = Array.isArray(target.activities) ? target.activities : []
+          return targetActivities.some((activity) => {
+            const activityKey = normalizeActivity(typeof activity === 'string' ? activity : activity?.nombre ?? '')
+            return (
+              activityKey &&
+              [...selectedActivityKeys].some(
+                (selectedActivityKey) =>
+                  activityKey === selectedActivityKey ||
+                  activityKey.includes(selectedActivityKey) ||
+                  selectedActivityKey.includes(activityKey),
+              )
+            )
+          })
+        })
+      : targets
 
   return (
     <div className="flex flex-col gap-5 mt-10">
@@ -60,46 +81,29 @@ function ProvinceTargetsGrid({
       </h1>
 
       <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 px-4 sm:px-0">
-        {targets.map((target) => {
+        {visibleTargets.map((target) => {
           const isVideo = target.type === 'video'
-          const targetActivities = Array.isArray(target.activities) ? target.activities : []
-          const matchesSelectedActivity =
-            selectedActivityKeys.size > 0 &&
-            targetActivities.some((activity) => {
-              const activityKey = normalizeActivity(typeof activity === 'string' ? activity : activity?.nombre ?? '')
-              return (
-                activityKey &&
-                [...selectedActivityKeys].some(
-                  (selectedActivityKey) =>
-                    activityKey === selectedActivityKey ||
-                    activityKey.includes(selectedActivityKey) ||
-                    selectedActivityKey.includes(activityKey),
-                )
-              )
-            })
           const resolvedTarget =
             provinceId && target.type === 'zone' && !target.provinceId
               ? { ...target, provinceId }
               : target
           const route = resolveTargetRoute(resolvedTarget)
           const description = getTargetDescription(target)
-          const cardIsHighlighted = mode === 'sites-only' && matchesSelectedActivity
+          const nextState = {
+            breadcrumbSourceLabel,
+            breadcrumbProvinceLabel: provinceLabel,
+            breadcrumbZoneLabel: target.type === 'zone' ? target.nombre : zoneLabel,
+          }
 
           return (
             <button
               key={target.id}
               type="button"
               aria-label={`Ver informacion de ${target.nombre}`}
-              onClick={() => navigate(route)}
+              onClick={() => navigate(route, { state: nextState })}
               className={`flex cursor-pointer flex-col overflow-hidden rounded-xl text-left shadow-xl transition hover:-translate-y-1 ${
                 mode === 'zones-only' || mode === 'mixed' ? 'basis-[300px] grow' : 'w-full max-w-[340px]'
-              } ${
-                mode === 'zones-only' || mode === 'mixed'
-                  ? 'bg-transparent'
-                  : cardIsHighlighted
-                    ? 'bg-brand-blue shadow-[0_20px_40px_rgba(73,86,162,0.20)]'
-                    : 'bg-brand-white'
-              }`}
+              } ${mode === 'zones-only' || mode === 'mixed' ? 'bg-transparent' : 'bg-brand-white'}`}
             >
               <div className="group relative aspect-[16/9] w-full overflow-hidden bg-brand-soft">
                 {isVideo ? (
@@ -122,13 +126,7 @@ function ProvinceTargetsGrid({
 
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
 
-                {mode === 'sites-only' && (
-                  <div
-                    className={`absolute inset-0 transition-all duration-300 ${
-                      cardIsHighlighted ? 'bg-brand-blue/10 group-hover:bg-brand-blue/0' : 'bg-black/8 group-hover:bg-black/0'
-                    }`}
-                  />
-                )}
+                {mode === 'sites-only' && <div className="absolute inset-0 bg-black/8 transition-all duration-300 group-hover:bg-black/0" />}
 
                 {(mode === 'zones-only' || mode === 'mixed') && (
                   <div className="absolute inset-x-0 bottom-0 p-5">
@@ -145,19 +143,19 @@ function ProvinceTargetsGrid({
               </div>
 
               {mode === 'sites-only' && (
-                <div className={`flex flex-1 flex-col p-5 ${cardIsHighlighted ? 'bg-brand-blue' : 'bg-brand-white'}`}>
-                  <h3 className={`font-secondary-italic mt-2 text-2xl ${cardIsHighlighted ? 'text-brand-white' : 'text-brand-blue/95'}`}>
+                <div className="flex flex-1 flex-col bg-brand-white p-5">
+                  <h3 className="font-secondary-italic mt-2 text-2xl text-brand-blue/95">
                     {target.nombre}
                   </h3>
 
                   {description && (
-                    <p className={`font-body mt-3 text-sm leading-6 ${cardIsHighlighted ? 'text-brand-white/85' : 'text-black'}`}>
+                    <p className="font-body mt-3 text-sm leading-6 text-black">
                       {description}
                     </p>
                   )}
 
                   {target.ubicacion && (
-                    <p className={`font-secondary-italic mt-auto pt-4 text-sm ${cardIsHighlighted ? 'text-brand-white/90' : 'text-brand-red/95'}`}>
+                    <p className="font-secondary-italic mt-auto pt-4 text-sm text-brand-red/95">
                       {target.ubicacion}
                     </p>
                   )}
@@ -166,6 +164,12 @@ function ProvinceTargetsGrid({
             </button>
           )
         })}
+
+        {mode === 'sites-only' && selectedActivityKeys.size > 0 && visibleTargets.length === 0 ? (
+          <div className="w-full rounded-2xl border border-white/15 bg-black/20 px-6 py-10 text-center text-brand-white/90 backdrop-blur-sm">
+            No hay sitios que coincidan con la actividad seleccionada.
+          </div>
+        ) : null}
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-const volcanBaruImageBase = '/images/destinations/chiriqui/boquete'
+const volcanBaruImageBase = '/images/destinations/chiriqui/volcan-baru'
 
 export const volcanBaru = {
   id: 'volcan-baru',
@@ -8,18 +8,21 @@ export const volcanBaru = {
     src: `${volcanBaruImageBase}/bg-volcan-baru.webp`,
     alt: 'Banner del Volcán Barú',
   },
+  gallery: [
+    `${volcanBaruImageBase}/bg-volcan-baru.webp`,
+    `${volcanBaruImageBase}/g1-volcan-baru.webp`,
+    `${volcanBaruImageBase}/g2-volcan-baru.webp`,
+    `${volcanBaruImageBase}/g3-volcan-baru.webp`,
+    `${volcanBaruImageBase}/g4-volcan-baru.webp`,
+    `${volcanBaruImageBase}/g5-volcan-baru.webp`,
+    `${volcanBaruImageBase}/g6-volcan-baru.webp`,
+  ],
   descripcion:
     'El Volcán Barú es la cumbre más alta de Panamá y uno de los destinos de montaña más reconocidos del país. Sus senderos, bosques nubosos y vistas amplias convierten la visita en una experiencia exigente pero muy memorable para quienes disfrutan la naturaleza.',
   previewDescripcion:
     'La montaña más alta de Panamá, famosa por sus senderos y vistas panorámicas.',
   previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
-    {
-      nombre: 'Amanecer',
-      descripcion:
-        'Disfruta uno de los amaneceres más espectaculares del país desde la cima.',
-      icono: '',
-    },
     {
       nombre: 'Senderismo',
       descripcion:
@@ -33,13 +36,7 @@ export const volcanBaru = {
       icono: '',
     },
     {
-      nombre: 'Flora y fauna',
-      descripcion:
-        'Descubre especies propias de los ecosistemas de alta montaña.',
-      icono: '',
-    },
-    {
-      nombre: 'Avistamiento aves',
+      nombre: 'Avistamiento de aves',
       descripcion:
         'Explora uno de los mejores lugares de Panamá para observar aves de altura.',
       icono: '',
@@ -51,7 +48,7 @@ export const volcanBaru = {
       icono: '',
     },
     {
-      nombre: 'Estrellas',
+      nombre: 'Avistamiento de estrellas',
       descripcion:
         'Aprovecha la altitud y la baja contaminación lumínica para admirar el cielo nocturno.',
       icono: '',
@@ -60,12 +57,6 @@ export const volcanBaru = {
       nombre: 'Bosque nuboso',
       descripcion:
         'Adéntrate en ecosistemas únicos cubiertos por neblina y vegetación exuberante.',
-      icono: '',
-    },
-    {
-      nombre: 'Aventura',
-      descripcion:
-        'Vive una experiencia desafiante y memorable en uno de los íconos naturales de Panamá.',
       icono: '',
     },
   ],

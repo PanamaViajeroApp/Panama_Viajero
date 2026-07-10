@@ -1,17 +1,29 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 
-function ProvinceSitesOnly({ provinceData, title = 'Sitios Turísticos', selectedActivities = [] }) {
+function ProvinceSitesOnly({
+  provinceData,
+  title = 'Sitios Turísticos',
+  selectedActivities = [],
+  breadcrumbSourceLabel = 'Mapa',
+  provinceLabel,
+  zoneLabel,
+}) {
   const provinceId = provinceData?.id ?? ''
   const directSiteIds = provinceData?.directSiteIds ?? []
+
   const belongsToProvince = (site) =>
-    site?.provinceId === provinceId || site?.provinceIds?.includes(provinceId) || site?.sharedProvinceIds?.includes(provinceId)
+    site?.provinceId === provinceId ||
+    site?.provinceIds?.includes(provinceId) ||
+    site?.sharedProvinceIds?.includes(provinceId)
+
   const fallbackSiteIds =
     directSiteIds.length > 0
-    ? directSiteIds
-    : Object.values(siteRegistry)
-        .filter((site) => belongsToProvince(site))
-        .map((site) => site.id)
+      ? directSiteIds
+      : Object.values(siteRegistry)
+          .filter((site) => belongsToProvince(site))
+          .map((site) => site.id)
+
   const targets = fallbackSiteIds
     .map((siteId) => siteRegistry[siteId])
     .filter(Boolean)
@@ -34,6 +46,9 @@ function ProvinceSitesOnly({ provinceData, title = 'Sitios Turísticos', selecte
       mode="sites-only"
       provinceId={provinceData.id}
       selectedActivities={selectedActivities}
+      breadcrumbSourceLabel={breadcrumbSourceLabel}
+      provinceLabel={provinceLabel || provinceData?.nombre}
+      zoneLabel={zoneLabel}
     />
   )
 }

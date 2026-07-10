@@ -5,7 +5,7 @@ nombre: 'Panamá Oeste',
 banner: {
 tipo: 'video',
 src: '/videos/panamaOeste/VideoBannerPanamaOeste.av1.mp4',
-alt: 'Vista de la provincia de Panamá Oeste',
+alt: 'Vista del destino de Panamá Oeste',
 },
 descripcionCorta:
 'Panamá Oeste es el respiro necesario que te saca de la ciudad para llevarte a la brisa fresca del Cerro Campana en menos de una hora. Disfruta de un destino que combina la tranquilidad de la vida de campo con playas que ofrecen el escape perfecto para cada fin de semana.',

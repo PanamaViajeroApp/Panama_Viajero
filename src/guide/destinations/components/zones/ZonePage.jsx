@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, useParams, useLocation } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import Menu from '../../../components/menu/Menu.jsx'
 import ButtomBanner from '../../../components/bottombanner/Bottombanner.jsx'
 import ZoneVideo from './ZoneVideo.jsx'
 import ProvinceTargetsGrid from '../destinations/ProvinceTargetsGrid.jsx'
 import OtherProvinces from '../destinations/OtherProvinces.tsx'
+import BreadcrumbNav from '../destinations/BreadcrumbNav.jsx'
 import { zoneRegistry } from '../../destinations-pages/zoneRegistry.js'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 import { provincias as chiriquiProvincias } from '../../destinations-pages/chiriqui/ChiriquiData.js'
@@ -34,6 +35,8 @@ function ZonePage() {
   const searchProvinceId = new URLSearchParams(location.search).get('province')
   const provinceId = searchProvinceId || zone?.provinceId || zone?.provinceIds?.[0] || 'chiriqui'
   const provinceData = provinceDataRegistry[provinceId] ?? chiriquiProvincias[0]
+  const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa'
+  const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map'
   const fallbackTarget =
     provinceData?.targets?.find((target) => target.zoneId === decodedZoneId || target.id === decodedZoneId) ?? null
   const safeHeading = zone?.nombre || fallbackTarget?.nombre || 'Zona'
@@ -87,32 +90,37 @@ function ZonePage() {
       </div>
 
       <section id="video" className="relative min-h-screen overflow-hidden">
-        <div className="pointer-events-none fixed inset-0  bg-brand-charcoal">
+        <div className="pointer-events-none fixed inset-0 bg-brand-charcoal">
           <ZoneVideo provinceData={provinceData} zone={zone} fixedBackground scrollProgress={scrollProgress} />
         </div>
         <div className="relative z-10 flex min-h-screen items-start px-4 md:items-center max-w-lg">
           <div className="mt-24 max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 md:ml-10">
-            <h1
-              className="font-main text-5xl font-bold text-brand-white brightness-150 md:text-6xl"
-              
-            >
+            <h1 className="font-main text-5xl font-bold text-brand-white brightness-150 md:text-6xl">
               {safeHeading}
             </h1>
-            <p className="mt-4 font-body text-lg leading-7 text-brand-white/90">
-              {safeDescription}
-            </p>
+            <p className="mt-4 font-body text-lg leading-7 text-brand-white/90">{safeDescription}</p>
+            <BreadcrumbNav
+              items={[
+                { label: breadcrumbSourceLabel, to: breadcrumbSourceTo },
+                { label: provinceData.nombre, to: breadcrumbSourceTo },
+                { label: safeHeading },
+              ]}
+            />
           </div>
         </div>
       </section>
 
       <section className="relative z-10">
         <div className="mx-auto max-w-6xl px-4 md:px-10">
-          <div className=" flex flex-col gap-12">
+          <div className="flex flex-col gap-12">
             <ProvinceTargetsGrid
               title="Lugares turísticos"
               targets={sitios.map(toTarget)}
               fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
               mode="sites-only"
+              breadcrumbSourceLabel={breadcrumbSourceLabel}
+              provinceLabel={provinceData.nombre}
+              zoneLabel={safeHeading}
             />
           </div>
 

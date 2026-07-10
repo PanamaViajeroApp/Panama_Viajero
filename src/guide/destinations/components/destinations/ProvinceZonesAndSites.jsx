@@ -1,7 +1,7 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 
-function ProvinceZonesAndSites({ provinceData, selectedActivity = null }) {
+function ProvinceZonesAndSites({ provinceData, selectedActivity = null, breadcrumbSourceLabel = 'Mapa' }) {
   const zones = provinceData?.targets?.filter((target) => target.type === 'zone') ?? []
   const provinceId = provinceData?.id ?? ''
   const directSiteIds = provinceData?.directSiteIds ?? []
@@ -34,6 +34,8 @@ function ProvinceZonesAndSites({ provinceData, selectedActivity = null }) {
           fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
           mode="zones-only"
           provinceId={provinceData.id}
+          provinceLabel={provinceData?.nombre}
+          breadcrumbSourceLabel={breadcrumbSourceLabel}
         />
       )}
       {sites.length > 0 && (
@@ -44,6 +46,8 @@ function ProvinceZonesAndSites({ provinceData, selectedActivity = null }) {
           mode="sites-only"
           provinceId={provinceData.id}
           selectedActivity={selectedActivity}
+          provinceLabel={provinceData?.nombre}
+          breadcrumbSourceLabel={breadcrumbSourceLabel}
         />
       )}
     </div>

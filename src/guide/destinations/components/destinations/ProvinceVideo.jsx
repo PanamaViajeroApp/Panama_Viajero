@@ -1,6 +1,7 @@
 import SmartVideo from '../../../components/video/SmartVideo.jsx';
+import BreadcrumbNav from './BreadcrumbNav.jsx'
 
-function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false }) {
+function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false, breadcrumbItems = [] }) {
     const banner = provinceData.banner || {};
     const source = videoSrc || banner.src;
 
@@ -35,6 +36,7 @@ function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false }) {
                         <p className="font-body text-lg leading-7 text-brand-white/90">
                             {provinceData.descripcionCorta}
                         </p>
+                        <BreadcrumbNav items={breadcrumbItems} />
                     </div>
                 </div>
             </section>
@@ -54,6 +56,7 @@ function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false }) {
                         <p className="font-body text-lg leading-7 text-brand-white/90">
                             {provinceData.descripcionCorta}
                         </p>
+                        <BreadcrumbNav items={breadcrumbItems} />
                     </div>
                 </div>
             </div>
