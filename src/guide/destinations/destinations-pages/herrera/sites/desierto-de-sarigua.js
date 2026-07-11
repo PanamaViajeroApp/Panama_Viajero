@@ -1,13 +1,19 @@
-const sariguaImageBase = '/images/destinations/herrera'
+const sariguaImageBase = '/images/destinations/herrera/desierto-sarigua'
 
 export const desiertoSarigua = {
     id: 'desierto-sarigua',
     provinceId: 'herrera',
     nombre: 'Desierto de Sarigua',
     banner: {
-        src: `${sariguaImageBase}/bg-desierto-sarigua.jpg`,
+        src: `${sariguaImageBase}/bg-desierto-sarigua.webp`,
         alt: 'Banner del Desierto de Sarigua',
     },
+    gallery: [
+        `${sariguaImageBase}/bg-desierto-sarigua.webp`,
+        `${sariguaImageBase}/g1-desierto-sarigua.webp`,
+        `${sariguaImageBase}/g2-desierto-sarigua.webp`,
+        `${sariguaImageBase}/g3-desierto-sarigua.webp`,
+    ],
     descripcion:
         'El Desierto de Sarigua es uno de los paisajes más singulares de Panamá, con planicies salinizadas, historia arqueológica y ecosistemas costeros. Su entorno árido y abierto lo convierte en un lugar muy atractivo para la exploración y la fotografía.',
     previewDescripcion:
@@ -36,12 +42,6 @@ export const desiertoSarigua = {
             nombre: 'Manglares',
             descripcion:
                 'Visita ecosistemas costeros que contrastan con la aridez del parque.',
-            icono: '',
-        },
-        {
-            nombre: 'Interpretación',
-            descripcion:
-                'Aprende sobre la formación del lugar, su historia ecológica y su proceso de desertificación.',
             icono: '',
         },
     ],

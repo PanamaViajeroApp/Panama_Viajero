@@ -1,4 +1,4 @@
-const paritaImageBase = '/images/destinations/herrera'
+const paritaImageBase = '/images/destinations/herrera/parita'
 
 export const parita = {
     id: 'parita',
@@ -8,6 +8,13 @@ export const parita = {
         src: `${paritaImageBase}/bg-parita.webp`,
         alt: 'Banner de Parita',
     },
+    gallery: [
+        `${paritaImageBase}/bg-parita.webp`,
+        `${paritaImageBase}/g1-parita.webp`,
+        `${paritaImageBase}/g2-parita.webp`,
+        `${paritaImageBase}/g3-parita.webp`,
+        `${paritaImageBase}/g4-parita.webp`,
+    ],
     descripcion:
         'Parita es uno de los pueblos coloniales más antiguos de Panamá, donde la historia, la tradición y la arquitectura conservan la esencia del interior del país. Su valor está en el patrimonio cultural y en la vida tradicional que aún mantiene.',
     previewDescripcion:
@@ -15,22 +22,27 @@ export const parita = {
     previewUbicacion: 'Parita, Herrera',
     actividades: [
         {
-            nombre: 'Iglesia',
-            descripcion:
-                'Conoce uno de los templos coloniales más importantes de Panamá y su valor patrimonial.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía',
             descripcion:
                 'Captura plazas, fachadas antiguas y detalles arquitectónicos únicos del pueblo.',
             icono: '',
         },
-
         {
-            nombre: 'Festividades',
+            nombre: 'Artesanías',
             descripcion:
-                'Participa en celebraciones como carnavales, patronales y danzas folclóricas reconocidas a nivel nacional.',
+                'Descubre talleres donde se elaboran piezas de alfarería y otras artesanías tradicionales de la región.',
+            icono: '',
+        },
+        {
+            nombre: 'Folclore',
+            descripcion:
+                'Conoce las tradiciones, danzas y manifestaciones culturales que identifican a Parita.',
+            icono: '',
+        },
+        {
+            nombre: 'Museos',
+            descripcion:
+                'Aprende sobre la historia y el patrimonio local a través de espacios culturales del distrito.',
             icono: '',
         },
         {
