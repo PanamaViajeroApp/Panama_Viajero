@@ -31,7 +31,7 @@ const activityRules = [
     { test: /(estrella|estrellas)/, Icon: LuSparkles },
     { test: /(avistamiento|observaci).*(rana|ranas).*(roja|rojas)/, Icon: LuCamera },
     { test: /(avistamiento|observaci).*(delfin|delfines)/, Icon: LuBinoculars },
-    { test: /(avistamiento|observaci).*(ballena|ballenas|tortuga|tortugas|fauna marina|marino|marina|medusa|medusas|pez|peces|coral|arrecife|manta|rayas?)/, Icon: LuWaves },
+    { test: /(avistamiento|observaci).*(ballena|ballenas|tortuga|tortugas|fauna marina|marino|marina|medusa|medusas|pez|peces|coral|arrecife|manta|rayas?|manglar|manglares)/, Icon: LuWaves },
     { test: /(avistamiento|observaci|aves|pajar)/, Icon: LuBird },
     { test: /(canal|visitas|tour|recorrido|museo|hist|casco|ciudad|urbano|paseo)/, Icon: LuMapPinned },
     { test: /(isla|islote)/, Icon: LuTreePalm },

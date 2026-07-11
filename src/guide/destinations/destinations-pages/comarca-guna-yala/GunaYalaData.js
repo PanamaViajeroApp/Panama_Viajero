@@ -15,10 +15,12 @@ export const provincias = [
     actividades: [
       'Playa',
       'Snorkel',
-      'Lancha',
+      'Paseo en bote',
       'Excursión',
       'Baño',
       'Estrellas de mar',
+      'Fotografía',
+      'Gastronomía',
     ],
     displayMode: 'sites-only',
     directSiteIds: ['isla-chichime', 'isla-perro', 'la-piscina-natural'],

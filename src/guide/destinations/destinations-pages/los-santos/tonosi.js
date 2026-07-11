@@ -1,4 +1,4 @@
-const tonosiImageBase = '/images/destinations/los-santos'
+const tonosiImageBase = '/images/destinations/los-santos/tonosi'
 
 export const tonosi = {
     id: 'tonosi',
@@ -8,6 +8,16 @@ export const tonosi = {
         src: `${tonosiImageBase}/bg-tonosi.webp`,
         alt: 'Banner de Tonosí',
     },
+    gallery: [
+        `${tonosiImageBase}/bg-tonosi.webp`,
+        `${tonosiImageBase}/g1-tonosi.webp`,
+        `${tonosiImageBase}/g2-tonosi.webp`,
+        `${tonosiImageBase}/g3-tonosi.webp`,
+        `${tonosiImageBase}/g4-tonosi.webp`,
+        `${tonosiImageBase}/g5-tonosi.webp`,
+        `${tonosiImageBase}/g6-tonosi.webp`,
+        `${tonosiImageBase}/g7-tonosi.webp`,
+    ],
     descripcion:
         'Tonosí es un destino del sur de Azuero donde se combinan naturaleza, playas salvajes y una vida rural muy auténtica. Su valor está en los paisajes abiertos, la cercanía a playas vírgenes y la tranquilidad del entorno.',
     previewDescripcion:
@@ -15,15 +25,15 @@ export const tonosi = {
     previewUbicacion: 'Tonosí, Los Santos',
     actividades: [
         {
-            nombre: 'Playas',
-            descripcion:
-                'Explora playas como Cambutal, Guánico y La Marinera, conocidas por su belleza natural y ambiente tranquilo.',
-            icono: '',
-        },
-        {
             nombre: 'Surf',
             descripcion:
                 'Disfruta de olas consistentes en playas cercanas que atraen surfistas nacionales e internacionales.',
+            icono: '',
+        },
+        {
+            nombre: 'Pesca deportiva',
+            descripcion:
+                'Participa en excursiones de pesca en las costas del Pacífico y disfruta de la riqueza marina de la región.',
             icono: '',
         },
         {
@@ -33,15 +43,9 @@ export const tonosi = {
             icono: '',
         },
         {
-            nombre: 'Fauna',
+            nombre: 'Avistamiento de aves',
             descripcion:
-                'Descubre aves, tortugas marinas y otras especies propias de la biodiversidad costera y rural de la región.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo rural',
-            descripcion:
-                'Conoce la vida tradicional interiorana, sus costumbres y la hospitalidad característica de Tonosí.',
+                'Observa diversas especies que habitan los bosques, ríos y zonas rurales del distrito.',
             icono: '',
         },
         {
@@ -51,12 +55,18 @@ export const tonosi = {
             icono: '',
         },
         {
-            nombre: 'Ríos',
+            nombre: 'Gastronomía',
             descripcion:
-                'Descubre rincones naturales escondidos en las áreas montañosas y rurales de la región.',
+                'Disfruta platillos tradicionales y mariscos frescos característicos de la región de Azuero.',
             icono: '',
         },
-    ],
+        {
+            nombre: 'Folclore',
+            descripcion:
+                'Conoce las tradiciones, festividades y expresiones culturales que distinguen al distrito de Tonosí.',
+            icono: '',
+        },
+    ], 
     ubicacion:
         'https://www.google.com/maps?q=Tonosi%20Los%20Santos%20Panama&output=embed',
 }

@@ -1,4 +1,4 @@
-const bahiaPinaImageBase = '/images/destinations/darien'
+const bahiaPinaImageBase = '/images/destinations/darien/bahia-pina'
 
 export const bahiaPina = {
     id: 'bahia-pina',
@@ -8,6 +8,16 @@ export const bahiaPina = {
         src: `${bahiaPinaImageBase}/bg-bahia-pina.webp`,
         alt: 'Banner de Bahía Piña',
     },
+    gallery: [
+        `${bahiaPinaImageBase}/bg-bahia-pina.webp`,
+        `${bahiaPinaImageBase}/g1-bahia-pina.webp`,
+        `${bahiaPinaImageBase}/g2-bahia-pina.webp`,
+        `${bahiaPinaImageBase}/g3-bahia-pina.webp`,
+        `${bahiaPinaImageBase}/g4-bahia-pina.webp`,
+        `${bahiaPinaImageBase}/g5-bahia-pina.webp`,
+        `${bahiaPinaImageBase}/g6-bahia-pina.webp`,
+
+    ],
     descripcion:
         'Bahía Piña es un destino remoto del Pacífico panameño rodeado de selva tropical, manglares y una biodiversidad marina muy valiosa. Es especialmente reconocido por la pesca deportiva y por su ambiente natural poco intervenido.',
     previewDescripcion:
@@ -21,13 +31,13 @@ export const bahiaPina = {
             icono: '',
         },
         {
-            nombre: 'Lancha',
+            nombre: 'Paseo en bote',
             descripcion:
                 'Explora bahías, costas y zonas naturales donde la selva tropical se encuentra con el océano.',
             icono: '',
         },
         {
-            nombre: 'Manglares',
+            nombre: 'Avistamiento de manglares',
             descripcion:
                 'Recorre ecosistemas costeros vitales para la biodiversidad y descubre su riqueza natural.',
             icono: '',

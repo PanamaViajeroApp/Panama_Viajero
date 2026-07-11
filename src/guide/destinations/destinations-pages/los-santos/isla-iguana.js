@@ -1,4 +1,4 @@
-const islaIguanaImageBase = '/images/destinations/los-santos'
+const islaIguanaImageBase = '/images/destinations/los-santos/isla-iguana'
 
 export const islaIguana = {
     id: 'isla-iguana',
@@ -8,6 +8,17 @@ export const islaIguana = {
         src: `${islaIguanaImageBase}/bg-isla-iguana.webp`,
         alt: 'Banner de Isla Iguana',
     },
+    gallery: [
+        `${islaIguanaImageBase}/bg-isla-iguana.webp`,
+        `${islaIguanaImageBase}/g1-isla-iguana.webp`,
+        `${islaIguanaImageBase}/g2-isla-iguana.webp`,
+        `${islaIguanaImageBase}/g3-isla-iguana.webp`,
+        `${islaIguanaImageBase}/g4-isla-iguana.webp`,
+        `${islaIguanaImageBase}/g5-isla-iguana.webp`,
+        `${islaIguanaImageBase}/g7-isla-iguana.webp`,
+        `${islaIguanaImageBase}/g8-isla-iguana.webp`,
+        
+    ],
     descripcion:
         'Isla Iguana es un refugio natural frente a Pedasí, reconocido por sus playas de arena blanca, aguas cristalinas y abundante vida marina. Es un destino destacado para disfrutar del mar, observar fauna y recorrer un área protegida muy valiosa del Pacífico panameño.',
     previewDescripcion:
@@ -21,19 +32,13 @@ export const islaIguana = {
             icono: '',
         },
         {
-            nombre: 'Playa',
-            descripcion:
-                'Relájate en playas de arena blanca rodeadas de aguas cristalinas.',
-            icono: '',
-        },
-        {
             nombre: 'Avistamiento de aves',
             descripcion:
                 'Observa aves marinas que encuentran refugio en este ecosistema protegido.',
             icono: '',
         },
         {
-            nombre: 'Lancha',
+            nombre: 'Paseo en bote',
             descripcion:
                 'Disfruta el recorrido por las aguas del Pacífico hasta llegar a la isla.',
             icono: '',
@@ -46,15 +51,9 @@ export const islaIguana = {
         },
 
         {
-            nombre: 'Ballenas',
+            nombre: 'Avistamiento de ballenas',
             descripcion:
                 'Durante la temporada adecuada, contempla el paso de ballenas jorobadas por la región.',
-            icono: '',
-        },
-        {
-            nombre: 'Ecoturismo',
-            descripcion:
-                'Conoce uno de los refugios de vida silvestre más importantes de Panamá.',
             icono: '',
         },
     ],

@@ -1,4 +1,4 @@
-const islaCanasImageBase = '/images/destinations/los-santos'
+const islaCanasImageBase = '/images/destinations/los-santos/isla-cañas'
 
 export const islaCanas = {
     id: 'isla-canas',
@@ -8,6 +8,15 @@ export const islaCanas = {
         src: `${islaCanasImageBase}/bg-isla-cañas.webp`,
         alt: 'Banner de Isla Cañas',
     },
+    gallery: [
+        `${islaCanasImageBase}/bg-isla-cañas.webp`,
+        `${islaCanasImageBase}/g1-isla-cañas.webp`,
+        `${islaCanasImageBase}/g2-isla-cañas.webp`,
+        `${islaCanasImageBase}/g3-isla-cañas.webp`,
+        `${islaCanasImageBase}/g4-isla-cañas.webp`,
+        `${islaCanasImageBase}/g5-isla-cañas.webp`,
+
+    ],
     descripcion:
         'Isla Cañas es un santuario natural de gran importancia ecológica en la costa del Pacífico panameño. Es conocida por la anidación de tortugas marinas, sus manglares y sus playas vírgenes.',
     previewDescripcion:
@@ -15,19 +24,13 @@ export const islaCanas = {
     previewUbicacion: 'Tonosí, Los Santos',
     actividades: [
         {
-            nombre: 'Tortugas',
+            nombre: 'Avistamiento de tortugas',
             descripcion:
                 'Presencia el proceso de anidación y nacimiento de tortugas durante la temporada adecuada.',
             icono: '',
         },
         {
-            nombre: 'Ecoturismo',
-            descripcion:
-                'Descubre uno de los ecosistemas costeros más importantes y protegidos de Panamá.',
-            icono: '',
-        },
-        {
-            nombre: 'Manglares',
+            nombre: 'Avistamiento de manglares',
             descripcion:
                 'Explora canales naturales rodeados de abundante biodiversidad.',
             icono: '',
@@ -39,7 +42,7 @@ export const islaCanas = {
             icono: '',
         },
         {
-            nombre: 'Lancha',
+            nombre: 'Paseo en bote',
             descripcion:
                 'Navega por los alrededores de la isla y disfruta de sus paisajes costeros.',
             icono: '',
@@ -48,18 +51,6 @@ export const islaCanas = {
             nombre: 'Fotografía',
             descripcion:
                 'Captura playas vírgenes, fauna silvestre y escenarios naturales únicos.',
-            icono: '',
-        },
-        {
-            nombre: 'Fauna',
-            descripcion:
-                'Descubre diversas especies que habitan los manglares y zonas costeras.',
-            icono: '',
-        },
-        {
-            nombre: 'Educación ambiental',
-            descripcion:
-                'Aprende sobre la conservación de las tortugas marinas y los ecosistemas costeros.',
             icono: '',
         },
     ],

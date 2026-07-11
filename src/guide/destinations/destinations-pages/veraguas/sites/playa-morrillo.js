@@ -10,11 +10,11 @@ export const playaMorrillo = {
   },
   gallery: [
       `${playaMorrilloImageBase}/bg-playa-morrillo.webp`,
-      `${playaMorrilloImageBase}/g1-playa-morrillo.png`,
-      `${playaMorrilloImageBase}/g2-playa-morrillo.png`,
-      `${playaMorrilloImageBase}/g3-playa-morrillo.png`,
-      `${playaMorrilloImageBase}/g4-playa-morrillo.png`,
-      `${playaMorrilloImageBase}/g5-playa-morrillo.png`,
+      `${playaMorrilloImageBase}/g1-playa-morrillo.webp`,
+      `${playaMorrilloImageBase}/g2-playa-morrillo.webp`,
+      `${playaMorrilloImageBase}/g3-playa-morrillo.webp`,
+      `${playaMorrilloImageBase}/g4-playa-morrillo.webp`,
+      `${playaMorrilloImageBase}/g5-playa-morrillo.webp`,
   ],
   descripcion:
     'Playa Morrillo es uno de los destinos de surf más reconocidos de Veraguas, con olas potentes, paisaje abierto y un entorno costero poco intervenido. Su ambiente aislado la convierte en un lugar ideal para quienes buscan surf, naturaleza y tranquilidad frente al Pacífico.',
