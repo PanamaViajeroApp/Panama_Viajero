@@ -1,4 +1,4 @@
-const pedasiImageBase = '/images/destinations/los-santos'
+const pedasiImageBase = '/images/destinations/los-santos/pedasi'
 
 export const pedasi = {
     id: 'pedasi',
@@ -8,6 +8,21 @@ export const pedasi = {
         src: `${pedasiImageBase}/bg-pedasi.webp`,
         alt: 'Banner de Pedasí',
     },
+    gallery: [
+        `${pedasiImageBase}/bg-pedasi.webp`,
+        `${pedasiImageBase}/g1-pedasi.webp`,
+        `${pedasiImageBase}/g2-pedasi.webp`,
+        `${pedasiImageBase}/g3-pedasi.webp`,
+        `${pedasiImageBase}/g4-pedasi.webp`,
+        `${pedasiImageBase}/g5-pedasi.webp`,
+        `${pedasiImageBase}/g6-pedasi.webp`,
+        `${pedasiImageBase}/g7-pedasi.webp`,
+        `${pedasiImageBase}/g8-pedasi.webp`,
+        `${pedasiImageBase}/g9-pedasi.webp`,
+        `${pedasiImageBase}/g10-pedasi.webp`,
+        `${pedasiImageBase}/g11-pedasi.webp`,
+
+    ],
     descripcion:
         'Pedasí es un pueblo costero conocido por su ambiente tranquilo, sus playas cercanas y su papel como base para explorar la costa santeña. Combina mar, cultura local y una experiencia relajada muy atractiva para el visitante.',
     previewDescripcion:
@@ -15,19 +30,7 @@ export const pedasi = {
     previewUbicacion: 'Pedasí, Los Santos',
     actividades: [
         {
-            nombre: 'Isla Iguana',
-            descripcion:
-                'Explora uno de los refugios de vida silvestre más impresionantes de Panamá.',
-            icono: '',
-        },
-        {
-            nombre: 'Playa',
-            descripcion:
-                'Relájate en playas de arena clara y aguas ideales para descansar.',
-            icono: '',
-        },
-        {
-            nombre: 'Ballenas',
+            nombre: 'Avistamiento de ballenas',
             descripcion:
                 'Observa ballenas jorobadas durante su temporada migratoria en el Pacífico.',
             icono: '',
@@ -54,18 +57,6 @@ export const pedasi = {
             nombre: 'Fotografía',
             descripcion:
                 'Captura playas, atardeceres y escenarios naturales únicos de la península.',
-            icono: '',
-        },
-        {
-            nombre: 'Fauna',
-            descripcion:
-                'Descubre aves y especies marinas que habitan la zona costera.',
-            icono: '',
-        },
-        {
-            nombre: 'Naturaleza',
-            descripcion:
-                'Combina playa, vida silvestre y paisajes costeros en una sola experiencia.',
             icono: '',
         },
     ],

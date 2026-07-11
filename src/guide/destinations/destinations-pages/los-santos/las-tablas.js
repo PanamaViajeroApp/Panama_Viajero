@@ -1,4 +1,4 @@
-const lasTablasImageBase = '/images/destinations/los-santos'
+const lasTablasImageBase = '/images/destinations/los-santos/las-tablas'
 
 export const lasTablas = {
     id: 'las-tablas',
@@ -8,6 +8,14 @@ export const lasTablas = {
         src: `${lasTablasImageBase}/bg-las-tablas.webp`,
         alt: 'Banner de Las Tablas',
     },
+    gallery: [
+        `${lasTablasImageBase}/bg-las-tablas.webp`,
+        `${lasTablasImageBase}/g1-las-tablas.webp`,
+        `${lasTablasImageBase}/g2-las-tablas.webp`,
+        `${lasTablasImageBase}/g3-las-tablas.webp`,
+        `${lasTablasImageBase}/g4-las-tablas.webp`,
+        `${lasTablasImageBase}/g5-las-tablas.webp`,
+    ],
     descripcion:
         'Las Tablas es uno de los centros culturales más importantes de Panamá y un referente del folclore nacional. Su vida gira en torno a las tradiciones, el Carnaval, la artesanía y una identidad local muy marcada.',
     previewDescripcion:
@@ -39,21 +47,9 @@ export const lasTablas = {
             icono: '',
         },
         {
-            nombre: 'Festividades',
-            descripcion:
-                'Participa en eventos que celebran la música, la danza y las tradiciones locales.',
-            icono: '',
-        },
-        {
             nombre: 'Fotografía',
             descripcion:
                 'Captura la arquitectura, las vestimentas y las escenas culturales de la ciudad.',
-            icono: '',
-        },
-        {
-            nombre: 'Iglesias',
-            descripcion:
-                'Conoce templos históricos que forman parte del patrimonio religioso de la región.',
             icono: '',
         },
     ],

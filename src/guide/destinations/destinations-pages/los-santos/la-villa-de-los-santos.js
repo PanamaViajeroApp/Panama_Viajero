@@ -1,4 +1,4 @@
-const laVillaImageBase = '/images/destinations/los-santos'
+const laVillaImageBase = '/images/destinations/los-santos/villa-de-los-santos'
 
 export const laVilla = {
     id: 'la-villa',
@@ -8,30 +8,23 @@ export const laVilla = {
         src: `${laVillaImageBase}/bg-villa-de-los-santos.webp`,
         alt: 'Banner de La Villa de Los Santos',
     },
+    gallery: [
+        `${laVillaImageBase}/bg-villa-de-los-santos.webp`,
+        `${laVillaImageBase}/g1-villa-de-los-santos.webp`,
+        `${laVillaImageBase}/g2-villa-de-los-santos.webp`,
+        `${laVillaImageBase}/g3-villa-de-los-santos.webp`,
+        `${laVillaImageBase}/g4-villa-de-los-santos.webp`,
+        `${laVillaImageBase}/g5-villa-de-los-santos.webp`,
+        `${laVillaImageBase}/g6-villa-de-los-santos.webp`,
+
+
+    ],
     descripcion:
         'La Villa de Los Santos es uno de los pueblos históricos más importantes de Panamá y cuna de hechos clave para la independencia. Su valor turístico está en el patrimonio, la arquitectura tradicional y el peso cultural que conserva en Azuero.',
     previewDescripcion:
         'Historia, tradición y orgullo nacional en uno de los pueblos más emblemáticos de Panamá.',
     previewUbicacion: 'Los Santos',
     actividades: [
-        {
-            nombre: 'Historia',
-            descripcion:
-                'Descubre los lugares donde ocurrieron hechos importantes de la historia panameña.',
-            icono: '',
-        },
-        {
-            nombre: 'Monumentos',
-            descripcion:
-                'Conoce plazas, estatuas y sitios que forman parte del patrimonio nacional.',
-            icono: '',
-        },
-        {
-            nombre: 'Iglesias',
-            descripcion:
-                'Admira templos emblemáticos que forman parte de la herencia religiosa del país.',
-            icono: '',
-        },
         {
             nombre: 'Fotografía',
             descripcion:
@@ -45,21 +38,21 @@ export const laVilla = {
             icono: '',
         },
         {
-            nombre: 'Festividades',
-            descripcion:
-                'Participa en celebraciones que mantienen vivas las costumbres santeñas.',
-            icono: '',
-        },
-        {
             nombre: 'Folclore',
             descripcion:
                 'Descubre la música, la danza y la vestimenta que distinguen a la región.',
             icono: '',
         },
         {
-            nombre: 'Tradición',
+            nombre: 'Museos',
             descripcion:
-                'Vive la hospitalidad y el estilo de vida característicos de Los Santos.',
+                'Conoce la historia y el patrimonio de La Villa de Los Santos a través de sus espacios culturales.',
+            icono: '',
+        },
+        {
+            nombre: 'Artesanías',
+            descripcion:
+                'Encuentra piezas elaboradas por artesanos locales inspiradas en las tradiciones de Azuero.',
             icono: '',
         },
     ],

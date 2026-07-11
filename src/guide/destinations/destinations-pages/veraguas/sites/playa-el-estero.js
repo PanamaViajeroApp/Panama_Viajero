@@ -10,10 +10,10 @@ export const playaElEstero = {
   },
   gallery: [
     `${playaElEsteroImageBase}/bg-playa-el-estero.webp`,
-    `${playaElEsteroImageBase}/g1-playa-el-estero.png`,
-    `${playaElEsteroImageBase}/g2-playa-el-estero.png`,
-    `${playaElEsteroImageBase}/g3-playa-el-estero.png`,
-    `${playaElEsteroImageBase}/g4-playa-el-estero.png`,
+    `${playaElEsteroImageBase}/g1-playa-el-estero.webp`,
+    `${playaElEsteroImageBase}/g2-playa-el-estero.webp`,
+    `${playaElEsteroImageBase}/g3-playa-el-estero.webp`,
+    `${playaElEsteroImageBase}/g4-playa-el-estero.webp`,
   ],
   descripcion:
     'Playa El Estero es una extensa franja de arena cercana a Santa Catalina, conocida por sus olas consistentes, sus espacios abiertos y su ambiente relajado. Es una playa práctica para surfear, caminar y disfrutar de la costa veragüense sin complicaciones.',

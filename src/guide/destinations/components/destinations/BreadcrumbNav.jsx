@@ -5,9 +5,8 @@ function BreadcrumbNav({ items = [] }) {
   if (!items.length) return null
 
   return (
-    <nav aria-label="Navegación" className="mt-5 w-full">
-      <div className="inline-flex w-90 min-w-max max-w-none flex-wrap items-center  rounded-[10px] border border-white/15 
-      bg-black/35 px-4 py-2 text-sm shadow-[0_12px_30px_rgba(0,0,0,0.22)] backdrop-blur-md">
+    <nav aria-label="Navegación" className="mt-5 w-full max-w-full">
+      <div className="inline-flex w-full max-w-full min-w-0 flex-wrap items-center gap-1 rounded-[10px] border border-white/15 bg-black/35 px-4 py-2 text-sm shadow-[0_12px_30px_rgba(0,0,0,0.22)] backdrop-blur-md">
         {items.map((item, index) => {
           const isLast = index === items.length - 1
           const content = (
@@ -23,10 +22,10 @@ function BreadcrumbNav({ items = [] }) {
           )
 
           return (
-            <div key={`${item.label}-${index}`} className="inline-flex items-center gap-1">
-              {index > 0 ? <FiChevronRight className="h-4 w-4 text-brand-white/55" /> : null}
+            <div key={`${item.label}-${index}`} className="inline-flex min-w-0 items-center gap-1">
+              {index > 0 ? <FiChevronRight className="h-4 w-4 shrink-0 text-brand-white/55" /> : null}
               {item.to && !isLast ? (
-                <Link to={item.to} className="rounded-full px-1">
+                <Link to={item.to} className="min-w-0 rounded-full px-1">
                   {content}
                 </Link>
               ) : (
