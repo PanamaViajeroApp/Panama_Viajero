@@ -1,4 +1,4 @@
-const fuerteShermanImageBase = '/images/destinations/colon/costa-abajo'
+const fuerteShermanImageBase = '/images/destinations/colon/costa-abajo/fuerte-sherman'
 
 export const fuerteSherman = {
     id: 'fuerte-sherman',
@@ -8,6 +8,13 @@ export const fuerteSherman = {
         src: `${fuerteShermanImageBase}/bg-fuerte-sherman.webp`,
         alt: 'Banner de Fuerte Sherman',
     },
+    gallery: [
+        `${fuerteShermanImageBase}/bg-fuerte-sherman.webp`,
+        `${fuerteShermanImageBase}/g1-fuerte-sherman.webp`,
+        `${fuerteShermanImageBase}/g2-fuerte-sherman.webp`,
+        `${fuerteShermanImageBase}/g3-fuerte-sherman.webp`,
+        `${fuerteShermanImageBase}/g4-fuerte-sherman.webp`,
+    ],
     descripcion:
         'Un antiguo enclave militar rodeado de naturaleza, historia y paisajes caribeños en la Costa Abajo de Colón. Su cercanía al Canal, al Bosque Protector San Lorenzo y a la desembocadura del río Chagres lo convierte en un punto interesante para explorar patrimonio, aventura y entornos naturales.',
     previewDescripcion:
@@ -21,33 +28,33 @@ export const fuerteSherman = {
             icono: '',
         },
         {
-            nombre: 'Paseos escénicos',
-            descripcion:
-                'Recorre caminos rodeados de vegetación y vistas características de la Costa Abajo.',
-            icono: '',
-        },
-        {
             nombre: 'Visita al entorno canalero',
             descripcion:
                 'Explora una zona vinculada a la historia del Canal de Panamá.',
             icono: '',
         },
         {
-            nombre: 'Conexión con San Lorenzo',
+            nombre: 'Fotografía',
             descripcion:
-                'Utiliza Fuerte Sherman como punto de partida para visitar el castillo y el bosque protector.',
+                'Captura edificaciones históricas, paisajes selváticos y vistas hacia la costa caribeña.',
             icono: '',
         },
         {
-            nombre: 'Observación de fauna',
+            nombre: 'Paseo en bote',
             descripcion:
-                'Encuentra especies silvestres en los alrededores del área natural.',
+                'Explora la costa y las aguas cercanas para apreciar el paisaje desde una perspectiva diferente.',
             icono: '',
         },
         {
-            nombre: 'Turismo de aventura',
+            nombre: 'Camping',
             descripcion:
-                'Combina historia, caminos naturales y exploración en un destino diferente de Colón.',
+                'Disfruta una experiencia al aire libre en áreas rodeadas por la naturaleza del Caribe panameño.',
+            icono: '',
+        },
+        {
+            nombre: 'Snorkel',
+            descripcion:
+                'Explora las aguas del Caribe y descubre peces, formaciones rocosas y vida marina en zonas cercanas a la costa.',
             icono: '',
         },
     ],

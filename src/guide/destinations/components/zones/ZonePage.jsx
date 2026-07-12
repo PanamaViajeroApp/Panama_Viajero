@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import Menu from '../../../components/menu/Menu.jsx'
 import ButtomBanner from '../../../components/bottombanner/Bottombanner.jsx'
@@ -6,6 +6,8 @@ import ZoneVideo from './ZoneVideo.jsx'
 import ProvinceTargetsGrid from '../destinations/ProvinceTargetsGrid.jsx'
 import OtherProvinces from '../destinations/OtherProvinces.tsx'
 import BreadcrumbNav from '../destinations/BreadcrumbNav.jsx'
+import Activities from '../destinations/Activities.jsx'
+import SelectedActivitiesBar from '../destinations/SelectedActivitiesBar.jsx'
 import { zoneRegistry } from '../../destinations-pages/zoneRegistry.js'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 import { provincias as chiriquiProvincias } from '../../destinations-pages/chiriqui/ChiriquiData.js'
@@ -24,11 +26,21 @@ const provinceDataRegistry = {
   veraguas: veraguasProvincias[0],
 }
 
+function normalizeActivity(activity = '') {
+  return String(activity)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+}
+
 function ZonePage() {
   const { zoneId } = useParams()
   const location = useLocation()
   const navigate = useNavigate()
   const [scrollProgress, setScrollProgress] = useState(0)
+  const [selectedActivities, setSelectedActivities] = useState([])
+  const deferredSelectedActivities = useDeferredValue(selectedActivities)
 
   const decodedZoneId = zoneId ? decodeURIComponent(zoneId) : ''
   const zone = zoneRegistry[decodedZoneId] ?? zoneRegistry[zoneId] ?? null
@@ -41,7 +53,47 @@ function ZonePage() {
     provinceData?.targets?.find((target) => target.zoneId === decodedZoneId || target.id === decodedZoneId) ?? null
   const safeHeading = zone?.nombre || fallbackTarget?.nombre || 'Zona'
   const safeDescription = zone?.descripcion || fallbackTarget?.descripcion || provinceData?.descripcionCorta || ''
-  const sitios = (zone?.sitios || []).map((id) => siteRegistry[id]).filter(Boolean)
+  const sitios = useMemo(
+    () => (zone?.sitios || []).map((id) => siteRegistry[id]).filter(Boolean),
+    [zone],
+  )
+  const isColonZone = provinceId === 'colon'
+  const zoneActivities = useMemo(
+    () => [
+      ...new Set(
+        sitios
+          .flatMap((site) => site.actividades || [])
+          .map((activity) => (typeof activity === 'string' ? activity : activity?.nombre))
+          .filter(Boolean),
+      ),
+    ],
+    [sitios],
+  )
+  const zoneActivityData = useMemo(
+    () => ({
+      ...provinceData,
+      actividades: zoneActivities,
+    }),
+    [provinceData, zoneActivities],
+  )
+
+  const toggleSelectedActivity = (activity) => {
+    setSelectedActivities((current) => {
+      const activityKey = normalizeActivity(activity)
+      const alreadySelected = current.some((item) => normalizeActivity(item) === activityKey)
+
+      return alreadySelected
+        ? current.filter((item) => normalizeActivity(item) !== activityKey)
+        : [...current, activity]
+    })
+  }
+
+  const removeSelectedActivity = (activityToRemove) => {
+    const activityKey = normalizeActivity(activityToRemove)
+    setSelectedActivities((current) =>
+      current.filter((item) => normalizeActivity(item) !== activityKey),
+    )
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -71,6 +123,7 @@ function ZonePage() {
     previewDescripcion: s.previewDescripcion || s.descripcion || '',
     imagen: s.imagen || s.banner?.src || s.thumbnail || s.src,
     ubicacion: s.previewUbicacion || s.ubicacion || `${provinceData.nombre}, ${s.nombre}`,
+    activities: s.actividades || [],
     type: 'site',
     siteId: s.id,
   })
@@ -111,6 +164,21 @@ function ZonePage() {
       </section>
 
       <section className="relative z-10">
+        {isColonZone && (
+          <>
+            <Activities
+              provinceData={zoneActivityData}
+              selectedActivities={selectedActivities}
+              onActivitySelect={toggleSelectedActivity}
+            />
+            <SelectedActivitiesBar
+              selectedActivities={selectedActivities}
+              onRemoveActivity={removeSelectedActivity}
+              onClearAll={() => setSelectedActivities([])}
+            />
+          </>
+        )}
+
         <div className="mx-auto max-w-6xl px-4 md:px-10">
           <div className="flex flex-col gap-12">
             <ProvinceTargetsGrid
@@ -121,6 +189,7 @@ function ZonePage() {
               breadcrumbSourceLabel={breadcrumbSourceLabel}
               provinceLabel={provinceData.nombre}
               zoneLabel={safeHeading}
+              selectedActivities={isColonZone ? deferredSelectedActivities : []}
             />
           </div>
 

@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-chame.webp'
+const chameImageBase = '/images/destinations/rivera-pacifica/chame'
 
 export const puntaChame = {
   id: 'punta-chame',
@@ -7,9 +7,16 @@ export const puntaChame = {
   riveraPacifica: true,
   nombre: 'Punta Chame',
   banner: {
-    src: base,
+    src: `${chameImageBase}/bg-chame.webp`,
     alt: 'Banner de Punta Chame',
   },
+    gallery: [
+        `${chameImageBase}/bg-chame.webp`,
+        `${chameImageBase}/g1-chame.webp`,
+        `${chameImageBase}/g2-chame.webp`,
+        `${chameImageBase}/g3-chame.webp`,
+
+    ],
   descripcion:
     'Una impresionante península rodeada por el océano y famosa por sus vientos constantes, extensas playas y vistas panorámicas al Pacífico. Punta Chame es uno de los destinos más reconocidos de Panamá para deportes acuáticos, aventura y escapadas llenas de naturaleza.',
   previewDescripcion:

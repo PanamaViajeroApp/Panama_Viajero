@@ -3,7 +3,6 @@ import { cintaCostera } from './sites/cinta-costera.js'
 import { panamaViejo } from './sites/panama-viejo.js'
 import { miraflores } from './sites/miraflores.js'
 import { calzadaAmador } from './sites/calzada-amador.js'
-import { puertoBalboa } from './sites/puerto-balboa.js'
 import { gamboa } from './sites/gamboa.js'
 import { islaContadora } from './sites/isla-contadora.js'
 import { islaTaboga } from './sites/isla-taboga.js'
@@ -15,7 +14,6 @@ export const panamaSiteRegistry = {
   [panamaViejo.id]: panamaViejo,
   [miraflores.id]: miraflores,
   [calzadaAmador.id]: calzadaAmador,
-  [puertoBalboa.id]: puertoBalboa,
   [gamboa.id]: gamboa,
   [islaContadora.id]: islaContadora,
   [islaTaboga.id]: islaTaboga,

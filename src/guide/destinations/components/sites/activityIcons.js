@@ -20,6 +20,7 @@ import { IoBoat } from 'react-icons/io5'
 
 const activityIconRules = [
   { test: /(playa|playas)/, Icon: FaUmbrellaBeach },
+  { test: /(aguas?\s*termales?|termales?|termal)/, Icon: LuWaves },
   { test: /(nataci|nado|nadar|swim|surf|snorkel|buce|kayak|mar|arrecife)/, Icon: LuWaves },
   { test: /(paseo(?:s)? en lancha|lancha|bote|boat)/, Icon: IoBoat },
   { test: /(pesca)/, Icon: LuFish },

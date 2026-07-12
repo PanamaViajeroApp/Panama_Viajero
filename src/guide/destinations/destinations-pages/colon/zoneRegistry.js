@@ -6,7 +6,7 @@ export const colonZoneRegistry = {
     descripcion:
       'Una región donde la historia colonial, la naturaleza protegida y el legado canalero se combinan entre fortalezas, selvas tropicales y paisajes únicos frente al Caribe.',
     imagen:
-      '/images/destinations/colon/costa-abajo/bg-castillo-san-lorenzo.webp',
+      '/images/destinations/colon/costa-abajo/castillo-san-lorenzo/bg-castillo-san-lorenzo.webp',
     sitios: [
       'castillo-san-lorenzo',
       'esclusas-agua-clara',
@@ -22,7 +22,7 @@ export const colonZoneRegistry = {
     descripcion:
       'La joya caribeña de Colón, reconocida por su riqueza histórica, cultura afrocaribeña, playas paradisíacas e islas tropicales llenas de encanto.',
     imagen:
-      '/images/destinations/colon/costa-arriba/bg-portobelo.webp',
+      '/images/destinations/colon/costa-arriba/portobelo/bg-portobelo.webp',
     sitios: [
       'portobelo',
       'isla-grande',

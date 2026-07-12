@@ -5,18 +5,18 @@ export const penonome = {
     provinceId: 'cocle',
     nombre: 'Penonomé',
     banner: {
-        src: `${penonomeImageBase}/banner/bg-penonome.webp`,
+        src: `${penonomeImageBase}/bg-penonome.webp`,
         alt: 'Banner de Penonomé',
     },
     gallery: [
-        `${penonomeImageBase}/banner/bg-penonome.webp`,
-        `${penonomeImageBase}/gallery/g1-penonome.webp`,
-        `${penonomeImageBase}/gallery/g2-penonome.webp`,
-        `${penonomeImageBase}/gallery/g3-penonome.webp`,
-        `${penonomeImageBase}/gallery/g4-penonome.webp`,
-        `${penonomeImageBase}/gallery/g5-penonome.webp`,
-        `${penonomeImageBase}/gallery/g6-penonome.webp`,
-        `${penonomeImageBase}/gallery/g7-penonome.webp`,
+        `${penonomeImageBase}/bg-penonome.webp`,
+        `${penonomeImageBase}/g1-penonome.webp`,
+        `${penonomeImageBase}/g2-penonome.webp`,
+        `${penonomeImageBase}/g3-penonome.webp`,
+        `${penonomeImageBase}/g4-penonome.webp`,
+        `${penonomeImageBase}/g5-penonome.webp`,
+        `${penonomeImageBase}/g6-penonome.webp`,
+        `${penonomeImageBase}/g7-penonome.webp`,
     ],
     descripcion:
         'Un vibrante epicentro geográfico e histórico donde las tradiciones folclóricas se fusionan con el verdor de los valles interiores. Un encantador rincón rodeado de ríos cristalinos, cerros guardianes y calles coloniales, reconocido por salvaguardar el legado precolombino y las manifestaciones culturales más puras de la identidad del país.',
@@ -37,16 +37,22 @@ export const penonome = {
             icono: '',
         },
         {
-            nombre: 'Gastronomía tradicional',
+            nombre: 'Gastronomía',
             descripcion:
                 'Saborea los deliciosos platillos criollos preparados en fogón de leña en los comedores del casco urbano.',
             icono: '',
         },
         {
-            nombre: 'Senderismo de colina',
+            nombre: 'Senderismo',
             descripcion:
                 'Asciende por senderos rurales hacia miradores naturales para contemplar la inmensidad del valle central.',
             icono: '',
+        },
+        {
+        nombre: 'Museos',
+        descripcion:
+            'Descubre la historia, las tradiciones y el legado cultural de la provincia de Coclé.',
+        icono: '',
         },
     ],
     ubicacion:

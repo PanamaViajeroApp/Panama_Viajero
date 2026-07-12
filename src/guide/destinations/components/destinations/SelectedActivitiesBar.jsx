@@ -54,7 +54,7 @@ function SelectedActivitiesBar({
                     </button>
                 </>
             ) : (
-                <span className="inline-flex items-center rounded-full border border-brand-blue bg-brand-white px-4 py-2 text-sm font-semibold text-brand-black shadow-sm md:text-base">
+                <span className="inline-flex items-center rounded-full border border-brand-blue bg-brand-white px-4 py-2 text-sm font-semibold text-black shadow-sm md:text-base">
                     Selecciona una o mas actividades
                 </span>
             )}
