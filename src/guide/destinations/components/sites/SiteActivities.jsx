@@ -73,7 +73,7 @@ function SiteActivities({ site = null }) {
         </div>
 
         <div className="grid gap-0 md:grid-cols-[0.88fr_1.12fr]">
-          <div className="rounded-bl-[28px] border-b border-[#4D4C4C]/10 bg-[#EBEBEB]/30 p-4 sm:p-5 md:border-b-0 md:border-r">
+          <div className="flex justify-center rounded-bl-[28px] border-b border-[#4D4C4C]/10 bg-[#EBEBEB]/30 p-4 sm:p-5 md:block md:border-b-0 md:border-r">
             {totalImages > 0 ? (
               <article className="mx-auto flex h-full w-full max-w-md flex-col">
                 <div className="relative overflow-hidden rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] shadow-[0_16px_34px_rgba(77,76,76,0.08)]">
@@ -138,7 +138,7 @@ function SiteActivities({ site = null }) {
               </div>
             </div>
 
-            <div className="mx-auto mt-4 flex max-h-[350px] w-full max-w-2xl gap-3 overflow-y-auto overflow-x-hidden pr-2 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
+            <div className="mx-auto mt-4 flex max-h-[350px] w-full max-w-2xl flex-col gap-3 overflow-y-auto overflow-x-hidden pr-2 md:flex-row [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
               <div className="flex w-full min-w-0 flex-1 flex-col gap-3">
                 {leftColumnActivities.map((actividad, index) => {
                   const { Icon } = getActivityIcon(actividad.nombre)
