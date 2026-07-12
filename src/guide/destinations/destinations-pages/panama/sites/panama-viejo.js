@@ -1,4 +1,4 @@
-const panamaViejoImageBase = '/images/destinations/panama'
+const panamaViejoImageBase = '/images/destinations/panama/panama-viejo'
 
 export const panamaViejo = {
     id: 'panama-viejo',
@@ -8,6 +8,14 @@ export const panamaViejo = {
         src: `${panamaViejoImageBase}/bg-panama-viejo.webp`,
         alt: 'Banner de Panamá Viejo',
     },
+    gallery: [
+        `${panamaViejoImageBase}/bg-panama-viejo.webp`,
+        `${panamaViejoImageBase}/g1-panama-viejo.webp`,
+        `${panamaViejoImageBase}/g2-panama-viejo.webp`,
+        `${panamaViejoImageBase}/g3-panama-viejo.webp`,
+        `${panamaViejoImageBase}/g4-panama-viejo.webp`,
+        `${panamaViejoImageBase}/g5-panama-viejo.webp`,
+    ],
     descripcion:
         'Las ruinas de la primera ciudad fundada por los españoles en el Pacífico americano y uno de los sitios históricos más importantes del país. Panamá Viejo ofrece una experiencia única para descubrir el origen de la ciudad y revivir parte de su legado colonial a través de su patrimonio arqueológico.',
     previewDescripcion:
@@ -39,7 +47,7 @@ export const panamaViejo = {
             icono: '',
         },
         {
-            nombre: 'Fotografía histórica',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura la belleza de las ruinas y la mezcla entre historia colonial y ciudad contemporánea.',
             icono: '',
@@ -48,12 +56,6 @@ export const panamaViejo = {
             nombre: 'Experiencia educativa',
             descripcion:
                 'Aprende sobre la fundación de la ciudad y su importancia dentro de la expansión española en América.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación del patrimonio colonial',
-            descripcion:
-                'Admira estructuras y detalles arquitectónicos que han sobrevivido siglos como parte del legado histórico de Panamá.',
             icono: '',
         },
     ],

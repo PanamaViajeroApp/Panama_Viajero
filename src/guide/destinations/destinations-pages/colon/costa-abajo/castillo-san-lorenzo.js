@@ -1,4 +1,4 @@
-const castilloSanLorenzoImageBase = '/images/destinations/colon/costa-abajo'
+const castilloSanLorenzoImageBase = '/images/destinations/colon/costa-abajo/castillo-san-lorenzo'
 
 export const castilloSanLorenzo = {
     id: 'castillo-san-lorenzo',
@@ -8,6 +8,13 @@ export const castilloSanLorenzo = {
         src: `${castilloSanLorenzoImageBase}/bg-castillo-san-lorenzo.webp`,
         alt: 'Banner del Castillo de San Lorenzo',
     },
+    gallery: [
+        `${castilloSanLorenzoImageBase}/bg-castillo-san-lorenzo.webp`,
+        `${castilloSanLorenzoImageBase}/g1-castillo-san-lorenzo.webp`,
+        `${castilloSanLorenzoImageBase}/g2-castillo-san-lorenzo.webp`,
+        `${castilloSanLorenzoImageBase}/g3-castillo-san-lorenzo.webp`,
+        `${castilloSanLorenzoImageBase}/g4-castillo-san-lorenzo.webp`,
+    ],
     descripcion:
         'Una joya histórica ubicada en la desembocadura del río Chagres, rodeada de naturaleza y vistas impresionantes del Caribe. Sus antiguas murallas cuentan la historia colonial de Panamá y ofrecen una experiencia perfecta para quienes buscan cultura, patrimonio y paisajes únicos.',
     previewDescripcion:
@@ -15,25 +22,19 @@ export const castilloSanLorenzo = {
     previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
-            nombre: 'Fotografía patrimonial',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura las murallas, cañones y paisajes que rodean este sitio histórico.',
             icono: '',
         },
         {
-            nombre: 'Observación del río Chagres',
-            descripcion:
-                'Admira la desembocadura del río y su conexión con el mar Caribe.',
-            icono: '',
-        },
-        {
-            nombre: 'Visita a ruinas coloniales',
+            nombre: 'Ruinas coloniales',
             descripcion:
                 'Camina entre estructuras antiguas que conservan siglos de historia.',
             icono: '',
         },
         {
-            nombre: 'Senderismo cercano',
+            nombre: 'Senderismo',
             descripcion:
                 'Complementa la visita explorando áreas naturales alrededor del fuerte.',
             icono: '',
@@ -45,16 +46,10 @@ export const castilloSanLorenzo = {
             icono: '',
         },
         {
-            nombre: 'Experiencia educativa',
-            descripcion:
-                'Aprende sobre piratas, comercio marítimo y defensa colonial en el Caribe panameño.',
-            icono: '',
-        },
-        {
-            nombre: 'Paseo familiar',
-            descripcion:
-                'Disfruta un recorrido cultural y natural ideal para visitantes de todas las edades.',
-            icono: '',
+        nombre: 'Miradores',
+        descripcion:
+            'Disfruta vistas panorámicas hacia la desembocadura del río Chagres y la costa caribeña.',
+        icono: '',
         },
     ],
     ubicacion:

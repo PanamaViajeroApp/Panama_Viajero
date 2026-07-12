@@ -1,4 +1,4 @@
-const cuevasBayanoImageBase = '/images/destinations/panama'
+const cuevasBayanoImageBase = '/images/destinations/panama/cuevas-bayano'
 
 export const cuevasBayano = {
     id: 'cuevas-bayano',
@@ -8,6 +8,15 @@ export const cuevasBayano = {
         src: `${cuevasBayanoImageBase}/bg-cuevas-bayano.webp`,
         alt: 'Banner de Cuevas de Bayano',
     },
+    gallery: [
+        `${cuevasBayanoImageBase}/bg-cuevas-bayano.webp`,
+        `${cuevasBayanoImageBase}/g1-cuevas-bayano.webp`,
+        `${cuevasBayanoImageBase}/g2-cuevas-bayano.webp`,
+        `${cuevasBayanoImageBase}/g3-cuevas-bayano.webp`,
+        `${cuevasBayanoImageBase}/g4-cuevas-bayano.webp`,
+        `${cuevasBayanoImageBase}/g5-cuevas-bayano.webp`,
+        `${cuevasBayanoImageBase}/g6-cuevas-bayano.webp`,
+    ],
     descripcion:
         'Uno de los destinos de aventura más impresionantes de Panamá, donde enormes cavernas, ríos subterráneos y formaciones rocosas crean una experiencia única para quienes buscan exploración, adrenalina y contacto directo con la naturaleza.',
     previewDescripcion:
@@ -46,7 +55,7 @@ export const cuevasBayano = {
             icono: '',
         },
         {
-            nombre: 'Tours guiados de aventura',
+            nombre: 'Visitas guiados',
             descripcion:
                 'Participa en recorridos organizados que combinan exploración, seguridad y aprendizaje sobre el lugar.',
             icono: '',

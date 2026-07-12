@@ -1,4 +1,4 @@
-const esclusasAguaClaraImageBase = '/images/destinations/colon/costa-abajo'
+const esclusasAguaClaraImageBase = '/images/destinations/colon/costa-abajo/esclusas-agua-clara'
 
 export const esclusasAguaClara = {
     id: 'esclusas-agua-clara',
@@ -8,6 +8,14 @@ export const esclusasAguaClara = {
         src: `${esclusasAguaClaraImageBase}/bg-esclusas-agua-clara.webp`,
         alt: 'Banner de Esclusas de Agua Clara',
     },
+        gallery: [
+        `${esclusasAguaClaraImageBase}/bg-esclusas-agua-clara.webp`,
+        `${esclusasAguaClaraImageBase}/g1-esclusas-agua-clara.webp`,
+        `${esclusasAguaClaraImageBase}/g2-esclusas-agua-clara.webp`,
+        `${esclusasAguaClaraImageBase}/g3-esclusas-agua-clara.webp`,
+        `${esclusasAguaClaraImageBase}/g4-esclusas-agua-clara.webp`,
+        `${esclusasAguaClaraImageBase}/g5-esclusas-agua-clara.webp`,
+    ],
     descripcion:
         'Uno de los mejores lugares para vivir de cerca la grandeza del Canal de Panamá en el Caribe. Desde su centro de visitantes, se pueden observar enormes buques cruzando las esclusas mientras se disfruta de una experiencia educativa, panorámica y única en Colón.',
     previewDescripcion:
@@ -21,13 +29,13 @@ export const esclusasAguaClara = {
             icono: '',
         },
         {
-            nombre: 'Visita al centro de visitantes',
+            nombre: 'Centro de visitantes',
             descripcion:
                 'Aprende sobre el funcionamiento del Canal y su importancia para el comercio mundial.',
             icono: '',
         },
         {
-            nombre: 'Fotografía panorámica',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura vistas únicas de las esclusas, el lago Gatún y los barcos en tránsito.',
             icono: '',
@@ -36,30 +44,6 @@ export const esclusasAguaClara = {
             nombre: 'Turismo educativo',
             descripcion:
                 'Conoce la ingeniería, historia y operación de una de las obras más importantes del país.',
-            icono: '',
-        },
-        {
-            nombre: 'Recorrido familiar',
-            descripcion:
-                'Disfruta una experiencia ideal para visitantes de todas las edades.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación del lago Gatún',
-            descripcion:
-                'Admira uno de los paisajes más representativos del sistema canalero.',
-            icono: '',
-        },
-        {
-            nombre: 'Paseo turístico',
-            descripcion:
-                'Recorre las áreas habilitadas del centro mientras disfrutas del entorno caribeño.',
-            icono: '',
-        },
-        {
-            nombre: 'Avistamiento de naturaleza',
-            descripcion:
-                'Observa el paisaje natural que rodea la zona canalera en Colón.',
             icono: '',
         },
         {

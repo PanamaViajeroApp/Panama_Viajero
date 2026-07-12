@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-playa-blanca.webp'
+const playaBlancaImageBase = '/images/destinations/rivera-pacifica/playa-blanca'
 
 export const playaBlanca = {
   id: 'playa-blanca',
@@ -6,7 +6,17 @@ export const playaBlanca = {
   sharedProvinceIds: ['cocle'],
   riveraPacifica: true,
   nombre: 'Playa Blanca',
-  banner: { src: base, alt: 'Banner de Playa Blanca' },
+  banner: { src: `${playaBlancaImageBase}/bg-playa-blanca.webp`,
+  alt: 'Banner de Playa Blanca' },
+  gallery: [
+      `${playaBlancaImageBase}/bg-playa-blanca.webp`,
+      `${playaBlancaImageBase}/g1-playa-blanca.webp`,
+      `${playaBlancaImageBase}/g2-playa-blanca.webp`,
+      `${playaBlancaImageBase}/g3-playa-blanca.webp`,
+      `${playaBlancaImageBase}/g4-playa-blanca.webp`,
+      `${playaBlancaImageBase}/g5-playa-blanca.webp`,
+
+  ],
 descripcion:
     'Un refugio costero de gran belleza natural donde las suaves arenas claras y las tranquilas aguas del ma. Rodeado de vegetación tropical y un ambiente sereno, este destino invita a disfrutar del sol, la brisa marina y la tranquilidad de un paraíso escondido.',
 previewDescripcion:

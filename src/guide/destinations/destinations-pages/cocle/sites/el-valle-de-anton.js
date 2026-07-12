@@ -5,18 +5,18 @@ export const elValleDeAnton = {
     provinceId: 'cocle',
     nombre: 'El Valle de Antón',
     banner: {
-        src: `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.webp`,
+        src: `${elValleDeAntonImageBase}/bg-el-valle-de-anton.webp`,
         alt: 'Banner de El Valle de Antón',
     },
     gallery: [
-        `${elValleDeAntonImageBase}/banner/bg-el-valle-de-anton.webp`,
-        `${elValleDeAntonImageBase}/gallery/g1-el-valle-de-anton.webp`,
-        `${elValleDeAntonImageBase}/gallery/g2-el-valle-de-anton.webp`,
-        `${elValleDeAntonImageBase}/gallery/g3-el-valle-de-anton.webp`,
-        `${elValleDeAntonImageBase}/gallery/g4-el-valle-de-anton.webp`,
-        `${elValleDeAntonImageBase}/gallery/g5-el-valle-de-anton.webp`,
-        `${elValleDeAntonImageBase}/gallery/g6-el-valle-de-anton.webp`,
-        `${elValleDeAntonImageBase}/gallery/g7-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/bg-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/g1-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/g2-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/g3-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/g4-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/g5-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/g6-el-valle-de-anton.webp`,
+        `${elValleDeAntonImageBase}/g7-el-valle-de-anton.webp`,
 
     ],
     descripcion:
@@ -26,13 +26,13 @@ export const elValleDeAnton = {
     previewUbicacion: 'Antón, Coclé',
     actividades: [
         {
-            nombre: 'Senderismo de montaña',
+            nombre: 'Senderismo',
             descripcion:
                 'Asciende por las laderas del cerro la India Dormida para contemplar vistas espectaculares de todo el valle.',
             icono: '',
         },
         {
-            nombre: 'Fotografía de cascadas',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura la majestuosa belleza del Chorro El Macho enmarcado por una densa y húmeda vegetación tropical.',
             icono: '',
@@ -47,6 +47,12 @@ export const elValleDeAnton = {
             nombre: 'Avistamiento de aves',
             descripcion:
                 'Observa exóticas especies y coloridos tucanes que revolotean entre las altas copas del bosque nuboso.',
+            icono: '',
+        },
+        {
+            nombre: 'Aguas termales',
+            descripcion:
+                'Relájate en aguas termales naturales rodeadas de un entorno montañoso y exuberante vegetación.',
             icono: '',
         },
     ],

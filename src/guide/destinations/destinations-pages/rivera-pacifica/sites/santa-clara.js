@@ -1,15 +1,20 @@
-const base = '/images/destinations/rivera-pacifica/bg-santa-clara.webp'
-
+const santaclaraImageBase = '/images/destinations/rivera-pacifica/santa-clara'
 export const santaClara = {
   id: 'santa-clara',
   provinceIds: ['cocle'],
   sharedProvinceIds: ['cocle'],
   riveraPacifica: true,
   nombre: 'Santa Clara',
-  banner: {
-    src: base,
+  banner: { src: `${santaclaraImageBase}/bg-santa-clara.webp`,
     alt: 'Banner de Santa Clara',
   },
+  gallery: [
+    `${santaclaraImageBase}/bg-santa-clara.webp`,
+    `${santaclaraImageBase}/g1-santa-clara.webp`,
+    `${santaclaraImageBase}/g2-santa-clara.webp`,
+    `${santaclaraImageBase}/g3-santa-clara.webp`,
+    `${santaclaraImageBase}/g4-santa-clara.webp`,
+  ],
   descripcion:
     'Un encantador refugio costero conocido por sus extensas arenas claras, aguas tranquilas y ambiente familiar. Rodeada de paisajes tropicales y una atmósfera relajada, Santa Clara es el lugar ideal para desconectarse, disfrutar del sol y vivir una experiencia auténtica junto al Pacífico.',
   previewDescripcion:

@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-playa-sea-cliff.webp'
+const coronadoImageBase = '/images/destinations/rivera-pacifica/playa-sea-cliff'
 
 export const playaSeaCliff = {
   id: 'playa-sea-cliff',
@@ -7,9 +7,18 @@ export const playaSeaCliff = {
   riveraPacifica: true,
   nombre: 'Playa Sea Cliff',
   banner: {
-    src: base,
+    src: `${coronadoImageBase}/bg-playa-sea-cliff.webp`,
     alt: 'Banner de Playa Sea Cliff',
   },
+  gallery: [
+    `${coronadoImageBase}/bg-playa-sea-cliff.webp`,
+    `${coronadoImageBase}/g1-playa-sea-cliff.webp`,
+    `${coronadoImageBase}/g2-playa-sea-cliff.webp`,
+    `${coronadoImageBase}/g3-playa-sea-cliff.webp`,
+    `${coronadoImageBase}/g4-playa-sea-cliff.webp`,
+    `${coronadoImageBase}/g5-playa-sea-cliff.webp`,
+    `${coronadoImageBase}/g6-playa-sea-cliff.webp`,
+  ],
   descripcion:
     'Un exclusivo refugio costero donde imponentes acantilados, extensas playas y palmeras inclinadas hacia el océano crean un paisaje único de gran belleza natural, ideal para quienes buscan descanso, privacidad y conexión con el mar.',
   previewDescripcion:

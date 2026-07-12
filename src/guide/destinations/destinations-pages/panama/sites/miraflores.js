@@ -1,4 +1,4 @@
-const mirafloresImageBase = '/images/destinations/panama'
+const mirafloresImageBase = '/images/destinations/panama/miraflores'
 
 export const miraflores = {
     id: 'miraflores',
@@ -8,6 +8,14 @@ export const miraflores = {
         src: `${mirafloresImageBase}/bg-miraflores.webp`,
         alt: 'Banner de Miraflores',
     },
+    gallery: [
+        `${mirafloresImageBase}/bg-miraflores.webp`,
+        `${mirafloresImageBase}/g1-miraflores.webp`,
+        `${mirafloresImageBase}/g2-miraflores.webp`,
+        `${mirafloresImageBase}/g3-miraflores.webp`,
+        `${mirafloresImageBase}/g4-miraflores.webp`,
+        `${mirafloresImageBase}/g5-miraflores.webp`,
+    ],
     descripcion:
         'Uno de los destinos turísticos más importantes de Panamá, donde puedes observar de cerca el paso de enormes embarcaciones por el Canal de Panamá. Es una experiencia única que combina historia, ingeniería y vistas privilegiadas de una de las obras más importantes del mundo.',
     previewDescripcion:
@@ -33,19 +41,13 @@ export const miraflores = {
             icono: '',
         },
         {
-            nombre: 'Experiencia educativa',
-            descripcion:
-                'Aprende sobre la importancia histórica, económica y estratégica del Canal para Panamá y el mundo.',
-            icono: '',
-        },
-        {
             nombre: 'Miradores',
             descripcion:
                 'Disfruta de terrazas con vistas privilegiadas para observar la operación completa de las esclusas.',
             icono: '',
         },
         {
-            nombre: 'Restaurante con vista',
+            nombre: 'Restaurante con vista al canal',
             descripcion:
                 'Disfruta de una comida mientras observas el paso de los barcos y la actividad del Canal.',
             icono: '',
@@ -54,12 +56,6 @@ export const miraflores = {
             nombre: 'Visitas guiadas',
             descripcion:
                 'Profundiza en la historia y funcionamiento del Canal con explicaciones especializadas.',
-            icono: '',
-        },
-        {
-            nombre: 'Videos interactivos',
-            descripcion:
-                'Explora contenido audiovisual e interactivo que complementa la experiencia del museo y la historia canalera.',
             icono: '',
         },
     ],

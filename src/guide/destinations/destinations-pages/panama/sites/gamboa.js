@@ -1,4 +1,4 @@
-const gamboaImageBase = '/images/destinations/panama'
+const gamboaImageBase = '/images/destinations/panama/gamboa'
 
 export const gamboa = {
     id: 'gamboa',
@@ -8,6 +8,18 @@ export const gamboa = {
         src: `${gamboaImageBase}/bg-gamboa.webp`,
         alt: 'Banner de Gamboa',
     },
+    gallery: [
+        `${gamboaImageBase}/bg-gamboa.webp`,
+        `${gamboaImageBase}/g1-gamboa.webp`,
+        `${gamboaImageBase}/g2-gamboa.webp`,
+        `${gamboaImageBase}/g3-gamboa.webp`,
+        `${gamboaImageBase}/g4-gamboa.webp`,
+        `${gamboaImageBase}/g5-gamboa.webp`,
+        `${gamboaImageBase}/g6-gamboa.webp`,
+        `${gamboaImageBase}/g7-gamboa.webp`,
+        `${gamboaImageBase}/g8-gamboa.webp`,
+        `${gamboaImageBase}/g9-gamboa.webp`,
+    ],
     descripcion:
         'Un destino rodeado de selva tropical y ríos que combina naturaleza, biodiversidad y aventura a orillas del Canal de Panamá. Gamboa es uno de los principales puntos de ecoturismo del país, ideal para descubrir fauna silvestre y vivir experiencias inmersas en la selva.',
     previewDescripcion:
@@ -45,7 +57,7 @@ export const gamboa = {
             icono: '',
         },
         {
-            nombre: 'Visitas guiadas de naturaleza',
+            nombre: 'Visitas guiada',
             descripcion:
                 'Aprende sobre la flora, fauna y ecosistemas tropicales de la mano de expertos locales.',
             icono: '',
