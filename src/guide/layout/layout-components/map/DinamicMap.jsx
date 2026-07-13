@@ -208,7 +208,17 @@ function Map() {
               onMouseLeave={() => setActiveProvince(null)}
               onClick={() => navigate(item.to)}
             >
-              {item.alt}
+              {item.hoverKey === 'guna-yala' ? (
+                <>
+                  <span className="block text-center leading-tight md:hidden">
+                    Guna Yala
+                    <span className="block">San Blas</span>
+                  </span>
+                  <span className="hidden md:inline">{item.alt}</span>
+                </>
+              ) : (
+                item.alt
+              )}
             </button>
           ))}
         </div>

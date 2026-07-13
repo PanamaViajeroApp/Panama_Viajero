@@ -12,6 +12,8 @@ function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false, breadc
     const media = (
         <SmartVideo
             src={source}
+            webmSrc={banner.webmSrc}
+            fallbackSrc={banner.fallbackSrc}
             className={mediaClassName}
             autoPlay
             poster={banner.poster}

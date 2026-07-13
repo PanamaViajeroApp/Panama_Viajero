@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import politicaDePrivacidadPdf from '../../../Politica-de-privacidad.pdf';
+import { useState } from "react";
+import politicaDePrivacidadPdf from "../../../Politica-de-privacidad.pdf";
 
-const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL ?? '';
+const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL ?? "";
 
 const initialForm = {
-    fullName: '',
-    phone: '',
-    email: '',
+    fullName: "",
+    phone: "",
+    email: "",
     acceptedPrivacyPolicy: false,
 };
 
-function IconBase({ children, className = '' }) {
+function IconBase({ children, className = "" }) {
     return (
         <svg
             viewBox="0 0 24 24"
@@ -27,7 +27,7 @@ function IconBase({ children, className = '' }) {
     );
 }
 
-function UserIcon({ className = '' }) {
+function UserIcon({ className = "" }) {
     return (
         <IconBase className={className}>
             <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
@@ -36,7 +36,7 @@ function UserIcon({ className = '' }) {
     );
 }
 
-function PhoneIcon({ className = '' }) {
+function PhoneIcon({ className = "" }) {
     return (
         <IconBase className={className}>
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72l.34 2.74a2 2 0 0 1-.57 1.72L7.1 9.9a16 16 0 0 0 7 7l1.72-1.78a2 2 0 0 1 1.72-.57l2.74.34A2 2 0 0 1 22 16.92Z" />
@@ -44,7 +44,7 @@ function PhoneIcon({ className = '' }) {
     );
 }
 
-function MailIcon({ className = '' }) {
+function MailIcon({ className = "" }) {
     return (
         <IconBase className={className}>
             <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -55,26 +55,30 @@ function MailIcon({ className = '' }) {
 
 function Preregister({ onViewSite = null }) {
     const [form, setForm] = useState(initialForm);
-    const [status, setStatus] = useState({ loading: false, error: '', success: '' });
+    const [status, setStatus] = useState({
+        loading: false,
+        error: "",
+        success: "",
+    });
 
     function handleChange(event) {
         const { name, value, type, checked } = event.target;
 
         setForm((current) => ({
             ...current,
-            [name]: type === 'checkbox' ? checked : value,
+            [name]: type === "checkbox" ? checked : value,
         }));
     }
 
     async function handleSubmit(event) {
         event.preventDefault();
-        setStatus({ loading: true, error: '', success: '' });
+        setStatus({ loading: true, error: "", success: "" });
 
         if (!APPS_SCRIPT_URL) {
             setStatus({
                 loading: false,
-                error: 'Falta configurar VITE_APPS_SCRIPT_URL',
-                success: '',
+                error: "Falta configurar VITE_APPS_SCRIPT_URL",
+                success: "",
             });
             return;
         }
@@ -88,10 +92,10 @@ function Preregister({ onViewSite = null }) {
             });
 
             await fetch(APPS_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
+                method: "POST",
+                mode: "no-cors",
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+                    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
                 },
                 body: payload.toString(),
             });
@@ -99,14 +103,17 @@ function Preregister({ onViewSite = null }) {
             setForm(initialForm);
             setStatus({
                 loading: false,
-                error: '',
-                success: 'Registro enviado correctamente.',
+                error: "",
+                success: "Registro enviado correctamente.",
             });
         } catch (error) {
             setStatus({
                 loading: false,
-                error: error instanceof Error ? error.message : 'Ocurrio un error inesperado',
-                success: '',
+                error:
+                    error instanceof Error
+                        ? error.message
+                        : "Ocurrio un error inesperado",
+                success: "",
             });
         }
     }
@@ -115,13 +122,39 @@ function Preregister({ onViewSite = null }) {
         <div className="max-w-full md:p-30">
             <div className="mx-auto max-w-4xl rounded-xl border border-brand-blue/15 bg-brand-white p-8 shadow-[0_18px_45px_rgba(77,76,76,0.15)]">
                 <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="flex flex-col border-b border-brand-soft pb-4 md:flex-row md:items-baseline md:justify-end">
-                        <div className="flex flex-col items-end">
-                            <div className="flex items-baseline gap-2 justify-start">
-                                <span className="font-body text-xl text-brand-charcoal/90">Registrate y participa por una</span>
-                                <span className="font-main text-3xl font-bold text-brand-red">ESTADÍA GRATIS</span>
+                    <div className="border-b border-brand-soft pb-4">
+                        <div className="flex flex-col items-start md:items-end">
+                            {/* Desktop */}
+                            <div className="hidden md:flex items-baseline gap-2">
+                                <span className="font-body text-xl text-brand-charcoal/90">
+                                    Registrate y participa por una
+                                </span>
+
+                                <span className="font-main text-3xl font-bold text-brand-red">
+                                    ESTADÍA GRATIS
+                                </span>
                             </div>
-                            <span className="font-body text-xl text-brand-charcoal/90">para 2 personas.</span>
+
+                            {/* Mobile */}
+                            <div className="flex flex-col md:hidden leading-tight">
+                                <span className="font-body text-xl text-brand-charcoal/90">
+                                    Registrate y participa
+                                </span>
+
+                                <div className="flex items-baseline gap-2">
+                                    <span className="font-body text-xl text-brand-charcoal/90">
+                                        por una
+                                    </span>
+
+                                    <span className="font-main text-3xl font-bold text-brand-red">
+                                        ESTADÍA GRATIS
+                                    </span>
+                                </div>
+                            </div>
+
+                            <span className="font-body text-xl text-brand-charcoal/90">
+                                para 2 personas.
+                            </span>
                         </div>
                     </div>
 
@@ -173,7 +206,7 @@ function Preregister({ onViewSite = null }) {
                                 disabled={status.loading}
                                 className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-8 py-3 text-brand-white transition-colors hover:bg-brand-blue disabled:cursor-not-allowed disabled:opacity-70"
                             >
-                                {status.loading ? 'Registrando...' : 'Registrarme'}
+                                {status.loading ? "Registrando..." : "Registrarme"}
                             </button>
                         </div>
 
@@ -188,7 +221,7 @@ function Preregister({ onViewSite = null }) {
                                 className="h-4 w-4 cursor-pointer accent-brand-blue"
                             />
                             <label htmlFor="terms" className="font-body">
-                                He leido y acepto la{' '}
+                                He leido y acepto la{" "}
                                 <a
                                     href={politicaDePrivacidadPdf}
                                     target="_blank"
@@ -210,7 +243,7 @@ function Preregister({ onViewSite = null }) {
                                     {status.success}
                                 </p>
 
-                                {typeof onViewSite === 'function' ? (
+                                {typeof onViewSite === "function" ? (
                                     <button
                                         type="button"
                                         onClick={onViewSite}

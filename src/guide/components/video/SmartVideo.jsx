@@ -10,6 +10,7 @@ function deriveFallbackSrc(src) {
 
 function SmartVideo({
     src,
+    webmSrc,
     fallbackSrc,
     className,
     poster,
@@ -73,13 +74,14 @@ function SmartVideo({
             playsInline
             {...props}
         >
-            {shouldLoad && resolvedFallbackSrc && (
+            {shouldLoad && (webmSrc || resolvedFallbackSrc) && (
                 <>
-                    <source src={src} type='video/mp4; codecs="av01.0.05M.08"' />
-                    <source src={resolvedFallbackSrc} type='video/mp4' />
+                    {src && <source src={src} type='video/mp4; codecs="av01.0.05M.08"' />}
+                    {webmSrc && <source src={webmSrc} type='video/webm; codecs="vp9"' />}
+                    {resolvedFallbackSrc && <source src={resolvedFallbackSrc} type='video/mp4' />}
                 </>
             )}
-            {shouldLoad && !resolvedFallbackSrc && src && (
+            {shouldLoad && !webmSrc && !resolvedFallbackSrc && src && (
                 <source src={src} type='video/mp4' />
             )}
         </video>
