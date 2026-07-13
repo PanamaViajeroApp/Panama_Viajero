@@ -60,7 +60,7 @@ function CountdownModal({ onClose, onPreregister }) {
                         <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-brand-red/20 blur-3xl" />
 
                         <div className="relative z-10 mx-auto max-w-md text-center md:mx-0 md:text-left">
-                            <div className="hidden  mx-auto md:inline-flex w-fit items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 backdrop-blur md:mx-0">
+                            <div className="mx-auto inline-flex w-fit items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 backdrop-blur md:mx-0">
                                 Muy pronto
                             </div>
 
