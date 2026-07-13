@@ -79,7 +79,7 @@ function BottomBanner({ onLogoClick }) {
                             <a href={politicaDePrivacidadPdf} 
                             target="_blank"
                             rel="noreferrer" 
-                            className="hover:text-brand-white underline underline-offset-4 transition">
+                            className="hover:text-brand-white transition">
                                 Política de Privacidad
                             </a>
                         </div>
@@ -90,7 +90,7 @@ function BottomBanner({ onLogoClick }) {
                         <span>Desarrollado por <span className="text-brand-white">Davis Marketing</span></span>
                         <span className="hidden md:inline text-brand-white/30">|</span>
                         <span>Contacto: 
-                            <a href="mailto:hola@panamaviajero.app" className="text-brand-white underline underline-offset-4 hover:text-brand-white/80 transition ml-1">
+                            <a href="mailto:hola@panamaviajero.app" className="text-brand-white hover:text-brand-white/80 transition ml-1">
                                 hola@panamaviajero.app
                             </a>
                         </span>

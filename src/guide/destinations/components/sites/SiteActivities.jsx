@@ -7,6 +7,7 @@ function SiteActivities({ site = null }) {
   const [activeActivity, setActiveActivity] = useState(null)
   const [activeImageIndex, setActiveImageIndex] = useState(0)
   const [isImageVisible, setIsImageVisible] = useState(true)
+  const [isChangingImage, setIsChangingImage] = useState(false)
 
   const activities = Array.isArray(site?.actividades) ? site.actividades : []
   const gallery = useMemo(() => {
@@ -21,7 +22,25 @@ function SiteActivities({ site = null }) {
   useEffect(() => {
     setActiveImageIndex(0)
     setIsImageVisible(true)
+    setIsChangingImage(false)
   }, [gallery.length, site?.id])
+
+  useEffect(() => {
+    if (gallery.length <= 1) {
+      return
+    }
+
+    const adjacentIndexes = [
+      (activeImageIndex + 1) % gallery.length,
+      (activeImageIndex - 1 + gallery.length) % gallery.length,
+    ]
+
+    adjacentIndexes.forEach((index) => {
+      const image = new Image()
+      image.src = gallery[index]
+      image.decode?.().catch(() => {})
+    })
+  }, [activeImageIndex, gallery])
 
   const { leftColumnActivities, rightColumnActivities } = useMemo(() => {
     const left = []
@@ -44,20 +63,38 @@ function SiteActivities({ site = null }) {
   const currentImage = gallery[activeImageIndex] ?? site?.banner?.src ?? ''
   const totalImages = gallery.length
 
-  const moveImage = (direction) => {
-    if (totalImages <= 1) {
+  const moveImage = async (direction) => {
+    if (totalImages <= 1 || isChangingImage) {
       return
     }
 
     const nextIndex = (activeImageIndex + direction + totalImages) % totalImages
-    setIsImageVisible(false)
+    const nextImage = new Image()
+    nextImage.src = gallery[nextIndex]
+    setIsChangingImage(true)
 
-    window.setTimeout(() => {
-      setActiveImageIndex(nextIndex)
-      window.requestAnimationFrame(() => {
-        setIsImageVisible(true)
+    try {
+      await nextImage.decode()
+    } catch {
+      await new Promise((resolve) => {
+        if (nextImage.complete) {
+          resolve()
+          return
+        }
+
+        nextImage.onload = resolve
+        nextImage.onerror = resolve
       })
-    }, 180)
+    }
+
+    setIsImageVisible(false)
+    await new Promise((resolve) => window.setTimeout(resolve, 180))
+    setActiveImageIndex(nextIndex)
+
+    window.requestAnimationFrame(() => {
+      setIsImageVisible(true)
+      setIsChangingImage(false)
+    })
   }
 
   return (
@@ -91,6 +128,7 @@ function SiteActivities({ site = null }) {
                     <button
                       type="button"
                       onClick={() => moveImage(-1)}
+                      disabled={isChangingImage}
                       aria-label="Imagen anterior"
                       className="cursor-pointer absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-sm transition duration-200 hover:scale-105 hover:bg-black/50"
                     >
@@ -100,6 +138,7 @@ function SiteActivities({ site = null }) {
                     <button
                       type="button"
                       onClick={() => moveImage(1)}
+                      disabled={isChangingImage}
                       aria-label="Imagen siguiente"
                       className="cursor-pointer absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-sm transition duration-200 hover:scale-105 hover:bg-black/50"
                     >
