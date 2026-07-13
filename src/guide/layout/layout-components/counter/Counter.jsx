@@ -70,7 +70,7 @@ function CountdownModal({ onClose, onPreregister }) {
                                 <span className="block text-[#CD2E4C]">antes lo viste</span>
                             </h2>
 
-                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0 hidden md:block">
+                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0">
                                 Una nueva forma de explorar destinos, experiencias y lugares increíbles dentro de Panamá.
                             </p>
 
