@@ -35,7 +35,7 @@ function Suggestions() {
           Sugerencias para explorar
         </h2>
         <p className="font-body-italic mt-3 max-w-2xl text-left text-brand-white md:text-lg">
-          Provincias recomendadas para descubrir historia, naturaleza, cultura y experiencias únicas
+          Destinos recomendados para descubrir historia, naturaleza, cultura y experiencias únicas
         </p>
       </div>
 
