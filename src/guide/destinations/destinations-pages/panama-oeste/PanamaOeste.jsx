@@ -89,7 +89,7 @@ function PanamaOeste() {
           { label: provinceData.nombre },
         ]}
       />
-      <section className="relative z-10">
+      <>
         <Activities
           provinceData={provinceData}
           selectedActivities={selectedActivities}
@@ -111,7 +111,7 @@ function PanamaOeste() {
         <div className="mt-40">
           <BottomBanner onLogoClick={() => navigate('/#home')} />
         </div>
-      </section>
+      </>
     </div>
   )
 }

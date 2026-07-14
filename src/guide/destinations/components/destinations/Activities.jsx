@@ -176,7 +176,7 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
     };
 
     return (
-        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 mt-[-65px]">
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 md:mt-[-65px] mt-10">
             <h1
                 className="font-main text-3xl font-bold text-brand-white md:text-4xl mb-[-60px]"
                 style={{ textShadow: '0 0 6px rgba(0, 0, 0, 0.9)' }}
