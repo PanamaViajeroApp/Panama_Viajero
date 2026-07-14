@@ -133,7 +133,6 @@ function ZonePage() {
       <div className="fixed top-0 z-50 w-full">
         <Menu
           autoHideOnScroll
-          hideMobileMenu
           onLogoClick={() => navigate('/#home')}
           onUsClick={() => navigate('/#us')}
           onMapClick={() => navigate('/#map')}
