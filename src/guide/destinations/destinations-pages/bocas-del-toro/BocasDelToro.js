@@ -39,7 +39,6 @@ export const provincias = [
 
     ],
     directSiteIds: [
-      'isla-colon',
       'isla-bastimentos',
       'cayo-zapatilla',
       'isla-carenero',
