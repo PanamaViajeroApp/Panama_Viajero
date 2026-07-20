@@ -34,15 +34,7 @@ export const provincias = [
       'Camping',
     ],
 
-    directSiteIds: [
-      'santiago',
-      'isla-cebaco',
-      'calovebora',
-      'santa-catalina',
-      'playa-torio',
-      'playa-el-estero',
-      'playa-morrillo',
-    ],
+    directSiteIds: [],
     displayMode: 'sites-only',
   },
 ]
