@@ -47,17 +47,7 @@ export const provincias = [
       'Surf',
     ],
 
-    directSiteIds: [
-      'boquete-centro',
-      'gualaca',
-      'volcan-baru',
-      'david-centro',
-      'cerro-punta-centro',
-      'boca-chica',
-      'playa-barqueta',
-      'playa-las-lajas',
-      'puerto-armuelles',
-    ],
+    directSiteIds: [],
     displayMode: 'sites-only',
   },
 ]
