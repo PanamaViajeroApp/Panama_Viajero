@@ -29,7 +29,7 @@ export const provincias = [
       'Folclore',
     ],
 
-    directSiteIds: [ 'reserva-forestal-el-montuoso', 'chitre', 'desierto-sarigua', 'parita' ],
+    directSiteIds: [],
     displayMode: 'sites-only',
   },
 ]
