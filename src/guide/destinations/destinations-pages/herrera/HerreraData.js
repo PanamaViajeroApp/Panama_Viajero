@@ -15,19 +15,6 @@ export const provincias = [
     ubicacionProvincia: {
       src: 'https://www.google.com/maps?q=Herrera%2C%20Panam%C3%A1&output=embed',
     },
-    actividades: [
-      'Gastronomía',
-      'Senderismo',
-      'Museos',
-      'Fotografía',
-      'Arqueología',
-      'Avistamiento de aves',
-      'Manglares',
-      'Camping',
-      'Observación de flores',
-      'Artesanías',
-      'Folclore',
-    ],
 
     directSiteIds: [],
     displayMode: 'sites-only',

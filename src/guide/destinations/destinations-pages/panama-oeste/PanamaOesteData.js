@@ -32,6 +32,6 @@ actividades: [
   'Pesca artesanal',
 ],
 displayMode: 'sites-only',
-directSiteIds: ['playa-san-carlos', 'coronado', 'playa-el-palmar', 'punta-chame', 'playa-malibu', 'playa-sea-cliff', 'gorgona', 'veracruz'],
+directSiteIds: ['gorgona', 'veracruz'],
 },
 ]

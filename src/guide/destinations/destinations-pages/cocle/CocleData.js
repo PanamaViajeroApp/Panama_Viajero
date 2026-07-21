@@ -30,10 +30,6 @@ export const provincias = [
     directSiteIds: [
       'el-valle-de-anton',
       'penonome',
-      'playa-blanca',
-      'playa-farallon',
-      'santa-clara',
-      'playa-juan-hombron',
     ],
   },
 ]

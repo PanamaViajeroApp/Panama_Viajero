@@ -7,7 +7,6 @@ import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx'
 import OtherProvinces from '../../components/destinations/OtherProvinces.tsx'
 import BreadcrumbNav from '../../components/destinations/BreadcrumbNav.jsx'
 import { provinceMedia } from '../provinceMedia.js'
-import { riveraPacificaSiteRegistry } from './siteRegistry.js'
 
 const riveraPacificaProvince = {
   id: 'rivera-pacifica',
@@ -20,7 +19,7 @@ const riveraPacificaProvince = {
   },
   descripcionCorta:
     'Un corredor costero compartido entre Coclé y Panamá Oeste, con playas extensas, olas consistentes y paisajes pensados para surf, descanso y recorridos de litoral.',
-  directSiteIds: Object.keys(riveraPacificaSiteRegistry),
+  directSiteIds: [],
   displayMode: 'sites-only',
 }
 
