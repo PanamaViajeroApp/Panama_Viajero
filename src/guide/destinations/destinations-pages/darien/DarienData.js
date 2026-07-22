@@ -12,15 +12,7 @@ export const provincias = [
     ubicacionProvincia: {
       src: 'https://www.google.com/maps?q=Dari%C3%A9n%2C%20Panam%C3%A1&output=embed',
     },
-    actividades: [
-      'Selva',
-      'Avistamiento de aves',
-      'Fotografía',
-      'Pesca deportiva',
-      'Paseo en bote',
-      'Avistamiento de manglares',
-    ],
     displayMode: 'sites-only',
-    directSiteIds: ['bahia-pina'],
+    directSiteIds: [],
   },
 ]
