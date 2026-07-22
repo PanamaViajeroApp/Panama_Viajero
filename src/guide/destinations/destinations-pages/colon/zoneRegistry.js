@@ -5,14 +5,8 @@ export const colonZoneRegistry = {
     nombre: 'Costa Abajo',
     descripcion:
       'Una región donde la historia colonial, la naturaleza protegida y el legado canalero se combinan entre fortalezas, selvas tropicales y paisajes únicos frente al Caribe.',
-    imagen:
-      '/images/destinations/colon/costa-abajo/castillo-san-lorenzo/bg-castillo-san-lorenzo.webp',
-    sitios: [
-      'castillo-san-lorenzo',
-      'esclusas-agua-clara',
-      'fuerte-sherman',
-      'bosque-protector-san-lorenzo',
-    ],
+    imagen: '/images/destinations/colon/bg-castillo-san-lorenzo.webp',
+    sitios: [],
   },
 
   'costa-arriba': {
@@ -21,14 +15,7 @@ export const colonZoneRegistry = {
     nombre: 'Costa Arriba',
     descripcion:
       'La joya caribeña de Colón, reconocida por su riqueza histórica, cultura afrocaribeña, playas paradisíacas e islas tropicales llenas de encanto.',
-    imagen:
-      '/images/destinations/colon/costa-arriba/portobelo/bg-portobelo.webp',
-    sitios: [
-      'portobelo',
-      'isla-grande',
-      'isla-mamey',
-      'puerto-lindo',
-      'el-guaira',
-    ],
+    imagen: '/images/destinations/colon/bg-portobelo.webp',
+    sitios: [],
   },
 }
